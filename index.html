@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ferhad Eyvazov">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media.query.css">
+    <title>ShopStore</title>
+</head>
+
+<body>
+
+    <!-- ==========================HEADER======================== -->
+    <a class="author" id="header"></a>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header--info">
+                <a href="#">Korporativ satış</a>
+                <a href="#">Haqqımızda</a>
+                <a href="#">Mağazalarımız</a>
+                <a href="#">Texniki dəstək</a>
+                <a href="#">Çatdırılma və ödəniş</a>
+            </div>
+            <div class="header--user--sign">
+                <a href="tel:+994(*6777)">
+                    <i class="fa-solid fa-phone"></i>*6777
+                </a>
+                <select class="header--language">
+                    <option value="az">
+                        AZ
+                    </option>
+                    <option value="en">
+                        EN
+                    </option>
+                    <option value="rus">
+                        РУС
+                    </option>
+                </select>
+                <a href="#">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Qeydiyyat | Giriş</span>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+
+
+
+
+    <!-- ==========================NAV======================== -->
+    <nav class="nav" id="nav">
+        <div class="container nav__container">
+            <div class="nav--burger--logo">
+                <label class="nav--burger">
+                    <input type="checkbox">
+                    <div class="checkmark">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </label>
+                <a href="#header"><img src="./assets/img/logo_shopstore.svg" alt="LOGO" class="logo"></a>
+                
+                <button class="product--catalog">
+                    <span class="circle1"></span>
+                    <span class="circle2"></span>
+                    <span class="circle3"></span>
+                    <span class="circle4"></span>
+                    <span class="circle5"></span>
+                    <p class="text">
+                        Məhsul kataloqu <i class="fa-solid fa-chevron-down"></i>
+                    </p>
+                </button>
+            </div>
+
+            <div class="search__section" id="search__section">
+                <div class="container">
+                    <div class="search__back">
+                        <i class="fa-solid fa-x" id="faBack"></i>
+                    </div>
+                    <div class="search__container">
+                        <input placeholder="Search the internet..." type="text" name="text" class="input">
+                        <a href="#" class="search--input"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <form class="form">
+                <input type="search" name="" id="searchBtn"
+                placeholder="Iphone 12 pro max silicone case baseus">
+                <button class="search__btn" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+
+            <div class="nav--tools">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-magnifying-glass" id="faSearch"></i>
+                    </li>
+                    <li>
+                        <span>Müqayisə</span>
+                        <i class="fa-solid fa-scale-balanced"></i>
+
+                    </li>
+                    <li>
+                        <span>Seçilmişlər</span>
+                        <i class="fa-regular fa-heart"></i>
+                    </li>
+                    <li>
+                        <span>Səbət</span>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="nav__alt" id="nav__alt">
+        <div class="container nav__container--alt">
+            <a href="#" class="nav__link">
+                <i class="fa-solid fa-bullhorn"></i>
+                Kampaniyalar
+            </a>
+            <a href="#" class="nav__link">
+                <i class="fa-solid fa-newspaper"></i>
+                Xəbərlər
+            </a>
+            <a href="#" class="nav__link">
+                <i class="fa-solid fa-sim-card"></i>
+                Nömrələr
+            </a>
+            <a href="#" class="nav__link">
+                <i class="fa-solid fa-building-columns"></i>
+                Kredit
+            </a>
+            <a href="#" class="nav__link">
+                <i class="fa-solid fa-truck"></i>
+                Online sifariş
+            </a>
+        </div>
+    </nav>
+
+    <nav class="menu__alt">
+        <div class="container container__alt--menu">
+            <ul class="menu__list">
+                <li class="menu__link">
+                    <a href="#">
+                        <i class="fa-solid fa-house"></i>
+                        <p>Əsas Səhifə</p>
+                    </a>
+                </li>
+                <li class="menu__link">
+                    <a href="#">
+                        <i class="fa-solid fa-file-lines"></i>
+                        <p>Katalog</p>
+                    </a>
+                </li>
+                <li class="menu__link">
+                    <a href="#">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <p>Səbət</p>
+                    </a>
+                </li>
+                <li class="menu__link">
+                    <a href="#">
+                        <i class="fa-solid fa-user"></i>
+                        <p>Profil</p>
+                    </a>
+                </li>
+                <li class="menu__link">
+                    <a href="#">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <p>Menu</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    <!-- ==========================MAIN======================== -->
+    <main class="main" id="main">
+
+    </main>
+    <!-- ==========================REKLAM======================== -->
+    <section class="reklam" id="reklam">
+
+    </section>
+    <!-- ==========================BRENDS======================== -->
+    <section class="brends" id="brends">
+
+    </section>
+    <!-- ==========================SATIS LIDERLERI======================== -->
+    <!-- ==========================KATEQORIYALAR======================== -->
+    <!-- ==========================APPLE======================== -->
+    <!-- ==========================SAMSUNG======================== -->
+    <!-- ==========================XIDMET======================== -->
+    <!-- ==========================XIOMI MEHSULLARI======================== -->
+    <!-- ==========================GAME NOUTBOOK======================== -->
+    <!-- ==========================ABUNEOL======================== -->
+    <!-- ==========================FOOTER======================== -->
+    <footer class="footer" id="footer">
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- =======================MAIN JS================ -->
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
