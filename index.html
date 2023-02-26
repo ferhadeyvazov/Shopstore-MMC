@@ -11,42 +11,45 @@
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+        <!-- =======================SWIPER-JS================ -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
         <!-- =======================MAIN CSS================ -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/media.query.css">
-
-    <!-- =======================MAIN JS================ -->
-    <script defer src="./assets/js/app.js"></script>
-
-    <title>ShopStore</title>
-</head>
-
-<body>
-
-    <!-- ==========================HEADER======================== -->
-    <a class="author" id="header"></a>
-    <header class="header">
-        <div class="container header__container">
-            <div class="header--info">
-                <a href="#">Korporativ satış</a>
-                <a href="#">Haqqımızda</a>
-                <a href="#">Mağazalarımız</a>
-                <a href="#">Texniki dəstək</a>
-                <a href="#">Çatdırılma və ödəniş</a>
-            </div>
-            <div class="header--user--sign">
-                <a href="tel:+994(*6777)">
-                    <i class="fa-solid fa-phone"></i>*6777
-                </a>
-                <select class="header--language">
-                    <option value="az">
-                        AZ
-                    </option>
-                    <option value="en">
-                        EN
-                    </option>
-                    <option value="rus">
-                        РУС
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/media.query.css">
+        
+        <!-- =======================MAIN JS================ -->
+        <script defer src="./assets/js/app.js"></script>
+        
+        <title>ShopStore</title>
+    </head>
+    
+    <body>
+        
+        <!-- ==========================HEADER======================== -->
+        <a class="author" id="header"></a>
+        <header class="header">
+            <div class="container header__container">
+                <div class="header--info">
+                    <a href="#">Korporativ satış</a>
+                    <a href="#">Haqqımızda</a>
+                    <a href="#">Mağazalarımız</a>
+                    <a href="#">Texniki dəstək</a>
+                    <a href="#">Çatdırılma və ödəniş</a>
+                </div>
+                <div class="header--user--sign">
+                    <a href="tel:+994(*6777)">
+                        <i class="fa-solid fa-phone"></i>*6777
+                    </a>
+                    <select class="header--language">
+                        <option value="az">
+                            AZ
+                        </option>
+                        <option value="en">
+                            EN
+                        </option>
+                        <option value="rus">
+                            РУС
                     </option>
                 </select>
                 <a href="#">
@@ -54,14 +57,14 @@
                     <span>Qeydiyyat | Giriş</span>
                 </a>
             </div>
-
+            
         </div>
     </header>
-
-
-
-
-
+    
+    
+    
+    
+    
     <!-- ==========================NAV======================== -->
     <nav class="nav" id="nav">
         <div class="container nav__container">
@@ -75,7 +78,7 @@
                     </div>
                 </label>
                 <a href="#header"><img src="./assets/img/logo_shopstore.svg" alt="LOGO" class="logo"></a>
-
+                
                 <button class="product--catalog">
                     <span class="circle1"></span>
                     <span class="circle2"></span>
@@ -87,7 +90,7 @@
                     </p>
                 </button>
             </div>
-
+            
             <div class="search__section" id="search__section">
                 <div class="container">
                     <div class="search__back">
@@ -99,14 +102,14 @@
                     </div>
                 </div>
             </div>
-
+            
             <form class="form">
                 <input type="search" name="" id="searchBtn" placeholder="Iphone 12 pro max silicone case baseus">
                 <button class="search__btn" type="submit">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </form>
-
+            
             <div class="nav--tools">
                 <ul>
                     <li>
@@ -115,7 +118,7 @@
                     <li>
                         <span>Müqayisə</span>
                         <i class="fa-solid fa-scale-balanced"></i>
-
+                        
                     </li>
                     <li>
                         <span>Seçilmişlər</span>
@@ -129,6 +132,7 @@
             </div>
         </div>
     </nav>
+    
 
     <nav class="nav__alt" id="nav__alt">
         <div class="container nav__container--alt">
@@ -154,6 +158,7 @@
             </a>
         </div>
     </nav>
+    
 
     <nav class="menu__alt">
         <div class="container container__alt--menu">
@@ -192,20 +197,47 @@
         </div>
     </nav>
 
-
-
-
+    
+    
+    
     <!-- ==========================MAIN======================== -->
     <main class="main" id="main">
+        <div class="container main__container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="slide1 swiper-slide">Slide 1</div>
+                    <div class="slide2 swiper-slide">Slide 2</div>
+                    <div class="slide3 swiper-slide">Slide 3</div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="item-pagination swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev prevBtn flexCenter"></div>
+                <div class="nextBtn swiper-button-next flexCenter"></div>
+            
+                <!-- If we need scrollbar
+                <div class="swiper-scrollbar"></div> -->
+            </div>
+        </div>
+
+
+
 
     </main>
+
+
     <!-- ==========================REKLAM======================== -->
     <section class="reklam" id="reklam">
-
+        
     </section>
     <!-- ==========================BRENDS======================== -->
     <section class="brends" id="brends">
-
+        
     </section>
     <!-- ==========================SATIS LIDERLERI======================== -->
     <!-- ==========================KATEQORIYALAR======================== -->
@@ -217,25 +249,25 @@
     <!-- ==========================ABUNEOL======================== -->
     <!-- ==========================FOOTER======================== -->
     <footer class="footer" id="footer">
-
+        
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!-- =======================SWIPER-JS================ -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
+    
 </body>
 
 </html>

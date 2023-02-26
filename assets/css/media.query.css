@@ -38,6 +38,10 @@
         display: none;
     }
 
+    .search__section{
+        display: none;
+    }
+
     .menu__alt {
         display: none;
     }
@@ -175,5 +179,9 @@
         width: 42%;
         /* 500px/1200 */
         max-width: none;
+    }
+
+    .swiper{
+        height: 600px;
     }
 }
