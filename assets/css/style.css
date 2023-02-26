@@ -434,11 +434,11 @@ p {
 
 /* ==========================MAIN========================  */
 .main {
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 .swiper {
-    height: 600px;
+    border: solid;
 }
 
 
@@ -476,15 +476,20 @@ p {
     background-image: url(../img/swiperImg/img1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;    
+    background-position: center;
+    padding-top: 42%;
 }
 .slide2{
     background-image: url(../img/swiperImg/img2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    padding-top: 42%;
 }
 .slide3{
     background-image: url(../img/swiperImg/img3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    padding-top: 42%;
 }
