@@ -398,9 +398,13 @@ p {
     display: none;
 }
 .nav--tools ul li{
-    font-size: 14px;
+    font-size: 16px;
     padding: 4px 12px;
-    border-right: solid 1px grey;
+    border-right: solid 1px #9178b4;
+}
+.nav--tools ul li:hover{
+    color: var(--hover-color);
+    cursor: pointer;
 }
 .nav--tools ul li:nth-child(3) {
     border: none;

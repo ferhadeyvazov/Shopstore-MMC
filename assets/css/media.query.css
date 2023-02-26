@@ -74,6 +74,10 @@
         font-size: 12px;
     }
 
+    .nav--tools ul li {
+        font-size: 13px;
+    }
+
     .nav--tools ul li span,
     .nav--tools ul li:last-child {
         display: inline;
@@ -84,12 +88,12 @@
     }
 
     .nav--tools ul li:not(:last-child) {
-        padding: 5px 12px;
+        padding: 4px 10px;
     }
 
     .nav--tools ul li:last-child {
         border-right: none;
-        border-left: solid 1px grey;
+        border-left: solid 1px #9178b4;
     }
 
     .nav--tools ul li {
