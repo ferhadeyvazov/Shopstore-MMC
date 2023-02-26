@@ -299,7 +299,7 @@ p {
     display: block;
 }
 .menuActive{
-    color: red !important;
+    color: var(--main-bg-color) !important;
 }
 
 
@@ -341,7 +341,7 @@ p {
 }
 
 .search--input {
-    padding: 10px;
+    padding: 10px 12px;
     background: var(--btn-bg-color);
     border-radius: 50%;
     color: #ffffff;
@@ -398,8 +398,8 @@ p {
     display: none;
 }
 .nav--tools ul li{
-    font-size: 12px;
-    padding: 5px 12px;
+    font-size: 14px;
+    padding: 4px 12px;
     border-right: solid 1px grey;
 }
 .nav--tools ul li:nth-child(3) {

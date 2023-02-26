@@ -17,7 +17,7 @@ function cancelSearchActive() {
     searchSection.classList.remove('activeSearch');
 }
 
-// ==========MENU__LINK================
+// ==========ACTIVE MENU__LINK================
 let links = document.querySelectorAll('.menu__link a');
 
 links.forEach(item=>{
