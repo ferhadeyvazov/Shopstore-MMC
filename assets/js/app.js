@@ -32,6 +32,9 @@ links.forEach(item=>{
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     loop: true,
+    autoplay: {
+        delay: 2500,
+    },
 
     // If we need pagination
     pagination: {

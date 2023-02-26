@@ -138,6 +138,7 @@ p {
     color: var(--text-color2);
     position: sticky;
     top: 0;
+    z-index: var(--index);
 }
 
 .logo {
@@ -319,7 +320,7 @@ p {
     background-color: #ffffff;
     width: 100%;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 100vh;
     left: 0;
     z-index: 1;
@@ -437,6 +438,10 @@ p {
     padding: 1rem 0;
 }
 
+.swiper,
+.swiper-wrapper{
+    z-index: 0;
+}
 
 
 .prevBtn,
