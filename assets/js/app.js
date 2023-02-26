@@ -56,30 +56,6 @@ const swiper = new Swiper('.swiper', {
         el: '.swiper-scrollbar',
     },
 });
-const reklamSwiper = new Swiper('.reklam_swiper', {
-    // Optional parameters
-    loop: true,
-    // autoplay: {
-    //     delay: 2500,
-    // },
-
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.prevBtn',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
-});
 
 
 // ============DATE============
