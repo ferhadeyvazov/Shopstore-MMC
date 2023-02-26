@@ -11,8 +11,13 @@
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+        <!-- =======================MAIN CSS================ -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/media.query.css">
+
+    <!-- =======================MAIN JS================ -->
+    <script defer src="./assets/js/app.js"></script>
+
     <title>ShopStore</title>
 </head>
 
@@ -70,7 +75,7 @@
                     </div>
                 </label>
                 <a href="#header"><img src="./assets/img/logo_shopstore.svg" alt="LOGO" class="logo"></a>
-                
+
                 <button class="product--catalog">
                     <span class="circle1"></span>
                     <span class="circle2"></span>
@@ -96,8 +101,7 @@
             </div>
 
             <form class="form">
-                <input type="search" name="" id="searchBtn"
-                placeholder="Iphone 12 pro max silicone case baseus">
+                <input type="search" name="" id="searchBtn" placeholder="Iphone 12 pro max silicone case baseus">
                 <button class="search__btn" type="submit">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
@@ -155,33 +159,33 @@
         <div class="container container__alt--menu">
             <ul class="menu__list">
                 <li class="menu__link">
-                    <a href="#">
-                        <i class="fa-solid fa-house"></i>
-                        <p>Əsas Səhifə</p>
+                    <a class="menuActive" href="/">
+                        <i class="menu__link--icon fa-solid fa-house"></i>
+                        <span class="menu__link--name">Əsas Səhifə</span>
                     </a>
                 </li>
                 <li class="menu__link">
                     <a href="#">
-                        <i class="fa-solid fa-file-lines"></i>
-                        <p>Katalog</p>
+                        <i class="menu__link--icon fa-solid fa-file-lines"></i>
+                        <span class="menu__link--name">Katalog</span>
+                    </a>
+                </li>
+                <li class="menu__link">
+                    <a href="/Cart">
+                        <i class="menu__link--icon fa-solid fa-cart-shopping"></i>
+                        <span class="menu__link--name">Səbət</span>
                     </a>
                 </li>
                 <li class="menu__link">
                     <a href="#">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <p>Səbət</p>
+                        <i class="menu__link--icon fa-solid fa-user"></i>
+                        <span class="menu__link--name">Profil</span>
                     </a>
                 </li>
                 <li class="menu__link">
                     <a href="#">
-                        <i class="fa-solid fa-user"></i>
-                        <p>Profil</p>
-                    </a>
-                </li>
-                <li class="menu__link">
-                    <a href="#">
-                        <i class="fa-solid fa-ellipsis"></i>
-                        <p>Menu</p>
+                        <i class="menu__link--icon fa-solid fa-ellipsis"></i>
+                        <span class="menu__link--name">Menu</span>
                     </a>
                 </li>
             </ul>
@@ -232,8 +236,6 @@
 
 
 
-    <!-- =======================MAIN JS================ -->
-    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>

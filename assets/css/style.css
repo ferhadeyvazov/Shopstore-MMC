@@ -292,6 +292,16 @@ p {
     text-align: center;
     font-weight: 300;
 }
+.menu__link a{
+    color: #000;
+}
+.menu__link a>i{
+    display: block;
+}
+.menuActive{
+    color: red !important;
+}
+
 
 /* ===SEARCHBAR=== */
 .search__section {
