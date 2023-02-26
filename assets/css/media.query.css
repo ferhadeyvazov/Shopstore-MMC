@@ -38,7 +38,7 @@
         display: none;
     }
 
-    .search__section{
+    .search__section {
         display: none;
     }
 
@@ -168,6 +168,19 @@
         transform: translate(-50%, -50%) scale(4);
         transition: 1.5s ease;
     }
+
+    .main__sliders{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .reklam_swiper {
+        max-width: 300px;
+        margin: 0;
+        height: 280px;
+    }
 }
 
 @media screen and (min-width: 1120px) {
@@ -181,7 +194,7 @@
         max-width: none;
     }
 
-    .swiper{
-        height: 600px;
+    .swiper {
+        max-height: 520px;
     }
 }

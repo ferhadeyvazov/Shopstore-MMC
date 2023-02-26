@@ -71,6 +71,15 @@ p {
     text-align: center;
 }
 
+.btn {
+    cursor: pointer;
+    padding: 10px 15px;
+    background: var(--btn-bg-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+
 /* ==========================HEADER========================  */
 .header {
     background-color: var(--btn-bg-color);
@@ -134,7 +143,7 @@ p {
 /* ==========================NAV========================  */
 .nav {
     background-color: var(--main-bg-color);
-    padding: 1rem 0;
+    padding: .4rem 0;
     color: var(--text-color2);
     position: sticky;
     top: 0;
@@ -438,8 +447,12 @@ p {
     padding: 1rem 0;
 }
 
+.reklam_swiper {
+    margin: 1rem 0;
+}
+
 .swiper,
-.swiper-wrapper{
+.swiper-wrapper {
     z-index: 0;
 }
 
@@ -474,24 +487,83 @@ p {
     opacity: 1;
 }
 
-.slide1{
+.slide1 {
     background-image: url(../img/swiperImg/img1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding-top: 42%;
 }
-.slide2{
+
+.slide2 {
     background-image: url(../img/swiperImg/img2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding-top: 42%;
 }
-.slide3{
+
+.slide3 {
     background-image: url(../img/swiperImg/img3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding-top: 42%;
+}
+
+/* =======2 SLIDER============ */
+.reklam_swiper{
+    height: 40vh;
+}
+.reklam__slide1 {
+    background-color: white;
+    padding: 1rem .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(../img/swiperImg/reklamImg1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reklam__timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.reklam__btn{
+    align-self: flex-end;
+}
+
+.reklam__timer p {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.sale__time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-color: var(--bg-color);
+    padding: .5rem 0;
+    border-radius: 5px;
+}
+
+.sale__time li {
+    padding: 0 1.1rem;
+    font-weight: 200;
+}
+
+.sale__time li p:first-child {
+    font-size: 14px;
+}
+
+.sale__time li p:last-child {
+    font-size: 10px;
+}
+
+.sale__time li:not(:last-child) {
+    border-right: 1px solid gray;
 }
