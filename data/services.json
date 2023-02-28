@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Trade-in",
+        "name_description": "Köhnəni yenisiylə əvəz et",
+        "bg-image": "url()"
+    },
+    {
+        "id": 2,
+        "name": "Servis",
+        "name_description": "Peşəkarlara etibar edin",
+        "bg-image": "url()"
+    },
+    {
+        "id": 3,
+        "name": "Nömrələr",
+        "name_description": "Səndə də kamaz nömrəsidir?",
+        "bg-image": "url()"
+    },
+    {
+        "id": 4,
+        "name": "Kredit",
+        "name_description": "Köhnəni yenisiylə əvəz et",
+        "bg-image": "url()"
+    },
+    {
+        "id": 5,
+        "name": "Trade-in",
+        "name_description": "Köhnəni yenisiylə əvəz et",
+        "bg-image": "url()"
+    },
+    {
+        "id": 6,
+        "name": "Trade-in",
+        "name_description": "Köhnəni yenisiylə əvəz et",
+        "bg-image": "url()"
+    }
+]

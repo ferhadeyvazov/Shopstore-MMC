@@ -14,11 +14,16 @@
     <!-- =======================SWIPER-JS================ -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
+    <!-- =======================OWL-CAROUSEL================ -->
+    <link rel="stylesheet" href="./tools/owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./tools/owl-carousel/assets/owl.theme.default.min.css">
+
     <!-- =======================MAIN CSS================ -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/media.query.css">
 
     <!-- =======================MAIN JS================ -->
+    <script defer src="./assets/js/fetchApies.js"></script>
     <script defer src="./assets/js/app.js"></script>
 
     <title>ShopStore</title>
@@ -202,98 +207,220 @@
 
     <!-- ==========================MAIN======================== -->
     <main class="main" id="main">
-        <div class="container main__container">
-            <div class="main__sliders">
-                <!-- Slider main container -->
-                <div class="swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="slide1 swiper-slide"></div>
-                        <div class="slide2 swiper-slide"></div>
-                        <div class="slide3 swiper-slide"></div>
-                    </div>
-                    <!-- If we need pagination -->
-                    <div class="item-pagination swiper-pagination"></div>
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev prevBtn flexCenter"></div>
-                    <div class="nextBtn swiper-button-next flexCenter"></div>
-                    <!-- If we need scrollbar
-                        <div class="swiper-scrollbar"></div> -->
-                </div>
-
-
-                <!-- Slider reklam container -->
-                <div class="swiper reklam_swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="reklam__slide1 swiper-slide">
-                            <div class="reklam__timer">
-                                <p>Günün təklifi</p>
-                                <ul class="sale__time">
-                                    <li>
-                                        <p class="saat">4</p>
-                                        <p>saat</p>
-                                    </li>
-                                    <li>
-                                        <p class="deq">56</p>
-                                        <p>dəqiqə</p>
-                                    </li>
-                                    <li>
-                                        <p class="san">25</p>
-                                        <p>saniyə</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <button class="btn reklam__btn"><i class="fa-solid fa-cart-shopping"></i></button>
-                        </div>
-                        <div class="slide2 swiper-slide"></div>
-                        <div class="slide3 swiper-slide"></div>
-                    </div>
-                    <!-- If we need pagination -->
-                    <!-- <div class="item-pagination swiper-pagination"></div> -->
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev prevBtn flexCenter"></div>
-                    <div class="swiper-button-next nextBtn flexCenter"></div>
-                    <!-- If we need scrollbar
-                    div class="swiper-scrollbar"></div> -->
-                </div>
-            </div>
-
-
-
-        </div>
-
-
+        <div class="container main__container"></div>
 
 
     </main>
 
 
     <!-- ==========================SERVICES======================== -->
-    <section class="service" id="service">
+    <section class="service section" id="service">
+        <div class="container service__container">
+            <div class="service__left--side"></div>
+            <div class="service__right--side">
 
+            </div>
+
+        </div>
     </section>
     <!-- ==========================BRENDS======================== -->
-    <section class="brends" id="brends">
-
+    <section class="section brends" id="brends">
+        <div class="container brend__container">
+            <div class="all__brends">
+                <!-- <div class="brends__cards">
+                    <a class="brend--card"><img src="./assets/img/brends/img1.jpg" alt="apple"></a>
+                </div> -->
+            </div>
+        </div>
     </section>
     <!-- ==========================SATIS LIDERLERI======================== -->
+
+
     <!-- ==========================KATEQORIYALAR======================== -->
+    <section class="section categories" id="categories">
+        <div class="container category__container">
+            <h3 class="category__title">Digər kateqoriyalar</h3>
+
+            <div class="categories__boxes">
+                <div class="box__section1">
+                    <div class="box">
+                        <p>Elektrosamokat</p>
+                    </div>
+                    <div class="box">
+                        <div>
+                            <p>JBL qulaqciqlari</p>
+                        </div>
+                        <div>
+                            <p>Ejdaha noutbuklar</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <p>Agilli robotlar</p>
+                    </div>
+                    <div class="box">
+                        <p>Aksesuarlar</p>
+                    </div>
+                    <div class="box">
+                        <p>Apple aksesuarları</p>
+                    </div>
+                </div>
+                <div class="box__section2">
+                    <div class="box">
+                        <div><a href="/">Sés-kuyu yox eden</a></div>
+                        <div><a href="/">Smart Saat</a></div>
+                    </div>
+                    <div class="box"><a href="/">Robot Tozsoranlar</a></div>
+                    <div class="box">
+                        <div><a href="/">Usaq saatlari</a></div>
+                        <div><a href="/">Oyun konsollari</a></div>
+
+                    </div>
+                    <div class="box">
+                        <div><a href="/">Cehizlik</a></div>
+                        <div><a href="/">PS5</a></div>
+
+                    </div>
+                    <div class="box"><a href="/">Game Zone</a></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
     <!-- ==========================APPLE======================== -->
     <!-- ==========================SAMSUNG======================== -->
     <!-- ==========================XIDMET======================== -->
+    <section class="section section__xidmet" id="section">
+        <div class="container">
+            <div class="cards">
+                <!-- <div class="card">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <h2>Express çatdırılma</h2>
+                    <span>Sizə ən tez təhlükəsiz <br> çatdırılma xidmetini təklif edirik</span>
+                </div> -->
+            </div>
+        </div>
+    </section>
     <!-- ==========================XIOMI MEHSULLARI======================== -->
     <!-- ==========================GAME NOUTBOOK======================== -->
     <!-- ==========================ABUNEOL======================== -->
+    <section class="abune__section">
+        <div class="container footer__container">
+            <div class="text-center footer__abune">
+                <div class="footer--abune">
+                    <h1 class="footer__abune--title">Bizə abunə olun</h1>
+                    <p class="footer__abune--description">
+                        Ən son yeniləmələrə abunə olun, yeni məhsullar
+                        və xüsusi təkliflər haqqında ilk siz xəbərdar olun
+                    </p>
+                </div>
+    
+            </div>
+    
+            <form class="footer__inp">
+                <input class="footer__inp--input" 
+                type="email" 
+                placeholder="Elektron ünvanınızı qeyd edin..."
+                required 
+                />
+                <button class="footer__inp--btn" type="submit">Abunə ol</button>
+            </form>
+    
+            <div class="footer__form--app">
+                <div class="footer__app text-center">
+                    <h2>Bütün arzularınız bir tətbiqdə!</h2>
+                    <div>
+                        <a href="/"><img src="./assets/img/footer_app/app1.png" alt=""></a>
+                        <a href="/"><img src="./assets/img/footer_app/app2.png" alt=""></a>
+                        <a href="/"><img src="./assets/img/footer_app/app3.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
     <!-- ==========================FOOTER======================== -->
     <footer class="footer" id="footer">
+        <div class="container foot__container">
+            <div class="foot__section1">
+                <h3 class="foot__section1--title">Çağrı mərkəzi</h3>
+                <a href="/" class="section1--qaynarxett">
+                    <p>Qaynar xətt</p>
+                    <h2>*6777</h2>
+                </a>
+                <div class="foot__saatlar">
+                    <h3>İş saatları</h3>
+                    <p>B.e-C.9:00-21:00</p>
+                    <p>Ş-B.9:00-20:00</p>
+                </div>
 
+                <div class="foot__phone--numbers">
+                    <a href="tel: +994557776777">Mob: +994 55 777-67-77</a>
+                    <a href="tel: +994707776777">+994 70 777-67-77</a>
+                    <a href="tel: +994125996777">Tel: +994 12 599-67-77</a>
+                </div>
+
+                <div class="foot__socials">
+                    <a href="https://wa.me/994557776777" class="foot__social--whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        WhatsApp
+                    </a>
+                    <a href="https://t.me/994557776777" class="foot__social--telegram">
+                        <i class="fa-brands fa-telegram"></i>
+                        Telegram
+                    </a>
+                    <a href="https://www.facebook.com/shopstoreba" class="foot__social--facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                        Facebook
+                    </a>
+                    <a href="https://www.instagram.com/shopstore.az/" class="foot__social--instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                        Instagram
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="foot__section2">
+                <h3 class="foot__section1--title">Umico Market</h3>
+                <div class="foot__section2--links">
+                    <a href="/">
+                        Umico Market-də necə sifariş etmək olar?
+                    </a>
+                    <a href="/">
+                        Çatdırılma və Ödəmə
+                    </a>
+                    <a href="/">
+                        Kredit
+                    </a>
+                    <a href="/">
+                        Taksitli ödəniş
+                    </a>
+                    <a href="/">
+                        Promokodlar və Endirimlər
+                    </a>
+                    <a href="/">
+                        Sifarişin ləğv edilməsi və qaytarılması
+                    </a>
+                    <a href="/">
+                        Umico Market təhvil məntəqələrinin siyahısı
+                    </a>
+                    <a href="/">
+                        Servis mərkəzləri
+                    </a>
+                    <a href="/">
+                        Ən çox verilən suallar
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
 
 
-
+    <main class="section"></main>
 
 
 
@@ -306,6 +433,15 @@
 
     <!-- =======================SWIPER-JS================ -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+    <!-- =======================JQUERY================ -->
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+        integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+
+    <!-- =======================OWL CAROUSEL================ -->
+    <script src="./tools/owl-carousel/owl.carousel.min.js"></script>
+    <script src="./tools/owl-carousel/owl.carousel.js"></script>
 
 
 </body>

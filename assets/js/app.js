@@ -67,24 +67,70 @@ let startsaniye = 14400;
 let startdeqiqe = 60;
 let startHours = 4;
 
-setInterval(updateTime, 1000);
+// setInterval(updateTime, 1000);
 
-function updateTime() {
-    let deqInt = Math.floor(startsaniye % 60);
-    san.textContent = deqInt;
+// function updateTime() {
+//     let deqInt = Math.floor(startsaniye % 60);
+//     san.textContent = deqInt;
 
-    if(deqInt===0){
-        startdeqiqe--;
+//     if(deqInt===0){
+//         startdeqiqe--;
+//     }
+//     deq.textContent = startdeqiqe;
+
+    
+//     if(startdeqiqe===0){
+//         startHours--;
+//     };
+//     saat.textContent = startHours;
+    
+
+//     startsaniye--;
+// }
+// updateTime();
+
+// ===================OWL-CAROUSEL =================
+$(document).ready(function () {
+    $(".owl-carousel").owlCarousel();
+});
+
+
+$('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    items: 1,
+    autoplay: true,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        526: {
+            dots: true
+        }
     }
-    deq.textContent = startdeqiqe;
+})
 
-    
-    if(startdeqiqe===0){
-        startHours--;
-    };
-    saat.textContent = startHours;
-    
+// =========FETCH FROM JSON============================
+// const reklamSlider = document.querySelector(".reklam__slider");
 
-    startsaniye--;
-}
-updateTime();
+// const getData = async () => {
+//     let res = await fetch('../../data/dailySales.json');
+//     let data = await res.json();
+//     console.log(data);
+
+//     setData(data);
+// }
+// getData();
+
+// function setData(data) {
+//     data.forEach(item => {
+//         let div = document.createElement('div');
+//         div.style.backgroundImage = item.img;
+//         div.classList.add("item");
+//         reklamSlider.appendChild(div);
+
+//     })
+// }
+
+

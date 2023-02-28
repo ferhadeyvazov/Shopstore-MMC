@@ -7,6 +7,23 @@
     .nav--tools {
         gap: 1.5rem;
     }
+
+    .foot__section1--title {
+        font-size: 1.2rem;
+    }
+
+    .section1--qaynarxett h2 {
+        font-size: 2rem;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .all__brends {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 }
 
 @media screen and (min-width: 526px) {
@@ -22,6 +39,23 @@
 
     .nav__container--alt {
         overflow-x: hidden;
+    }
+
+    .service__container {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .service__right--side {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .foot__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .foot__section2 {
+        display: block;
     }
 }
 
@@ -169,17 +203,49 @@
         transition: 1.5s ease;
     }
 
-    .main__sliders{
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 1rem;
+    .service__right--side {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .reklam_swiper {
-        max-width: 300px;
+    .footer__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .footer__abune {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer--abune {
+        text-align: left;
+    }
+
+    .footer__abune--description {
+        max-width: 250px;
+    }
+
+    .footer__inp {
         margin: 0;
-        height: 280px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer__inp--input {
+        max-width: unset;
+        width: 100%;
+    }
+
+    .footer__inp--btn {
+        overflow: visible;
+    }
+
+    .cards {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .all__brends {
+        grid-template-columns: repeat(5, 1fr);
     }
 }
 
@@ -190,11 +256,10 @@
 
     .form {
         width: 42%;
-        /* 500px/1200 */
         max-width: none;
     }
 
-    .swiper {
-        max-height: 520px;
+    .service__right--side {
+        grid-template-columns: repeat(3, 1fr);
     }
 }

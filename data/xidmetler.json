@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Express çatdırılma",
+        "description": "Sizə ən tez təhlükəsiz çatdırılma təklif edirik",
+        "icon": "<i class='fa-solid fa-truck-fast'></i>"
+    },
+    {
+        "name": "Şəhərin mərkəzində",
+        "description": "Sizə ən tez təhlükəsiz çatdırılma təklif edirik",
+        "icon": "<i class='fa-solid fa-location-dot'></i>"
+    },
+    {
+        "name": "Express çatdırılma",
+        "description": "Sizə ən tez təhlükəsiz çatdırılma təklif edirik",
+        "icon": "<i class='fa-solid fa-manat-sign'></i>"
+    },
+    {
+        "name": "Express çatdırılma",
+        "description": "Sizə ən tez təhlükəsiz çatdırılma təklif edirik",
+        "icon": "<i class='fa-solid fa-shield-heart'></i>"
+    },
+    {
+        "name": "Express çatdırılma",
+        "description": "Sizə ən tez təhlükəsiz çatdırılma təklif edirik",
+        "icon": "<i class='fa-regular fa-clock'></i>"
+    }
+]
