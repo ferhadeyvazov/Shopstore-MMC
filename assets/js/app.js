@@ -17,7 +17,7 @@ function cancelSearchActive() {
     searchSection.classList.remove('activeSearch');
 }
 
-// ==========ACTIVE MENU__LINK================
+// ==========ACTIVE ALT__MENU__LINK================
 let links = document.querySelectorAll('.menu__link a');
 
 links.forEach(item => {
@@ -28,34 +28,6 @@ links.forEach(item => {
 })
 
 
-// ===============SWIPER-JS====================
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    loop: true,
-    // autoplay: {
-    //     delay: 2500,
-    // },
-    keyboard: {
-        enabled: true,
-    },
-
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.prevBtn',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
-});
 
 
 // ============DATE============
@@ -90,26 +62,77 @@ let startHours = 4;
 // updateTime();
 
 // ===================OWL-CAROUSEL =================
-$(document).ready(function () {
-    $(".owl-carousel").owlCarousel();
-});
+// $(document).ready(function () {
+//     $(".owl-carousel").owlCarousel();
+// });
 
-
-$('.owl-carousel').owlCarousel({
+// ====FIRST CAROUSEL =================
+// $('.main1__carousel').owlCarousel({
+//     loop: true,
+//     margin: 10,
+//     nav: true,
+//     items: 1,
+//     autoplay: true,
+//     utoplayTimeout: 4400,
+//     responsive: {
+//         0: {
+//             // items: 1,
+//         },
+//     }
+// })
+// $('.main2__carousel').owlCarousel({
+//     loop: true,
+//     margin: 10,
+//     nav: true,
+//     dots: false,
+//     items: 1,
+//     // autoplay: true,
+//     // autoplayTimeout: 5555,
+//     responsive: {
+//         0: {
+//             items: 1,
+//         }
+//     }
+// })
+// ====SECOND CAROUSEL =================
+var saj = $('.ferhad-2');
+saj.owlCarousel({
     loop: true,
-    margin: 10,
     nav: true,
-    items: 1,
+    dots: false,
+    margin: 10,
     autoplay: true,
     responsive: {
         0: {
             items: 1,
         },
-        526: {
-            dots: true
+        500: {
+            items: 1
         }
     }
-})
+});
+
+var nonloop = $(".nonloop");
+nonloop.owlCarousel({
+    loop: true,
+    margin: 10,
+    // autoplay: true,
+    dots: false,
+    nav: true,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        500: {
+            items: 1,
+        }
+    }
+});
+
+
+
+
+
 
 // =========FETCH FROM JSON============================
 // const reklamSlider = document.querySelector(".reklam__slider");

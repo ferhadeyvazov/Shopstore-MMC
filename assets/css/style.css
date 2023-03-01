@@ -447,6 +447,117 @@ p {
     padding: 1rem 0;
 }
 
+.sliders {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* =========================================== */
+.item {
+    position: relative;
+    border-radius: 5px;
+    /* padding: 2rem 0; Buna gore enli gorsenirler */
+}
+
+.sliders .owl-nav {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sliders .owl-nav button {
+    background-color: #ffffff;
+    width: 40px;
+    border-radius: 50% !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.sliders .owl-nav button span {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.ferhad-2 .item {
+    background-color: green;
+    /* padding olduguna gore genis gorsenir yuxaridan asagiya */
+}
+
+.nonloop .item {
+    background-color: #ffffff;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    height: 422px;
+}
+
+.nonloop .item>img {
+    margin: 2rem 0 2rem;
+    width: 200px;
+
+}
+
+
+
+
+.gunun__teklifi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gunun__teklifi--title {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.functional--date {
+    background-color: #f0f1f3;
+    padding: .5rem 0;
+}
+
+.functional--date ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.functional--date ul li {
+    padding: 0 1rem;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.functional--date ul li:not(:last-child) {
+    border-right: 1px solid gray;
+}
+
+.item__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.item__info--alt {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.item__info--description h3 {
+    font-size: 1.3rem;
+}
+
+.item__info--description del {
+    text-decoration: line-through;
+}
 
 /* ==========================SERVICES========================  */
 .service {
@@ -503,7 +614,8 @@ p {
     overflow-y: hidden;
     max-width: 100%;
 }
-.categories__boxes::-webkit-scrollbar{
+
+.categories__boxes::-webkit-scrollbar {
     display: none;
     width: 0;
 }
@@ -608,12 +720,13 @@ p {
 }
 
 /* ================BRENDS============== */
-.all__brends{
+.all__brends {
     display: grid;
     grid-gap: 1rem;
 
 }
-.brends__cards{
+
+.brends__cards {
     background-color: white;
     display: flex;
     justify-content: center;
@@ -626,50 +739,61 @@ p {
     cursor: pointer;
     transition: .6s;
 }
-.brends__cards:hover{
-    transform: scale(1.2);
+
+.brends__cards:hover {
+    transform: scale(1.1);
     z-index: 1;
 }
-.brend--card{
+
+.brend--card {
     display: grid;
     place-content: center;
 }
-.brend--card img{
+
+.brend--card img {
     width: 60px;
 }
-.brends__cards:nth-child(2) img{
+
+.brends__cards:nth-child(2) img {
     width: 120px;
 }
-.brends__cards:nth-child(3) img{
+
+.brends__cards:nth-child(3) img {
     width: 45px;
 }
-.brends__cards:nth-child(4) img{
+
+.brends__cards:nth-child(4) img {
     width: 80px;
 }
-.brends__cards:nth-child(5) img{
+
+.brends__cards:nth-child(5) img {
     width: 130px;
 }
 
 /* ================XIDMET============== */
-.cards{
+.cards {
     display: grid;
     grid-gap: 3px;
 }
-.card{
+
+.card {
     background-color: white;
     padding: 2rem 1.5rem 3rem;
     line-height: 15px;
 }
-.card i{
+
+.card i {
     font-size: 45px;
     color: var(--head-color);
 }
-.card h2{
+
+.card h2 {
     margin: 1rem 0;
     font-size: 1.2rem;
     font-weight: 600;
 }
-.card span{
+
+.card span {
     color: grey;
     font-size: 12px;
     margin-bottom: 1rem;
@@ -710,7 +834,8 @@ p {
 }
 
 .footer__inp--input {
-    width: 60%; /* 280px/395 */
+    width: 60%;
+    /* 280px/395 */
     max-width: 300px;
     background-color: #f5f5f5;
     color: #242424;
@@ -742,92 +867,109 @@ p {
 }
 
 
-.footer__app{
+.footer__app {
     margin-top: 1rem;
 }
+
 .footer__app h2 {
     color: white;
     font-size: 1rem;
     margin-bottom: .4rem;
 }
+
 .footer__app div {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.footer__app img{
+
+.footer__app img {
     width: 88px;
 }
 
 
 /* ================FOOTER============== */
-.footer{
+.footer {
     padding: 3rem 0;
 }
-.foot__section1--title{
+
+.foot__section1--title {
     margin-bottom: 1.4rem;
     font-size: 1rem;
 }
 
-.section1--qaynarxett p{
+.section1--qaynarxett p {
     margin-bottom: .4rem;
     font-weight: 400;
     font-size: .9rem;
 }
-.section1--qaynarxett h2{
+
+.section1--qaynarxett h2 {
     font-weight: 400;
     font-size: 1.5rem;
 }
-.foot__saatlar{
+
+.foot__saatlar {
     margin-top: 1.5rem;
 }
 
-.foot__phone--numbers{
+.foot__phone--numbers {
     margin: 1rem 0;
 }
-.foot__phone--numbers a{
+
+.foot__phone--numbers a {
     display: block;
     color: #000;
     cursor: pointer;
 }
-.foot__socials{
+
+.foot__socials {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: .6rem;
     max-width: 250px;
 }
-.foot__socials a{
+
+.foot__socials a {
     font-size: .9rem;
     color: black;
 }
-.foot__socials a:nth-child(1) i{
+
+.foot__socials a:nth-child(1) i {
     color: green;
 }
-.foot__socials a:nth-child(2) i{
+
+.foot__socials a:nth-child(2) i {
     color: blue;
 }
-.foot__socials a:nth-child(3) i{
+
+.foot__socials a:nth-child(3) i {
     color: blue;
 }
-.foot__socials a:nth-child(4) i{
+
+.foot__socials a:nth-child(4) i {
     color: orangered;
 }
+
 /* ================================================= */
 
-.foot__section2{
+.foot__section2 {
     display: none;
 }
-.foot__section2--links{
+
+.foot__section2--links {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-.foot__section2--links a{
+
+.foot__section2--links a {
     margin-bottom: .8rem;
     font-size: .9rem;
     color: #000;
     display: block;
 }
+
 .foot__section2--links a:hover {
     color: var(--hover-color);
 }

@@ -9,7 +9,7 @@ allFetches();
 async function serviceData() {
     const res = await fetch("../../data/services.json");
     const data = await res.json();
-    
+
     setServiceData(data);
 }
 const rightSide = document.querySelector(".service__right--side");
@@ -31,12 +31,12 @@ function setServiceData(data) {
 async function brandsData() {
     let res = await fetch("../../data/brands.json");
     let data = await res.json();
-    
+
     setBrandsData(data);
 }
 function setBrandsData(data) {
     let allBrends = document.querySelector('.all__brends');
-    data.forEach(item=>{
+    data.forEach(item => {
         let div = document.createElement("div");
         let a = document.createElement("a");
         let img = document.createElement("img");
@@ -46,7 +46,7 @@ function setBrandsData(data) {
         a.appendChild(img);
         div.appendChild(a);
         allBrends.appendChild(div);
-        
+
     })
 }
 
@@ -64,10 +64,10 @@ function setXidmetData(data) {
     let cards = document.querySelector('.cards');
     console.log(data);
 
-    data.forEach(item=>{
-        let div=document.createElement("div");
-        let h2=document.createElement("h2");
-        let span=document.createElement("span");
+    data.forEach(item => {
+        let div = document.createElement("div");
+        let h2 = document.createElement("h2");
+        let span = document.createElement("span");
         div.classList.add("card");
         div.innerHTML = item.icon;
         h2.textContent = item.name;
@@ -80,3 +80,4 @@ function setXidmetData(data) {
 
 
 }
+// =================FETCH GUNUN TEKLIFLERI=================

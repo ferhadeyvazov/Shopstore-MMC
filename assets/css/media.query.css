@@ -24,6 +24,12 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
+        .gunun__teklifi{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
 }
 
 @media screen and (min-width: 526px) {
@@ -247,6 +253,27 @@
     .all__brends {
         grid-template-columns: repeat(5, 1fr);
     }
+
+    /* ==================MAİN SLİDERS================ */
+    .sliders{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .ferhad-2{
+        width: 72% !important;
+    }
+    .nonloop{
+        width: 27% !important;
+    }
+    .nonloop .item{
+        padding: 1rem 10px;
+        
+    }
+    .functional--date ul li{
+        padding: 0 10px;
+    }
+
+
 }
 
 @media screen and (min-width: 1120px) {
