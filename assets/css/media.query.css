@@ -24,7 +24,7 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-        .gunun__teklifi{
+    .gunun__teklifi {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -255,22 +255,35 @@
     }
 
     /* ==================MAİN SLİDERS================ */
-    .sliders{
+    .sliders {
         flex-direction: row;
         justify-content: space-between;
     }
-    .ferhad-2{
+
+    .ferhad-2 {
         width: 72% !important;
     }
-    .nonloop{
+
+    .nonloop {
         width: 27% !important;
     }
-    .nonloop .item{
+
+    .nonloop .item {
         padding: 1rem 10px;
-        
     }
-    .functional--date ul li{
+
+    .functional--date ul li {
         padding: 0 10px;
+    }
+
+    /* ==============MAIN>SLIDERS=========== */
+    .ferhad-2 .item img {
+        height: 400px;
+    }
+
+    .nonloop .item img {
+        margin: 1rem 0 2rem;
+        height: 195px;
     }
 
 
