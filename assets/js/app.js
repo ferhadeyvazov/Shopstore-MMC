@@ -31,70 +31,33 @@ links.forEach(item => {
 
 
 // ============DATE============
-let san = document.querySelector('.san');
-let deq = document.querySelector('.deq');
-let saat = document.querySelector('.saat');
+let saniye = document.querySelectorAll('.san');
+let deqiqe = document.querySelectorAll('.deq');
+let saat = document.querySelectorAll('.saat');
 
-let startsaniye = 14400;
+
+let startsaniye = 60;
 let startdeqiqe = 60;
-let startHours = 4;
+let startHours = 24;
 
-// setInterval(updateTime, 1000);
+function updateTime() {
+    let date = new Date();
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
 
-// function updateTime() {
-//     let deqInt = Math.floor(startsaniye % 60);
-//     san.textContent = deqInt;
+    let dateNow = {
+        san: startsaniye - seconds,
+        deq: startdeqiqe - minutes,
+        saat: startHours - hours
+    }
+    saat.forEach(item => item.innerHTML = dateNow.saat < 10 ? `0${dateNow.saat}<br>saat` : `${dateNow.saat}<br>saat`);
+    deqiqe.forEach(item => item.innerHTML = dateNow.deq < 10 ? `0${dateNow.deq}<br>dəqiqə` : `${dateNow.deq}<br>dəqiqə`);
+    saniye.forEach(item => item.innerHTML = dateNow.san < 10 ? `0${dateNow.san}<br>saniyə` : `${dateNow.san}<br>saniyə`);
+}
+setInterval(updateTime, 1000);
 
-//     if(deqInt===0){
-//         startdeqiqe--;
-//     }
-//     deq.textContent = startdeqiqe;
-
-    
-//     if(startdeqiqe===0){
-//         startHours--;
-//     };
-//     saat.textContent = startHours;
-    
-
-//     startsaniye--;
-// }
-// updateTime();
-
-// ===================OWL-CAROUSEL =================
-// $(document).ready(function () {
-//     $(".owl-carousel").owlCarousel();
-// });
-
-// ====FIRST CAROUSEL =================
-// $('.main1__carousel').owlCarousel({
-//     loop: true,
-//     margin: 10,
-//     nav: true,
-//     items: 1,
-//     autoplay: true,
-//     utoplayTimeout: 4400,
-//     responsive: {
-//         0: {
-//             // items: 1,
-//         },
-//     }
-// })
-// $('.main2__carousel').owlCarousel({
-//     loop: true,
-//     margin: 10,
-//     nav: true,
-//     dots: false,
-//     items: 1,
-//     // autoplay: true,
-//     // autoplayTimeout: 5555,
-//     responsive: {
-//         0: {
-//             items: 1,
-//         }
-//     }
-// })
-// ====SECOND CAROUSEL =================
+// ==========OWL CAROUSEL =================
 var saj = $('.ferhad-2');
 saj.owlCarousel({
     loop: true,
@@ -102,6 +65,7 @@ saj.owlCarousel({
     dots: false,
     margin: 10,
     autoplay: true,
+    autoplayTimeout: 4400,
     responsive: {
         0: {
             items: 1,
@@ -116,7 +80,7 @@ var nonloop = $(".nonloop");
 nonloop.owlCarousel({
     loop: true,
     margin: 10,
-    // autoplay: true,
+    autoplay: true,
     dots: false,
     nav: true,
     responsive: {
