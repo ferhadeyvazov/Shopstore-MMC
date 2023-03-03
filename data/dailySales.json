@@ -4,20 +4,34 @@
         "name": "AirPods Max Silver",
         "price": 2249.99,
         "alt_price": 2899.99,
-        "img": "../assets/img/swiperImg/endirimImg1.jpeg"
+        "img": "../assets/img/satisLiderleri/img1.jpeg"
     },
     {
         "id": 2,
         "name": "PS 5 SlimPack",
         "price": 1499.99,
         "alt_price": 1899.99,
-        "img": "../assets/img/swiperImg/endirimImg2.jpeg"
+        "img": "../assets/img/satisLiderleri/img2.jpeg"
     },
     {
         "id": 3,
         "name": "Roborock",
         "price": 2749.99,
         "alt_price": 2999.99,
-        "img": "../assets/img/swiperImg/endirimImg3.jpeg"
+        "img": "../assets/img/satisLiderleri/img3.jpeg"
+    },
+    {
+        "id": 4,
+        "name": "Roborock",
+        "price": 2749.99,
+        "alt_price": 2999.99,
+        "img": "../assets/img/satisLiderleri/img4.jpeg"
+    },
+    {
+        "id": 5,
+        "name": "Roborock",
+        "price": 2749.99,
+        "alt_price": 2999.99,
+        "img": "../assets/img/satisLiderleri/img5.jpeg"
     }
 ]

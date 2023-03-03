@@ -93,31 +93,49 @@ nonloop.owlCarousel({
     }
 });
 
+var satLider__carousel = $('.satLider__carousel');
+satLider__carousel.owlCarousel({
+    loop: true,
+    margin: 1,
+    dots: false,
+    nav: false,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        320: {
+            items: 2,
+        },
+        400: {
+            items: 2,
+        },
+        650:{
+            items: 3,
+        },
+        800:{
+            items: 4,
+        },
+        1000:{
+            items: 5
+        }
+
+    }
+});
 
 
 
 
 
-// =========FETCH FROM JSON============================
-// const reklamSlider = document.querySelector(".reklam__slider");
-
-// const getData = async () => {
-//     let res = await fetch('../../data/dailySales.json');
-//     let data = await res.json();
-//     console.log(data);
-
-//     setData(data);
-// }
-// getData();
-
-// function setData(data) {
-//     data.forEach(item => {
-//         let div = document.createElement('div');
-//         div.style.backgroundImage = item.img;
-//         div.classList.add("item");
-//         reklamSlider.appendChild(div);
-
-//     })
-// }
-
-
+// ============HEART=====================
+let satLider__Heart = document.querySelectorAll('.satLider__link--favor button');
+let secilmisler = document.getElementById('secilmisler');
+let secilmislerAfter = window.getComputedStyle(secilmisler,"::after");
+    satLider__Heart.forEach(item=>{
+        item.addEventListener("click", () => {
+            item.classList.toggle('satLiderActive');
+            let satLiderActive = document.querySelectorAll('.satLiderActive');
+            let secilmislerLength = satLiderActive.length;
+            console.log(secilmislerLength);
+            secilmisler.getAttribute("content", secilmislerLength);    
+    });
+})

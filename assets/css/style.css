@@ -444,13 +444,14 @@ p {
 
 /* ==========================MAIN========================  */
 .main {
-    padding:1rem 0;
+    padding: 1rem 0;
 }
 
 .sliders {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: .5rem;
 }
 
 /* =========================================== */
@@ -480,7 +481,8 @@ p {
     align-items: center;
     padding: 0;
 }
-.owl-nav button:hover{
+
+.owl-nav button:hover {
     background-color: #ffffff !important;
     color: black !important;
 }
@@ -500,6 +502,7 @@ p {
     padding: 1rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
+
 /* ^^^^^^^^^^^^^^^^^ */
 .nonloop .item img {
     margin: 1rem auto 2rem auto;
@@ -545,12 +548,6 @@ p {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
-}
-
-.item__info--alt {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
 }
 
 .item__info--description h3 {
@@ -802,8 +799,6 @@ p {
 }
 
 
-
-
 /* ================ABUNEOL============== */
 .abune__section {
     background-color: var(--main-bg-color);
@@ -974,4 +969,96 @@ p {
 
 .foot__section2--links a:hover {
     color: var(--hover-color);
+}
+
+/* =========================SATIS LIDERLERI=============== */
+.satLider__carousel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+}
+
+.satisLider {
+    background-color: #ffffff;
+}
+
+.satLider__img {
+    width: 200px;
+    height: 200px;
+}
+
+.satLider__link {
+    background-color: #ffff;
+    border: 1px solid #e9e9e9;
+    padding: 1rem;
+    transition: all .4s;
+}
+
+.satLider__link:hover {
+    transform: scale(1.1);
+}
+
+.satLider__link div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.satLider__title {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.satLider__title i {
+    color: rgb(159, 158, 158);
+    margin-left: 5px;
+    font-size: 1.3rem;
+}
+
+.satLider__link--favor button {
+    background-color: white;
+    border-radius: 50%;
+    padding: .66rem;
+    border: var(--text-color-alt) solid 1px;
+    cursor: pointer;
+}
+
+.satLiderActive {
+    background-color: #ff003c !important;
+    border: none !important;
+}
+
+#secilmisler i {
+    position: relative;
+}
+
+#secilmisler i:after {
+    content: attr(content);
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.heart_say {
+    position: absolute;
+    color: white;
+    top: 0;
+    right: 0;
+    z-index: 3;
+
+}
+
+.item__info--alt {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+}
+
+.item__info--description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.item__info--description del {
+    text-decoration: line-through;
 }

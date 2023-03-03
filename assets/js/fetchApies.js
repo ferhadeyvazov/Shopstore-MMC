@@ -52,7 +52,6 @@ function setBrandsData(data) {
 
 
 // =================FETCH XIDMETLER=================
-
 async function xidmetData() {
     const res = await fetch("../../data/xidmetler.json");
     const data = await res.json();
@@ -62,7 +61,6 @@ async function xidmetData() {
 
 function setXidmetData(data) {
     let cards = document.querySelector('.cards');
-    console.log(data);
 
     data.forEach(item => {
         let div = document.createElement("div");
@@ -80,4 +78,4 @@ function setXidmetData(data) {
 
 
 }
-// =================FETCH GUNUN TEKLIFLERI=================
+// =================FETCH SATIS LIDERLERI=================
