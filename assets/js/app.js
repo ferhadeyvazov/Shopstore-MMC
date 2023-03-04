@@ -126,6 +126,7 @@ satLider__carousel.owlCarousel({
 
 
 
+
 // ============HEART=====================
 let satLider__Heart = document.querySelectorAll('.satLider__link--favor button');
 let secilmisler = document.getElementById('secilmisler');

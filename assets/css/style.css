@@ -73,11 +73,11 @@ p {
 
 .btn {
     cursor: pointer;
-    padding: 10px 15px;
+    padding: 5px 15px;
     background: var(--btn-bg-color);
     color: #ffffff;
     border: none;
-    border-radius: 0 5px 5px 0;
+    border-radius: 5px;
 }
 
 /* ==========================HEADER========================  */
@@ -473,13 +473,11 @@ p {
 
 .sliders .owl-nav button {
     background-color: #ffffff !important;
-    width: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50% !important;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
+    padding: 0 !important;
 }
 
 .owl-nav button:hover {
@@ -490,6 +488,7 @@ p {
 .sliders .owl-nav button span {
     font-size: 2rem;
     font-weight: 600;
+    color: #000;
 }
 
 .ferhad-2 .item {
@@ -560,8 +559,8 @@ p {
 
 /* ==========================SERVICES========================  */
 .service {
-    background-color: white;
-    padding: 1rem 0;
+    /* background-color: white; */
+    /* padding: 1rem 0; */
 }
 
 .service__left--side {
@@ -594,12 +593,16 @@ p {
 .service__container {
     display: grid;
     grid-gap: 15px;
+    background-color: #ffffff;
+    padding: 1rem;
 }
 
 /* ================CATEGORIES============== */
 .categories {
+}
+.category__container {
+    padding: 1rem 1rem 3rem 1rem;
     background-color: white;
-    padding: 1rem 0 3rem 0;
 }
 
 .category__title {
@@ -719,6 +722,10 @@ p {
 }
 
 /* ================BRENDS============== */
+.brends{
+    padding: 0;
+}
+
 .all__brends {
     display: grid;
     grid-gap: 1rem;
@@ -977,8 +984,9 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(150px, auto));
 }
 
-.satisLider {
+.container__satLider {
     background-color: #ffffff;
+    padding-top: .5rem;
 }
 
 .satLider__img {
@@ -1005,7 +1013,7 @@ p {
 .satLider__title {
     font-size: 25px;
     font-weight: 400;
-    margin-bottom: 1rem;
+    margin: 0 0 .7rem 1rem;
 }
 
 .satLider__title i {
@@ -1018,13 +1026,18 @@ p {
     background-color: white;
     border-radius: 50%;
     padding: .66rem;
-    border: var(--text-color-alt) solid 1px;
+    border: #cbcbcb solid 1px;
     cursor: pointer;
+    color: #979797;
 }
 
 .satLiderActive {
     background-color: #ff003c !important;
     border: none !important;
+}
+
+.satLiderActive i {
+    color: white;
 }
 
 #secilmisler i {
@@ -1061,4 +1074,82 @@ p {
 
 .item__info--description del {
     text-decoration: line-through;
+}
+
+/* ==============GAME============= */
+.section__game{
+    padding: 3rem 0 5rem 0;
+}
+.game__rose {
+    position: relative !important;
+    background-color: rgba(255, 0, 112, 255);
+    height: 180px;
+}
+
+.section__game .container__game {
+    position: absolute;
+    margin: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin-top: 6rem;
+}
+.game__title{
+    color: white;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+.game__title i{
+    color: white;
+    margin-left: 5px;
+}
+.game__products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.game__products--item{
+    border-right: solid 1px #eaeaea;
+    border-left: solid 1px #eaeaea;
+    background-color: #ffffff;
+    padding: 1.5rem;  
+    transition: .4s;
+    cursor: pointer;
+}
+.game__products--item:hover{
+    transform: scale(1.05);
+    border: solid 1px #eaeaea;
+}
+.product__item--img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: .8rem;
+}
+.product__item--favor button{
+    padding: .5rem;
+    border-radius: 50%;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.product__item--favor i{
+    color: #989898;
+}
+.product__item--info--title{
+    margin-bottom: 4rem;
+}
+.product__item--info--alt{
+    display: flex;
+    justify-content: space-between;
+}
+.product__item--price--alt{
+    text-decoration: line-through;
+    font-size: 300;
+    font-size: 15px;
+}
+.product__item--price{
+    font-size: 1.5rem;
 }
