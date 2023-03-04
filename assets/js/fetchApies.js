@@ -3,7 +3,8 @@ const allFetches = () => {
     xidmetData();
     brandsData();
 }
-allFetches();
+window.onload = allFetches();
+// allFetches();
 
 // =================FETCH SERVICES=================
 async function serviceData() {
@@ -41,6 +42,10 @@ function setBrandsData(data) {
         let a = document.createElement("a");
         let img = document.createElement("img");
         img.src = item;
+        let att = document.createAttribute("loading");
+        att.value = "lazy";
+        img.setAttribute("loading", "lazy");
+        img.setAttribute("alt", "brendName");
         div.classList.add('brends__cards');
         a.classList.add("brend--card");
         a.appendChild(img);
