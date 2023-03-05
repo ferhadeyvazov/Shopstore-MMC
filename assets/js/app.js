@@ -140,3 +140,17 @@ let secilmislerAfter = window.getComputedStyle(secilmisler,"::after");
             secilmisler.getAttribute("content", secilmislerLength);    
     });
 })
+
+
+
+let lin = document.querySelectorAll('link');
+console.log(lin);
+lin.forEach(item=>{
+    item.disabled = true;
+})
+
+window.addEventListener('load', ()=>{
+    lin.forEach(item=>{
+        item.disabled = false;
+    })
+})
