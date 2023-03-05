@@ -1,5 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;300;400;500;600;700;800;900&display=swap'); */
 
+@font-face {
+    font-family: "Hanken Grotesk";
+    src: url(../Fonts/HankenG/HankenGrotesk-Black.woff2) format("woff2");
+    src: url(../Fonts/HankenG/HankenGrotesk-Bold.woff2) format("woff2");
+    src: url(../Fonts/HankenG/HankenGrotesk-ExtraBold.woff2) format("woff2");
+    src: url(../Fonts/HankenG/HankenGrotesk-ExtraLight.woff2) format("woff2");
+    src: url(../Fonts/HankenG/HankenGrotesk-Light.woff2) format("woff2");
+    src: url(../Fonts/HankenG/HankenGrotesk-Medium.woff2) format("woff2");
+    src: url(../Fonts/HankenG/HankenGrotesk-Regular.woff2) format("woff2");
+    src: url(../Fonts/HankenG/HankenGrotesk-SemiBold.woff2) format("woff2");
+    font-display: swap;
+}
 
 * {
     margin: 0;
@@ -7,8 +19,9 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: "ArialNU";
     scroll-behavior: smooth;
+    font-family: "Hanken Grotesk";
 }
 
 :root {
@@ -558,11 +571,6 @@ p {
 }
 
 /* ==========================SERVICES========================  */
-.service {
-    /* background-color: white; */
-    /* padding: 1rem 0; */
-}
-
 .service__left--side {
     /* width: 350px; */
     height: 400px;
@@ -598,8 +606,6 @@ p {
 }
 
 /* ================CATEGORIES============== */
-.categories {
-}
 .category__container {
     padding: 1rem 1rem 3rem 1rem;
     background-color: white;
@@ -722,7 +728,7 @@ p {
 }
 
 /* ================BRENDS============== */
-.brends{
+.brends {
     padding: 0;
 }
 
@@ -764,6 +770,7 @@ p {
     width: 25px;
     height: 32px;
 }
+
 .brends__cards:nth-child(2) img {
     width: 120px;
     height: 43px;
@@ -777,7 +784,6 @@ p {
 .brends__cards:nth-child(4) img {
     width: 80px;
     height: 18px;
-    border: solid 1px;
 }
 
 .brends__cards:nth-child(5) img {
@@ -884,7 +890,7 @@ p {
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
 }
 
 .footer__app h2 {
@@ -1092,9 +1098,10 @@ p {
 }
 
 /* ==============GAME============= */
-.section__game{
+.section__game {
     padding: 3rem 0 5rem 0;
 }
+
 .game__rose {
     position: relative !important;
     background-color: rgba(255, 0, 112, 255);
@@ -1109,62 +1116,74 @@ p {
     width: 100%;
     margin-top: 6rem;
 }
-.game__title{
+
+.game__title {
     color: white;
     font-weight: 300;
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
 }
-.game__title i{
+
+.game__title i {
     color: white;
     margin-left: 5px;
 }
-.game__products{
+
+.game__products {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     overflow-x: scroll;
     overflow-y: hidden;
 }
-.game__products--item{
+
+.game__products--item {
     border-right: solid 1px #eaeaea;
     border-left: solid 1px #eaeaea;
     background-color: #ffffff;
-    padding: 1.5rem;  
+    padding: 1.5rem;
     transition: .4s;
     cursor: pointer;
 }
-.game__products--item:hover{
+
+.game__products--item:hover {
     transform: scale(1.05);
     border: solid 1px #eaeaea;
 }
-.product__item--img{
+
+.product__item--img {
     width: 200px;
     height: 200px;
     margin-bottom: .8rem;
 }
-.product__item--favor button{
+
+.product__item--favor button {
     padding: .5rem;
     border-radius: 50%;
     border: 1px solid #eaeaea;
     background-color: #ffffff;
     cursor: pointer;
 }
-.product__item--favor i{
+
+.product__item--favor i {
     color: #989898;
 }
-.product__item--info--title{
+
+.product__item--info--title {
     margin-bottom: 4rem;
 }
-.product__item--info--alt{
+
+.product__item--info--alt {
     display: flex;
     justify-content: space-between;
 }
-.product__item--price--alt{
+
+.product__item--price--alt {
     text-decoration: line-through;
     font-size: 300;
     font-size: 15px;
 }
-.product__item--price{
+
+.product__item--price {
     font-size: 1.5rem;
 }
