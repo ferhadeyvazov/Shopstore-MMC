@@ -296,6 +296,9 @@
     }
 
 
+    .btn-up{
+        bottom: 16px;
+    }
 }
 
 @media screen and (min-width: 1120px) {

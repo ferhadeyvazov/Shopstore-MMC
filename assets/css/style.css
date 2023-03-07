@@ -1249,6 +1249,7 @@ p {
 /* ======BTN-UP============== */
 .section-btn-up>.container{
     position: relative;
+    border: solid;
 }
 
 .btn-up {
@@ -1256,7 +1257,7 @@ p {
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: 16px;
+    bottom: 66px;
     right: 2rem;
     font-size: 20px;
     background-color: white;
@@ -1292,7 +1293,7 @@ p {
     opacity: 0.75;
     pointer-events: auto;
 }
-
+/* ============COPYRIGHT========== */
 .section-copyright{
     padding: 1.2rem 0;
 }
