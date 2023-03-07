@@ -1245,3 +1245,51 @@ p {
 .product__item--price {
     font-size: 1.5rem;
 }
+
+/* ======BTN-UP============== */
+.section-btn-up>.container{
+    position: relative;
+    border: solid;
+}
+
+.btn-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 16px;
+    right: 2rem;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    width: 45px;
+    height: 45px;
+    opacity: 0;
+    border: 1px solid #e7eae8;
+    border-radius: 8px;
+    cursor: pointer;
+    pointer-events: none;
+    z-index: var(--index);
+    transition: opacity .2s;
+    animation: bounce_513 1s infinite;
+    
+}
+
+@keyframes bounce_513 {
+
+    0%,
+    100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+
+    50% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+}
+
+.to-active-btn{
+    opacity: 0.75;
+    pointer-events: auto;
+}
