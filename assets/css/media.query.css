@@ -63,6 +63,10 @@
     .foot__section2 {
         display: block;
     }
+
+    .product__images--big {
+        display: flex;
+    }
 }
 
 @media screen and (min-width: 938px) {
@@ -245,7 +249,8 @@
     .footer__inp--btn {
         overflow: visible;
     }
-    .footer__app{
+
+    .footer__app {
         align-items: flex-end;
         margin-top: 0;
     }

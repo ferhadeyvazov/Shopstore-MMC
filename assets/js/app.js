@@ -106,10 +106,7 @@ satLider__carousel.owlCarousel({
         320: {
             items: 2,
         },
-        400: {
-            items: 2,
-        },
-        650:{
+        500:{
             items: 3,
         },
         800:{
