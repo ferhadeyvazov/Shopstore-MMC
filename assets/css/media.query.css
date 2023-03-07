@@ -67,6 +67,13 @@
     .product__images--big {
         display: flex;
     }
+
+    .right__side--element div:nth-child(2) img {
+        position: absolute;
+        right: -50px;
+        width: 150px;
+        display: block;
+    }
 }
 
 @media screen and (min-width: 938px) {
@@ -296,8 +303,14 @@
     }
 
 
-    .btn-up{
+    .btn-up {
         bottom: 16px;
+    }
+
+    .right__side--element div:nth-child(2) img {
+        right: -40px;
+        width: 200px;
+        top: -10px;
     }
 }
 

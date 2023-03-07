@@ -630,9 +630,11 @@ p {
 
 /* ==========================SERVICES========================  */
 .service__left--side {
-    /* width: 350px; */
     height: 400px;
-    background-color: teal;
+    background-image: url(../img/xidmetler/backg11.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 5px;
 }
 
@@ -642,14 +644,42 @@ p {
 }
 
 .right__side--element {
-    background-color: gray;
+    background-color: #fff;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
     border-radius: 5px;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: space-between;
     row-gap: 30px;
     padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.right__side--element div:nth-child(1){
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.right__side--element div:nth-child(1) h3{
+    font-size: 20px;
+}
+.right__side--element div:nth-child(1) p{
+    font-size: 14px;
+}
+.right__side--element div:nth-child(2){
+    width: 40%;
+    position: relative;
+}
+.right__side--element div:nth-child(2) img{
+    position: absolute;
+    right: -70px;
+    width: 150px;
+    display: none;
 }
 
 .right__side--element p {

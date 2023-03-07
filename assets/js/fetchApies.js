@@ -18,12 +18,19 @@ const rightSide = document.querySelector(".service__right--side");
 function setServiceData(data) {
     data.forEach(item => {
         let div = document.createElement('div');
+        let div1 = document.createElement('div');
+        let div2 = document.createElement('div');
         let h3 = document.createElement('h3');
         let p = document.createElement("p");
+        let imag =document.createElement('img');
         h3.textContent = item.name;
         p.textContent = item.name_description;
-        div.appendChild(h3);
-        div.appendChild(p);
+        imag.src = item.bgImage;
+        div1.appendChild(h3);
+        div1.appendChild(p);
+        div2.appendChild(imag);
+        div.appendChild(div1);
+        div.appendChild(div2);
         rightSide.appendChild(div);
         div.classList.add('right__side--element');
     })
