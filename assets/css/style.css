@@ -1249,7 +1249,6 @@ p {
 /* ======BTN-UP============== */
 .section-btn-up>.container{
     position: relative;
-    border: solid;
 }
 
 .btn-up {
@@ -1292,4 +1291,12 @@ p {
 .to-active-btn{
     opacity: 0.75;
     pointer-events: auto;
+}
+
+.section-copyright{
+    padding: 1.2rem 0;
+}
+.authorOfPage{
+    font-size: 12px;
+    font-weight: 400;
 }
