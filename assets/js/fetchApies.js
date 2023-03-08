@@ -93,7 +93,7 @@ function setXidmetData(data) {
 }
 // =================FETCH CATALOG=================
 let catalog__list = document.querySelector(".catalog__list");
-console.log(catalog__list);
+let altCatalog__list = document.querySelector(".altCatalog__list");
 
 async function catalog__() {
     let res = await fetch("../../data/catalogMenu.json");
@@ -105,7 +105,7 @@ async function catalog__() {
 function setCatalog__(data) {
     data.forEach((item) => {
         catalog__list.innerHTML += `
-        <li class="catalog__list--link">
+        <li onclick="activeCatalogAlt()" class="catalog__list--link">
             <div>
                 ${item.icon}
                 <p>${item.name}</p>
@@ -113,15 +113,35 @@ function setCatalog__(data) {
             <i class="fa-solid fa-angle-right"></i>
         </li>
         `
+        console.log(item.altCategory);
+        item.altCategory.forEach(altItem => {
+            altCatalog__list.innerHTML += `
+                <li class="catalog__list--link">
+                    <div>
+                        <p>${altItem.altName}</p>
+                    </div>
+                    <i class="fa-solid fa-angle-right"></i>
+                </li>
+
+            `
+        })
+
     });
 }
 
 let section__catalog = document.getElementById('section__catalog');
-function activeCatalog(){
-    section__catalog.classList.toggle("catalog__active");    
+let section__catalogAlt = document.getElementById('section__catalog-alt');
+function activeCatalog() {
+    section__catalog.classList.toggle("catalog__active");
     console.log(section__catalog.classList.value);
 }
 function cancelCatalog() {
-    section__catalog.classList.remove("catalog__active");    
+    section__catalog.classList.remove("catalog__active");
+    section__catalogAlt.classList.remove("catalog__active");
 }
-
+function activeCatalogAlt() {
+    section__catalogAlt.classList.add("catalog__active");
+}
+function cancelCatalogAlt() {
+    section__catalogAlt.classList.remove("catalog__active");
+}

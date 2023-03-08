@@ -2,31 +2,212 @@
     {
         "name": "Smartfonlar",
         "icon": "<i class='fa-solid fa-mobile-screen-button'></i>",
-        "kecid": "<i class='fa-solid fa-angle-right'></i>"
+        "kecid": "<i class='fa-solid fa-angle-right'></i>",
+        "altCategory": [
+            {
+                "img": "",
+                "altName": "Smartfonlar" 
+            },
+            {
+                "img": "",
+                "altName": "Telefonlar" 
+            },
+            {
+                "img": "",
+                "altName": "Qoruyucu Şüşələr" 
+            },
+            {
+                "img": "",
+                "altName": "Smartfon üçün korpuslar" 
+            },
+            {
+                "img": "",
+                "altName": "Avtomobil malları" 
+            },
+            {
+                "img": "",
+                "altName": "Şarj cihazları" 
+            },
+            {
+                "img": "",
+                "altName": "Yaddaş kartları" 
+            }
+        ]
     },
     {
         "name": "Smart saatlar, Fitness qolbaqlar",
         "icon": "<i class='fa-regular fa-clock'></i>",
-        "kecid": "<i class='fa-solid fa-angle-right'></i>"
+        "kecid": "<i class='fa-solid fa-angle-right'></i>",
+        "altCategory": [
+            {
+                "img": "",
+                "altName": "Smartfonlar" 
+            },
+            {
+                "img": "",
+                "altName": "Telefonlar" 
+            },
+            {
+                "img": "",
+                "altName": "Qoruyucu Şüşələr" 
+            },
+            {
+                "img": "",
+                "altName": "Smartfon üçün korpuslar" 
+            },
+            {
+                "img": "",
+                "altName": "Avtomobil malları" 
+            },
+            {
+                "img": "",
+                "altName": "Şarj cihazları" 
+            },
+            {
+                "img": "",
+                "altName": "Yaddaş kartları" 
+            }
+        ]
+
     },
     {
         "name": "Notbuklar, Planşetlər və Kompüterlər",
         "icon": "<i class='fa-solid fa-computer'></i>",
-        "kecid": "<i class='fa-solid fa-angle-right'></i>"
+        "kecid": "<i class='fa-solid fa-angle-right'></i>",
+        "altCategory": [
+            {
+                "img": "",
+                "altName": "Smartfonlar" 
+            },
+            {
+                "img": "",
+                "altName": "Telefonlar" 
+            },
+            {
+                "img": "",
+                "altName": "Qoruyucu Şüşələr" 
+            },
+            {
+                "img": "",
+                "altName": "Smartfon üçün korpuslar" 
+            },
+            {
+                "img": "",
+                "altName": "Avtomobil malları" 
+            },
+            {
+                "img": "",
+                "altName": "Şarj cihazları" 
+            },
+            {
+                "img": "",
+                "altName": "Yaddaş kartları" 
+            }
+        ]
     },
     {
         "name": "Aksesuarlar",
         "icon": "<i class='fa-solid fa-file-invoice'></i>",
-        "kecid": "<i class='fa-solid fa-angle-right'></i>"
+        "kecid": "<i class='fa-solid fa-angle-right'></i>",
+        "altCategory": [
+            {
+                "img": "",
+                "altName": "Smartfonlar" 
+            },
+            {
+                "img": "",
+                "altName": "Telefonlar" 
+            },
+            {
+                "img": "",
+                "altName": "Qoruyucu Şüşələr" 
+            },
+            {
+                "img": "",
+                "altName": "Smartfon üçün korpuslar" 
+            },
+            {
+                "img": "",
+                "altName": "Avtomobil malları" 
+            },
+            {
+                "img": "",
+                "altName": "Şarj cihazları" 
+            },
+            {
+                "img": "",
+                "altName": "Yaddaş kartları" 
+            }
+        ]
     },
     {
         "name": "Qulaqcıqlar, səs gücləndiricilər və musiqi",
         "icon": "<i class='fa-solid fa-headphones-simple'></i>",
-        "kecid": "<i class='fa-solid fa-angle-right'></i>"
+        "kecid": "<i class='fa-solid fa-angle-right'></i>",
+        "altCategory": [
+            {
+                "img": "",
+                "altName": "Smartfonlar" 
+            },
+            {
+                "img": "",
+                "altName": "Telefonlar" 
+            },
+            {
+                "img": "",
+                "altName": "Qoruyucu Şüşələr" 
+            },
+            {
+                "img": "",
+                "altName": "Smartfon üçün korpuslar" 
+            },
+            {
+                "img": "",
+                "altName": "Avtomobil malları" 
+            },
+            {
+                "img": "",
+                "altName": "Şarj cihazları" 
+            },
+            {
+                "img": "",
+                "altName": "Yaddaş kartları" 
+            }
+        ]
     },
     {
         "name": "Oyun konsolları",
         "icon": "<i class='fa-solid fa-gamepad'></i>",
-        "kecid": "<i class='fa-solid fa-angle-right'></i>"
+        "kecid": "<i class='fa-solid fa-angle-right'></i>",
+        "altCategory": [
+            {
+                "img": "",
+                "altName": "Smartfonlar" 
+            },
+            {
+                "img": "",
+                "altName": "Telefonlar" 
+            },
+            {
+                "img": "",
+                "altName": "Qoruyucu Şüşələr" 
+            },
+            {
+                "img": "",
+                "altName": "Smartfon üçün korpuslar" 
+            },
+            {
+                "img": "",
+                "altName": "Avtomobil malları" 
+            },
+            {
+                "img": "",
+                "altName": "Şarj cihazları" 
+            },
+            {
+                "img": "",
+                "altName": "Yaddaş kartları" 
+            }
+        ]
     }
 ]
