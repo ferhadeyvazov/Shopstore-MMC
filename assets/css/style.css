@@ -1186,94 +1186,67 @@ p {
 }
 
 /* ==============GAME============= */
-.section__game {
-    padding: 3rem 0 5rem 0;
-}
-
 .game__rose {
     position: relative !important;
     background-color: rgba(255, 0, 112, 255);
     height: 180px;
 }
-
-.section__game .container__game {
-    position: absolute;
-    margin: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    margin-top: 6rem;
+.game__products--item{
+    background-color: #fff;
 }
 
-.game__title {
-    color: white;
-    font-weight: 300;
+.product__item--img{
     margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
+}
+.game__products--item{
+    padding: 1.3rem;
+    border-right: solid #b9b9b9 1px;
+    min-width: 300px;
+}
+.game__products--item:last-child{
+    border: none !important;
 }
 
-.game__title i {
-    color: white;
-    margin-left: 5px;
-}
 
-.game__products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-    overflow-x: scroll;
-    overflow-y: hidden;
+.product__item--info--title{
+    margin-bottom: 5rem;
+    font-weight: 400;
+    font-size: 14px;
 }
-
-.game__products--item {
-    border-right: solid 1px #eaeaea;
-    border-left: solid 1px #eaeaea;
-    background-color: #ffffff;
-    padding: 1.5rem;
-    transition: .4s;
-    cursor: pointer;
-}
-
-.game__products--item:hover {
-    transform: scale(1.05);
-    border: solid 1px #eaeaea;
-}
-
-.product__item--img {
-    width: 200px;
-    height: 200px;
-    margin-bottom: .8rem;
-}
-
-.product__item--favor button {
-    padding: .5rem;
-    border-radius: 50%;
-    border: 1px solid #eaeaea;
-    background-color: #ffffff;
-    cursor: pointer;
-}
-
-.product__item--favor i {
-    color: #989898;
-}
-
-.product__item--info--title {
-    margin-bottom: 4rem;
-}
-
-.product__item--info--alt {
+.product__item--info--alt{
     display: flex;
     justify-content: space-between;
 }
-
-.product__item--price--alt {
+.product__item--info--description del{
     text-decoration: line-through;
-    font-size: 300;
-    font-size: 15px;
 }
-
-.product__item--price {
-    font-size: 1.5rem;
+.product__item--price{
+    font-size: 1.6rem;
+}
+.product__item--btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 10px !important;
+}
+.product__item--favor{
+    margin-bottom: 1.5rem;
+}
+.product__item--favor button{
+    border-radius: 50%;
+    background-color: white;
+    border: #cbcbcb 1px solid;
+    color: #979797;
+    padding: .4rem;
+    cursor: pointer;
+}
+/* ========================= */
+.game__products{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 /* ======BTN-UP============== */
