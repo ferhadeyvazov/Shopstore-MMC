@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Smartfonlar",
+        "icon": "<i class='fa-solid fa-mobile-screen-button'></i>",
+        "kecid": "<i class='fa-solid fa-angle-right'></i>"
+    },
+    {
+        "name": "Smart saatlar, Fitness qolbaqlar",
+        "icon": "<i class='fa-regular fa-clock'></i>",
+        "kecid": "<i class='fa-solid fa-angle-right'></i>"
+    },
+    {
+        "name": "Notbuklar, Planşetlər və Kompüterlər",
+        "icon": "<i class='fa-solid fa-computer'></i>",
+        "kecid": "<i class='fa-solid fa-angle-right'></i>"
+    },
+    {
+        "name": "Aksesuarlar",
+        "icon": "<i class='fa-solid fa-file-invoice'></i>",
+        "kecid": "<i class='fa-solid fa-angle-right'></i>"
+    },
+    {
+        "name": "Qulaqcıqlar, səs gücləndiricilər və musiqi",
+        "icon": "<i class='fa-solid fa-headphones-simple'></i>",
+        "kecid": "<i class='fa-solid fa-angle-right'></i>"
+    },
+    {
+        "name": "Oyun konsolları",
+        "icon": "<i class='fa-solid fa-gamepad'></i>",
+        "kecid": "<i class='fa-solid fa-angle-right'></i>"
+    }
+]

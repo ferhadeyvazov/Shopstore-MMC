@@ -312,6 +312,13 @@
         width: 200px;
         top: -10px;
     }
+
+    /* ==================CATALOG VE MENU================= */
+    .section__catalog{
+        display: none;
+    }
+
+
 }
 
 @media screen and (min-width: 1120px) {

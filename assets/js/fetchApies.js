@@ -1,4 +1,5 @@
 const allFetches = () => {
+    catalog__();
     serviceData();
     xidmetData();
     brandsData();
@@ -22,7 +23,7 @@ function setServiceData(data) {
         let div2 = document.createElement('div');
         let h3 = document.createElement('h3');
         let p = document.createElement("p");
-        let imag =document.createElement('img');
+        let imag = document.createElement('img');
         h3.textContent = item.name;
         p.textContent = item.name_description;
         imag.src = item.bgImage;
@@ -90,4 +91,37 @@ function setXidmetData(data) {
 
 
 }
-// =================FETCH SATIS LIDERLERI=================
+// =================FETCH CATALOG=================
+let catalog__list = document.querySelector(".catalog__list");
+console.log(catalog__list);
+
+async function catalog__() {
+    let res = await fetch("../../data/catalogMenu.json");
+    let data = await res.json();
+    console.log(data);
+    setCatalog__(data);
+}
+
+function setCatalog__(data) {
+    data.forEach((item) => {
+        catalog__list.innerHTML += `
+        <li class="catalog__list--link">
+            <div>
+                ${item.icon}
+                <p>${item.name}</p>
+            </div>
+            <i class="fa-solid fa-angle-right"></i>
+        </li>
+        `
+    });
+}
+
+let section__catalog = document.getElementById('section__catalog');
+function activeCatalog(){
+    section__catalog.classList.toggle("catalog__active");    
+    console.log(section__catalog.classList.value);
+}
+function cancelCatalog() {
+    section__catalog.classList.remove("catalog__active");    
+}
+

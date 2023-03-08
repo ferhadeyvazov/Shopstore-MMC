@@ -94,6 +94,41 @@
                 </button>
             </div>
 
+            <div class="section__catalog" id="section__catalog">
+                    <div class="catalog__title">
+                        <h3>Məhsulların kataloqu</h3>
+                        <button onclick="cancelCatalog()" class="catalog">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+
+                    <div class="catalog">
+                        <ul class="catalog__list">
+                            <!-- <li class="catalog__list--link">
+                                <div>
+                                    <i class="fa-solid fa-file-invoice"></i>
+                                    <p>Smartfonlar</p>
+                                </div>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </li>
+                            <li class="catalog__list--link">
+                                <div>
+                                    <i class="fa-solid fa-file-invoice"></i>
+                                    <p>Aksesuarlar</p>
+                                </div>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </li>
+                            <li class="catalog__list--link">
+                                <div>
+                                    <i class="fa-solid fa-file-invoice"></i>
+                                    <p>Aksesuarlar</p>
+                                </div>
+                                <i class="kecid fa-solid fa-angle-right"></i>
+                            </li> -->
+                        </ul>
+                    </div>
+            </div>
+
             <div class="search__section" id="search__section">
                 <div class="container">
                     <div class="search__back">
@@ -176,7 +211,7 @@
                     </a>
                 </li>
                 <li class="menu__link">
-                    <a href="#">
+                    <a onclick="activeCatalog()">
                         <i class="menu__link--icon fa-solid fa-file-lines"></i>
                         <span class="menu__link--name">Katalog</span>
                     </a>
