@@ -1186,22 +1186,32 @@ p {
 }
 
 /* ==============GAME============= */
+.section__game{
+    margin-bottom: 23rem;
+}
+
 .game__rose {
     position: relative !important;
     background-color: rgba(255, 0, 112, 255);
     height: 180px;
 }
+.container__game{
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .game__products--item{
     background-color: #fff;
+    padding: 1.3rem;
+    border-right: solid #b9b9b9 1px;
+    min-width: 200px;
+    max-width: 300px;
 }
 
 .product__item--img{
     margin-bottom: 1rem;
-}
-.game__products--item{
-    padding: 1.3rem;
-    border-right: solid #b9b9b9 1px;
-    min-width: 300px;
 }
 .game__products--item:last-child{
     border: none !important;
@@ -1244,9 +1254,22 @@ p {
 .game__products{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:flex-start;
     overflow-x: scroll;
     overflow-y: hidden;
+}
+
+.game__title{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.game__title i{
+    margin-left: 10px;
+    align-self: flex-end;
 }
 
 /* ======BTN-UP============== */
