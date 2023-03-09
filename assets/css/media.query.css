@@ -321,6 +321,7 @@
 
     /* ==========================POPUP CATALOG========================  */
     .catalogPopUp {
+        display: block;
         position: fixed;
         top: -100%;
         left: 0;

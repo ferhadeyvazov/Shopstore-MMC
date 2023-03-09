@@ -395,6 +395,11 @@ p {
     color: var(--main-bg-color) !important;
 }
 
+/* =================POPUP CATALOG================= */
+#catalogPopup{
+    display: none !important;
+}
+
 /* =================CATALOG================= */
 .section__catalog {
     position: fixed;
