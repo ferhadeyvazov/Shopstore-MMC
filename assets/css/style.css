@@ -396,8 +396,54 @@ p {
 }
 
 /* =================POPUP CATALOG================= */
-.catalogPopUp{
+.catalogPopUp {
     display: none;
+}
+
+.catalog__Popup--container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 80% !important;
+}
+
+.catalog__Popup--alt,
+.catalog__Popup {
+    background-color: white;
+    border-right: solid #626262;
+}
+.catalog__Popup--alt{
+    border: none;
+}
+
+.catalog__Popup--link:hover {
+    background-color: #f1f0f2;
+}
+
+.catalog__Popup--link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.catalog__Popup--link>div {
+    display: flex;
+    align-items: center;
+}
+
+.catalog__Popup--link>div>i {
+    margin-right: 1rem;
+    font-size: 20px;
+    color: #4c1e87;
+
+}
+.catalog__Popup--link>div>p{
+    font-weight: 500;
+    font-size: 18px;
+}
+.catalog__Popup--link>i{
+    color: #999;
+    font-size: 12px;
 }
 
 /* =================CATALOG================= */

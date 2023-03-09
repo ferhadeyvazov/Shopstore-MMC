@@ -209,5 +209,75 @@
                 "altName": "Yaddaş kartları" 
             }
         ]
+    },
+    {
+        "name": "Məişət texnologiyaları",
+        "icon": "<i class='fa-solid fa-kitchen-set'></i>",
+        "kecid": "<i class='fa-solid fa-angle-right'></i>",
+        "altCategory": [
+            {
+                "img": "",
+                "altName": "Smartfonlar" 
+            },
+            {
+                "img": "",
+                "altName": "Telefonlar" 
+            },
+            {
+                "img": "",
+                "altName": "Qoruyucu Şüşələr" 
+            },
+            {
+                "img": "",
+                "altName": "Smartfon üçün korpuslar" 
+            },
+            {
+                "img": "",
+                "altName": "Avtomobil malları" 
+            },
+            {
+                "img": "",
+                "altName": "Şarj cihazları" 
+            },
+            {
+                "img": "",
+                "altName": "Yaddaş kartları" 
+            }
+        ]
+    },
+    {
+        "name": "Televizor və aksesuarları",
+        "icon": "<i class='fa-solid fa-tv'></i>",
+        "kecid": "<i class='fa-solid fa-angle-right'></i>",
+        "altCategory": [
+            {
+                "img": "",
+                "altName": "Smartfonlar" 
+            },
+            {
+                "img": "",
+                "altName": "Telefonlar" 
+            },
+            {
+                "img": "",
+                "altName": "Qoruyucu Şüşələr" 
+            },
+            {
+                "img": "",
+                "altName": "Smartfon üçün korpuslar" 
+            },
+            {
+                "img": "",
+                "altName": "Avtomobil malları" 
+            },
+            {
+                "img": "",
+                "altName": "Şarj cihazları" 
+            },
+            {
+                "img": "",
+                "altName": "Yaddaş kartları" 
+            }
+        ]
     }
 ]

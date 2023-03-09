@@ -94,6 +94,7 @@ function setXidmetData(data) {
 // =================FETCH CATALOG=================
 let catalog__list = document.querySelector(".catalog__list");
 let altCatalog__list = document.querySelector(".altCatalog__list");
+let catalog__PopupList = document.querySelector(".catalog__Popup--list");
 
 async function catalog__() {
     let res = await fetch("../../data/catalogMenu.json");
@@ -103,6 +104,18 @@ async function catalog__() {
 
 function setCatalog__(data) {
     data.forEach((item) => {
+        catalog__PopupList.innerHTML += `
+            <li class="catalog__Popup--link">
+                <div>
+                    ${item.icon}
+                    <p>${item.name}</p>
+                </div>
+                <i class="fa-solid fa-angle-right"></i>
+            </li>
+
+        `;
+
+
         catalog__list.innerHTML += `
         <li onclick="activeCatalogAlt()" class="catalog__list--link">
             <div>
