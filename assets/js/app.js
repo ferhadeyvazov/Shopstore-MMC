@@ -2,11 +2,14 @@
 const searchSection = document.getElementById('search__section');
 const search = document.getElementById('faSearch');
 const cancelSearch = document.getElementById('faBack');
+const productCatalog = document.querySelector(".product--catalog");
 
 addeventliseners();
 function addeventliseners() {
     search.addEventListener('click', searchActive);
     cancelSearch.addEventListener('click', cancelSearchActive);
+    productCatalog.addEventListener('click', catalogPopup);
+    
 }
 
 function searchActive() {
@@ -141,7 +144,6 @@ let secilmislerAfter = window.getComputedStyle(secilmisler,"::after");
 
 
 let lin = document.querySelectorAll('link');
-console.log(lin);
 lin.forEach(item=>{
     item.disabled = true;
 })
@@ -163,3 +165,12 @@ window.addEventListener('scroll', ()=>{
         toTop.classList.remove('to-active-btn');
     }
 })
+
+// ===============POPUP CATALOG============================
+const popup = document.getElementById('catalogPopup');
+
+function catalogPopup() {
+    popup.classList.toggle('activePopUp');
+}
+
+

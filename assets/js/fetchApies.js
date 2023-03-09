@@ -98,7 +98,6 @@ let altCatalog__list = document.querySelector(".altCatalog__list");
 async function catalog__() {
     let res = await fetch("../../data/catalogMenu.json");
     let data = await res.json();
-    console.log(data);
     setCatalog__(data);
 }
 
@@ -113,7 +112,7 @@ function setCatalog__(data) {
             <i class="fa-solid fa-angle-right"></i>
         </li>
         `
-        console.log(item.altCategory);
+
         item.altCategory.forEach(altItem => {
             altCatalog__list.innerHTML += `
                 <li class="catalog__list--link">
