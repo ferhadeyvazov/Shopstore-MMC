@@ -25,7 +25,7 @@ function addeventliseners() {
     search.addEventListener('click', searchActive);
     cancelSearch.addEventListener('click', cancelSearchActive);
     productCatalog.addEventListener('click', catalogPopup);
-    
+
 }
 
 function searchActive() {
@@ -77,69 +77,60 @@ function updateTime() {
 setInterval(updateTime, 1000);
 
 // ==========OWL CAROUSEL =================
-var saj = $('.ferhad-2');
-saj.owlCarousel({
-    loop: true,
-    nav: true,
-    dots: false,
-    margin: 10,
-    autoplay: true,
-    autoplayTimeout: 4400,
-    responsive: {
-        0: {
+setTimeout(() => {
+    $(document).ready(function () {
+        var saj = $('.ferhad-2');
+        saj.owlCarousel({
+            loop: true,
+            nav: true,
+            dots: false,
+            margin: 10,
             items: 1,
-        },
-        500: {
-            items: 1
-        }
-    }
-});
+            autoplay: true,
+            autoplayTimeout: 4400
+        });
 
-var nonloop = $(".nonloop");
-nonloop.owlCarousel({
-    loop: true,
-    margin: 10,
-    autoplay: true,
-    dots: false,
-    nav: true,
-    responsive: {
-        0: {
+        var nonloop = $(".nonloop");
+        nonloop.owlCarousel({
+            loop: true,
+            margin: 10,
             items: 1,
-        },
-        500: {
+            autoplay: true,
+            dots: false,
+            nav: true
+        });
+
+        var satLider__carousel = $('.satLider__Carousel');
+        satLider__carousel.owlCarousel({
+            loop: true,
+            margin: 1,
             items: 1,
-        }
-    }
-});
+            dots: false,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                320: {
+                    items: 2
+                },
+                500: {
+                    items: 3
+                },
+                800: {
+                    items: 4
+                },
+                1000: {
+                    items: 5
+                }
 
-var satLider__carousel = $('.satLider__Carousel');
-satLider__carousel.owlCarousel({
-    loop: true,
-    margin: 1,
-    items: 1,
-    dots: false,
-    nav: false,
-    responsive: {
-        0: {
-            items: 1,
-        },
-        320: {
-            items: 2,
-        },
-        500:{
-            items: 3,
-        },
-        800:{
-            items: 4,
-        },
-        1000:{
-            items: 5,
-        }
-
-    }
-});
+            }
+        });
 
 
+    });
+
+}, 10)
 
 
 
@@ -147,14 +138,14 @@ satLider__carousel.owlCarousel({
 // ============HEART=====================
 let satLider__Heart = document.querySelectorAll('.satLider__link--favor button');
 let secilmisler = document.getElementById('secilmisler');
-let secilmislerAfter = window.getComputedStyle(secilmisler,"::after");
-    satLider__Heart.forEach(item=>{
-        item.addEventListener("click", () => {
-            item.classList.toggle('satLiderActive');
-            let satLiderActive = document.querySelectorAll('.satLiderActive');
-            let secilmislerLength = satLiderActive.length;
-            console.log(secilmislerLength);
-            secilmisler.getAttribute("content", secilmislerLength);    
+let secilmislerAfter = window.getComputedStyle(secilmisler, "::after");
+satLider__Heart.forEach(item => {
+    item.addEventListener("click", () => {
+        item.classList.toggle('satLiderActive');
+        let satLiderActive = document.querySelectorAll('.satLiderActive');
+        let secilmislerLength = satLiderActive.length;
+        console.log(secilmislerLength);
+        secilmisler.getAttribute("content", secilmislerLength);
     });
 })
 
@@ -163,11 +154,11 @@ let secilmislerAfter = window.getComputedStyle(secilmisler,"::after");
 // ===============TO TOP OF PAGE============================
 const toTop = document.querySelector('.btn-up');
 
-window.addEventListener('scroll', ()=>{
-    if(window.pageYOffset>100){
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 100) {
         toTop.classList.add('to-active-btn');
     }
-    else{
+    else {
         toTop.classList.remove('to-active-btn');
     }
 })
