@@ -339,7 +339,7 @@
     }
 
     .activePopUp{
-        top: unset;
+        top: unset !important;
     }
 }
 
