@@ -4,7 +4,23 @@ const search = document.getElementById('faSearch');
 const cancelSearch = document.getElementById('faBack');
 const productCatalog = document.querySelector(".product--catalog");
 
-addeventliseners();
+// ======================ONLOAD================
+let lin = document.querySelectorAll('link');
+lin.forEach(item => {
+    item.disabled = true;
+})
+function onLoad() {
+    addeventliseners();
+    lin.forEach(item => {
+        item.disabled = false;
+    })
+
+
+}
+
+window.addEventListener('load', onLoad);
+
+
 function addeventliseners() {
     search.addEventListener('click', searchActive);
     cancelSearch.addEventListener('click', cancelSearchActive);
@@ -142,17 +158,6 @@ let secilmislerAfter = window.getComputedStyle(secilmisler,"::after");
 })
 
 
-
-let lin = document.querySelectorAll('link');
-lin.forEach(item=>{
-    item.disabled = true;
-})
-
-window.addEventListener('load', ()=>{
-    lin.forEach(item=>{
-        item.disabled = false;
-    })
-})
 
 // ===============TO TOP OF PAGE============================
 const toTop = document.querySelector('.btn-up');
