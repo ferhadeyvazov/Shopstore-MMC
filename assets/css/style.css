@@ -117,12 +117,12 @@ p {
 }
 
 .section {
-    padding: 3rem 0;
+    padding: 1rem 0;
 }
 
 .container {
     width: 92%;
-    max-width: 1200px;
+    max-width: 154rem;
     margin-inline: auto;
 }
 
