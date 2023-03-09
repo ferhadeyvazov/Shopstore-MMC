@@ -112,10 +112,11 @@ nonloop.owlCarousel({
     }
 });
 
-var satLider__carousel = $('.satLider__carousel');
+var satLider__carousel = $('.satLider__Carousel');
 satLider__carousel.owlCarousel({
     loop: true,
     margin: 1,
+    items: 1,
     dots: false,
     nav: false,
     responsive: {
@@ -132,7 +133,7 @@ satLider__carousel.owlCarousel({
             items: 4,
         },
         1000:{
-            items: 5
+            items: 5,
         }
 
     }
