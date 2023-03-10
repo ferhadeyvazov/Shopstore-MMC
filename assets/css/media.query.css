@@ -374,11 +374,18 @@
         width: 280px;
     }
 
+    /* ================COLLECTIONS=============== */
     .sutun-2 {
         grid-template-columns: 4fr 4fr 1fr;
     }
-    .prodImg{
+
+    .prodImg {
         width: unset;
+    }
+
+    .sutun-samsung-2 {
+        /* grid-template-columns: 100px 400px 400px; */
+        grid-template-columns: 1fr 4fr 4fr;
     }
 }
 
