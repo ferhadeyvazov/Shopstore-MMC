@@ -1255,16 +1255,21 @@ p {
     padding-top: .5rem;
 }
 
-.satLider__img {
-    width: 200px !important;
-    height: 250px;
-}
-
 .satLider__link {
     background-color: #ffff;
     border: 1px solid #e9e9e9;
+    display: flex;
+    flex-direction: column;
     padding: 1rem;
     transition: all .4s;
+
+}
+
+.satLider__img {
+    width: 200px !important;
+    height: 250px;
+    align-self: center;
+    margin-bottom: 1rem;
 }
 
 .satLider__link:hover {
@@ -1330,6 +1335,7 @@ p {
     display: flex;
     justify-content: space-between !important;
     align-items: center;
+    margin-top: 1.2rem;
 }
 
 .item__info--description {
