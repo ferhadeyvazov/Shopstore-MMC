@@ -230,7 +230,6 @@ p {
     align-items: center;
     justify-content: space-between;
 
-
 }
 
 .nav--burger--logo {
@@ -784,7 +783,7 @@ p {
 
 /* ==========================SERVICES========================  */
 .service__left--side {
-    height: 400px;
+    height: 350px;
     background-image: url(../img/xidmetler/backg11.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -1257,8 +1256,8 @@ p {
 }
 
 .satLider__img {
-    width: 200px;
-    height: 200px;
+    width: 200px !important;
+    height: 250px;
 }
 
 .satLider__link {
