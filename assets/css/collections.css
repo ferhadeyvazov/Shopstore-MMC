@@ -88,7 +88,7 @@
 }
 
 .product__images--extra {
-    width: 260px;
+    /* width: 260px; */
     background-color: #fff;
     border-radius: 5px;
     display: flex;
@@ -144,8 +144,8 @@
 
 .sutun-2 {
     display: grid;
-    /* grid-template-columns: 4fr 4fr 1fr; */
-    grid-template-columns: 400px 400px 100px;
+    grid-template-columns: 4fr 4fr 1fr;
+    /* grid-template-columns: 400px 400px 100px; */
     grid-gap: .7rem;
 }
 
@@ -173,5 +173,6 @@
 }
 
 .sutun-samsung-2 {
-    grid-template-columns: 100px 400px 400px;
+    /* grid-template-columns: 400px 400px 100px; */
+    grid-template-columns: 1fr 4fr 4fr;
 }
