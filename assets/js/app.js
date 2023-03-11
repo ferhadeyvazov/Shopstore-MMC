@@ -172,6 +172,22 @@ function catalogPopup() {
 
 // ===============SLICK SLIDER============================
 $(document).ready(function () {
-// Diger Kategoriyalar yazilacaq icine
+    // Diger Kategoriyalar yazilacaq icine
+    $('.category__grids').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        variableWidth: true,
+        infinite: true,
+        speed: 300,
+        responsive: [
+            {
+                breakpoint: 2700,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+    });
 
 });
