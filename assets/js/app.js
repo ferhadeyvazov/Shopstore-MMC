@@ -79,26 +79,6 @@ setInterval(updateTime, 1000);
 // ==========OWL CAROUSEL =================
 setTimeout(() => {
     $(document).ready(function () {
-        var saj = $('.ferhad-2');
-        // saj.owlCarousel({
-        //     loop: true,
-        //     nav: true,
-        //     dots: false,
-        //     margin: 10,
-        //     items: 1,
-        //     autoplay: true,
-        //     autoplayTimeout: 4400
-        // });
-
-        var nonloop = $(".nonloop");
-        // nonloop.owlCarousel({
-        //     loop: true,
-        //     margin: 10,
-        //     items: 1,
-        //     autoplay: true,
-        //     dots: false,
-        //     nav: true
-        // });
 
         var satLider__carousel = $('.satLider__Carousel');
         satLider__carousel.owlCarousel({
@@ -189,6 +169,11 @@ $(document).ready(function () {
         ]
     });
 
-    $('.ferhad-2').slick();
-    $('.nonloop').slick();
+    var saj = $('.ferhad-2');
+    var nonloop = $(".nonloop");
+
+    saj.slick({
+        autoplay: true
+    });
+    nonloop.slick();
 });
