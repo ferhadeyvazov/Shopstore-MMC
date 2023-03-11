@@ -170,4 +170,8 @@ function catalogPopup() {
     popup.classList.toggle('activePopUp');
 }
 
+// ===============SLICK SLIDER============================
+$(document).ready(function () {
+// Diger Kategoriyalar yazilacaq icine
 
+});

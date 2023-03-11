@@ -885,7 +885,7 @@ p {
 }
 
 .box {
-    width: 260px;
+    min-width: 260px;
     /* height: 250px; */
     height: 200px;
     background-color: teal;
