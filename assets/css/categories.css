@@ -54,7 +54,6 @@
     width: 2rem;
     height: 2rem;
     z-index: 3;
-    /* border: solid black; */
     border-radius: 50%;
     display: block;
     transform: translateY(-50%);
@@ -64,10 +63,15 @@
     transition: .3s;
 }
 
-.slick-arrow::before {
-    content: "" !important;
+.slick-arrow::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     background: url("../img/Logo/right.svg");
-    color: black;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
@@ -82,4 +86,11 @@
 }
 .slick-next {
     right: 1rem;
+}
+.slick-prev::after{
+    transform: rotate(180deg);
+    width: 0.9rem;
+    height: 1.2rem;
+    top: .4rem;
+    left: .5rem;
 }
