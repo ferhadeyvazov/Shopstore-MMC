@@ -34,15 +34,52 @@
     grid-row: span 2 !important;
     overflow: hidden;
 }
-.alt_alt{
+
+.alt_alt {
     grid-column: span 2;
     grid-row: span 1;
     overflow: hidden;
 }
-.yan-yan{
+
+.yan-yan {
     grid-column: span 1;
     grid-row: span 2;
 }
-.category__grids--2grid{
+
+.category__grids--2grid {
     width: 62rem;
+}
+
+.slick-arrow {
+    width: 2rem;
+    height: 2rem;
+    z-index: 3;
+    /* border: solid black; */
+    border-radius: 50%;
+    display: block;
+    transform: translateY(-50%);
+    background: hsla(0, 0%, 100%, .6);
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%),
+        0 4px 10px rgb(0 0 0 / 20%);
+    transition: .3s;
+}
+
+.slick-arrow::before {
+    content: "" !important;
+    background: url("../img/Logo/right.svg");
+    color: black;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+
+}
+.slick-arrow:hover{
+    background: #fff;
+}
+
+.slick-prev{
+    left: 1rem;
+}
+.slick-next {
+    right: 1rem;
 }
