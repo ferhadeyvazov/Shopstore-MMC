@@ -277,15 +277,27 @@
 
     .ferhad-2 {
         width: 72%;
+        height:90vh;
+        border: solid;
     }
 
     .nonloop {
         width: 27%;
+        height: 90vh;
+    }
+    .nonloop__item{
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 90vh;
+
     }
 
     .functional--date ul li {
         padding: 0 10px;
     }
+
+
 
     /* ==============MAIN>SLIDERS=========== */
 
@@ -362,6 +374,13 @@
         width: 280px;
     }
 
+    .nonloop__item {
+        padding: 1rem;
+    }
+    .gunun__teklifi--title{
+        font-size: 22px;
+    }
+
     /* ================COLLECTIONS=============== */
     .sutun-2 {
         grid-template-columns: 4fr 4fr 1fr;
@@ -374,6 +393,11 @@
     .sutun-samsung-2 {
         /* grid-template-columns: 100px 400px 400px; */
         grid-template-columns: 1fr 4fr 4fr;
+    }
+
+    .nonloop__item--img {
+        width: 250px;
+        height: 200px;
     }
 }
 

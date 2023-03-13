@@ -410,7 +410,8 @@ p {
     background-color: white;
     border-right: solid #626262;
 }
-.catalog__Popup--alt{
+
+.catalog__Popup--alt {
     border: none;
 }
 
@@ -436,11 +437,13 @@ p {
     color: #4c1e87;
 
 }
-.catalog__Popup--link>div>p{
+
+.catalog__Popup--link>div>p {
     font-weight: 500;
     font-size: 18px;
 }
-.catalog__Popup--link>i{
+
+.catalog__Popup--link>i {
     color: #999;
     font-size: 12px;
 }
@@ -675,69 +678,33 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     gap: .5rem;
 }
 
 .ferhad-2,
-.nonloop{
+.nonloop {
     width: 100%;
     background-color: #fff;
 }
-.nonloop{
+
+.nonloop {
     align-self: stretch;
 }
-/* =========================================== */
 
-.sliders .owl-nav {
-    margin: 0;
-    position: absolute;
-    top: 44%;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
+.nonloop__item {
+    padding: .3rem;
+    border: solid;
 
-.sliders .owl-nav button {
-    background-color: #ffffff !important;
-    width: 50px;
-    height: 50px;
-    border-radius: 50% !important;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    padding: 0 !important;
-}
-
-.owl-nav button:hover {
-    background-color: #ffffff !important;
-    color: black !important;
-}
-
-.sliders .owl-nav button span {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #000;
-}
-
-.nonloop .item {
-    background-color: #ffffff;
-    padding: 1rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-.nonloop__item{
-    border: solid green;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 /* ^^^^^^^^^^^^^^^^^ */
 .nonloop__item--img {
-    /* margin: 1rem auto 2rem auto; */
-    width: 300px;
-    height: 200px;
+    width: 200px;
+    height: 150px;
     border: solid;
     margin: 0 auto;
+    margin-bottom: 1rem;
 }
 
 
@@ -747,11 +714,12 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 .gunun__teklifi--title {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .functional--date {
@@ -778,7 +746,8 @@ p {
 .item__info {
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
+    justify-content: space-between;
+    /* row-gap: 1rem; */
 }
 
 .item__info--description h3 {

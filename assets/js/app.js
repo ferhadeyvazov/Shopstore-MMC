@@ -175,5 +175,10 @@ $(document).ready(function () {
     saj.slick({
         autoplay: true
     });
-    nonloop.slick();
+    nonloop.slick(
+        {
+            autoplay: true,
+            autoplaySpeed: 3600
+        }
+    );
 });
