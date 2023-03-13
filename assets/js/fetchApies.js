@@ -3,6 +3,7 @@ const allFetches = () => {
     serviceData();
     xidmetData();
     brandsData();
+    // satLider();
 }
 window.onload = allFetches();
 // allFetches();
@@ -105,42 +106,86 @@ async function catalog__() {
 function setCatalog__(data) {
     data.forEach((item) => {
         catalog__PopupList.innerHTML += `
-            <li class="catalog__Popup--link">
-                <div>
-                    ${item.icon}
-                    <p>${item.name}</p>
-                </div>
-                <i class="fa-solid fa-angle-right"></i>
-            </li>
-
+        <li class="catalog__Popup--link">
+        <div>
+        ${item.icon}
+        <p>${item.name}</p>
+        </div>
+        <i class="fa-solid fa-angle-right"></i>
+        </li>
+        
         `;
-
-
+        
+        
         catalog__list.innerHTML += `
         <li onclick="activeCatalogAlt()" class="catalog__list--link">
-            <div>
-                ${item.icon}
-                <p>${item.name}</p>
-            </div>
-            <i class="fa-solid fa-angle-right"></i>
+        <div>
+        ${item.icon}
+        <p>${item.name}</p>
+        </div>
+        <i class="fa-solid fa-angle-right"></i>
         </li>
         `
-
+        
         item.altCategory.forEach(altItem => {
             altCatalog__list.innerHTML += `
-                <li class="catalog__list--link">
-                    <div>
-                        <p>${altItem.altName}</p>
-                    </div>
-                    <i class="fa-solid fa-angle-right"></i>
-                </li>
-
+            <li class="catalog__list--link">
+            <div>
+            <p>${altItem.altName}</p>
+            </div>
+            <i class="fa-solid fa-angle-right"></i>
+            </li>
+            
             `
         })
-
+        
     });
 }
+// =================FETCH SATİS LİDERİ=================
+// let satLider__Carousel = document.querySelector('.satLider__Carousel');
 
+// async function satLider() {
+//     let res = await fetch('../../data/satLider.json');
+//     let data = await res.json();
+
+//     satLider__UI(data);
+// }
+// function satLider__UI(data){
+//     data.forEach(item=>{
+//         console.log(item);
+//         let div = document.createElement('div');
+//         div.classList.add('satLider__link');
+//         satLider__Carousel.innerHTML += `
+//                 <div class="satLider__link">
+//                     <div class="satLider__link--favor">
+//                         <button aria-label="favor"><i class="fa-regular fa-heart"></i>
+//                         </button>
+//                     </div>
+
+//                     <img loading="lazy" class="satLider__img" src="${item.img}"
+//                         alt="satLider1">
+
+//                     <div class="item__info">
+//                         <p class="item__info--title">${item.name}</p>
+//                         <div class="item__info--alt">
+//                             <div class="item__info--description">
+//                                 <del>${item.alt_price}<i class="fa-solid fa-manat-sign"></i></del>
+//                                 <h3>${item.price}<i class="fa-solid fa-manat-sign"></i></h3>
+//                             </div>
+//                             <button aria-label="favor" class="btn item__info--alt--btn">
+//                                 <i class="fa-solid fa-cart-shopping"></i>
+//                             </button>
+//                         </div>
+//                     </div>
+//                 </div>
+
+//         `
+
+//     })
+// }
+
+
+// ===================================================
 let section__catalog = document.getElementById('section__catalog');
 let section__catalogAlt = document.getElementById('section__catalog-alt');
 function activeCatalog() {
@@ -157,3 +202,4 @@ function activeCatalogAlt() {
 function cancelCatalogAlt() {
     section__catalogAlt.classList.remove("catalog__active");
 }
+

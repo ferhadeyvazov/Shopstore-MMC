@@ -1221,9 +1221,13 @@ p {
 }
 
 /* =========================SATIS LIDERLERI=============== */
-.satLider__carousel {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+.satLider__Carousel {
+    /* display: flex;
+    justify-content: space-between; */
+    overflow: hidden;
+}
+.satLider__Carousel>.slick-list {
+    padding: 2rem 0;
 }
 
 .container__satLider {
@@ -1238,18 +1242,19 @@ p {
     flex-direction: column;
     padding: 1rem;
     transition: all .4s;
-
 }
 
 .satLider__img {
-    width: 200px !important;
+    width: 240px;
     height: 250px;
     align-self: center;
     margin-bottom: 1rem;
+    margin-inline: auto;
 }
 
 .satLider__link:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
+    z-index: 9;
 }
 
 .satLider__link div {

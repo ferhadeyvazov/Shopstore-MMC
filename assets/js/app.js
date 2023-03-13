@@ -17,7 +17,6 @@ function onLoad() {
 
 
 }
-
 window.addEventListener('load', onLoad);
 
 
@@ -45,8 +44,6 @@ links.forEach(item => {
         item.classList.add('menuActive');
     })
 })
-
-
 
 
 // ============DATE============
@@ -77,40 +74,40 @@ function updateTime() {
 setInterval(updateTime, 1000);
 
 // ==========OWL CAROUSEL =================
-setTimeout(() => {
-    $(document).ready(function () {
+// setTimeout(() => {
+//     $(document).ready(function () {
 
-        var satLider__carousel = $('.satLider__Carousel');
-        satLider__carousel.owlCarousel({
-            loop: true,
-            margin: 1,
-            items: 1,
-            dots: false,
-            nav: false,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                320: {
-                    items: 2
-                },
-                500: {
-                    items: 3
-                },
-                933: {
-                    items: 4
-                },
-                1100: {
-                    items: 5
-                }
+//         var satLider__carousel = $('.satLider__Carousel');
+//         satLider__carousel.owlCarousel({
+//             loop: true,
+//             margin: 1,
+//             items: 1,
+//             dots: false,
+//             nav: false,
+//             responsive: {
+//                 0: {
+//                     items: 1
+//                 },
+//                 320: {
+//                     items: 2
+//                 },
+//                 500: {
+//                     items: 3
+//                 },
+//                 933: {
+//                     items: 4
+//                 },
+//                 1100: {
+//                     items: 5
+//                 }
 
-            }
-        });
+//             }
+//         });
 
 
-    });
+//     });
 
-}, 10)
+// }, 10)
 
 
 
@@ -181,4 +178,44 @@ $(document).ready(function () {
             autoplaySpeed: 3600
         }
     );
+
+    var satLiderCarousel = $('.satLider__Carousel');
+    satLiderCarousel.slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        responsive: [
+            {
+                breakpoint: 1450,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                }
+            },
+            {
+                breakpoint: 825,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 560,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
 });
