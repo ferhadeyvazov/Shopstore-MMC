@@ -276,15 +276,11 @@
     }
 
     .ferhad-2 {
-        width: 72% !important;
+        width: 72%;
     }
 
     .nonloop {
-        width: 27% !important;
-    }
-
-    .nonloop .item {
-        padding: 1rem 10px;
+        width: 27%;
     }
 
     .functional--date ul li {
@@ -292,14 +288,6 @@
     }
 
     /* ==============MAIN>SLIDERS=========== */
-    .ferhad-2 .item img {
-        height: 400px;
-    }
-
-    .nonloop .item img {
-        margin: 1rem 0 2rem;
-        height: 195px;
-    }
 
 
     .btn-up {
