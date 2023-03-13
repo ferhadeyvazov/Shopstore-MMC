@@ -277,20 +277,26 @@
 
     .ferhad-2 {
         width: 72%;
-        height:90vh;
-        border: solid;
     }
 
     .nonloop {
         width: 27%;
-        height: 90vh;
     }
-    .nonloop__item{
+
+    .ferhad-2,
+    .nonloop{
+        height: 450px;
+    }
+
+    .nonloop__item,
+    .ferhad-2 img{
+        height: 440px;
+    }
+
+    .nonloop__item {
         display: flex !important;
         flex-direction: column;
         justify-content: space-between;
-        height: 90vh;
-
     }
 
     .functional--date ul li {
@@ -377,7 +383,8 @@
     .nonloop__item {
         padding: 1rem;
     }
-    .gunun__teklifi--title{
+
+    .gunun__teklifi--title {
         font-size: 22px;
     }
 

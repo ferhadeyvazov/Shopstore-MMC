@@ -694,15 +694,12 @@ p {
 
 .nonloop__item {
     padding: .3rem;
-    border: solid;
-
 }
 
 /* ^^^^^^^^^^^^^^^^^ */
 .nonloop__item--img {
     width: 200px;
     height: 150px;
-    border: solid;
     margin: 0 auto;
     margin-bottom: 1rem;
 }
@@ -748,6 +745,9 @@ p {
     flex-direction: column;
     justify-content: space-between;
     /* row-gap: 1rem; */
+}
+.item__info--title{
+    font-size: 18px;
 }
 
 .item__info--description h3 {
