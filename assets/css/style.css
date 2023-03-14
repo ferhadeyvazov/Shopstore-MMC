@@ -464,6 +464,8 @@ p {
     color: #999;
     font-size: 12px;
 }
+
+
 .altCategory--link{
     display: inline-flex;
     flex-direction: column;
@@ -476,7 +478,6 @@ p {
     height: 70px;
     margin: 0 auto;
 }
-
 /* =================CATALOG================= */
 .section__catalog {
     position: fixed;

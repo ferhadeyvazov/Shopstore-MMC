@@ -104,9 +104,9 @@ async function catalog__() {
 }
 
 function setCatalog__(data) {
-    data.forEach((item) => {
+    data.forEach((item, index) => {
         catalog__PopupList.innerHTML += `
-        <li class="catalog__Popup--link">
+        <li onmouseover="setAltCatalog(${index})" class="catalog__Popup--link">
         <div>
         ${item.icon}
         <p>${item.name}</p>
@@ -114,10 +114,10 @@ function setCatalog__(data) {
         <i class="fa-solid fa-angle-right"></i>
         </li>
         `;
-        
-        
+
+
         catalog__list.innerHTML += `
-        <li onclick="activeCatalogAlt()" class="catalog__list--link">
+        <li onclick="activeCatalogAlt(${index})" class="catalog__list--link">
         <div>
         ${item.icon}
         <p>${item.name}</p>
@@ -125,21 +125,12 @@ function setCatalog__(data) {
         <i class="fa-solid fa-angle-right"></i>
         </li>
         `
-        
-        item.altCategory.forEach(altItem => {
-            altCatalog__list.innerHTML += `
-            <li class="catalog__list--link">
-            <div>
-            <p>${altItem.altName}</p>
-            </div>
-            <i class="fa-solid fa-angle-right"></i>
-            </li>
-            
-            `
-        })
-        
     });
+
 }
+// function overAltCatalog(index){
+
+// }
 
 // ===================================================
 let section__catalog = document.getElementById('section__catalog');
@@ -152,10 +143,44 @@ function cancelCatalog() {
     section__catalog.classList.remove("catalog__active");
     section__catalogAlt.classList.remove("catalog__active");
 }
-function activeCatalogAlt() {
+function activeCatalogAlt(index) {
     section__catalogAlt.classList.add("catalog__active");
+    // >
+    console.log(index);
+    setAltCatalog(index);
+
 }
 function cancelCatalogAlt() {
     section__catalogAlt.classList.remove("catalog__active");
+}
+
+async function setAltCatalog(index) {
+    let res = await fetch("../../data/altCatalogMenu.json");
+    let altData = await res.json();
+
+
+    let altCategory = document.querySelector(".altCategory");
+    altCategory.innerHTML = "";
+    altCatalog__list.innerHTML = "";
+    altData[index].forEach(item => {
+
+        altCatalog__list.innerHTML += `
+                <li class="catalog__list--link">
+                    <div>
+                        <p>${item.altName}</p>
+                    </div>
+                        <i class="fa-solid fa-angle-right"></i>
+                </li>
+                `
+        altCategory.innerHTML += `
+                <a class="altCategory--link" href="/">
+                    <img src="${item.img}" alt="altCategory" loading="lazy">
+                    <p class="text-center">${item.altName}</p>
+                </a>
+        
+        `
+
+
+    })
 }
 

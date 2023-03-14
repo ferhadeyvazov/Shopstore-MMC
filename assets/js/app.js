@@ -149,6 +149,7 @@ function catalogPopup() {
 
 popup.addEventListener("click", () => popup.classList.remove('activePopUp'));
 
+
 // ===============SLICK SLIDER============================
 $(document).ready(function () {
     $('.category__grids').slick({
