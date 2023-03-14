@@ -3,7 +3,6 @@ const allFetches = () => {
     serviceData();
     xidmetData();
     brandsData();
-    // satLider();
 }
 window.onload = allFetches();
 // allFetches();
@@ -97,6 +96,7 @@ let catalog__list = document.querySelector(".catalog__list");
 let altCatalog__list = document.querySelector(".altCatalog__list");
 let catalog__PopupList = document.querySelector(".catalog__Popup--list");
 
+
 async function catalog__() {
     let res = await fetch("../../data/catalogMenu.json");
     let data = await res.json();
@@ -113,7 +113,6 @@ function setCatalog__(data) {
         </div>
         <i class="fa-solid fa-angle-right"></i>
         </li>
-        
         `;
         
         
@@ -141,49 +140,6 @@ function setCatalog__(data) {
         
     });
 }
-// =================FETCH SATİS LİDERİ=================
-// let satLider__Carousel = document.querySelector('.satLider__Carousel');
-
-// async function satLider() {
-//     let res = await fetch('../../data/satLider.json');
-//     let data = await res.json();
-
-//     satLider__UI(data);
-// }
-// function satLider__UI(data){
-//     data.forEach(item=>{
-//         console.log(item);
-//         let div = document.createElement('div');
-//         div.classList.add('satLider__link');
-//         satLider__Carousel.innerHTML += `
-//                 <div class="satLider__link">
-//                     <div class="satLider__link--favor">
-//                         <button aria-label="favor"><i class="fa-regular fa-heart"></i>
-//                         </button>
-//                     </div>
-
-//                     <img loading="lazy" class="satLider__img" src="${item.img}"
-//                         alt="satLider1">
-
-//                     <div class="item__info">
-//                         <p class="item__info--title">${item.name}</p>
-//                         <div class="item__info--alt">
-//                             <div class="item__info--description">
-//                                 <del>${item.alt_price}<i class="fa-solid fa-manat-sign"></i></del>
-//                                 <h3>${item.price}<i class="fa-solid fa-manat-sign"></i></h3>
-//                             </div>
-//                             <button aria-label="favor" class="btn item__info--alt--btn">
-//                                 <i class="fa-solid fa-cart-shopping"></i>
-//                             </button>
-//                         </div>
-//                     </div>
-//                 </div>
-
-//         `
-
-//     })
-// }
-
 
 // ===================================================
 let section__catalog = document.getElementById('section__catalog');
