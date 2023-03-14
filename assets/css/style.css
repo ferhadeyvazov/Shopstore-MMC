@@ -405,7 +405,7 @@ p {
 .catalog__Popup--container {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    width: 80% !important;
+    width: 68% !important;
     position: fixed;
     top: 130px;
     transition: top .6s;
@@ -423,7 +423,7 @@ p {
 
 .catalog__Popup--alt {
     border: none;
-    opacity: 1; /*Bu 0 olamilidir*/
+    opacity: 1;
     /* padding: 0 .7rem; */
 }
 
@@ -470,12 +470,13 @@ p {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     padding: 1rem;
-    
+    width: 145px;
 }
 .altCategory--link img{
     width: 60px;
-    height: 70px;
+    height: 75px;
     margin: 0 auto;
 }
 /* =================CATALOG================= */
