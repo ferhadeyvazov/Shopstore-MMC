@@ -1,4 +1,5 @@
 const nav = document.getElementById("nav");
+const nav__alt = document.getElementById("nav__alt");
 
 nav.innerHTML = `
         <div class="container nav__container">
@@ -137,6 +138,33 @@ nav.innerHTML = `
                     </li>
                 </ul>
             </div>
+        </div>
+
+
+`;
+
+nav__alt.innerHTML = `
+        <div class="container nav__container--alt">
+            <a href="#" class="nav__link">
+                <i class="fa-solid fa-bullhorn"></i>
+                Kampaniyalar
+            </a>
+            <a href="#" class="nav__link">
+                <i class="fa-solid fa-newspaper"></i>
+                Xəbərlər
+            </a>
+            <a href="#" class="nav__link">
+                <i class="fa-solid fa-sim-card"></i>
+                Nömrələr
+            </a>
+            <a href="#" class="nav__link">
+                <i class="fa-solid fa-building-columns"></i>
+                Kredit
+            </a>
+            <a href="#" class="nav__link">
+                <i class="fa-solid fa-truck"></i>
+                Online sifariş
+            </a>
         </div>
 
 
