@@ -10,7 +10,7 @@
 }
 
 .pad-1 {
-    padding: .5rem;
+    padding: 1rem .5rem;
 }
 
 .prodImg {
@@ -26,6 +26,9 @@
     /* width: 200px; */
     background-color: #fff;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .images--medium--title {
