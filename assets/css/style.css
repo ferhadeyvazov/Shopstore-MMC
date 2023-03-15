@@ -412,10 +412,11 @@ p {
     transition: top .6s;
 
 }
-.catalog__Popup--list{
+
+.catalog__Popup--list {
     position: relative;
 }
-    
+
 .catalog__Popup--alt,
 .catalog__Popup {
     background-color: white;
@@ -467,7 +468,7 @@ p {
 }
 
 
-.altCategory--link{
+.altCategory--link {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -475,11 +476,13 @@ p {
     padding: 1rem;
     width: 145px;
 }
-.altCategory--link img{
+
+.altCategory--link img {
     width: 60px;
     height: 75px;
     margin: 0 auto;
 }
+
 /* =================CATALOG================= */
 .section__catalog {
     position: fixed;
@@ -1308,14 +1311,20 @@ p {
     font-size: 1.3rem;
 }
 
-.satLider__link--favor button {
-    background-color: white;
+.heart {
     border-radius: 50%;
-    width: 28px;
-    height: 28px;
-    border: #cbcbcb solid 1px;
-    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #cbcbcb;
     color: #979797;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart i {
+    font-size: 8px;
 }
 
 .satLiderActive {
@@ -1427,16 +1436,18 @@ p {
 
 .product__item--favor {
     margin-bottom: 1.5rem;
+    display: flex;
+    gap: 8px;
 }
 
-.product__item--favor button {
+/* .product__item--favor button {
     border-radius: 50%;
     background-color: white;
     border: #cbcbcb 1px solid;
     color: #979797;
     padding: .4rem;
     cursor: pointer;
-}
+} */
 
 /* ========================= */
 .game__products {
