@@ -400,6 +400,7 @@ p {
 /* =================POPUP CATALOG================= */
 .catalogPopUp {
     display: none;
+    position: relative;
 }
 
 .catalog__Popup--container {
@@ -407,7 +408,7 @@ p {
     grid-template-columns: 1fr 2fr;
     width: 68% !important;
     position: fixed;
-    top: 130px;
+    top: -100%;
     transition: top .6s;
 
 }

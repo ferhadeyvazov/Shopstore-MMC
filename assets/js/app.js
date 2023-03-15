@@ -142,9 +142,10 @@ window.addEventListener('scroll', () => {
 
 // ===============POPUP CATALOG============================
 const popup = document.getElementById('catalogPopup');
-
+const popupCatalog__container = document.querySelector('.catalog__Popup--container');
 function catalogPopup() {
     popup.classList.toggle('activePopUp');
+    popupCatalog__container.classList.toggle('activeCatalog');    
 }
 
 popup.addEventListener("click", () => popup.classList.remove('activePopUp'));
