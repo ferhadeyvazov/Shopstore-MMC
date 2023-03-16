@@ -20,8 +20,9 @@
     <link rel="stylesheet" type="text/css" href="./tools/slick-1.8.1/slick/slick-theme.css" />
 
     <!-- =======================MAIN CSS================ -->
+    <link rel="stylesheet" media="all" href="./assets/css/loading.css">
     <link rel="stylesheet" media="all" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/categories.css">
+    <link rel="stylesheet" media="all" href="./assets/css/categories.css">
     <link rel="stylesheet" media="all" href="./assets/css/collections.css">
     <link rel="stylesheet" media="all" href="./assets/css/media.query.css">
 
@@ -29,8 +30,7 @@
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- =======================MAIN JS================ -->
-    <script defer src="./assets/js/header.js"></script>
-    <script defer src="./assets/js/navbar.js"></script>
+    <script defer src="./assets/js/load.js"></script>
     <script defer src="./assets/js/fetchApies.js"></script>
     <script defer src="./assets/js/app.js"></script>
 
@@ -38,11 +38,17 @@
 </head>
 
 <body>
+    <!-- ==========================LOADING======================== -->
+    <div class="containerLoading">
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="loader"></div>
+    </div>
 
     <!-- ==========================HEADER======================== -->
     <a class="author" id="header"></a>
     <header class="header">
-        <!-- <div class="container header__container">
+        <div class="container header__container">
             <div class="header--info">
                 <a href="#">Korporativ satış</a>
                 <a href="#">Haqqımızda</a>
@@ -72,14 +78,14 @@
                 </a>
             </div>
 
-        </div> -->
+        </div>
     </header>
 
 
 
     <!-- ==========================NAV======================== -->
     <nav class="nav" id="nav">
-        <!-- <div class="container nav__container">
+        <div class="container nav__container">
             <div class="nav--burger--logo">
                 <label class="nav--burger">
                     <input type="checkbox" aria-label="Katalog">
@@ -110,7 +116,7 @@
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
-
+<!-- =========================AltCatalog================ -->
                 <div class="catalog">
                     <ul class="catalog__list"></ul>
                 </div>
@@ -176,12 +182,12 @@
                     </li>
                 </ul>
             </div>
-        </div> -->
+        </div>
     </nav>
 
 
     <nav class="nav__alt" id="nav__alt">
-        <!-- <div class="container nav__container--alt">
+        <div class="container nav__container--alt">
             <a href="#" class="nav__link">
                 <i class="fa-solid fa-bullhorn"></i>
                 Kampaniyalar
@@ -202,7 +208,7 @@
                 <i class="fa-solid fa-truck"></i>
                 Online sifariş
             </a>
-        </div> -->
+        </div>
     </nav>
 
 
@@ -269,17 +275,18 @@
             <div class="sliders">
                 <div class="ferhad-2">
                     <div>
+                        <img src="./assets/img/swiperImg/img1.jpg" alt="altImg1">
+                    </div>
+                    <div>
+                        <img src="./assets/img/swiperImg/img2.jpg" alt="altImg2">
+                    </div>
+                    <div>
+                        <img src="./assets/img/swiperImg/img3.jpg" alt="altImg3">
+                    </div>
+                    <div>
                         <img src="./assets/img/swiperImg/img4.jpg" alt="altImg1">
                     </div>
-                    <div>
-                        <img src="./assets/img/swiperImg/img1.webp" alt="altImg1">
-                    </div>
-                    <div>
-                        <img src="./assets/img/swiperImg/img2.webp" alt="altImg2">
-                    </div>
-                    <div>
-                        <img src="./assets/img/swiperImg/img3.webp" alt="altImg3">
-                    </div>
+
                 </div>
 
 
@@ -422,8 +429,8 @@
                 </div>
                 <div class="satLider__link">
                     <div class="satLider__link--favor">
-                        <button class="heart" aria-label="favor"><i
-                                class="fa-regular fa-heart"></i></button></div>
+                        <button class="heart" aria-label="favor"><i class="fa-regular fa-heart"></i></button>
+                    </div>
 
                     <img loading="lazy" class="satLider__img" src="./assets/img/satisLiderleri/satis2.webp"
                         alt="satLider2">
@@ -444,8 +451,8 @@
                 </div>
                 <div class="satLider__link">
                     <div class="satLider__link--favor">
-                        <button class="heart" aria-label="favor"><i
-                                class="fa-regular fa-heart"></i></button></div>
+                        <button class="heart" aria-label="favor"><i class="fa-regular fa-heart"></i></button>
+                    </div>
 
                     <img loading="lazy" class="satLider__img" src="./assets/img/satisLiderleri/img3.webp"
                         alt="satLider3">
@@ -466,8 +473,7 @@
                 </div>
                 <div class="satLider__link">
                     <div class="satLider__link--favor">
-                        <button class="heart" aria-label="favor"><i
-                                class="fa-regular fa-heart"></i>
+                        <button class="heart" aria-label="favor"><i class="fa-regular fa-heart"></i>
                         </button>
                     </div>
 
@@ -1318,7 +1324,7 @@
 
 
 
-
+    
     <!-- =======================JQUERY================ -->
     <!-- <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
         integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script> -->

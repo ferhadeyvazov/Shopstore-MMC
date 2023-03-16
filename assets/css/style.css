@@ -424,7 +424,7 @@ p {
 }
 
 .catalog__Popup--alt {
-    border: none;
+    border: solid;
     opacity: 1;
     /* padding: 0 .7rem; */
 }

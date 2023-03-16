@@ -2,7 +2,6 @@
     {
         "name": "Smartfonlar",
         "icon": "<i class='fa-solid fa-mobile-screen-button'></i>",
-        "kecid": "<i class='fa-solid fa-angle-right'></i>",
         "altCategory": [
             {
                 "img": "",
@@ -37,7 +36,6 @@
     {
         "name": "Smart saatlar, Fitness qolbaqlar",
         "icon": "<i class='fa-regular fa-clock'></i>",
-        "kecid": "<i class='fa-solid fa-angle-right'></i>",
         "altCategory": [
             {
                 "img": "",
@@ -73,7 +71,6 @@
     {
         "name": "Notbuklar, Planşetlər və Kompüterlər",
         "icon": "<i class='fa-solid fa-laptop'></i>",
-        "kecid": "<i class='fa-solid fa-angle-right'></i>",
         "altCategory": [
             {
                 "img": "",
@@ -108,7 +105,6 @@
     {
         "name": "Aksesuarlar",
         "icon": "<i class='fa-solid fa-file-invoice'></i>",
-        "kecid": "<i class='fa-solid fa-angle-right'></i>",
         "altCategory": [
             {
                 "img": "",
@@ -143,7 +139,6 @@
     {
         "name": "Qulaqcıqlar, səs gücləndiricilər və musiqi",
         "icon": "<i class='fa-solid fa-headphones-simple'></i>",
-        "kecid": "<i class='fa-solid fa-angle-right'></i>",
         "altCategory": [
             {
                 "img": "",
@@ -178,7 +173,6 @@
     {
         "name": "Oyun konsolları",
         "icon": "<i class='fa-solid fa-gamepad'></i>",
-        "kecid": "<i class='fa-solid fa-angle-right'></i>",
         "altCategory": [
             {
                 "img": "",
@@ -213,7 +207,6 @@
     {
         "name": "Məişət texnologiyaları",
         "icon": "<i class='fa-solid fa-kitchen-set'></i>",
-        "kecid": "<i class='fa-solid fa-angle-right'></i>",
         "altCategory": [
             {
                 "img": "",
@@ -248,7 +241,6 @@
     {
         "name": "Televizor və aksesuarları",
         "icon": "<i class='fa-solid fa-tv'></i>",
-        "kecid": "<i class='fa-solid fa-angle-right'></i>",
         "altCategory": [
             {
                 "img": "",
