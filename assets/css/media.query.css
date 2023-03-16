@@ -285,7 +285,7 @@
 
     .ferhad-2,
     .nonloop{
-        height: 450px;
+        /* height: 450px; */
     }
 
     .nonloop__item,
@@ -296,7 +296,7 @@
     .nonloop__item {
         display: flex !important;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-between !important;
         padding: .3rem;
     }
 
@@ -406,8 +406,8 @@
     }
 
     .nonloop__item--img {
-        width: 250px;
-        height: 200px;
+        /* width: 250px;
+        height: 200px; */
     }
 }
 

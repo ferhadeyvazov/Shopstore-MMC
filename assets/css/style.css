@@ -721,22 +721,24 @@ p {
 .nonloop {
     width: 100%;
     background-color: #fff;
+    aspect-ratio: 9/1;
+    flex-grow: 1;
 }
 
 .nonloop {
-    align-self: stretch;
+    align-self: stretch !important;
 }
 
 .nonloop__item {
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.3rem 1.8rem 1.3rem;
+    justify-content: space-between;
 }
 
 /* ^^^^^^^^^^^^^^^^^ */
 .nonloop__item--img {
-    width: 200px;
-    height: 150px;
     margin: 0 auto;
-    margin-bottom: 1rem;
 }
 
 
@@ -746,12 +748,11 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 1rem;
 }
 
 .gunun__teklifi--title {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .functional--date {
@@ -1359,8 +1360,7 @@ p {
 .item__info--alt {
     display: flex;
     justify-content: space-between !important;
-    align-items: center;
-    margin-top: 2rem;
+    align-items: flex-end;
 }
 
 .item__info--description {
