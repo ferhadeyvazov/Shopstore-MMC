@@ -715,45 +715,32 @@ p {
     justify-content: space-between;
     align-items: flex-start;
     gap: .5rem;
-    max-height: 450px; /*Deyise biler*/
+    max-height: 450px; /*Legv oluna biler*/
 }
 
 .ferhad-2,
 .nonloop {
     width: 100%;
+    /* height: 450px; */
     background-color: #fff;
-    aspect-ratio: 9/1;
-    flex-grow: 1;
+    flex: 1;
 }
 
-.nonloop {
-    align-self: stretch !important;
-}
-
-.nonloop__item {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 1.3rem 1.8rem 1.3rem;
-    justify-content: space-between;
+.nonloop__item{
+    padding: 1rem 1.2rem 2rem 1.2rem;
 }
 
 /* ^^^^^^^^^^^^^^^^^ */
-.nonloop__item--img {
-    margin: 0 auto;
-}
-
-
-
-
 .gunun__teklifi {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .gunun__teklifi--title {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .functional--date {

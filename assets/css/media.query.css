@@ -28,6 +28,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        text-align: start;
     }
 
 }
@@ -283,32 +284,19 @@
         width: 27%;
     }
 
-    .ferhad-2,
-    .nonloop{
-        /* height: 450px; */
-    }
-
-    .nonloop__item,
-    .ferhad-2 img{
-        /* height: 440px; */
-    }
-
     .nonloop__item {
-        display: flex !important;
-        flex-direction: column;
-        justify-content: space-between !important;
-        padding: .3rem;
+        padding: .4rem 1.2rem 1rem 1.2rem;
+    }
+
+    .gunun__teklifi--title {
+        font-size: 18px;
     }
 
     .functional--date ul li {
         padding: 0 10px;
     }
 
-
-
     /* ==============MAIN>SLIDERS=========== */
-
-
     .btn-up {
         bottom: 16px;
     }
@@ -345,7 +333,8 @@
     .activePopUp {
         top: 0;
     }
-    .activeCatalog{
+
+    .activeCatalog {
         top: 130px;
     }
 }
@@ -369,6 +358,9 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .nonloop__item {
+        padding: 1rem 1.2rem 1rem 1.2rem;
+    }
 }
 
 
@@ -383,13 +375,6 @@
         width: 280px;
     }
 
-    .nonloop__item {
-        padding: 1rem;
-    }
-
-    .gunun__teklifi--title {
-        font-size: 22px;
-    }
 
     /* ================COLLECTIONS=============== */
     .sutun-2 {
@@ -405,10 +390,14 @@
         grid-template-columns: 1fr 4fr 4fr;
     }
 
-    .nonloop__item--img {
-        /* width: 250px;
-        height: 200px; */
+    .gunun__teklifi--title {
+        font-size: 22px;
     }
+
+    .nonloop__item {
+        padding: 1.8rem 1.2rem 2.2rem 1.2rem;
+    }
+
 }
 
 @media screen and (min-width: 1400px) {
