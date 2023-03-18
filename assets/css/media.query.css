@@ -30,7 +30,6 @@
         align-items: center;
         text-align: start;
     }
-
 }
 
 @media screen and (min-width: 526px) {
@@ -282,10 +281,7 @@
 
     .nonloop {
         width: 27%;
-    }
-
-    .nonloop__item {
-        padding: .4rem 1.2rem 1rem 1.2rem;
+        padding: 0 0.4rem;
     }
 
     .gunun__teklifi--title {
@@ -358,9 +354,6 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .nonloop__item {
-        padding: 1rem 1.2rem 1rem 1.2rem;
-    }
 }
 
 
@@ -392,10 +385,6 @@
 
     .gunun__teklifi--title {
         font-size: 22px;
-    }
-
-    .nonloop__item {
-        padding: 1.8rem 1.2rem 2.2rem 1.2rem;
     }
 
 }
