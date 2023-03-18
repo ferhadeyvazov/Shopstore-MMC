@@ -715,7 +715,6 @@ p {
     justify-content: space-between;
     align-items: stretch;
     gap: .5rem;
-    border: solid;
 }
 
 .ferhad-2,
@@ -726,7 +725,6 @@ p {
     align-items: center;
     flex: 1;
     align-self: stretch;
-    border: solid;
     position: relative;
 }
 
@@ -735,7 +733,6 @@ p {
     flex-direction: column;
     justify-content: space-between;
     justify-self: stretch;
-    border: solid #fe006f;
     padding: 1rem;
 }
 .nonloop__item--img{
