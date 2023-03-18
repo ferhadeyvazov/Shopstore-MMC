@@ -387,10 +387,19 @@
         font-size: 22px;
     }
 
+    .item__info--title {
+        margin-top: 1rem;
+    }
+
 }
 
 @media screen and (min-width: 1400px) {
     .form {
         width: 49%;
+    }
+
+
+    .item__info--title {
+        margin-top: 2rem;
     }
 }
