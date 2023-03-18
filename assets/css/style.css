@@ -728,14 +728,15 @@ p {
     position: relative;
 }
 
-.nonloop__item{
+.nonloop__item {
     display: flex !important;
     flex-direction: column;
     justify-content: space-between;
     justify-self: stretch;
     padding: 1rem;
 }
-.nonloop__item--img{
+
+.nonloop__item--img {
     aspect-ratio: 3/2;
 }
 
@@ -1263,6 +1264,19 @@ p {
 
 .satLider__Carousel>.slick-list {
     padding: 2rem 0;
+}
+
+.slick-arrow {
+    background-color: hsla(0, 0%, 100%, .6);
+}
+
+.slick-arrow::before {
+    content: "";
+    background: none;
+}
+
+.slick-arrow::after {
+    background: hsla(0, 0%, 100%, .6);
 }
 
 .container__satLider {
