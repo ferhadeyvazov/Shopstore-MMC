@@ -726,12 +726,20 @@ p {
     align-items: center;
     flex: 1;
     align-self: stretch;
+    border: solid;
+    position: relative;
 }
 
 .nonloop__item{
     display: flex !important;
     flex-direction: column;
     justify-content: space-between;
+    justify-self: stretch;
+    border: solid #fe006f;
+    padding: 1rem;
+}
+.nonloop__item--img{
+    aspect-ratio: 3/2;
 }
 
 /* ^^^^^^^^^^^^^^^^^ */
