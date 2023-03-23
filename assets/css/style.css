@@ -725,19 +725,29 @@ p {
     align-items: center;
     flex: 1;
     align-self: stretch;
-    position: relative;
 }
+.ferhad-2 img{
+    min-height: 350px;
+    /* object-fit: cover; */
+}
+
+.nonloop {
+    background: #fff;
+    border: solid #7321df;
+    padding: 1rem .5rem;
+}
+
 
 .nonloop__item {
     display: flex !important;
     flex-direction: column;
     justify-content: space-between;
     justify-self: stretch;
-    padding: 1rem;
+    padding: 6px;
 }
 
 .nonloop__item--img {
-    aspect-ratio: 3/2;
+    margin: 1.3rem 0;
 }
 
 /* ^^^^^^^^^^^^^^^^^ */
@@ -745,13 +755,42 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
 .gunun__teklifi--title {
-    font-weight: 400;
+    position: relative;
+    font-weight: 700;
     font-size: 22px;
+    color: var(--head-color);
+    background-color: #fff;
+    padding: 4px 6px;
+    margin-bottom: 1rem;
 }
+
+.gunun__teklifi--title::after {
+    content: "";
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    padding: 4px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #0099F7;
+    background: -webkit-linear-gradient(to right, #F11712, #0099F7);
+    background: linear-gradient(to right, #F11712, #0099F7);
+    filter: hue-rotate(0);
+    animation: rotate-hue linear 500ms infinite;
+}
+
+@keyframes rotate-hue {
+    to {
+        filter: hue-rotate(1turn);
+    }
+}
+
 
 .functional--date {
     background-color: #f0f1f3;
@@ -765,9 +804,15 @@ p {
 }
 
 .functional--date ul li {
-    padding: 0 1rem;
+    padding: 0 12px;
     font-size: 12px;
     line-height: 1;
+}
+
+.nonloop__item--img--product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .functional--date ul li:not(:last-child) {
@@ -783,6 +828,7 @@ p {
 
 .item__info--title {
     font-size: 18px;
+    margin-bottom: .9rem;
 }
 
 .item__info--description h3 {
@@ -1267,16 +1313,17 @@ p {
 }
 
 .slick-arrow {
-    background-color: hsla(0, 0%, 100%, .6);
+    background-color: hsla(0, 0%, 100%, .6) !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1),
+        0 4px 10px rgba(0, 0, 0, .2);
+}
+
+.slick-arrow:hover {
+    background: #fff !important;
 }
 
 .slick-arrow::before {
-    content: "";
-    background: none;
-}
-
-.slick-arrow::after {
-    background: hsla(0, 0%, 100%, .6);
+    display: none;
 }
 
 .container__satLider {

@@ -30,6 +30,11 @@
         align-items: center;
         text-align: start;
     }
+
+    .gunun__teklifi--title {
+        margin: 0;
+    }
+
 }
 
 @media screen and (min-width: 526px) {
@@ -73,6 +78,16 @@
         right: -50px;
         width: 150px;
         display: block;
+    }
+
+    .nonloop {
+        padding: 1rem 2rem;
+    }
+
+    .functional--date ul li {
+        padding: 0 16px;
+        font-size: 14px;
+        line-height: 1;
     }
 }
 
@@ -279,17 +294,19 @@
         width: 72%;
     }
 
+    .ferhad-2 div img {
+        border: solid red 1px;
+        object-fit: cover;
+    }
+
     .nonloop {
         width: 27%;
         padding: 0 0.4rem;
     }
 
-    .gunun__teklifi--title {
-        font-size: 18px;
-    }
-
     .functional--date ul li {
         padding: 0 10px;
+        font-size: 10px;
     }
 
     /* ==============MAIN>SLIDERS=========== */
@@ -333,6 +350,18 @@
     .activeCatalog {
         top: 130px;
     }
+
+    .gunun__teklifi--title {
+        margin: 0;
+        display: block;
+        text-align: center;
+        font-size: 10px;
+        padding: 3px 1px;
+    }
+
+    .functional--date ul li {
+        font-size: 10px;
+    }
 }
 
 @media screen and (min-width: 1040px) {
@@ -352,6 +381,11 @@
 
     .service__right--side {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gunun__teklifi--title {
+        font-size: 12px;
+        padding: 4px 6px;
     }
 
 }
@@ -384,11 +418,26 @@
     }
 
     .gunun__teklifi--title {
-        font-size: 22px;
+        font-size: 16px;
     }
 
     .item__info--title {
         margin-top: 1rem;
+    }
+
+    .nonloop__item {
+        padding: 1rem;
+    }
+
+    .functional--date ul li {
+        padding: 0 10px;
+        font-size: 12px;
+        line-height: 1;
+    }
+
+    .ferhad-2 img {
+        min-height: 430px;
+        /* object-fit: cover; */
     }
 
 }
@@ -402,4 +451,13 @@
     .item__info--title {
         margin-top: 2rem;
     }
+
+    .gunun__teklifi--title {
+        font-size: 18px;
+    }
+
+    .functional--date ul li {
+        padding: 0 12px;
+    }
+
 }
