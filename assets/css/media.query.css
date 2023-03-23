@@ -388,6 +388,11 @@
         padding: 4px 6px;
     }
 
+    .ferhad-2,
+    .nonloop {
+        height: 530px;
+    }
+
 }
 
 
@@ -421,10 +426,6 @@
         font-size: 16px;
     }
 
-    .item__info--title {
-        margin-top: 1rem;
-    }
-
     .nonloop__item {
         padding: 1rem;
     }
@@ -447,17 +448,17 @@
         width: 49%;
     }
 
-
-    .item__info--title {
-        margin-top: 2rem;
-    }
-
     .gunun__teklifi--title {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .functional--date ul li {
         padding: 0 12px;
+    }
+
+    .ferhad-2,
+    .nonloop {
+        height: 560px;
     }
 
 }

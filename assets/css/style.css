@@ -747,7 +747,6 @@ p {
 }
 
 .nonloop__item--img {
-    margin: 1.3rem 0;
     object-fit: contain;
     object-position: center center;
 }
@@ -817,6 +816,7 @@ p {
     align-items: center;
     width: 80%;
     margin-inline: auto;
+    padding: 1.6rem 0;
 
 }
 
