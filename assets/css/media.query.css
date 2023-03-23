@@ -292,11 +292,15 @@
 
     .ferhad-2 {
         width: 72%;
+        border: solid 2px;
     }
 
-    .ferhad-2 div img {
-        border: solid red 1px;
-        object-fit: cover;
+    .ferhad-2 img {
+        border: solid red 3px;
+        object-fit: cover !important;
+        object-position: center center;
+        max-width: 100%;
+        min-height: 400px;
     }
 
     .nonloop {
@@ -388,9 +392,8 @@
         padding: 4px 6px;
     }
 
-    .ferhad-2,
-    .nonloop {
-        height: 530px;
+    .ferhad-2 img {
+        min-height: 450px;
     }
 
 }
@@ -437,9 +440,9 @@
     }
 
     .ferhad-2 img {
-        min-height: 430px;
-        /* object-fit: cover; */
+        min-height: 500px;
     }
+
 
 }
 
@@ -456,9 +459,8 @@
         padding: 0 12px;
     }
 
-    .ferhad-2,
-    .nonloop {
-        height: 560px;
+    .ferhad-2 img {
+        min-height: 530px;
     }
 
 }

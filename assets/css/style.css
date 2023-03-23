@@ -726,10 +726,6 @@ p {
     flex: 1;
     align-self: stretch;
 }
-.ferhad-2 img{
-    min-height: 350px;
-    /* object-fit: cover; */
-}
 
 .nonloop {
     background: #fff;
