@@ -292,15 +292,13 @@
 
     .ferhad-2 {
         width: 72%;
-        border: solid 2px;
     }
 
     .ferhad-2 img {
-        border: solid red 3px;
         object-fit: cover !important;
         object-position: center center;
         max-width: 100%;
-        min-height: 400px;
+        min-height: 450px;
     }
 
     .nonloop {
@@ -460,7 +458,7 @@
     }
 
     .ferhad-2 img {
-        min-height: 530px;
+        min-height: 500px;
     }
 
 }
