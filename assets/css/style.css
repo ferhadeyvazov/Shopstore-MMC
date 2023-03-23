@@ -748,6 +748,8 @@ p {
 
 .nonloop__item--img {
     margin: 1.3rem 0;
+    object-fit: contain;
+    object-position: center center;
 }
 
 /* ^^^^^^^^^^^^^^^^^ */
@@ -813,6 +815,9 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 80%;
+    margin-inline: auto;
+
 }
 
 .functional--date ul li:not(:last-child) {
