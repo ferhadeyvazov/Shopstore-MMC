@@ -1072,7 +1072,7 @@ p {
 }
 
 /* ========================= */
-.footer__inp div{
+.footer__inp--form{
     display: flex;
     align-items: center;
     margin-top: 1rem;
@@ -1117,12 +1117,16 @@ p {
 .check_container{
     position: relative;
     display: flex;
+    gap: 10px;
     align-items: center;
-    justify-content: flex-start !important;
+    justify-content: center;
+    width: 90%;
+    margin-inline: auto;
+    margin-top: 16px;
 }
 .check_container p{
     color: white;
-    width: 50%;
+    width: 100%;
 }
 .checkbox {
     position: relative;

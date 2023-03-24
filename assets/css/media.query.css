@@ -35,6 +35,10 @@
         margin: 0;
     }
 
+    .check_container {
+        width: 70%;
+    }
+
 }
 
 @media screen and (min-width: 526px) {
@@ -88,6 +92,15 @@
         padding: 0 16px;
         font-size: 14px;
         line-height: 1;
+    }
+
+    .check_container {
+        width: 55%;
+        justify-content: flex-start;
+    }
+
+    .check_container p {
+        width: 70%;
     }
 }
 
@@ -276,6 +289,11 @@
         margin-top: 0;
     }
 
+    .check_container {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
     .cards {
         grid-template-columns: repeat(5, 1fr);
     }
@@ -440,7 +458,8 @@
     .activeCatalog {
         top: 155px;
     }
-    .activeCatalog-90{
+
+    .activeCatalog-90 {
         top: 90px;
 
     }
