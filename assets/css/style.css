@@ -521,15 +521,13 @@ p {
 }
 
 .catalog__list--link {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 18px 0;
     border-bottom: 1px solid #ededed;
 }
 
-.catalog__list--link>div {
+.catalog__list--link a {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 10px;
 }

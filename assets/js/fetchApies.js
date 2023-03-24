@@ -105,23 +105,25 @@ async function catalog__() {
 
 function setCatalog__(data) {
     data.forEach((item, index) => {
+        let { name, icon } = item;
+        let hero = name;
         // =========DESTKOP CATALOG LIST==============
         catalog__PopupList.innerHTML += `
         <li onmouseover="setAltCatalog(${index})" class="catalog__Popup--link">
         <div>
-        ${item.icon}
-        <p>${item.name}</p>
+        ${icon}
+        <p>${name}</p>
         </div>
         <i class="fa-solid fa-angle-right"></i>
         </li>
         `;
 
-// ==========MOBILE CATALOG LIST =================
+        // ==========MOBILE CATALOG LIST =================
         catalog__list.innerHTML += `
         <li onclick="activeCatalogAlt(${index})" class="catalog__list--link">
             <div>
-                ${item.icon}
-                <p>${item.name}</p>
+                ${icon}
+                <p>${name}</p>
             </div>
                 <i class="fa-solid fa-angle-right"></i>
         </li>
@@ -147,26 +149,29 @@ function activeCatalogAlt(index) {
     setAltCatalog(index);
 
 }
-function cancelCatalogAlt() {
-    section__catalogAlt.classList.remove("catalog__active");
-}
 
 async function setAltCatalog(index) {
     let res = await fetch("../../data/altCatalogMenu.json");
     let altData = await res.json();
+    altData = altData[index];
 
+    let catalogAltHero = document.querySelector(".catalog-alt--hero");
+    catalogAltHero.textContent = altData[0].altName;
 
     let altCategory = document.querySelector(".altCategory");
     altCategory.innerHTML = "";
     altCatalog__list.innerHTML = "";
-    altData[index].forEach(item => {
+    altData.forEach(item => {
+        let {img, altName} = item;
 
         altCatalog__list.innerHTML += `
                 <li class="catalog__list--link">
-                    <div>
-                        <p>${item.altName}</p>
-                    </div>
-                        <i class="fa-solid fa-angle-right"></i>
+                    <a href="/">
+                        <div>
+                            <p>${item.altName}</p>
+                        </div>
+                            <i class="fa-solid fa-angle-right"></i>
+                    </a>
                 </li>
                 `
         altCategory.innerHTML += `
@@ -180,4 +185,9 @@ async function setAltCatalog(index) {
 
     })
 }
+
+function cancelCatalogAlt() {
+    section__catalogAlt.classList.remove("catalog__active");
+}
+
 
