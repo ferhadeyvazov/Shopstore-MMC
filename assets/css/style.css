@@ -533,6 +533,7 @@ p {
     justify-content: space-between;
     gap: 10px;
     padding: 18px 7px;
+    font-size: 18px
 }
 
 .catalog__list--link a {
@@ -540,6 +541,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 18px
 }
 
 .catalog__list--link>div>i:after {
