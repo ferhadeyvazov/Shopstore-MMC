@@ -520,13 +520,25 @@ p {
     font-size: 1.2rem;
 }
 
+.catalog__list--link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.catalog__list--link div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
 .catalog__list--link a {
+    width: 100%;
     border-bottom: 1px solid #ededed;
     padding: 18px 7px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
 }
 
 .catalog__list--link>div>i:after {
