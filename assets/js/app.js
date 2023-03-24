@@ -145,10 +145,22 @@ const popup = document.getElementById('catalogPopup');
 const popupCatalog__container = document.querySelector('.catalog__Popup--container');
 function catalogPopup() {
     popup.classList.toggle('activePopUp');
-    popupCatalog__container.classList.toggle('activeCatalog');    
+
+    if (popup.classList.contains("activePopUp")){
+        popupCatalog__container.classList.add('activeCatalog');    
+    }
+    else{
+        popupCatalog__container.classList.remove('activeCatalog');    
+    }
+    
 }
 
-popup.addEventListener("click", () => popup.classList.remove('activePopUp'));
+popup.addEventListener("click", (e) => {
+    if(e.target.id == "catalogPopup"){
+        popup.classList.remove('activePopUp')
+        popupCatalog__container.classList.remove('activeCatalog');    
+    }
+});
 
 
 // ===============SLICK SLIDER============================
