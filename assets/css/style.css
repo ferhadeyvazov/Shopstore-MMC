@@ -500,7 +500,7 @@ p {
     justify-content: space-between;
     align-items: center;
     background-color: #ededed;
-    padding: .5rem 5px;
+    padding: .5rem 7px;
 }
 
 .catalog__title h3 {
@@ -522,7 +522,7 @@ p {
 
 .catalog__list--link a {
     border-bottom: 1px solid #ededed;
-    padding: 18px 5px;
+    padding: 18px 7px;
     display: flex;
     justify-content: space-between;
     align-items: center;
