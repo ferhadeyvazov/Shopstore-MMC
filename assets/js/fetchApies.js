@@ -106,7 +106,6 @@ async function catalog__() {
 function setCatalog__(data) {
     data.forEach((item, index) => {
         let { name, icon } = item;
-        let hero = name;
         // =========DESTKOP CATALOG LIST==============
         catalog__PopupList.innerHTML += `
         <li onmouseover="setAltCatalog(${index})" class="catalog__Popup--link">
@@ -145,7 +144,6 @@ function cancelCatalog() {
 function activeCatalogAlt(index) {
     section__catalogAlt.classList.add("catalog__active");
     // >
-    console.log(index);
     setAltCatalog(index);
 
 }
@@ -168,7 +166,7 @@ async function setAltCatalog(index) {
                 <li class="catalog__list--link">
                     <a href="/">
                         <div>
-                            <p>${item.altName}</p>
+                            <p>${altName}</p>
                         </div>
                             <i class="fa-solid fa-angle-right"></i>
                     </a>
@@ -176,11 +174,10 @@ async function setAltCatalog(index) {
                 `
         altCategory.innerHTML += `
                 <a class="altCategory--link" href="/">
-                    <img src="${item.img}" alt="altCategory" loading="lazy">
-                    <p class="text-center">${item.altName}</p>
+                    <img src="${img}" alt="altCategory" loading="lazy">
+                    <p class="text-center">${altName}</p>
                 </a>
-        
-        `
+            `
 
 
     })

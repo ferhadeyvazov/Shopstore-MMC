@@ -424,7 +424,7 @@ p {
 }
 
 .catalog__Popup--alt {
-    border: solid;
+    border: solid red;
     opacity: 1;
     /* padding: 0 .7rem; */
 }
@@ -467,6 +467,9 @@ p {
     font-size: 12px;
 }
 
+.altCategory{
+    background-color: #fff;
+}
 
 .altCategory--link {
     display: inline-flex;
@@ -547,10 +550,6 @@ p {
 .catalog__list--link>div>i:after {
     width: 32px;
     height: 32px;
-}
-
-.catalog__list--link>div>p {
-    /* font-weight: 300; */
 }
 
 .catalog__list--link>i {
