@@ -806,7 +806,7 @@ p {
     line-height: 1;
 }
 
-.nonloop__item--img--product{
+.nonloop__item--img--product {
     display: flex;
     justify-content: center;
     align-items: center;

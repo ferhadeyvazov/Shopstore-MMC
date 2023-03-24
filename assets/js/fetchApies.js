@@ -105,6 +105,7 @@ async function catalog__() {
 
 function setCatalog__(data) {
     data.forEach((item, index) => {
+        // =========DESTKOP CATALOG LIST==============
         catalog__PopupList.innerHTML += `
         <li onmouseover="setAltCatalog(${index})" class="catalog__Popup--link">
         <div>
@@ -115,23 +116,19 @@ function setCatalog__(data) {
         </li>
         `;
 
-
+// ==========MOBILE CATALOG LIST =================
         catalog__list.innerHTML += `
         <li onclick="activeCatalogAlt(${index})" class="catalog__list--link">
-        <div>
-        ${item.icon}
-        <p>${item.name}</p>
-        </div>
-        <i class="fa-solid fa-angle-right"></i>
+            <div>
+                ${item.icon}
+                <p>${item.name}</p>
+            </div>
+                <i class="fa-solid fa-angle-right"></i>
         </li>
         `
     });
 
 }
-// function overAltCatalog(index){
-
-// }
-
 // ===================================================
 let section__catalog = document.getElementById('section__catalog');
 let section__catalogAlt = document.getElementById('section__catalog-alt');

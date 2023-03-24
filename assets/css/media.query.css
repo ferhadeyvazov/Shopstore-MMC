@@ -390,10 +390,6 @@
         padding: 4px 6px;
     }
 
-    .ferhad-2 img {
-        min-height: 450px;
-    }
-
 }
 
 
@@ -437,8 +433,9 @@
         line-height: 1;
     }
 
+    .nonloop,
     .ferhad-2 img {
-        min-height: 500px;
+        min-height: 480px;
     }
 
 
