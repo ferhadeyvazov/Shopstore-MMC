@@ -73,44 +73,6 @@ function updateTime() {
 }
 setInterval(updateTime, 1000);
 
-// ==========OWL CAROUSEL =================
-// setTimeout(() => {
-//     $(document).ready(function () {
-
-//         var satLider__carousel = $('.satLider__Carousel');
-//         satLider__carousel.owlCarousel({
-//             loop: true,
-//             margin: 1,
-//             items: 1,
-//             dots: false,
-//             nav: false,
-//             responsive: {
-//                 0: {
-//                     items: 1
-//                 },
-//                 320: {
-//                     items: 2
-//                 },
-//                 500: {
-//                     items: 3
-//                 },
-//                 933: {
-//                     items: 4
-//                 },
-//                 1100: {
-//                     items: 5
-//                 }
-
-//             }
-//         });
-
-
-//     });
-
-// }, 10)
-
-
-
 
 // ============HEART=====================
 let satLider__Heart = document.querySelectorAll('.satLider__link--favor button');
@@ -146,6 +108,7 @@ window.addEventListener('scroll', () => {
 // ===============POPUP CATALOG============================
 const popup = document.getElementById('catalogPopup');
 const popupCatalog__container = document.querySelector('.catalog__Popup--container');
+console.log(popup);
 function catalogPopup() {
     popup.classList.toggle('activePopUp');
 
