@@ -3,7 +3,7 @@ const searchSection = document.getElementById('search__section');
 const search = document.getElementById('faSearch');
 const cancelSearch = document.getElementById('faBack');
 
-// ======================ONLOAD================
+// ======================ONLOAD======================
 let lin = document.querySelectorAll('link');
 lin.forEach(item => {
     item.disabled = true;
@@ -41,10 +41,4 @@ links.forEach(item => {
         item.classList.add('menuActive');
     })
 });
-
-
-
-
-
-
 
