@@ -32,13 +32,4 @@ function cancelSearchActive() {
     searchSection.classList.remove('activeSearch');
 }
 
-// ==========ACTIVE ALT__MENU__LINK================
-let links = document.querySelectorAll('.menu__link a');
-
-links.forEach(item => {
-    item.addEventListener('click', () => {
-        links.forEach(link => link.classList.remove('menuActive'));
-        item.classList.add('menuActive');
-    })
-});
 
