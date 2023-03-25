@@ -2,7 +2,6 @@
 const searchSection = document.getElementById('search__section');
 const search = document.getElementById('faSearch');
 const cancelSearch = document.getElementById('faBack');
-const productCatalog = document.querySelector(".product--catalog");
 
 // ======================ONLOAD================
 let lin = document.querySelectorAll('link');
@@ -23,8 +22,6 @@ window.addEventListener('load', onLoad);
 function addeventliseners() {
     search.addEventListener('click', searchActive);
     cancelSearch.addEventListener('click', cancelSearchActive);
-    productCatalog.addEventListener('click', catalogPopup);
-
 }
 
 function searchActive() {
@@ -43,7 +40,7 @@ links.forEach(item => {
         links.forEach(link => link.classList.remove('menuActive'));
         item.classList.add('menuActive');
     })
-})
+});
 
 
 

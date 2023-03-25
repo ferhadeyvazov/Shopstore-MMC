@@ -14,6 +14,7 @@ window.addEventListener('scroll', () => {
 })
 
 // ===============POPUP CATALOG============================
+const productCatalog = document.querySelector(".product--catalog");
 const popup = document.getElementById('catalogPopup');
 const popupCatalog__container = document.querySelector('.catalog__Popup--container');
 console.log(popup);
@@ -28,6 +29,8 @@ function catalogPopup() {
     }
 
 }
+
+productCatalog.addEventListener('click', catalogPopup);
 
 popup.addEventListener("click", (e) => {
     if (e.target.id == "catalogPopup") {
