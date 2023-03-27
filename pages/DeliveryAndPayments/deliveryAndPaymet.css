@@ -1,2 +1,26 @@
 @import "../../assets/css/global.css";
 
+h1,
+h2,
+h3,
+h4,
+p{
+    margin-bottom: 1.2rem;
+}
+/* ================DELIVERY SECTION================ */
+.delivery__container{
+    background-color: rgba(246, 246, 246, 255);
+}
+.delivery__description{
+    background-color: #ffffff;
+    padding: 1.5rem;
+}
+
+.delivery__btn,
+.payment__btn{
+    padding: 1rem 1.2rem;
+    width: 100px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
