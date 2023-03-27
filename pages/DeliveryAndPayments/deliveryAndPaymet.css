@@ -18,6 +18,9 @@ p {
     background-color: #ffffff;
     padding: 1.5rem;
 }
+.payment__description{
+    display: none;
+}
 
 .delivery__btn,
 .payment__btn {
@@ -26,6 +29,9 @@ p {
     border: none;
     background: none;
     cursor: pointer;
+}
+.delivery__btn{
+    background: #ffffff;
 }
 
 .payment__description h3 {
