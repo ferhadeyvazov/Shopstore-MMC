@@ -4,23 +4,57 @@ h1,
 h2,
 h3,
 h4,
-p{
+p {
     margin-bottom: 1.2rem;
 }
+
 /* ================DELIVERY SECTION================ */
-.delivery__container{
+.delivery__container {
     background-color: rgba(246, 246, 246, 255);
 }
-.delivery__description{
+
+.delivery__description,
+.payment__description {
     background-color: #ffffff;
     padding: 1.5rem;
 }
 
 .delivery__btn,
-.payment__btn{
+.payment__btn {
     padding: 1rem 1.2rem;
     width: 100px;
     border: none;
     background: none;
     cursor: pointer;
+}
+
+.payment__description h3 {
+    text-transform: uppercase;
+    
+}
+
+.payments__description--banks {
+    text-transform: uppercase;
+    margin: 1.8rem 0;
+}
+.payments__description--banks h3 {
+    font-weight: 600;
+}
+
+.payment__description--banks--logos {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .payment__description--banks--logos {
+        flex-direction: row;
+        flex-basis: 150px;
+        flex-wrap: wrap;
+    }
+    .payment__description--banks--logos img{
+        width: 280px;
+        height: 150px;
+    }
 }
