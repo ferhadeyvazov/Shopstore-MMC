@@ -373,7 +373,7 @@
         width: 68% !important;
         position: fixed;
         top: -100%;
-        transition: top .6s;
+        transition: top .5s;
 
     }
 

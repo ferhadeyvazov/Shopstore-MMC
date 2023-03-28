@@ -1,0 +1,56 @@
+@import "../../assets/css/global.css";
+
+.delivery__section h1,
+.delivery__section h2,
+.delivery__section h3,
+.delivery__section h4,
+.delivery__section p {
+    margin-bottom: 1.2rem;
+}
+
+/* ================DELIVERY SECTION================ */
+.delivery__sections {
+    background-color: rgba(246, 246, 246, 255);
+}
+
+.delivery__description,
+.payment__description {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    user-select: none;
+    margin-bottom: 2rem;
+}
+.payment__description{
+    display: none;
+}
+
+.delivery__btn,
+.payment__btn {
+    padding: 1rem 1.2rem;
+    width: 100px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.delivery__btn{
+    background: #ffffff;
+}
+
+.payment__description h3 {
+    text-transform: uppercase;
+    
+}
+
+.payments__description--banks {
+    text-transform: uppercase;
+}
+.payments__description--banks h3 {
+    font-weight: 600;
+    margin: 2.5rem 0;
+}
+
+.payment__description--banks--logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /*min:200px ola biler*/
+    grid-gap: 2rem;
+}

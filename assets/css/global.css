@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('../Fonts/HankenG/HankenGrotesk-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('../Fonts/HankenG/HankenGrotesk-ExtraBold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('../Fonts/HankenG/HankenGrotesk-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('../Fonts/HankenG/HankenGrotesk-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('../Fonts/HankenG/HankenGrotesk-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('../Fonts/HankenG/HankenGrotesk-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('../Fonts/HankenG/HankenGrotesk-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('../Fonts/HankenG/HankenGrotesk-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('../Fonts/HankenG/HankenGrotesk-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "ArialNU";
+    scroll-behavior: smooth;
+    font-family: "Hanken Grotesk";
+}
+
+:root {
+    --bg-color: #ededed;
+    --main-bg-color: rgba(76, 31, 136, 255);
+    --main-color2: rgba(255, 0, 112, 255);
+    --head-color: #7321df;
+    --text-color: #000000;
+    --text-color2: #ffffff;
+    --text-color-alt: #5e5e5e;
+    --btn-bg-color: rgba(125, 98, 227, 255);
+    --hover-color: #fcb42c;
+
+    --index: 10;
+}
+
+body {
+    background: var(--bg-color);
+}
+
+img {
+    width: 100%;
+    height: auto;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: var(--text-color);
+}
+
+.section {
+    padding: 1rem 0;
+}
+
+.container {
+    width: 92%;
+    max-width: 1600px;
+    margin-inline: auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 5px 15px;
+    background: var(--btn-bg-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+}
+
+.page__header--logo {
+    font-weight: 400;
+    margin: 0 !important;
+    background: none;
+    padding: 1.8rem 0;
+}
