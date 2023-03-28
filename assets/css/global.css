@@ -149,3 +149,10 @@ p {
     border: none;
     border-radius: 5px;
 }
+
+.page__header--logo {
+    font-weight: 400;
+    margin: 0 !important;
+    background: none;
+    padding: 1.8rem 0;
+}
