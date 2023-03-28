@@ -18,6 +18,7 @@
     background-color: #ffffff;
     padding: 1.5rem;
     user-select: none;
+    margin-bottom: 2rem;
 }
 .payment__description{
     display: none;
