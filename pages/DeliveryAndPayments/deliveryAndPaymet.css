@@ -42,10 +42,10 @@ p {
 
 .payments__description--banks {
     text-transform: uppercase;
-    margin: 1.8rem 0;
 }
 .payments__description--banks h3 {
     font-weight: 600;
+    margin: 2.5rem 0;
 }
 
 .payment__description--banks--logos {
