@@ -23,6 +23,9 @@
 .payment__description{
     display: none;
 }
+.payment__description div:not(:last-child)>h3{
+    margin: 0;
+}
 
 .delivery__btn,
 .payment__btn {
