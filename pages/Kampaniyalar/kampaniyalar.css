@@ -1,0 +1,52 @@
+@import "../../assets/css/global.css";
+
+
+.kampaniya__description {
+    background-color: #ffffff;
+    padding: 2rem;
+    user-select: none;
+    margin-bottom: 2rem;
+}
+
+.kampaniya__description--statistic{
+    margin-bottom: 1.3rem;
+    display: flex;
+    gap: 1.3rem;
+}
+
+.kampaniya__news--text{
+    margin-bottom: 1.4rem;
+}
+
+.kampaniya__statistic--wiewer i {
+    color: #5f5f5f;
+}
+
+.kampaniya__description--media{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.kampaniya__description--media div{
+    display: flex;
+    gap: 1rem;
+}
+
+.kampaniya__like--dislike p{
+    color: #393939;
+}
+
+.kampaniya__social--links button{
+    border-radius: 50%;
+    width: 33px;
+    height: 33px;
+    font-size: 1.1rem;
+    display: grid;
+    place-items: center;
+
+    border: none;
+    color: #ffff;
+    background-color: #7321de;
+}
