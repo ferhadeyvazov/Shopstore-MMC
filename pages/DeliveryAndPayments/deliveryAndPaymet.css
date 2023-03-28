@@ -17,6 +17,7 @@ p {
 .payment__description {
     background-color: #ffffff;
     padding: 1.5rem;
+    user-select: none;
 }
 .payment__description{
     display: none;
@@ -48,19 +49,7 @@ p {
 }
 
 .payment__description--banks--logos {
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-}
-
-@media (min-width: 768px) {
-    .payment__description--banks--logos {
-        flex-direction: row;
-        flex-basis: 150px;
-        flex-wrap: wrap;
-    }
-    .payment__description--banks--logos img{
-        width: 280px;
-        height: 150px;
-    }
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /*min:200px ola biler*/
+    grid-gap: 2rem;
 }
