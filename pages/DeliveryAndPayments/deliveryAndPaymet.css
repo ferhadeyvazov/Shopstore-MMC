@@ -1,10 +1,10 @@
 @import "../../assets/css/global.css";
 
-h1,
-h2,
-h3,
-h4,
-p {
+.delivery__section h1,
+.delivery__section h2,
+.delivery__section h3,
+.delivery__section h4,
+.delivery__section p {
     margin-bottom: 1.2rem;
 }
 
