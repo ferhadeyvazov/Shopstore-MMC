@@ -10,7 +10,7 @@ function catalogPopup() {
         popupCatalog__container.classList.add('activeCatalog');
 
         window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 100) {
+            if (window.pageYOffset > 50) {
                 popupCatalog__container.classList.add('activeCatalog-90');
             }
             else {
@@ -20,7 +20,7 @@ function catalogPopup() {
         })
 
     }
-    else {
+    else if (!popup.classList.contains("activePopUp")) {
         popupCatalog__container.classList.remove('activeCatalog');
     }
 }
