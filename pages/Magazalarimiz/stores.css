@@ -1,3 +1,46 @@
-.stores{
+@import "../../assets/css/global.css";
+
+.stores {
     background-color: #ffffff;
+    padding-left: 0.8rem;
+}
+
+.stores__btns {
+    padding: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.stores__btns button {
+    border: none;
+    padding: .6rem .9rem;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+
+.stores__aside {
+    display: grid;
+}
+
+.stores__adress--list article {
+    display: block;
+    padding: .5rem 1.3rem;
+    padding-left: 0;
+    border-bottom: 1px solid #c8c8c8;
+    max-width: 460px;
+}
+
+/* GOGGLE MAP */
+.stores__map--google {
+    width: 100%;
+}
+
+@media (min-width: 1000px) {
+    .stores__aside {
+        grid-template-columns: 1fr 2fr;
+        align-items: end;
+    }
 }
