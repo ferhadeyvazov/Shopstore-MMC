@@ -15,7 +15,6 @@ function catalogPopup() {
             }
             else {
                 popupCatalog__container.classList.remove('activeCatalog-90')
-                
             }
         })
         
