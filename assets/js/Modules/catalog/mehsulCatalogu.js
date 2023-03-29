@@ -15,12 +15,13 @@ function catalogPopup() {
             }
             else {
                 popupCatalog__container.classList.remove('activeCatalog-90')
-
+                
             }
         })
-
+        
     }
-    else if (!popup.classList.contains("activePopUp")) {
+    else {
+        popupCatalog__container.classList.remove('activeCatalog-90')
         popupCatalog__container.classList.remove('activeCatalog');
     }
 }
