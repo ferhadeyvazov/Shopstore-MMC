@@ -8,6 +8,17 @@ function catalogPopup() {
 
     if (popup.classList.contains("activePopUp")) {
         popupCatalog__container.classList.add('activeCatalog');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 100) {
+                popupCatalog__container.classList.add('activeCatalog-90');
+            }
+            else {
+                popupCatalog__container.classList.remove('activeCatalog-90')
+
+            }
+        })
+
     }
     else {
         popupCatalog__container.classList.remove('activeCatalog');
