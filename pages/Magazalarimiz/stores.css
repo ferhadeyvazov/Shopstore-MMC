@@ -23,24 +23,35 @@
 
 .stores__aside {
     display: grid;
+    align-items: end;
+}
+.stores__adress--list{
+    align-self: flex-start;
 }
 
 .stores__adress--list article {
     display: block;
-    padding: .5rem 1.3rem;
+    padding: .6rem 1.3rem;
     padding-left: 0;
     border-bottom: 1px solid #c8c8c8;
-    max-width: 460px;
+    max-width: 430px;
 }
 
 /* GOGGLE MAP */
 .stores__map--google {
     width: 100%;
+    display: block;
+}
+
+@media (min-width: 840px) {
+    .stores__aside {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: end;
+    }
 }
 
 @media (min-width: 1000px) {
     .stores__aside {
         grid-template-columns: 1fr 2fr;
-        align-items: end;
     }
 }
