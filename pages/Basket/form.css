@@ -1,0 +1,23 @@
+.basket__form {
+    margin-top: 1.4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1.2rem;
+}
+
+#basket__form--inp{
+    padding: .6rem 1rem;
+    border-radius: 3px;
+    border: solid 1px rgba(227, 227, 227, 255);
+    /* font-size: 1.1rem; */
+}
+#basket__form--inp::placeholder{
+    font-size: .9rem;
+}
+#basket__form--inp:focus{
+    outline: #4c1f88 solid 1px;
+}
+#basket__form--inp::selection{
+    background: #7d62e3;
+    color: #ffffff;
+}
