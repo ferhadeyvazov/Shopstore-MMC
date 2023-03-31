@@ -5,19 +5,74 @@
     grid-gap: 1.2rem;
 }
 
-#basket__form--inp{
+#basket__form--inp {
     padding: .6rem 1rem;
     border-radius: 3px;
     border: solid 1px rgba(227, 227, 227, 255);
-    /* font-size: 1.1rem; */
+    width: 100%;
 }
-#basket__form--inp::placeholder{
+
+#basket__form--inp:valid {
+    outline: 1px solid green;
+}
+
+#basket__form--inp::placeholder {
     font-size: .9rem;
 }
-#basket__form--inp:focus{
+
+#basket__form--inp:focus {
     outline: #4c1f88 solid 1px;
 }
-#basket__form--inp::selection{
+
+#basket__form--inp::selection {
     background: #7d62e3;
     color: #ffffff;
+}
+
+#basket__form--inp+span {
+    position: relative;
+}
+
+#basket__form--inp+span::before {
+    position: absolute;
+    right: -20px;
+    top: 5px;
+}
+
+#basket__form--inp:invalid {
+    border: 2px solid red;
+    animation: shake 0.2s ease-in-out 0s 2;
+}
+
+#basket__form--inp:invalid+span::before {
+    content: "✖";
+    color: red;
+}
+
+#basket__form--inp:valid+span::before {
+    content: "✓";
+    color: green;
+}
+
+@keyframes shake {
+    0% {
+        margin-left: 0rem;
+    }
+
+    25% {
+        margin-left: 0.5rem;
+    }
+
+    75% {
+        margin-left: -0.5rem;
+    }
+
+    100% {
+        margin-left: 0rem;
+    }
+}
+
+/* ======================================================== */
+.name__form{
+    margin-top: .5rem;
 }

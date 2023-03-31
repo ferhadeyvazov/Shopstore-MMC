@@ -8,6 +8,9 @@
     <meta name="author" content="Ferhad Eyvazov">
     <meta name="description" content="Arzulariniz bir-klikle">
 
+    <link rel="stylesheet" href="../../tools/bootstrap-5.0.2-dist (1)/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../tools/bootstrap-5.0.2-dist (1)/bootstrap-5.0.2-dist/css/bootstrap.min.css.map">
+
     <!-- =======================MAIN CSS================ -->
     <link rel="stylesheet" media="all" href="../../assets/css/style.css">
     <link rel="stylesheet" media="all" href="./basket.css">
@@ -277,7 +280,8 @@
                         <div class="basket__product--price">
                             <h3>
                                 19
-                                <img class="manat-Icon-small" src="../../assets/img/Logo/manat-sign-solid.svg" alt="manatIcon">
+                                <img class="manat-Icon-small" src="../../assets/img/Logo/manat-sign-solid.svg"
+                                    alt="manatIcon">
                             </h3>
                         </div>
                         <div class="basket__product--count">
@@ -289,7 +293,8 @@
 
                             <h2 class="manat-number">
                                 19
-                                <img class="manat-Icon-big" src="../../assets/img/Logo/manat-sign-solid.svg" alt="ManatIcon">
+                                <img class="manat-Icon-big" src="../../assets/img/Logo/manat-sign-solid.svg"
+                                    alt="ManatIcon">
                             </h2>
                         </div>
                     </div>
@@ -307,7 +312,8 @@
                         <div class="basket__product--price">
                             <h3>
                                 19
-                                <img class="manat-Icon-small" src="../../assets/img/Logo/manat-sign-solid.svg" alt="manatIcon">
+                                <img class="manat-Icon-small" src="../../assets/img/Logo/manat-sign-solid.svg"
+                                    alt="manatIcon">
                             </h3>
                         </div>
                         <div class="basket__product--count">
@@ -319,7 +325,8 @@
 
                             <h2 class="manat-number">
                                 19
-                                <img class="manat-Icon-big" src="../../assets/img/Logo/manat-sign-solid.svg" alt="ManatIcon">
+                                <img class="manat-Icon-big" src="../../assets/img/Logo/manat-sign-solid.svg"
+                                    alt="ManatIcon">
                             </h2>
                         </div>
                     </div>
@@ -331,18 +338,55 @@
                         <h1>Şəxsi Məlumatlar</h1>
                     </div>
 
-                    <form class="basket__form">
-                        <div class="basket__form--label">
-                            <input
-                            type="text"
-                             name=""
-                             id="basket__form--inp"
-                             placeholder="A.S.A"
-                             required
-                             >
-                             <span></span>
+                    <form class="name__form row g-3 needs-validation" novalidate>
+                        <div class="col-md-6">
+                            <label for="validationCustom01" class="form-label">A.S.A</label>
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="Ad Soyad"
+                                required>
+                            <div class="invalid-feedback">
+                                Ad Soyadınızı qeyd edin.
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustomUsername" class="form-label">Email</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                <input type="email" class="form-control" id="validationCustomUsername"
+                                    aria-describedby="inputGroupPrepend" placeholder="Email" required>
+                                <div class="invalid-feedback">
+                                    Emailinizi qeyd edin.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="validationCustom03" class="form-label">Mobil nömrə</label>
+                            <input type="tel" class="form-control" id="validationCustom03" placeholder="+994551234567"
+                                value="+994" 
+                                pattern="[+,0-9]{4}[55,99,70,77,51,50,10,60]{2}[0-9]{7}" required>
+                            <div class="invalid-feedback">
+                                Nömrənizi düzgün daxil edin.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom03" class="form-label">Mobil nömrə</label>
+                            <input type="tel" class="form-control" id="validationCustom03" placeholder="+994551234567"
+                                value="+994" 
+                                pattern="[+,0-9]{4}[55,99,70,77,51,50,10,60]{2}[0-9]{7}" required>
+                            <div class="invalid-feedback">
+                                Nömrənizi düzgün daxil edin.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <p>Daimi Müştərisinizsə, <a href="#" class="text-primary text-decoration-none">Qeydiyyatdan keçin</a>.</p>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Submit form</button>
                         </div>
                     </form>
+
                 </div>
 
             </div>
@@ -485,6 +529,9 @@
     <a href="#header" class="btn-up">
         ↑
     </a>
+
+    <script src="../../tools/bootstrap-5.0.2-dist (1)/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="../../tools/bootstrap-5.0.2-dist (1)/bootstrap-5.0.2-dist/js/bootstrap.min.js.map"></script>
 
 
     <!-- =====================MODULE JS====================== -->
