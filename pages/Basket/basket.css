@@ -1,0 +1,139 @@
+@import "../../assets/css/global.css";
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sectionContainer {
+    display: grid;
+    grid-gap: 1.3rem;
+}
+
+.paddingContainer {
+    padding: 1.5rem 1rem;
+    background-color: #ffffff;
+}
+
+.a {
+    margin-bottom: 1rem;
+}
+
+.headerContainer {
+    font-weight: 600;
+    color: black;
+}
+
+.hero__alt {
+    color: #808080;
+    font-size: 15px;
+}
+
+.numberOfContainer {
+    border-radius: 50%;
+    padding: 1rem;
+    display: grid;
+    place-items: center;
+    color: white;
+    background-color: var(--btn-bg-color);
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 1rem;
+}
+
+
+.basket__right--container {
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.basket__product--hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .7rem;
+}
+
+.basket__product--hero h4 {
+    color: rgba(60, 60, 60, 255);
+    font-size: 14px;
+}
+
+.basket__product--hero i {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.basket__product--price h3 {
+    font-weight: 500;
+}
+
+.manat-number {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.manat-Icon-small {
+    width: 11px;
+}
+
+.manat-Icon-big {
+    width: 17px;
+}
+
+
+.basket__product--count {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.product__number {
+    color: #414141;
+    min-width: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.basket__product--info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.basket__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.basket__img img {
+    max-width: 100px;
+}
+
+@media screen and (min-width: 968px) {
+    .basket__product--hero h4 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 968px) {
+    .gridSections {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        flex-wrap: wrap-reverse;
+    }
+
+}
