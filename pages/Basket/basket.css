@@ -24,7 +24,7 @@
     background-color: #ffffff;
 }
 
-.a {
+.marginBottom-1 {
     margin-bottom: 1rem;
 }
 
@@ -63,7 +63,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: .7rem;
+    margin-bottom: .5rem;
 }
 
 .basket__product--hero h4 {

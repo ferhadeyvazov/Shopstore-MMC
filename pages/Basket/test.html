@@ -263,7 +263,7 @@
             <div class="sectionContainer">
 
                 <div class="paddingContainer">
-                    <h3 class="headerContainer a">Sifariş haqqında məlumat</h3>
+                    <h4 class="headerContainer marginBottom-1">Sifariş haqqında məlumat</h4>
                     <p class="hero__alt">1 məhsul, ümumi məbləğ 19 <i class="fa-solid fa-manat-sign"
                             style="color: #808080;"></i></p>
                 </div>
@@ -335,7 +335,7 @@
                 <div class="paddingContainer">
                     <div class="form__header">
                         <button class="numberOfContainer">1</button>
-                        <h1>Şəxsi Məlumatlar</h1>
+                        <h3 class="fs-5 fw-bold text-uppercase">Şəxsi Məlumatlar</h3>
                     </div>
 
                     <form class="name__form row g-3 needs-validation" novalidate>
@@ -363,8 +363,7 @@
                         <div class="col-md-6">
                             <label for="validationCustom03" class="form-label">Mobil nömrə</label>
                             <input type="tel" class="form-control" id="validationCustom03" placeholder="+994551234567"
-                                value="+994" 
-                                pattern="[+,0-9]{4}[55,99,70,77,51,50,10,60]{2}[0-9]{7}" required>
+                                value="+994" pattern="[+,0-9]{4}[55,99,70,77,51,50,10,60]{2}[0-9]{7}" required>
                             <div class="invalid-feedback">
                                 Nömrənizi düzgün daxil edin.
                             </div>
@@ -372,15 +371,81 @@
                         <div class="col-md-6">
                             <label for="validationCustom03" class="form-label">Mobil nömrə</label>
                             <input type="tel" class="form-control" id="validationCustom03" placeholder="+994551234567"
-                                value="+994" 
-                                pattern="[+,0-9]{4}[55,99,70,77,51,50,10,60]{2}[0-9]{7}" required>
+                                value="+994" pattern="[+,0-9]{4}[55,99,70,77,51,50,10,60]{2}[0-9]{7}" required>
                             <div class="invalid-feedback">
                                 Nömrənizi düzgün daxil edin.
                             </div>
                         </div>
 
                         <div class="col-12">
-                            <p>Daimi Müştərisinizsə, <a href="#" class="text-primary text-decoration-none">Qeydiyyatdan keçin</a>.</p>
+                            <p>Daimi Müştərisinizsə, <a href="#" class="text-primary text-decoration-none">Qeydiyyatdan
+                                    keçin</a>.</p>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="paddingContainer">
+                    <div class="form__header">
+                        <button class="numberOfContainer">2</button>
+                        <h3 class="fs-5 fw-bold text-uppercase">Çatdırılma Xidməti</h3>
+                    </div>
+
+                    <form class="name__form row g-3 needs-validation" novalidate>
+                        <div class="col-md-6">
+                            <label for="validationCustom04" class="form-label">State</label>
+                            <select class="form-select" id="validationCustom04" required>
+                                <option selected disabled value="">Çatdırılma üsulunu seçin</option>
+                                <option>...</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom04" class="form-label">State</label>
+                            <select class="form-select" id="validationCustom04" required>
+                                <option selected disabled value="">Çatdırılma ərazisini seçin</option>
+                                <option>...</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustomUsername" class="form-label">Email</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                <input type="email" class="form-control" id="validationCustomUsername"
+                                    aria-describedby="inputGroupPrepend" placeholder="Email" required>
+                                <div class="invalid-feedback">
+                                    Emailinizi qeyd edin.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="validationCustom03" class="form-label">Mobil nömrə</label>
+                            <input type="tel" class="form-control" id="validationCustom03" placeholder="+994551234567"
+                                value="+994" pattern="[+,0-9]{4}[55,99,70,77,51,50,10,60]{2}[0-9]{7}" required>
+                            <div class="invalid-feedback">
+                                Nömrənizi düzgün daxil edin.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom03" class="form-label">Mobil nömrə</label>
+                            <input type="tel" class="form-control" id="validationCustom03" placeholder="+994551234567"
+                                value="+994" pattern="[+,0-9]{4}[55,99,70,77,51,50,10,60]{2}[0-9]{7}" required>
+                            <div class="invalid-feedback">
+                                Nömrənizi düzgün daxil edin.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <p>Daimi Müştərisinizsə, <a href="#" class="text-primary text-decoration-none">Qeydiyyatdan
+                                    keçin</a>.</p>
                         </div>
                         <div class="col-12">
                             <button class="btn btn-primary" type="submit">Submit form</button>
@@ -532,7 +597,6 @@
 
     <script src="../../tools/bootstrap-5.0.2-dist (1)/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <script src="../../tools/bootstrap-5.0.2-dist (1)/bootstrap-5.0.2-dist/js/bootstrap.min.js.map"></script>
-
 
     <!-- =====================MODULE JS====================== -->
     <script src="../../assets/js/Modules/catalog/mehsulCatalogu.js"></script>
