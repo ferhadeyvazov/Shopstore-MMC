@@ -480,14 +480,58 @@
                             </label>
                         </div>
 
-                        <div class="col-12">
-                            <label for="validationCustom03 catdirilmaUnvan" class="form-label">Çatdırılma ünvanı</label>
-                            <input type="text" class="form-control" id="validationCustom03 catdirilmaUnvan"
-                                placeholder="Çatdırılma ünvanı" required>
+                        <div class="col-md-3">
+                            <label for="validationCustom04" class="form-label">Taksit</label>
+                            <select class="form-select" id="validationCustom04" required>
+                                <option selected disabled value="">Taksit müddəti</option>
+                                <option>3 ay</option>
+                                <option>6 ay</option>
+                                <option>12 ay</option>
+                                <option>18 ay</option>
+                            </select>
                             <div class="invalid-feedback">
-                                Zəhmət olmasa çatdırılma ünvanınızı daxil edin.
+                                Please select a valid state.
                             </div>
                         </div>
+
+                        <table class="table">
+                            <thead>
+                                <th scope="col">Bank</th>
+                                <th scope="col">Aylıq ödəniş</th>
+                                <th scope="col">Qiymət artımının faizi</th>
+                                <th scope="col">Məbləğ</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="d-flex align-items-center" scope="row">
+                                        <input class="form-check-input me-3" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="...">
+                                        <img class="img-fluid w-50" src="../../assets/img/Basket/birKart.avif" alt="">
+                                    </th>
+                                    <td class="w-25">23.50<i class="fa-solid fa-manat-sign fa-xs"></i></td>
+                                    <td class="w-25">12%</td>
+                                    <td>167<i class="fa-solid fa-manat-sign fa-xs"></i></td>
+                                </tr>
+                                <tr>
+                                    <th class="d-flex align-items-center" scope="row">
+                                        <input class="form-check-input me-3" type="radio" name="radioNoLabel" id="radioNoLabel2" value="" aria-label="...">
+                                        <img class="img-fluid w-50 rounded" src="../../assets/img/Basket/albali.avif" alt="">
+                                    </th>
+                                    <td class="w-25"></td>
+                                    <td class="w-25"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th class="d-flex align-items-center" scope="row">
+                                        <input class="form-check-input me-3" type="radio" name="radioNoLabel" id="radioNoLabel3" value="" aria-label="...">
+                                        <img class="img-fluid w-50" src="../../assets/img/Basket/tamkart.avif" alt="">
+                                    </th>
+                                    <td class="w-25"></td>
+                                    <td class="w-25"></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
                         <div class="col-12">
                             <button class="btn btn-primary" type="submit">Submit form</button>
                         </div>
@@ -520,7 +564,8 @@
                     <button aria-label="abuneOl" class="footer__inp--btn" type="submit">Abunə ol</button>
                 </div>
                 <div class="check_container">
-                    <label for="" id="checkboxNoLabel"><input class="form-check-input rounded-circle p-3" type="checkbox" id="checkboxNoLabel" value="" aria-label="..."></label>
+                    <label for="" id="checkboxNoLabel"><input class="form-check-input rounded-circle p-3"
+                            type="checkbox" id="checkboxNoLabel" value="" aria-label="..."></label>
                     <p class="checkbox__words">Şəxsi məlumatların emalı və abunə şərtləri ilə razıyam</p>
                 </div>
             </form>
