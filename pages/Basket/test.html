@@ -361,8 +361,8 @@
                         </div>
 
                         <div class="col-md-6">
-                            <label for="validationCustom03" class="form-label">Mobil nömrə</label>
-                            <input type="tel" class="form-control" id="validationCustom03" placeholder="+994551234567"
+                            <label for="validationCustom07" class="form-label">Mobil nömrə</label>
+                            <input type="tel" class="form-control" id="validationCustom07" placeholder="+994551234567"
                                 value="+994" pattern="[+,0-9]{4}[55,99,70,77,51,50,10,60]{2}[0-9]{7}" required>
                             <div class="invalid-feedback">
                                 Nömrənizi düzgün daxil edin.
@@ -405,8 +405,8 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <label for="validationCustom04" class="form-label">Region</label>
-                            <select class="form-select" id="validationCustom04" required>
+                            <label for="validationCustom05" class="form-label">Region</label>
+                            <select class="form-select" id="validationCustom05" required>
                                 <option selected disabled value="">Çatdırılma ərazisini seçin</option>
                                 <option>Bakı</option>
                             </select>
@@ -414,35 +414,55 @@
                                 Çatdırılma ərazisini seçin.
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <label for="validationCustomUsername" class="form-label">Email</label>
-                            <div class="input-group has-validation">
-                                <span class="input-group-text" id="inputGroupPrepend">@</span>
-                                <input type="email" class="form-control" id="validationCustomUsername"
-                                    aria-describedby="inputGroupPrepend" placeholder="Email" required>
-                                <div class="invalid-feedback">
-                                    Emailinizi doğru qeyd edin.
-                                </div>
+                        <div class="col-12">
+                            <div class="form-check d-flex justify-content-between">
+                                <label class="form-check-label d-flex justify-content-between align-items-center" for="invalidCheck">
+                                    <input class="form-check-input me-3" type="checkbox" id="invalidCheck">
+                                    <p class="lh-sm">Express çatdırılma <br> <span class="fs-6 fw-normal text-danger">(2saat ərzində)</span></p>
+                                </label>
+                                <p class="manat-number">+10 <i class="fa-solid fa-manat-sign fa-xs"></i></p>
                             </div>
                         </div>
-
-                        <div class="col-md-6">
-                            <label for="validationCustom03" class="form-label">Mobil nömrə</label>
-                            <input type="tel" class="form-control" id="validationCustom03" placeholder="+994551234567"
-                                value="+994" pattern="[+,0-9]{4}[55,99,70,77,51,50,10,60]{2}[0-9]{7}" required>
+                        <div class="col-12">
+                            <label for="validationCustom03 catdirilmaUnvan" class="form-label">Çatdırılma ünvanı</label>
+                            <input type="text" class="form-control"
+                             id="validationCustom03 catdirilmaUnvan" placeholder="Çatdırılma ünvanı" required>
                             <div class="invalid-feedback">
-                                Nömrənizi düzgün daxil edin.
+                                Zəhmət olmasa çatdırılma ünvanınızı daxil edin.
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <label for="validationCustom03" class="form-label">Mobil nömrə</label>
-                            <input type="tel" class="form-control" id="validationCustom03" placeholder="+994551234567"
-                                value="+994" pattern="[+,0-9]{4}[55,99,70,77,51,50,10,60]{2}[0-9]{7}" required>
-                            <div class="invalid-feedback">
-                                Nömrənizi düzgün daxil edin.
-                            </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Submit form</button>
                         </div>
+                    </form>
+                </div>
 
+                <div class="paddingContainer">
+                    <div class="form__header">
+                        <button class="numberOfContainer">3</button>
+                        <h3 class="fs-5 fw-bold text-uppercase">Ödəniş Sistemləri</h3>
+                    </div>
+
+                    <form class="name__form row g-3 needs-validation" novalidate>
+
+                        
+                        <div class="col-12">
+                            <div class="form-check d-flex justify-content-between">
+                                <label class="form-check-label d-flex justify-content-between align-items-center" for="invalidCheck">
+                                    <input class="form-check-input me-3" type="checkbox" id="invalidCheck">
+                                    <p class="lh-sm">Express çatdırılma <br> <span class="fs-6 fw-normal text-danger">(2saat ərzində)</span></p>
+                                </label>
+                                <p class="manat-number">+10 <i class="fa-solid fa-manat-sign fa-xs"></i></p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="validationCustom03 catdirilmaUnvan" class="form-label">Çatdırılma ünvanı</label>
+                            <input type="text" class="form-control"
+                             id="validationCustom03 catdirilmaUnvan" placeholder="Çatdırılma ünvanı" required>
+                            <div class="invalid-feedback">
+                                Zəhmət olmasa çatdırılma ünvanınızı daxil edin.
+                            </div>
+                        </div>
                         <div class="col-12">
                             <button class="btn btn-primary" type="submit">Submit form</button>
                         </div>
