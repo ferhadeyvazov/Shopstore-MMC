@@ -1,7 +1,9 @@
 @import "../../assets/css/global.css";
 @import "./formHeader.css";
 @import "./form.css";
-
+ul{
+    padding: 0;
+}
 .row {
     display: flex;
     align-items: center;
