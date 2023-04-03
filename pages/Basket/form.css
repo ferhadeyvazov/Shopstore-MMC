@@ -76,3 +76,11 @@
 .name__form{
     margin-top: .5rem;
 }
+
+.form-check-input:focus{
+    box-shadow: 0 0 0 0.25rem #411a75;
+}
+.form-check-input:checked{
+    background-color:#411a75;
+    border-color: #411a75;
+}
