@@ -4,6 +4,10 @@
 ul{
     padding: 0;
 }
+
+.btn {
+    background-color: #dc3545;
+}
 .row {
     display: flex;
     align-items: center;
