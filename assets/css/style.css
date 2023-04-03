@@ -445,6 +445,9 @@
     align-items: center;
     /* gap: 1.3rem; */
 }
+.nav--tools-link a{
+    color: #fff;
+}
 
 .nav--tools ul li:last-child,
 .nav--tools ul li span {
@@ -455,6 +458,7 @@
     font-size: 16px;
     padding: 4px 12px;
     border-right: solid 1px #9178b4;
+    color: #ffffff;
 }
 
 .nav--tools ul li:hover {

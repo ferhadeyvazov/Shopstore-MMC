@@ -8,6 +8,10 @@
     <meta name="author" content="Ferhad Eyvazov">
     <meta name="description" content="Arzulariniz bir-klikle">
 
+    <!-- =======================BOOTSTRAP 5.0.2================ -->
+    <link rel="stylesheet" href="../../tools/bootstrap-5.0.2-dist (1)/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../tools/bootstrap-5.0.2-dist (1)/bootstrap-5.0.2-dist/css/bootstrap.min.css.map">
+
     <!-- =======================MAIN CSS================ -->
     <link rel="stylesheet" media="all" href="../../assets/css/style.css">
     <link rel="stylesheet" media="all" href="./basket.css">
@@ -195,8 +199,8 @@
 
     <!-- =====================BOTTOM MENU====================== -->
     <nav class="menu__alt">
-        <div class="container container__alt--menu">
-            <ul class="menu__list">
+        <div class="container__alt--menu">
+            <ul class="d-flex justify-content-between align-items-center menu__list p-0 m-0">
                 <li class="menu__link">
                     <a class="menuActive" href="/">
                         <i class="menu__link--icon fa-solid fa-house"></i>
@@ -227,6 +231,7 @@
                         <span class="menu__link--name">Menu</span>
                     </a>
                 </li>
+
             </ul>
         </div>
     </nav>
@@ -260,7 +265,7 @@
             <div class="sectionContainer">
 
                 <div class="paddingContainer">
-                    <h3 class="headerContainer a">Sifariş haqqında məlumat</h3>
+                    <h4 class="headerContainer marginBottom-1">Sifariş haqqında məlumat</h4>
                     <p class="hero__alt">1 məhsul, ümumi məbləğ 19 <i class="fa-solid fa-manat-sign"
                             style="color: #808080;"></i></p>
                 </div>
@@ -277,7 +282,8 @@
                         <div class="basket__product--price">
                             <h3>
                                 19
-                                <img class="manat-Icon-small" src="../../assets/img/Logo/manat-sign-solid.svg" alt="manatIcon">
+                                <img class="manat-Icon-small" src="../../assets/img/Logo/manat-sign-solid.svg"
+                                    alt="manatIcon">
                             </h3>
                         </div>
                         <div class="basket__product--count">
@@ -289,7 +295,8 @@
 
                             <h2 class="manat-number">
                                 19
-                                <img class="manat-Icon-big" src="../../assets/img/Logo/manat-sign-solid.svg" alt="ManatIcon">
+                                <img class="manat-Icon-big" src="../../assets/img/Logo/manat-sign-solid.svg"
+                                    alt="ManatIcon">
                             </h2>
                         </div>
                     </div>
@@ -307,7 +314,8 @@
                         <div class="basket__product--price">
                             <h3>
                                 19
-                                <img class="manat-Icon-small" src="../../assets/img/Logo/manat-sign-solid.svg" alt="manatIcon">
+                                <img class="manat-Icon-small" src="../../assets/img/Logo/manat-sign-solid.svg"
+                                    alt="manatIcon">
                             </h3>
                         </div>
                         <div class="basket__product--count">
@@ -319,7 +327,8 @@
 
                             <h2 class="manat-number">
                                 19
-                                <img class="manat-Icon-big" src="../../assets/img/Logo/manat-sign-solid.svg" alt="ManatIcon">
+                                <img class="manat-Icon-big" src="../../assets/img/Logo/manat-sign-solid.svg"
+                                    alt="ManatIcon">
                             </h2>
                         </div>
                     </div>
@@ -328,21 +337,215 @@
                 <div class="paddingContainer">
                     <div class="form__header">
                         <button class="numberOfContainer">1</button>
-                        <h1>Şəxsi Məlumatlar</h1>
+                        <h3 class="fs-5 fw-bold text-uppercase">Şəxsi Məlumatlar</h3>
                     </div>
 
-                    <form class="basket__form">
-                        <div class="basket__form--label">
-                            <input
-                            type="text"
-                             name=""
-                             id="basket__form--inp"
-                             placeholder="A.S.A"
-                             required
-                             >
-                             <span></span>
+                    <form class="name__form row g-3 needs-validation" novalidate>
+                        <div class="col-md-6">
+                            <label for="validationCustom01" class="form-label">A.S.A</label>
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="Ad Soyad"
+                                required>
+                            <div class="invalid-feedback">
+                                Ad Soyadınızı qeyd edin.
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustomUsername" class="form-label">Email</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                <input type="email" class="form-control" id="validationCustomUsername"
+                                    aria-describedby="inputGroupPrepend" placeholder="Email" required>
+                                <div class="invalid-feedback">
+                                    Emailinizi qeyd edin.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="validationCustom07" class="form-label">Mobil nömrə</label>
+                            <input type="tel" class="form-control" id="validationCustom07" placeholder="+994551234567"
+                                value="+994" pattern="[+,0-9]{4}[55,99,70,77,51,50,10,60]{2}[0-9]{7}" required>
+                            <div class="invalid-feedback">
+                                Nömrənizi düzgün daxil edin.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom03" class="form-label">Mobil nömrə</label>
+                            <input type="tel" class="form-control" id="validationCustom03" placeholder="+994551234567"
+                                value="+994" pattern="[+,0-9]{4}[55,99,70,77,51,50,10,60]{2}[0-9]{7}" required>
+                            <div class="invalid-feedback">
+                                Nömrənizi düzgün daxil edin.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <p>Daimi Müştərisinizsə, <a href="#" class="text-primary text-decoration-none">Qeydiyyatdan
+                                    keçin</a>.</p>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Submit form</button>
                         </div>
                     </form>
+                </div>
+
+                <div class="paddingContainer">
+                    <div class="form__header">
+                        <button class="numberOfContainer">2</button>
+                        <h3 class="fs-5 fw-bold text-uppercase">Çatdırılma Xidməti</h3>
+                    </div>
+
+                    <form class="name__form row g-3 needs-validation" novalidate>
+                        <div class="col-md-6">
+                            <label for="validationCustom04" class="form-label">Çatdırılma</label>
+                            <select class="form-select" id="validationCustom04" required>
+                                <option selected disabled value="">Çatdırılma üsulunu seçin</option>
+                                <option>Ünvana Çatdırılma</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Çatdırılma üsulunu seçin.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom05" class="form-label">Region</label>
+                            <select class="form-select" id="validationCustom05" required>
+                                <option selected disabled value="">Çatdırılma ərazisini seçin</option>
+                                <option>Bakı</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Çatdırılma ərazisini seçin.
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check d-flex justify-content-between">
+                                <label class="form-check-label d-flex justify-content-between align-items-center"
+                                    for="invalidCheck">
+                                    <input class="form-check-input me-3" type="checkbox" id="invalidCheck">
+                                    <p class="lh-sm">Express çatdırılma <br> <span
+                                            class="fs-6 fw-normal text-danger">(2saat ərzində)</span></p>
+                                </label>
+                                <p class="manat-number">+10 <i class="fa-solid fa-manat-sign fa-xs"></i></p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="validationCustom03 catdirilmaUnvan" class="form-label">Çatdırılma ünvanı</label>
+                            <input type="text" class="form-control" id="validationCustom03 catdirilmaUnvan"
+                                placeholder="Çatdırılma ünvanı" required>
+                            <div class="invalid-feedback">
+                                Zəhmət olmasa çatdırılma ünvanınızı daxil edin.
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="paddingContainer">
+                    <div class="form__header">
+                        <div class="numberOfContainer">3</div>
+                        <h3 class="fs-5 fw-bold text-uppercase">Ödəniş Sistemləri</h3>
+                    </div>
+
+                    <form class="name__form row g-3 needs-validation" novalidate>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Nəğd ödəniş
+                            </label>
+                        </div>
+                        <div class="form-check mt-0">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Kombinləşmiş
+                            </label>
+                        </div>
+                        <div class="form-check mt-0">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                            <label class="form-check-label" for="flexRadioDefault3">
+                                Bank köçürməsi ilə ödəniş
+                            </label>
+                        </div>
+                        <div class="form-check mt-0">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                            <label class="form-check-label" for="flexRadioDefault4">
+                                Bank kartı onlayn ödəniş
+                            </label>
+                        </div>
+                        <div class="form-check mt-0">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5"
+                                checked>
+                            <label class="form-check-label" for="flexRadioDefault5">
+                                Taksit kartı ilə onlayn ödəniş
+                            </label>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="validationCustom04" class="form-label">Taksit</label>
+                            <select class="form-select" id="validationCustom04" required>
+                                <option selected disabled value="">Taksit müddəti</option>
+                                <option>3 ay</option>
+                                <option>6 ay</option>
+                                <option>12 ay</option>
+                                <option>18 ay</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+
+                        <table class="table">
+                            <thead>
+                                <th scope="col">Bank</th>
+                                <th scope="col">Aylıq ödəniş</th>
+                                <th scope="col" class="d-none d-lg-table-cell">Qiymət artımının faizi</th>
+                                <th scope="col" class="d-none d-md-table-cell">Məbləğ</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <label for="birkart" class="d-flex align-items-center">
+                                            <input id="birkart" class="form-check-input me-3" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="...">
+                                            <h6 class=" d-sm-none">BirKart</h6>
+                                            <img class="img-fluid w-50 d-none d-sm-block" src="../../assets/img/Basket/birKart.avif" alt="">
+                                        </label>
+                                    </th>
+                                    <td class="w-sm-25">23.50<i class="fa-solid fa-manat-sign fa-xs"></i></td>
+                                    <td class="w-sm-25 d-none d-lg-table-cell">12%</td>
+                                    <td class="w-sm-25 d-none d-md-table-cell">167<i class="fa-solid fa-manat-sign fa-xs"></i></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label for="tamkart" class="d-flex align-items-center">
+                                            <input id="tamkart" class="form-check-input me-3" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="...">
+                                            <h6 class=" d-sm-none">TamKart</h6>
+                                            <img class="img-fluid w-50 d-none d-sm-block" src="../../assets/img/Basket/tamkart3.avif" alt="TamKart">
+                                        </label>
+                                    </th>
+                                    <td class="w-sm-25">23.50<i class="fa-solid fa-manat-sign fa-xs"></i></td>
+                                    <td class="w-sm-25 d-none d-lg-table-cell">12%</td>
+                                    <td class="w-sm-25 d-none d-md-table-cell">167<i class="fa-solid fa-manat-sign fa-xs"></i></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label class="d-flex align-items-center" for="bolkart">
+                                            <input id="bolkart" class="form-check-input me-3" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="...">
+                                            <h6 class=" d-sm-none">BolKart</h6>
+                                            <img class="img-fluid w-50 d-none d-sm-block" src="../../assets/img/Basket/BolKart (1).avif" alt="TamKart">
+                                        </label>
+                                    </th>
+                                    <td class="w-sm-25">23.50<i class="fa-solid fa-manat-sign fa-xs"></i></td>
+                                    <td class="w-sm-25 d-none d-lg-table-cell">12%</td>
+                                    <td class="w-sm-25 d-none d-md-table-cell">167<i class="fa-solid fa-manat-sign fa-xs"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+                    </form>
+
                 </div>
 
             </div>
@@ -370,10 +573,8 @@
                     <button aria-label="abuneOl" class="footer__inp--btn" type="submit">Abunə ol</button>
                 </div>
                 <div class="check_container">
-                    <label class="check_container--label">
-                        <input type="checkbox">
-                        <div class="check_container--checkmark"></div>
-                    </label>
+                    <label for="" id="checkboxNoLabel"><input class="form-check-input rounded-circle p-3"
+                            type="checkbox" id="checkboxNoLabel" value="" aria-label="..."></label>
                     <p class="checkbox__words">Şəxsi məlumatların emalı və abunə şərtləri ilə razıyam</p>
                 </div>
             </form>
@@ -488,6 +689,9 @@
         ↑
     </a>
 
+    <!-- =====================BOOTSTRAP 5.0.2====================== -->
+    <script src="../../tools/bootstrap-5.0.2-dist (1)/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="../../tools/bootstrap-5.0.2-dist (1)/bootstrap-5.0.2-dist/js/bootstrap.min.js.map"></script>
 
     <!-- =====================MODULE JS====================== -->
     <script src="../../assets/js/Modules/catalog/mehsulCatalogu.js"></script>
