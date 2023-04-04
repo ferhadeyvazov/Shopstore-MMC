@@ -150,17 +150,20 @@
 
             <div class="nav--tools">
                 <ul>
-                    <li>
+                    <li class="nav--tools-link">
                         <i class="fa-solid fa-magnifying-glass" id="faSearch"></i>
                     </li>
-                    <li>
-                        <span>Müqayisə</span>
-                        <i class="fa-solid fa-scale-balanced"></i>
-
+                    <li class="nav--tools-link">
+                        <a href="#" target="_blank">
+                            <span>Müqayisə</span>
+                            <i class="fa-solid fa-scale-balanced"></i>
+                        </a>
                     </li>
-                    <li id="secilmisler">
-                        <span>Seçilmişlər</span>
-                        <i class="fa-regular fa-heart"></i>
+                    <li class="nav--tools-link" id="secilmisler">
+                        <a href="#" target="_blank">
+                            <span>Seçilmişlər</span>
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
                     </li>
                     <li class="nav--tools-link">
                         <a href="./basket.html">
@@ -204,7 +207,7 @@
         <div class="container__alt--menu">
             <ul class="d-flex justify-content-between align-items-center menu__list p-0 m-0">
                 <li class="menu__link">
-                    <a class="menuActive" href="/">
+                    <a href="/">
                         <i class="menu__link--icon fa-solid fa-house"></i>
                         <span class="menu__link--name">Əsas Səhifə</span>
                     </a>
@@ -216,7 +219,7 @@
                     </a>
                 </li>
                 <li class="menu__link">
-                    <a href="/Cart">
+                    <a class="menuActive" href="./basket.html">
                         <i class="menu__link--icon fa-solid fa-cart-shopping"></i>
                         <span class="menu__link--name">Səbət</span>
                     </a>
@@ -584,11 +587,11 @@
                         </div>
                         <div class="col-12">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioPresent"
-                                    id="flexRadioPresent">
-                                <label class="form-check-label fs-5" for="flexRadioPresent">
-                                    Hədiyyə qablaşdırması olsun <span class="text-danger fw-bold fs-5">+5<i
-                                            class="fa-solid fa-manat-sign" style="color: #dc3545;"></i></span>
+                                <label class="form-check-label fs-6" for="flexRadioPresent">
+                                    <input class="form-check-input" type="checkbox" name="flexRadioPresent"
+                                        id="flexRadioPresent">
+                                    Hədiyyə qablaşdırması olsun <span class="text-danger fw-bold fs-6 ms-2">+5<i
+                                            class="fa-solid fa-manat-sign fs-6" style="color: #dc3545;"></i></span>
                                 </label>
                             </div>
                         </div>
@@ -610,9 +613,12 @@
                     </div>
                     <div class="d-flex justify-content-between align-items-center">
                         <h4 class="fw-normal">Umico cashback:</h4>
-                        <h3 class="fs-5 fs-sm-4 fw-bold text-danger">0.50<i class="fa-solid fa-manat-sign" style="color: #dc3545;"></i></h3>
+                        <h3 class="fs-5 fs-sm-4 fw-bold text-danger">0.50<i class="fa-solid fa-manat-sign"
+                                style="color: #dc3545;"></i></h3>
                     </div>
-                    <button type="button" class="btn btn-danger text-uppercase col-12 py-3 mt-3 fw-bold fs-6 fs-sm-5 ">Sifarişinizi Təsdiq Edin</button>
+                    <button type="button"
+                        class="btn btn-danger text-uppercase col-12 py-3 mt-3 fw-bold fs-6 fs-sm-5 ">Sifarişinizi Təsdiq
+                        Edin</button>
                 </div>
 
 
