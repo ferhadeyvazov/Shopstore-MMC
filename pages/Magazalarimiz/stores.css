@@ -31,6 +31,10 @@
     align-items: end;
 }
 
+.stores__adress p{
+    margin-bottom: .3rem;
+}
+
 .stores__adress--list {
     align-self: flex-start;
 }
