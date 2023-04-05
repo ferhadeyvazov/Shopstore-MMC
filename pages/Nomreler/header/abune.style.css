@@ -1,0 +1,157 @@
+@import "../../../assets/css/global.css";
+
+/* ================ABUNEOL============== */
+.abune__section {
+    background-color: var(--main-bg-color);
+    padding: 1.5rem 0;
+}
+
+.footer__abune--title {
+    color: white;
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin-bottom: .5rem;
+}
+
+.footer__abune--description {
+    color: white;
+    font-size: .7rem;
+    max-width: 360px;
+    margin-inline: auto;
+}
+
+/* ========================= */
+.footer__inp--form {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    /* max-width: 300px; */
+    margin-inline: auto;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer__inp--input {
+    width: 60%;
+    max-width: 300px;
+    background-color: #f5f5f5;
+    color: #242424;
+    padding: .15rem .5rem;
+    min-height: 35px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    line-height: 1.15;
+    box-shadow: 0px 10px 20px -18px;
+}
+
+.footer__inp--btn {
+    font-weight: bold;
+    color: white;
+    background-color: #fe006f;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: .4s;
+}
+
+.footer__inp--btn:hover {
+    background-color: var(--hover-color);
+}
+
+.check_container {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-inline: auto;
+    margin-top: 16px;
+}
+
+.check_container--label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+}
+
+.check_container--checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 1.3em;
+    width: 1.3em;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+}
+
+.check_container--label input:checked~.check_container--checkmark {
+    background-color: #411a75;
+}
+
+.check_container--checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check_container--label input:checked~.check_container--checkmark:after {
+    display: block;
+}
+
+.check_container--label .check_container--checkmark:after {
+    left: 0.45em;
+    top: 0.25em;
+    width: 0.25em;
+    height: 0.5em;
+    border: solid white;
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotate(45deg);
+}
+
+.check_container--label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.check_container p {
+    color: white;
+    width: 100%;
+}
+
+
+.footer__app {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__app h2 {
+    color: white;
+    font-size: 1.4rem;
+    margin-bottom: .4rem;
+    font-weight: 400;
+}
+
+.footer__app div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+}
+
+.footer__app img {
+    width: 88px;
+    height: 30px;
+}

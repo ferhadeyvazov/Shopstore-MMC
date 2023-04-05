@@ -1,2 +1,7 @@
 @import "../../assets/css/global.css";
 
+
+ul{
+    padding: 0;
+    margin: 0;
+}
