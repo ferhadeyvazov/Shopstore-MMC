@@ -71,11 +71,15 @@
 
 .delivery__imgs{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 1.2rem;
     margin-bottom: 2rem;
 }
 
 .delivery__imgs--card{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.delivery__imgs--hero img{
+    height: 250px;
+    margin-bottom: .65rem;
 }
