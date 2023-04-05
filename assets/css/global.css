@@ -142,7 +142,7 @@ p {
     text-align: center;
 }
 
-.btn {
+.sebet-btn {
     cursor: pointer;
     padding: 5px 15px;
     background: var(--btn-bg-color);
