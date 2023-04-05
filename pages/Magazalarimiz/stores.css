@@ -25,7 +25,7 @@
     cursor: pointer;
 }
 
-
+.stores__service,
 .stores__aside {
     display: grid;
     align-items: end;
@@ -64,6 +64,7 @@
 }
 
 @media (min-width: 840px) {
+    .stores__service,
     .stores__aside {
         grid-template-columns: repeat(2, 1fr);
         align-items: end;
@@ -71,7 +72,9 @@
 }
 
 @media (min-width: 1000px) {
+    .stores__service,
     .stores__aside {
         grid-template-columns: 1fr 2fr;
+        align-items: end;
     }
 }
