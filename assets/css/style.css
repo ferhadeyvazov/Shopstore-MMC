@@ -445,7 +445,8 @@
     align-items: center;
     /* gap: 1.3rem; */
 }
-.nav--tools-link a{
+
+.nav--tools-link a {
     color: #fff;
 }
 
@@ -812,6 +813,7 @@
 .all__brends {
     display: grid;
     grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
 }
 

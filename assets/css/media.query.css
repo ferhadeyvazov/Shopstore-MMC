@@ -20,10 +20,6 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .all__brends {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
     .gunun__teklifi {
         flex-direction: row;
         justify-content: space-between;
@@ -295,10 +291,6 @@
     }
 
     .cards {
-        grid-template-columns: repeat(5, 1fr);
-    }
-
-    .all__brends {
         grid-template-columns: repeat(5, 1fr);
     }
 
