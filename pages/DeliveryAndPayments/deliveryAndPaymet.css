@@ -59,8 +59,14 @@
 }
 
 /* ======================================================== */
+.upperCase{
+    text-transform: uppercase;
+}
 .paddings{
     padding: 2rem 1.3rem;
+}
+.greenColor{
+    color: rgba(13, 195, 16, 255);
 }
 
 .delivery__imgs{
