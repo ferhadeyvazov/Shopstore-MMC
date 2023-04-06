@@ -1,50 +1,77 @@
 @import "../../assets/css/global.css";
 
-ul{
+ul {
     padding: 0;
     margin: 0;
 }
 
-.type__number--gold{
+.type__number--gold {
     color: #FFD700;
 }
-.type__number--simple{
-    color:  black;
+
+.type__number--simple {
+    color: black;
 }
 
-.nomreler{
+.nomreler {
     background-color: #ffffff;
 }
-.paddings{
+
+.paddings {
     padding: 1.5rem;
 }
 
-.btn-color{
+.btn-color {
     color: #8434ec;
     text-decoration: underline !important;
 }
-.buy__btns button{
-    padding: .5rem 0;
+
+.buy__btns button {
+    padding: 0;
+    margin-top: .5rem;
 }
-.buy__btns--price{
+
+.buy__btns--price {
     color: white;
     background-color: #8434ec;
     padding: .3rem;
 }
 
-.numbers__section{
+
+
+
+
+/* .numbers__section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     grid-gap: 1rem;
 }
-.numbers__aside{
+
+.numbers__aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.numbers__aside div{
+
+.numbers__aside div {
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
+} */
+
+/* @media screen and (min-width: 540px) {
+
+    .numbers__aside {
+        flex-direction: row;
+    }
+
+    .numbers__aside div {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        border: solid 1px;
+    }
 }
+
+@media screen and (min-width: 720px) {} */
