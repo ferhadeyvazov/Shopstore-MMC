@@ -126,7 +126,7 @@ p {
     margin-inline: auto;
 }
 
-.row {
+.rowFlex{
     display: flex;
     flex-direction: column;
     justify-content: space-between;

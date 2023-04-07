@@ -8,20 +8,20 @@
     {
         "number": "055 563 91 29",
         "operator": "Bakcell",
-        "type": "Qızıl",
-        "price": 3000
+        "type": "Gümüş",
+        "price": 1500
     },
     {
         "number": "070 909 91 29",
         "operator": "Azercell",
         "type": "Qızıl",
-        "price": 3000
+        "price": 2000
     },
     {
         "number": "051 877 34 12",
         "operator": "Azercell",
         "type": "Sadə",
-        "price": 3000
+        "price": 1000
     },
     {
         "number": "099 343 32 13",

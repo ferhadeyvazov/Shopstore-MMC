@@ -1,4 +1,4 @@
-@import "../../assets/css/global.css";
+/* @import "../../assets/css/global.css"; */
 
 ul {
     padding: 0;
@@ -37,41 +37,97 @@ ul {
     padding: .3rem;
 }
 
+.nomreler form{
+    background-color: rgba(238, 238, 238, 255);
+}
 
 
-
-
-/* .numbers__section {
+.nomreler__Validation {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    grid-gap: 1rem;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: .4rem;
 }
 
-.numbers__aside {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.nomreler__Select {
+    grid-column: 1/-1;
 }
 
-.numbers__aside div {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-} */
+.nomreler__Inp:nth-child(2) {
+    grid-column: 1/3;
+}
 
-/* @media screen and (min-width: 540px) {
+.nomreler__Inp:nth-child(3) {
+    grid-column: 4/6;
+}
 
-    .numbers__aside {
-        flex-direction: row;
+.nomreler__Inp:nth-child(4) {
+    grid-column: 7/-1;
+}
+
+.nomreler__Inp:nth-child(5) {
+    grid-column: 1/3;
+}
+
+.nomreler__Inp:nth-child(6) {
+    grid-column: 3/5;
+}
+
+.nomreler__Inp:nth-child(7) {
+    grid-column: 5/7;
+}
+
+.nomreler__Inp:nth-child(8) {
+    grid-column: 7/-1;
+}
+
+.nomreler__Inp input::-webkit-outer-spin-button,
+.nomreler__Inp input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+@media screen and (min-width: 576px) {
+    .numbers__section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        grid-gap: .5rem;
     }
 
-    .numbers__aside div {
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
-        border: solid 1px;
+    .nomreler__Validation {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+    }
+
+    .nomreler__Select {
+        grid-column: 1/3;
+    }
+
+    .nomreler__Inp:nth-child(2) {
+        grid-column: 3/4;
+    }
+
+    .nomreler__Inp:nth-child(3) {
+        grid-column: 4/5;
+    }
+
+    .nomreler__Inp:nth-child(4) {
+        grid-column: 5/6;
+    }
+
+    .nomreler__Inp:nth-child(5) {
+        grid-column: 6/7;
+    }
+
+    .nomreler__Inp:nth-child(6) {
+        grid-column: 7/8;
+    }
+
+    .nomreler__Inp:nth-child(7) {
+        grid-column: 8/9;
+    }
+
+    .nomreler__Inp:nth-child(8) {
+        grid-column: 9/-1;
     }
 }
-
-@media screen and (min-width: 720px) {} */
