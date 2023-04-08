@@ -463,7 +463,7 @@
 }
 
 .nav--tools ul li:hover,
-.nav--tools ul li:hover a {
+.nav--tools ul li:hover .nav__tools--link {
     color: var(--hover-color);
     cursor: pointer;
 }

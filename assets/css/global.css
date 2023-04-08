@@ -157,3 +157,7 @@ p {
     background: none;
     padding: 1.8rem 0;
 }
+
+.textUppercase {
+    text-transform: uppercase;
+}

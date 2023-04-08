@@ -39,7 +39,7 @@
 
 @media screen and (min-width: 526px) {
 
-    .row {
+    .rowFlex {
         flex-direction: row;
         align-items: center;
     }
