@@ -11,58 +11,65 @@ allInputs.forEach(item => {
         }
     });
 });
+
 // ==================FETCH========================
-let numberSection = document.querySelector(".numbers__section");
-let formControl = document.querySelectorAll(".form__control");
-
-
-window.onload = getNumber();
-
-async function getNumber() {
-    let response = await fetch("../../data/number.json");
-    let data = await response.json();
-
-    setNumber(data);
+// ===>>Inputlari bosalt
+let emtyString = "";
+let arr = [];
+function resetString() {
+    emtyString = '';
+    arr = [];	
 }
-function setNumber(data) {
-    console.log(data);
-    data.forEach(item => {
-        console.log(item);
-        numberSection.innerHTML += `
-                        <aside class=" numbers__aside p-2  
-                            border border-3 rounded-2 
-                            d-flex flex-column justify-content-between 
-                            flex-sm-row">
-                            <div class="d-flex justify-content-between
-                                flex-sm-column            
-                                fs-6 fs-md-4">
-                                <p>${item.number}</p>
-                                <p class="type__number--gold">${item.type}</p>
-                            </div>
-                            <div class="
-                                d-flex justify-content-between
-                                align-items-center
-                                flex-sm-column
-                                buy__btns text-end">
-                                <span class="buy__btns--price 
-                                    text-center 
-                                    rounded">
-                                    ${item.price}
-                                    <i class="fa-solid fa-manat-sign fa-xs" style="color: #ffffff;"></i>
-                                </span>
-                                <button class="btn btn-link btn-color fw-bold fs-md-6 fs-6 text-end">Sifaris et</button>
-                            </div>
-                        </aside>
 
-        `;
+const form = document.querySelector(".nomreler form");
+const inputs = form.querySelectorAll(".form-control");
+const num1 = document.getElementsByName("n1");
+const num2 = document.getElementsByName("n2");
+const num3 = document.getElementsByName("n3");
+const num4 = document.getElementsByName("n4");
+const num5 = document.getElementsByName("n5");
+const num6 = document.getElementsByName("n6");
+const num7 = document.getElementsByName("n7");
+
+function getNumData(e) {
+    console.log(e.target.value);
+
+    
+}
+
+
+
+
+
+
+
+
+// FOCUS NEXT INPUTS=============================
+form.addEventListener("input", handleInput);
+function handleInput(e, i){
+    const input = e.target;
+    let nextInput = input.parentElement.nextElementSibling;
+    nextInput=nextInput.firstElementChild;
+
+    if (nextInput&&input.value){
+        nextInput.focus();
+    }
+
+    emtyString += input.value;
+
+}
+
+// PASTE INPUTS AND VALUES
+inputs[0].addEventListener("paste", handlePaste);
+function handlePaste(e){
+    const paste = e.clipboardData.getData("text");
+    console.log(paste);
+
+    inputs.forEach((input,i)=>{
+        input.value = paste[i] || '';
     })
 }
 
-let emty = "";
-function filterNumber() {
-    formControl.forEach(item=>{
-        item.addEventListener('change',()=>{
+// 123
+// 4532191
 
-        })
-    })
-}
