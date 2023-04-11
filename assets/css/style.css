@@ -603,7 +603,7 @@
 
 .item__info--title {
     font-size: 18px;
-    margin-bottom: .9rem;
+    margin-bottom: 1rem;
 }
 
 .item__info--description h3 {
@@ -1145,8 +1145,6 @@
 
 /* =========================SATIS LIDERLERI=============== */
 .satLider__Carousel {
-    /* display: flex;
-    justify-content: space-between; */
     overflow: hidden;
 }
 
@@ -1183,8 +1181,9 @@
 }
 
 .satLider__img {
-    width: 240px;
-    height: 250px;
+    /* width: 240px;
+    height: 250px;  HER AN ACİLA BİLER ASPECT-RATİO SİLİNE BİLER */
+    aspect-ratio: 4/4;
     align-self: center;
     margin-bottom: 1rem;
     margin-inline: auto;
@@ -1222,6 +1221,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: auto;
 }
 
 .heart i {
@@ -1301,6 +1301,7 @@
 
 .product__item--img {
     margin-bottom: 1rem;
+    aspect-ratio: unset !important;
 }
 
 .game__products--item:last-child {
@@ -1338,6 +1339,13 @@
     margin-bottom: 1.5rem;
     display: flex;
     gap: 8px;
+}
+.product__item--favor button{
+    margin-left: 0;
+}
+
+.product__item--favor button:nth-child(1){
+    margin-left: auto;
 }
 
 /* .product__item--favor button {
