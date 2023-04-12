@@ -361,9 +361,9 @@
                                         <div class="input-group has-validation">
                                             <span class="input-group-text" id="inputGroupPrepend">@</span>
                                             <input type="email" class="form-control" id="validationCustomUsername"
-                                                aria-describedby="inputGroupPrepend" placeholder="Email" required>
+                                                aria-describedby="inputGroupPrepend" placeholder="Email">
                                             <div class="invalid-feedback">
-                                                Emailinizi qeyd edin.
+                                                Emailinizi doğru qeyd edin.
                                             </div>
                                         </div>
                                     </div>
@@ -376,7 +376,7 @@
                                             Nömrənizi düzgün daxil edin.
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <!-- <div class="col-md-6">
                                         <label for="validationCustom03" class="form-label">Mobil nömrə</label>
                                         <input type="tel" class="form-control" id="validationCustom03"
                                             placeholder="+994551234567" value="+994"
@@ -384,7 +384,7 @@
                                         <div class="invalid-feedback">
                                             Nömrənizi düzgün daxil edin.
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="col-12">
                                         <p>Daimi Müştərisinizsə, <a href="#"
                                                 class="text-primary text-decoration-none">Qeydiyyatdan
@@ -458,39 +458,40 @@
                         </div>
                         <section class="name__form row g-3 needs-validation" novalidate>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <input class="form-check-input odenis__novu" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
                                 <label class="form-check-label" for="flexRadioDefault1">
                                     Nəğd ödəniş
                                 </label>
                             </div>
                             <div class="form-check mt-0">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                <input class="form-check-input odenis__novu" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                                 <label class="form-check-label" for="flexRadioDefault2">
                                     Kombinləşmiş
                                 </label>
                             </div>
                             <div class="form-check mt-0">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                                <input class="form-check-input odenis__novu" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
                                 <label class="form-check-label" for="flexRadioDefault3">
                                     Bank köçürməsi ilə ödəniş
                                 </label>
                             </div>
                             <div class="form-check mt-0">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                                <input class="form-check-input odenis__novu" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
                                 <label class="form-check-label" for="flexRadioDefault4">
                                     Bank kartı onlayn ödəniş
                                 </label>
                             </div>
                             <div class="form-check mt-0">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5"
-                                    checked>
+                                <input class="form-check-input odenis__novu flexRadioDefault5" type="radio" name="flexRadioDefault" 
+                                    id="flexRadioDefault5"
+                                    >
                                 <label class="form-check-label" for="flexRadioDefault5">
                                     Taksit kartı ilə onlayn ödəniş
                                 </label>
                             </div>
                             <div class="col-md-3">
                                 <label for="validationCustom04" class="form-label">Taksit</label>
-                                <select class="form-select" id="validationCustom04" required>
+                                <select class="form-select taksitSelect" id="validationCustom04" disabled>
                                     <option selected disabled value="">Taksit müddəti</option>
                                     <option>3 ay</option>
                                     <option>6 ay</option>
@@ -501,7 +502,7 @@
                                     Taksit müddətini daxil edin.
                                 </div>
                             </div>
-                            <table class="table">
+                            <table class="table d-none bankTable">
                                 <thead>
                                     <th scope="col">Bank</th>
                                     <th scope="col">Aylıq ödəniş</th>
@@ -529,7 +530,7 @@
                                             <label for="tamkart" class="d-flex align-items-center">
                                                 <input id="tamkart" class="form-check-input me-3" type="radio"
                                                     name="radioNoLabel" id="radioNoLabel1" value="" aria-label="...">
-                                                <h6 class="d-sm-none">BirKart</h6>
+                                                <h6 class="d-sm-none">TamKart</h6>
                                                 <img loading="lazy" class="img-fluid w-50 d-none d-sm-block"
                                                     src="../../assets/img/Basket/tamkart.avif" alt="">
                                             </label>
@@ -544,7 +545,7 @@
                                             <label for="bolkart" class="d-flex align-items-center">
                                                 <input id="bolkart" class="form-check-input me-3" type="radio"
                                                     name="radioNoLabel" id="radioNoLabel1" value="" aria-label="...">
-                                                <h6 class="d-sm-none">PulPal</h6>
+                                                <h6 class="d-sm-none">BolKart</h6>
                                                 <img loading="lazy" class="img-fluid w-50 d-none d-sm-block"
                                                     src="../../assets/img/Basket/BolKart.avif" alt="BolKart">
                                             </label>
@@ -556,10 +557,10 @@
                                     </tr>
                                     <tr>
                                         <th class="w-50" scope="row">
-                                            <label for="bolkart" class="d-flex align-items-center">
-                                                <input id="bolkart" class="form-check-input me-3" type="radio"
+                                            <label for="pulpal" class="d-flex align-items-center">
+                                                <input id="pulpal" class="form-check-input me-3" type="radio"
                                                     name="radioNoLabel" id="radioNoLabel1" value="" aria-label="...">
-                                                <h6 class="d-sm-none">BirKart</h6>
+                                                <h6 class="d-sm-none">PulPal</h6>
                                                 <img loading="lazy" class="border border-2 img-fluid w-50 d-none d-sm-block"
                                                     src="../../assets/img/Basket/PulPalCard.avif" alt="PulPal">
                                             </label>
@@ -644,6 +645,7 @@
 
 
             </div>
+
         </div>
     </section>
 

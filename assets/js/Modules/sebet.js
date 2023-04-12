@@ -3,7 +3,6 @@ let sebetProductsSayi = document.querySelectorAll(".marginContainer");
 
 // ===========Product Sayi ============================
 let sebetProductsButton = document.querySelector(".sebet__products--sayi");
-console.log(sebetProductsButton);
 sebetProductsButton.innerText = sebetProductsSayi.length;
 
 // ===========ADD PRODUCT TO BASKET ============================
@@ -40,14 +39,13 @@ function sendToLocalStr(object) {
     for (let i = 0; i < arr.length; i++) {
         if (object.name == arr[i].name) {
             beraber = true;
-            console.log("beraberdir");
             arr[i].value++;
-            plusProduct(arr[i]);
+            plusProduct(i);
+            minusProduct(i);
             break;
         }
         else {
             beraber = false;
-            console.log("==deyil");
         }
     }
 
@@ -73,7 +71,6 @@ if (getElfromLocalStorage) {
 function updateDOM(elements) {
     const cartBox = document.querySelector(".sebet__products");
     // const sebetElemets = document.querySelector(".sebet__products--elements");
-    console.log(cartBox);
     let listItems = "";
     let id = 0;
 
@@ -102,7 +99,7 @@ function updateDOM(elements) {
                             </div>
                             <div class="basket__product--count">
                                 <div class="product__number">
-                                    <i class="cix fa-solid fa-minus"></i>
+                                    <i onclick="minusProduct(${id})" class="cix fa-solid fa-minus"></i>
                                     <span class="mehsul__sayi">${obj.value}</span>
                                     <i onclick="plusProduct(${id})" class="plus fa-solid fa-plus"></i>
                                 </div>
@@ -119,10 +116,24 @@ function updateDOM(elements) {
     })
 
     cartBox.innerHTML = listItems;
-    // sebetElemets.innerHTML = listItems;
+
 
     total();
 }
+function plusProduct(id) {
+    arr[id].value += 1;
+    
+    sendLS(arr);
+}
+function minusProduct(id) {
+    arr[id].value -= 1;
+    
+    if(arr[id].value<1){
+        arr[id].value = 1;
+    }
+    sendLS(arr);
+}
+
 
 //  Remove Items From Cart
 function delItemFromCart(id) {
@@ -139,10 +150,6 @@ function total() {
     `
 }
 
-function plusProduct(array) {
-    // value++;
-    console.log(array);
-}
 
 
 
@@ -154,13 +161,39 @@ function plusProduct(array) {
 const open4Sectionİnp = document.querySelector(".open4Section");
 const section4th = document.getElementById("section4TH");
 
-open4Sectionİnp.addEventListener("change",()=>{
+open4Sectionİnp.addEventListener("change", () => {
     if (open4Sectionİnp.checked) {
         console.log("4 acildi");
         section4th.style.display = "block";
     }
-    else{
+    else {
         section4th.style.display = "none";
         console.log("4 baglandi");
     }
 });
+
+// =========================TAKSIT KARTI ILE ODENIS======================================================
+
+const taksitInps = document.querySelectorAll(".odenis__novu");
+const taksitSelect = document.querySelector(".taksitSelect");
+console.log(taksitSelect);
+
+taksitInps.forEach(inp=>{
+    inp.addEventListener("change",(e)=>{
+        if (e.target.classList.contains("flexRadioDefault5")){
+            console.log("checked");
+            taksitSelect.setAttribute("required", true);
+            taksitSelect.disabled = false;
+            document.querySelector(".bankTable").classList.remove("d-none");
+        }
+        else{
+            console.log("uncheck");
+            taksitSelect.removeAttribute("required");
+            taksitSelect.disabled = true;
+            document.querySelector(".bankTable").classList.add("d-none");
+        }
+            
+    })
+
+});
+
