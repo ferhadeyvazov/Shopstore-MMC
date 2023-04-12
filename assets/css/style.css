@@ -468,6 +468,10 @@
     cursor: pointer;
 }
 
+#sebetMehsul>i::after{
+    content: "";
+}
+
 .nav--tools ul li:nth-child(3) {
     border: none;
 }
