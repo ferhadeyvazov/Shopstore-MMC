@@ -120,7 +120,7 @@ function updateDOM(elements) {
 
     cartBox.innerHTML = listItems;
     // sebetElemets.innerHTML = listItems;
-    
+
     total();
 }
 
@@ -147,3 +147,20 @@ function plusProduct(array) {
 
 
 
+
+
+
+// ===============OPEN 4TH SECTİON================================================================
+const open4Sectionİnp = document.querySelector(".open4Section");
+const section4th = document.getElementById("section4TH");
+
+open4Sectionİnp.addEventListener("change",()=>{
+    if (open4Sectionİnp.checked) {
+        console.log("4 acildi");
+        section4th.style.display = "block";
+    }
+    else{
+        section4th.style.display = "none";
+        console.log("4 baglandi");
+    }
+});

@@ -380,7 +380,7 @@
                                         <label for="validationCustom03" class="form-label">Mobil nömrə</label>
                                         <input type="tel" class="form-control" id="validationCustom03"
                                             placeholder="+994551234567" value="+994"
-                                            pattern="[+,0-9]{4}[55,99,70,77,51,50,10,60]{2}[0-9]{7}" required>
+                                            pattern="[+,0-9]{4}[55,99,70,77,51,50,10,60]{2}[0-9]{7}">
                                         <div class="invalid-feedback">
                                             Nömrənizi düzgün daxil edin.
                                         </div>
@@ -419,7 +419,7 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <div class="form-check d-flex justify-content-between">
+                                        <div class="form-check d-flex justify-content-between mb-3">
                                             <label
                                                 class="form-check-label d-flex justify-content-between align-items-center"
                                                 for="invalidCheck">
@@ -428,6 +428,14 @@
                                                         class="fs-6 fw-normal text-danger">(2saat ərzində)</span></p>
                                             </label>
                                             <p class="manat-number">+10 <i class="fa-solid fa-manat-sign fa-xs"></i></p>
+                                        </div>
+                                        <div class="form-check d-flex justify-content-between">
+                                            <label
+                                                class="form-check-label d-flex justify-content-between align-items-center"
+                                                for="invalidCheck02">
+                                                <input class="open4Section form-check-input me-3" type="checkbox" id="invalidCheck02">
+                                                <p class="lh-sm">Sifarişimi Başqası Götürəcək</p>
+                                            </label>
                                         </div>
                                     </div>
                                     <div class="col-12">
@@ -570,7 +578,7 @@
                             </div>
                         </section>
                     </div>
-                    <div class="paddingContainer mb-4">
+                    <div class="paddingContainer mb-4" id="section4TH">
                         <div class="form__header">
                             <button class="numberOfContainer">4</button>
                             <h3 class="fs-5 fw-bold text-uppercase">Sifarişi Alacaq Şəxs</h3>

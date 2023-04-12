@@ -36,6 +36,10 @@ ul{
     background-color: #ffffff;
 }
 
+#section4TH{
+    display: none;
+}
+
 .marginBottom-1 {
     margin-bottom: 1rem;
 }
