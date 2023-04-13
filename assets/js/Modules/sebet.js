@@ -146,8 +146,8 @@ function delItemFromCart(id) {
 function total() {
     let totalPrice = arr.reduce((acc, user) => (acc + (user.price * user.value)), 0);
     totalPrice = totalPrice.toFixed(2);
-    let totalPrices = document.querySelector(".sebet__total--price");
-    totalPrices.innerHTML += `
+    let totalPrices = document.querySelector(".sebet__total--cem");
+    totalPrices.innerHTML = `
     <h3 class="sebet__total--cem">${totalPrice}<i class="fa-solid fa-manat-sign" style="color: #000000;"></i></h3>
     `
 
