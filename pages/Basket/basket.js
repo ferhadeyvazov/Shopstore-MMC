@@ -20,3 +20,14 @@
 })()
 
 // ==================REGION APIES =============================
+
+
+// ==================TAKSIT KARTLA ODENIS =============================
+const taksitAyi = document.querySelector(".taksitAyi");
+taksitAyi.addEventListener("change", calculateTaksit);
+function calculateTaksit() {
+    console.log(taksitAyi.value);
+    let sebetPayment = document.querySelector(".sebet__total--cem");
+    sebetPayment = parseFloat(sebetPayment.textContent); 
+    console.log(sebetPayment);
+}

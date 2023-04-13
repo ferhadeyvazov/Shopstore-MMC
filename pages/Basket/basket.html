@@ -275,8 +275,8 @@
                             <div class="paddingContainer">
                                 <h4 class="headerContainer marginBottom-1">Sifariş haqqında məlumat</h4>
                                 <p class="hero__alt fs-6"></p>
-                                <span class="sebet__products--sayi"></span> məhsul
-                                <span class="sebet__total--price d-flex justify-content-between align-items-end"></span>
+                                <p><span class="sebet__products--sayi"></span> məhsul</p>
+                                <h3 class="sebet__total--price d-flex justify-content-between align-items-end">Cəmi: </h3>
                             </div>
                             <div class="sebet__products">
                                 <!-- <div class="shadow-sm grid-3 bg-white my-3 py-4 px-3">
@@ -491,12 +491,12 @@
                             </div>
                             <div class="col-md-3">
                                 <label for="validationCustom04" class="form-label">Taksit</label>
-                                <select class="form-select taksitSelect" id="validationCustom04" disabled>
+                                <select class="taksitAyi form-select taksitSelect" id="validationCustom04" disabled>
                                     <option selected disabled value="">Taksit müddəti</option>
-                                    <option>3 ay</option>
-                                    <option>6 ay</option>
-                                    <option>12 ay</option>
-                                    <option>18 ay</option>
+                                    <option value="3">3 ay</option>
+                                    <option value="6">6 ay</option>
+                                    <option value="12">12 ay</option>
+                                    <option value="18">18 ay</option>
                                 </select>
                                 <div class="invalid-feedback">
                                     Taksit müddətini daxil edin.
@@ -629,11 +629,11 @@
                     <div class="shadow-sm paddingContainer col-12 col-sm-6 col-md-5 col-lg-4">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <h3 class="fw-bold fs-3">Yekun:</h3>
-                            <h2 class="fw-bold fs-2 fs-sm-1">19<i class="fa-solid fa-manat-sign"></i></h2>
+                            <h2 class="final__Price fw-bold fs-2 fs-sm-1">0.00<i class="fa-solid fa-manat-sign"></i></h2>
                         </div>
                         <div class="d-flex justify-content-between align-items-center">
                             <h4 class="fw-normal">Umico cashback:</h4>
-                            <h3 class="fs-5 fs-sm-4 fw-bold text-danger">0.50<i class="fa-solid fa-manat-sign"
+                            <h3 class="fs-5 fs-sm-4 fw-bold text-danger">0.00<i class="fa-solid fa-manat-sign"
                                     style="color: #dc3545;"></i></h3>
                         </div>
                         <button type="submit"

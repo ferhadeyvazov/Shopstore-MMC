@@ -140,14 +140,22 @@ function delItemFromCart(id) {
     arr.splice(id, 1);
     sendLS(arr);
 }
+
+// =====================TOTAL PRICES =====================
+
 function total() {
     let totalPrice = arr.reduce((acc, user) => (acc + (user.price * user.value)), 0);
     totalPrice = totalPrice.toFixed(2);
     let totalPrices = document.querySelector(".sebet__total--price");
-    totalPrices.innerHTML = `
-            <h3>Cəmi:</h3>
-            <h3 class="sebet__total--cem">${totalPrice}<i class="fa-solid fa-manat-sign" style="color: #000000;"></i></h3>
+    totalPrices.innerHTML += `
+    <h3 class="sebet__total--cem">${totalPrice}<i class="fa-solid fa-manat-sign" style="color: #000000;"></i></h3>
     `
+
+    let finalPrice = document.querySelector('.final__Price');
+    finalPrice.innerHTML = `
+    ${totalPrice}<i class="fa-solid fa-manat-sign"></i>
+    `;
+
 }
 
 
@@ -194,6 +202,7 @@ taksitInps.forEach(inp=>{
         }
             
     })
-
 });
+
+
 
