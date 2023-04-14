@@ -6,7 +6,7 @@
     display: block;
 }
 
-ul{
+ul {
     padding: 0;
     margin: 0;
 }
@@ -14,6 +14,7 @@ ul{
 .btn {
     background-color: #fe0000;
 }
+
 .row {
     display: flex;
     align-items: center;
@@ -36,7 +37,7 @@ ul{
     background-color: #ffffff;
 }
 
-#section4TH{
+#section4TH {
     display: none;
 }
 
@@ -79,7 +80,7 @@ ul{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: .5rem;
 }
 
@@ -112,6 +113,19 @@ ul{
     width: 17px;
 }
 
+.sebet__products {
+    max-height: 528px;
+    overflow-y: scroll;
+}
+
+.sebet__products::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sebet__products::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: #a1a1a1;
+}
 
 .basket__product--count {
     display: flex;
@@ -131,7 +145,7 @@ ul{
 
 .basket__product--info {
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
 }
 
 .basket__img {
@@ -142,6 +156,10 @@ ul{
 
 .basket__img img {
     max-width: 100px;
+}
+
+.sebet__product--delete{
+    font-size: 2rem;
 }
 
 @media screen and (min-width: 368px) {

@@ -20,6 +20,28 @@
 })()
 
 // ==================REGION APIES =============================
+let regionSelect = document.getElementById("regions");
+console.log(regionSelect);
+let getRegions = async () => {
+    let resp = await fetch("../../data/az.json");
+    let data = await resp.json();
+    regionUI(data);
+}
+function regionUI(data) {
+    data.forEach(item=>{
+        let option = document.createElement("option");
+        option.value = item.city;
+        option.textContent = item.city;
+        regionSelect.appendChild(option);
+    });
+
+
+}
+getRegions();
+
+
+
+
 
 
 // ==================TAKSIT KARTLA ODENIS =============================
@@ -54,7 +76,7 @@ function finalPriceCalculate(getfromLS) {
     `
 
 }
-getElfromLs();
+getElfromLs(); //Bu Funksiya gedecek productUI() <-icerisine
 
 // ===============OPEN 4TH SECTİON================================================================
 const open4Sectionİnp = document.querySelector(".open4Section");
@@ -75,7 +97,6 @@ open4Sectionİnp.addEventListener("change", () => {
 // =========================TAKSIT KARTI ILE ODENIS======================================================
 const taksitInps = document.querySelectorAll(".odenis__novu");
 const taksitSelect = document.querySelector(".taksitSelect");
-console.log(taksitSelect);
 
 taksitInps.forEach(inp => {
     inp.addEventListener("change", (e) => {
@@ -95,5 +116,6 @@ taksitInps.forEach(inp => {
     })
 });
 
+// ============================PRODUCTS WIEW=========================
 
 
