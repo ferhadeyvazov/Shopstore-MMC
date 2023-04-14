@@ -40,10 +40,6 @@ function regionUI(data) {
 getRegions();
 
 
-
-
-
-
 // ==================TAKSIT KARTLA ODENIS =============================
 const taksitAyi = document.querySelector(".taksitAyi");
 taksitAyi.addEventListener("change", calculateTaksit);
@@ -94,11 +90,13 @@ function delItemFromCart(id) {
 
 // ==================FINAL PRICES=============================
 function finalPriceCalculate(getfromLS) {
+    let expressDelivery = document.querySelector(".expressDelivery");
     let totalPrices = document.querySelector(".sebet__total--price");
     let finalPrice = document.querySelector(".final__Price");
     let totalPrice = getfromLS.reduce((acc, user) => (acc + (user.price * user.value)), 0);
     totalPrice = totalPrice.toFixed(2);
 
+    
     finalPrice.innerHTML = `
     ${totalPrice}<i class="fa-solid fa-manat-sign"></i>
     `;
