@@ -33,17 +33,28 @@ function calculateTaksit() {
 }
 
 // ==================FINAL PRICES=============================
-let finalPrice = document.querySelector('.final__Price');
-let getfromLS = JSON.parse(localStorage.getItem("myCartItems"));
+function getElfromLs() {
+    let getfromLS = JSON.parse(localStorage.getItem("myCartItems"));
+    finalPriceCalculate(getfromLS);
+}
 
-function finalPriceCalculate() {
+function finalPriceCalculate(getfromLS) {
+    let totalPrices = document.querySelector(".sebet__total--price");
+    let finalPrice = document.querySelector('.final__Price');
     let totalPrice = getfromLS.reduce((acc, user) => (acc + (user.price * user.value)), 0);
+    totalPrice = totalPrice.toFixed(2);
+
     finalPrice.innerHTML = `
     ${totalPrice}<i class="fa-solid fa-manat-sign"></i>
     `;
 
-}
+    totalPrices.innerHTML = `
+    Cəmi:
+    <h3 class="sebet__total--cem">${totalPrice}<i class="fa-solid fa-manat-sign" style="color: #000000;"></i></h3>
+    `
 
+}
+getElfromLs();
 
 // ===============OPEN 4TH SECTİON================================================================
 const open4Sectionİnp = document.querySelector(".open4Section");
