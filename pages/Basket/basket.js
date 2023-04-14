@@ -52,11 +52,11 @@ function calculateTaksit() {
 
 
 // ==================GET ELEMENT FROM LOCALSTORAGE=============================
-    let array = [];
-    let getfromLS = JSON.parse(localStorage.getItem("myCartItems"));
-    if(getfromLS){
-        productUI(getfromLS);
-    }
+let array = [];
+let getfromLS = JSON.parse(localStorage.getItem("myCartItems"));
+if (getfromLS) {
+    productUI(getfromLS);
+}
 
 function sendLS(array) {
     localStorage.setItem('myCartItems', JSON.stringify(array));
@@ -91,12 +91,71 @@ function delItemFromCart(id) {
 // ==================FINAL PRICES=============================
 function finalPriceCalculate(getfromLS) {
     let expressDelivery = document.querySelector(".expressDelivery");
+    let giftInp = document.querySelector(".giftPresent");
     let totalPrices = document.querySelector(".sebet__total--price");
     let finalPrice = document.querySelector(".final__Price");
     let totalPrice = getfromLS.reduce((acc, user) => (acc + (user.price * user.value)), 0);
-    totalPrice = totalPrice.toFixed(2);
+    totalPrice = Number(totalPrice.toFixed(2));
 
-    
+    expressDelivery.addEventListener("change", () => {
+        if (expressDelivery.checked) {
+            totalPrice += 10;
+            console.log(totalPrice);
+            finalPrice.innerHTML = `
+                ${totalPrice}<i class="fa-solid fa-manat-sign"></i>
+              `;
+
+            totalPrices.innerHTML = `
+                Cəmi:
+                <h3 class="sebet__total--cem">${totalPrice}<i class="fa-solid fa-manat-sign" style="color: #000000;"></i></h3>
+            `
+
+        }
+        else {
+            totalPrice -= 10;
+            console.log(totalPrice);
+            finalPrice.innerHTML = `
+                ${totalPrice}<i class="fa-solid fa-manat-sign"></i>
+              `;
+
+            totalPrices.innerHTML = `
+                Cəmi:
+                <h3 class="sebet__total--cem">${totalPrice}<i class="fa-solid fa-manat-sign" style="color: #000000;"></i></h3>
+            `
+
+        }
+    });
+
+    giftInp.addEventListener("change", () => {
+        if (giftInp.checked) {
+            totalPrice += 5;
+            console.log(totalPrice);
+            finalPrice.innerHTML = `
+                ${totalPrice}<i class="fa-solid fa-manat-sign"></i>
+              `;
+
+            totalPrices.innerHTML = `
+                Cəmi:
+                <h3 class="sebet__total--cem">${totalPrice}<i class="fa-solid fa-manat-sign" style="color: #000000;"></i></h3>
+            `
+
+        }
+        else {
+            totalPrice -= 5;
+            console.log(totalPrice);
+            finalPrice.innerHTML = `
+                ${totalPrice}<i class="fa-solid fa-manat-sign"></i>
+              `;
+
+            totalPrices.innerHTML = `
+                Cəmi:
+                <h3 class="sebet__total--cem">${totalPrice}<i class="fa-solid fa-manat-sign" style="color: #000000;"></i></h3>
+            `
+
+        }
+
+    })
+
     finalPrice.innerHTML = `
     ${totalPrice}<i class="fa-solid fa-manat-sign"></i>
     `;
@@ -148,7 +207,7 @@ taksitInps.forEach(inp => {
 
 // ============================PRODUCTS WIEW=========================
 function productUI(data) {
-    let basketProducts = document.querySelector(".sebet__products"); 
+    let basketProducts = document.querySelector(".sebet__products");
     allElements = "";
     id = 0;
 
