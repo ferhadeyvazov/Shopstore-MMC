@@ -48,9 +48,10 @@ function sendToLocalStr(object) {
             beraber = false;
         }
     }
+    console.log(arr);
 
     beraber == false ? arr.push(object) : beraber;
-
+    console.log(arr);
     sendLS(arr);
 
 }
@@ -151,10 +152,10 @@ function total() {
     <h3 class="sebet__total--cem">${totalPrice}<i class="fa-solid fa-manat-sign" style="color: #000000;"></i></h3>
     `
 
-    let finalPrice = document.querySelector('.final__Price');
-    finalPrice.innerHTML = `
-    ${totalPrice}<i class="fa-solid fa-manat-sign"></i>
-    `;
+    // let finalPrice = document.querySelector('.final__Price');
+    // finalPrice.innerHTML = `
+    // ${totalPrice}<i class="fa-solid fa-manat-sign"></i>
+    // `;
 
 }
 
@@ -162,47 +163,6 @@ function total() {
 
 
 
-
-
-
-// ===============OPEN 4TH SECTİON================================================================
-const open4Sectionİnp = document.querySelector(".open4Section");
-const section4th = document.getElementById("section4TH");
-
-open4Sectionİnp.addEventListener("change", () => {
-    if (open4Sectionİnp.checked) {
-        console.log("4 acildi");
-        section4th.style.display = "block";
-    }
-    else {
-        section4th.style.display = "none";
-        console.log("4 baglandi");
-    }
-});
-
-// =========================TAKSIT KARTI ILE ODENIS======================================================
-
-const taksitInps = document.querySelectorAll(".odenis__novu");
-const taksitSelect = document.querySelector(".taksitSelect");
-console.log(taksitSelect);
-
-taksitInps.forEach(inp=>{
-    inp.addEventListener("change",(e)=>{
-        if (e.target.classList.contains("flexRadioDefault5")){
-            console.log("checked");
-            taksitSelect.setAttribute("required", true);
-            taksitSelect.disabled = false;
-            document.querySelector(".bankTable").classList.remove("d-none");
-        }
-        else{
-            console.log("uncheck");
-            taksitSelect.removeAttribute("required");
-            taksitSelect.disabled = true;
-            document.querySelector(".bankTable").classList.add("d-none");
-        }
-            
-    })
-});
 
 
 
