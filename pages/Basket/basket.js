@@ -83,39 +83,118 @@ let bolKart = document.querySelector(".bolk-tk");
 let pulPay = document.querySelector(".pulpal-tk");
 
 let birMebleg = document.querySelector(".birkart__mebleg");
+let tamMebleg = document.querySelector(".tamkart__mebleg");
+let bolMebleg = document.querySelector(".bolkart__mebleg");
 
-const taksitAyi = document.querySelector(".taksitAyi");
-taksitAyi.addEventListener("change", calculateTaksit);
+let birAyliq = document.querySelector(".birkart__ayliq");
+let tamAyliq = document.querySelector(".tamkart__ayliq");
+let bolAyliq = document.querySelector(".bolkart__ayliq");
 
 function calculateTaksit(totalPrice) {
     const taksitAyi = document.querySelector(".taksitAyi");
-    let sebetPayment = document.querySelector(".sebet__total--cem");
-    sebetPayment = parseFloat(sebetPayment.textContent);
-    console.log(totalPrice);
-    
-    switch (taksitAyi.value) {
-        case "3":
-            birKart.textContent = "2.5%"
-            birMebleg.textContent = ((totalPrice*2.5) / 100)+totalPrice;
-            tamKart.textContent = "2.5%"
-            bolKart.textContent = "3%"
-            break;
-        case "6":
-            birKart.textContent = "5%"
-            tamKart.textContent = "4%"
-            bolKart.textContent = "6%"
-            break;
-        case "12":
-            birKart.textContent = "8%"
-            tamKart.textContent = "7%"
-            bolKart.textContent = "12%"
-            break;
-        case "18":
-            birKart.textContent = "10%"
-            tamKart.textContent = "10%"
-            bolKart.textContent = "16%"
-            break;
-    }
+    taksitAyi.addEventListener("change", () => {
+        let sebetPayment = document.querySelector(".sebet__total--cem");
+        sebetPayment = parseFloat(sebetPayment.textContent);
+        console.log(totalPrice);
+
+        let birPrice, tamPrice, bolPrice;
+        
+        switch (taksitAyi.value) {
+            case "3":
+                birKart.textContent = "2.5%"
+                birPrice = Number(((totalPrice * 2.5) / 100) + totalPrice).toFixed(2)
+                birMebleg.innerHTML = `${birPrice}<i
+                                                class="fa-solid fa-manat-sign fa-sm"></i>`
+                birAyliq.innerHTML = `${(birPrice / 3).toFixed(2)}<i
+                                                class="fa-solid fa-manat-sign fa-sm"></i>`
+
+                tamKart.textContent = "2.5%"
+                tamPrice = Number(((totalPrice * 2.5) / 100) + totalPrice).toFixed(2)
+                tamMebleg.innerHTML = `${tamPrice}<i
+                                                class="fa-solid fa-manat-sign fa-sm"></i>`
+                tamAyliq.innerHTML = `${(tamPrice / 3).toFixed(2)}<i
+                                                class="fa-solid fa-manat-sign fa-sm"></i>`
+
+                bolKart.textContent = "3%"
+                bolPrice = Number(((totalPrice * 3) / 100) + totalPrice).toFixed(2)
+                bolMebleg.innerHTML = `${bolPrice}<i
+                                                class="fa-solid fa-manat-sign fa-sm"></i>`
+                bolAyliq.innerHTML = `${(bolPrice / 3).toFixed(2)}<i
+                                                class="fa-solid fa-manat-sign fa-sm"></i>`
+
+                break;
+            case "6":
+                birKart.textContent = "5%"
+                birPrice = Number(((totalPrice * 5) / 100) + totalPrice).toFixed(2)
+                birMebleg.innerHTML = `${birPrice}<i
+                                                class="fa-solid fa-manat-sign fa-sm"></i>`
+                birAyliq.innerHTML = `${(birPrice / 6).toFixed(2)}<i
+                                                class="fa-solid fa-manat-sign fa-sm"></i>`
+
+                tamKart.textContent = "4%"
+                tamPrice = Number(((totalPrice * 4) / 100) + totalPrice).toFixed(2)
+                tamMebleg.innerHTML = `${tamPrice}<i
+                                                class="fa-solid fa-manat-sign fa-sm"></i>`
+                tamAyliq.innerHTML = `${(tamPrice / 6).toFixed(2)}<i
+                                                class="fa-solid fa-manat-sign fa-sm"></i>`
+
+                bolKart.textContent = "6%"
+                bolPrice = Number(((totalPrice * 6) / 100) + totalPrice).toFixed(2)
+                bolMebleg.innerHTML = `${bolPrice}<i
+                                                class="fa-solid fa-manat-sign fa-sm"></i>`
+                bolAyliq.innerHTML = `${(bolPrice / 6).toFixed(2)}<i
+                                                class="fa-solid fa-manat-sign fa-sm"></i>`
+                break;
+
+            case "12":
+                birKart.textContent = "8%"
+                birPrice = Number(((totalPrice * 8) / 100) + totalPrice).toFixed(2)
+                birMebleg.innerHTML = `${birPrice}<i
+                                                class="fa-solid fa-manat-sign fa-sm"></i>`
+                birAyliq.innerHTML = `${(birPrice / 12).toFixed(2)}<i
+                                                class="fa-solid fa-manat-sign fa-sm"></i>`
+
+                tamKart.textContent = "7%"
+                tamPrice = Number(((totalPrice * 7) / 100) + totalPrice).toFixed(2)
+                tamMebleg.innerHTML = `${tamPrice}<i
+                                                class="fa-solid fa-manat-sign fa-sm"></i>`
+                tamAyliq.innerHTML = `${(tamPrice / 12).toFixed(2)}<i
+                                                class="fa-solid fa-manat-sign fa-sm"></i>`
+
+                bolKart.textContent = "12%"
+                bolPrice = Number(((totalPrice * 12) / 100) + totalPrice).toFixed(2)
+                bolMebleg.innerHTML = `${bolPrice}<i
+                                                class="fa-solid fa-manat-sign fa-sm"></i>`
+                bolAyliq.innerHTML = `${(bolPrice / 12).toFixed(2)}<i
+                                                class="fa-solid fa-manat-sign fa-sm"></i>`
+                break;
+
+            case "18":
+                birKart.textContent = "10%"
+                birPrice = Number(((totalPrice * 10) / 100) + totalPrice).toFixed(2)
+                birMebleg.innerHTML = `${birPrice}<i
+                                                class="fa-solid fa-manat-sign fa-sm"></i>`
+                birAyliq.innerHTML = `${(birPrice / 18).toFixed(2)}<i
+                                                class="fa-solid fa-manat-sign fa-sm"></i>`
+
+                tamKart.textContent = "10%"
+                tamPrice = Number(((totalPrice * 10) / 100) + totalPrice).toFixed(2)
+                tamMebleg.innerHTML = `${tamPrice}<i
+                                                class="fa-solid fa-manat-sign fa-sm"></i>`
+                tamAyliq.innerHTML = `${(tamPrice / 18).toFixed(2)}<i
+                                                class="fa-solid fa-manat-sign fa-sm"></i>`
+
+                bolKart.textContent = "16%"
+                bolPrice = Number(((totalPrice * 16) / 100) + totalPrice).toFixed(2)
+                bolMebleg.innerHTML = `${bolPrice}<i
+                                                class="fa-solid fa-manat-sign fa-sm"></i>`
+                bolAyliq.innerHTML = `${(bolPrice / 18).toFixed(2)}<i
+                                                class="fa-solid fa-manat-sign fa-sm"></i>`
+                break;
+        }
+
+    });
+
 }
 
 
