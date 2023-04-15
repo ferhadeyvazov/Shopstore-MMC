@@ -40,17 +40,6 @@ function regionUI(data) {
 getRegions();
 
 
-// ==================TAKSIT KARTLA ODENIS =============================
-const taksitAyi = document.querySelector(".taksitAyi");
-taksitAyi.addEventListener("change", calculateTaksit);
-function calculateTaksit() {
-    console.log(taksitAyi.value);
-    let sebetPayment = document.querySelector(".sebet__total--cem");
-    sebetPayment = parseFloat(sebetPayment.textContent);
-    console.log(sebetPayment);
-}
-
-
 // ==================GET ELEMENT FROM LOCALSTORAGE=============================
 let array = [];
 let getfromLS = JSON.parse(localStorage.getItem("myCartItems"));
@@ -87,6 +76,49 @@ function delItemFromCart(id) {
 }
 
 
+// =========================TAKSITLERIN AYLARA GORE HESABLANMASI======================================
+let birKart = document.querySelector(".kb-tk");
+let tamKart = document.querySelector(".tamk-tk");
+let bolKart = document.querySelector(".bolk-tk");
+let pulPay = document.querySelector(".pulpal-tk");
+
+let birMebleg = document.querySelector(".birkart__mebleg");
+
+const taksitAyi = document.querySelector(".taksitAyi");
+taksitAyi.addEventListener("change", calculateTaksit);
+
+function calculateTaksit(totalPrice) {
+    const taksitAyi = document.querySelector(".taksitAyi");
+    let sebetPayment = document.querySelector(".sebet__total--cem");
+    sebetPayment = parseFloat(sebetPayment.textContent);
+    console.log(totalPrice);
+    
+    switch (taksitAyi.value) {
+        case "3":
+            birKart.textContent = "2.5%"
+            birMebleg.textContent = ((totalPrice*2.5) / 100)+totalPrice;
+            tamKart.textContent = "2.5%"
+            bolKart.textContent = "3%"
+            break;
+        case "6":
+            birKart.textContent = "5%"
+            tamKart.textContent = "4%"
+            bolKart.textContent = "6%"
+            break;
+        case "12":
+            birKart.textContent = "8%"
+            tamKart.textContent = "7%"
+            bolKart.textContent = "12%"
+            break;
+        case "18":
+            birKart.textContent = "10%"
+            tamKart.textContent = "10%"
+            bolKart.textContent = "16%"
+            break;
+    }
+}
+
+
 
 // ==================FINAL PRICES=============================
 function finalPriceCalculate(getfromLS) {
@@ -97,17 +129,18 @@ function finalPriceCalculate(getfromLS) {
     let totalPrice = getfromLS.reduce((acc, user) => (acc + (user.price * user.value)), 0);
     totalPrice = Number(totalPrice.toFixed(2));
 
+    // ====>EXPRESS CATDIRILMA===================
     expressDelivery.addEventListener("change", () => {
         if (expressDelivery.checked) {
             totalPrice += 10;
             console.log(totalPrice);
             finalPrice.innerHTML = `
-                ${totalPrice}<i class="fa-solid fa-manat-sign"></i>
-              `;
+            ${totalPrice}<i class="fa-solid fa-manat-sign"></i>
+            `;
 
             totalPrices.innerHTML = `
-                Cəmi:
-                <h3 class="sebet__total--cem">${totalPrice}<i class="fa-solid fa-manat-sign" style="color: #000000;"></i></h3>
+            Cəmi:
+            <h3 class="sebet__total--cem">${totalPrice}<i class="fa-solid fa-manat-sign" style="color: #000000;"></i></h3>
             `
 
         }
@@ -115,17 +148,18 @@ function finalPriceCalculate(getfromLS) {
             totalPrice -= 10;
             console.log(totalPrice);
             finalPrice.innerHTML = `
-                ${totalPrice}<i class="fa-solid fa-manat-sign"></i>
-              `;
+            ${totalPrice}<i class="fa-solid fa-manat-sign"></i>
+            `;
 
             totalPrices.innerHTML = `
-                Cəmi:
-                <h3 class="sebet__total--cem">${totalPrice}<i class="fa-solid fa-manat-sign" style="color: #000000;"></i></h3>
+            Cəmi:
+            <h3 class="sebet__total--cem">${totalPrice}<i class="fa-solid fa-manat-sign" style="color: #000000;"></i></h3>
             `
 
         }
     });
 
+    // ====>HEDIYYE QABLASDIRMA==================
     giftInp.addEventListener("change", () => {
         if (giftInp.checked) {
             totalPrice += 5;
@@ -154,7 +188,7 @@ function finalPriceCalculate(getfromLS) {
 
         }
 
-    })
+    });
 
     finalPrice.innerHTML = `
     ${totalPrice}<i class="fa-solid fa-manat-sign"></i>
@@ -164,6 +198,8 @@ function finalPriceCalculate(getfromLS) {
     Cəmi:
     <h3 class="sebet__total--cem">${totalPrice}<i class="fa-solid fa-manat-sign" style="color: #000000;"></i></h3>
     `
+
+    calculateTaksit(totalPrice);
 
 }
 
@@ -204,6 +240,14 @@ taksitInps.forEach(inp => {
 
     })
 });
+
+
+
+
+
+
+
+
 
 // ============================PRODUCTS WIEW=========================
 function productUI(data) {
