@@ -10,7 +10,7 @@
 
     <!-- =======================MAIN CSS================ -->
     <link rel="stylesheet" media="all" href="../../assets/css/style.css">
-    <link rel="stylesheet" media="all" href="./stores.css">
+    <link rel="stylesheet" media="all" href="./login-Register.css">
     <link rel="stylesheet" media="all" href="../../assets/css/media.query.css">
 
 
@@ -22,9 +22,9 @@
 
     <!-- ====================MAIN JS==================== -->
     <script defer src="../../assets/js/app.js"></script>
-    <script defer src="./stores.js"></script>
+    <script defer src="./loginRegister.js"></script>
 
-    <title>Shopstore - Mağazalarımız</title>
+    <title>Shopstore - Login və Qeydiyyat</title>
 </head>
 
 <body>
@@ -35,7 +35,7 @@
             <div class="header--info">
                 <a href="#">Korporativ satış</a>
                 <a href="#">Haqqımızda</a>
-                <a href="./stores.html">Mağazalarımız</a>
+                <a href="../Magazalarimiz/stores.html">Mağazalarımız</a>
                 <a href="#">Texniki dəstək</a>
                 <a href="../DeliveryAndPayments/deliveryAndPayment.html">Çatdırılma və ödəniş</a>
             </div>
@@ -55,7 +55,7 @@
                         РУС
                     </option>
                 </select>
-                <a href="#">
+                <a href="./login-Register.html">
                     <i class="fa-regular fa-user"></i>
                     <span>Qeydiyyat | Giriş</span>
                 </a>
@@ -150,19 +150,19 @@
                         <i class="fa-solid fa-magnifying-glass" id="faSearch"></i>
                     </li>
                     <li class="nav--tools-link">
-                        <a href="#" target="_blank">
+                        <a href="#">
                             <span>Müqayisə</span>
                             <i class="fa-solid fa-scale-balanced"></i>
                         </a>
                     </li>
                     <li class="nav--tools-link" id="secilmisler">
-                        <a href="#" target="_blank">
+                        <a href="#">
                             <span>Seçilmişlər</span>
                             <i class="fa-regular fa-heart"></i>
                         </a>
                     </li>
                     <li class="nav--tools-link">
-                        <a href="../Basket/basket.html" target="_blank">
+                        <a href="../Basket/basket.html">
                             <span>Səbət</span>
                             <i class="fa-solid fa-cart-shopping"></i>
                         </a>
@@ -203,7 +203,7 @@
         <div class="container container__alt--menu">
             <ul class="menu__list">
                 <li class="menu__link">
-                    <a class="menuActive" href="/">
+                    <a href="/">
                         <i class="menu__link--icon fa-solid fa-house"></i>
                         <span class="menu__link--name">Əsas Səhifə</span>
                     </a>
@@ -257,116 +257,97 @@
         </div>
     </div>
 
-    <!-- =====================STORES SECTION PAGE====================== -->
-    <section class="section stores__section">
-        <div class="container stores__container">
-            <h2 class="page__header--logo">Magazalarimiz</h2>
-
-            <div class="stores">
-                <div class="stores__btns">
-                    <button onclick="changeStore(event)" class="store__btn active__btn">Mağazalar</button>
-                    <button onclick="changeStore(event)" class="service__btn">Servis mərkəzləri</button>
+    <!-- =====================LOGIN&REGISTER SECTION====================== -->
+    <section class="section loginRegister__section">
+        <div class="container delivery__container">
+            <h2 class="page__header--logo">Şəxsi kabinet</h2>
+            <div class="delivery__sections">
+                <div class="delivery__container--btns">
+                    <button onclick="changeSection(event)" class="delivery__btn">Giriş</button>
+                    <button onclick="changeSection(event)" class="payment__btn">Qeydiyyat</button>
+                    <button onclick="changeSection(event)" class="track__btn">Sifarişin statusu</button>
                 </div>
 
-                <div class="stores__aside">
-                    <aside class="stores__adress--list">
-                        <article class="stores__adress">
-                            <h4>
-                                <i class="fa-solid fa-location-dot" style="color: #8333ec;"></i>
-                                Nəsimi rayon, Zərifə Əliyeva 55
-                                (Yeni Həyat Plaza)
-                            </h4>
-                            <p>
-                                <i class="fa-solid fa-clock" style="color: #8333ec;"></i>
-                                B.e-B (10:00-22:00)
-                            </p>
-                            <p>
-                                <i class="fa-solid fa-phone-volume" style="color: #8333ec;"></i>
-                                *6777
-                            </p>
-                            <p>
-                                <i class="fa-solid fa-phone" style="color: #8333ec;"></i>
-                                +994125996777
-                            </p>
-                        </article>
-                        <article class="stores__adress">
-                            <h4>
-                                <i class="fa-solid fa-location-dot" style="color: #8333ec;"></i>
-                                Fəvvarələr meydanı, Tərlan Əliyarbəyov 9
-                            </h4>
-                            <p>
-                                <i class="fa-solid fa-clock" style="color: #8333ec;"></i>
-                                B.e-B (10:00-22:00)
-                            </p>
-                        </article>
-                        <article class="stores__adress">
-                            <h4>
-                                <i class="fa-solid fa-location-dot" style="color: #8333ec;"></i>
-                                Fəvvarələr meydanı, Tərlan Əliyarbəyov 9
-                            </h4>
-                            <p>
-                                <i class="fa-solid fa-clock" style="color: #8333ec;"></i>
-                                B.e-B (10:00-22:00)
-                            </p>
-                        </article>
-                        <article class="stores__adress">
-                            <h4>
-                                <i class="fa-solid fa-location-dot" style="color: #8333ec;"></i>
-                                Nəsimi rayon, Puşkin küç. 12/14
-                            </h4>
-                            <p>
-                                <i class="fa-solid fa-clock" style="color: #8333ec;"></i>
-                                B.e-B (10:00-22:00)
-                            </p>
-                        </article>
-                    </aside>
-                    <div class="stores__aside--map">
-                        <iframe class="stores__map--google"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.5078233269883!2d49.85263092595989!3d40.37543631338458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d00a03051b3%3A0x839949c793a7ddc1!2sYeni%20H%C9%99yat%20Plaza%2C%2055%20Zarifa%20Aliyeva%2C%20Bak%C4%B1!5e0!3m2!1saz!2saz!4v1680084338030!5m2!1saz!2saz"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
+                <div class="loginRegister__sections">
+                    <div class="loginRegister__contents">
+                        <div class="delivery__description">
+                            <h4 class="loginRegister__contents--title">Şifrə ilə daxil olmaq</h4>
 
-                <div class="stores__service">
-                    <aside class="stores__adress--list">
-                        <article class="stores__adress">
-                            <h4>
-                                <i class="fa-solid fa-location-dot" style="color: #8333ec;"></i>
-                                ISpace | Yeni Həyat Plaza, Zərifə Əliyeva 111
-                                
-                            </h4>
-                            <p>
-                                <i class="fa-solid fa-clock" style="color: #8333ec;"></i>
-                                B.e-B (10:00-22:00)
-                            </p>
-                            <p>
-                                <i class="fa-solid fa-phone-volume" style="color: #8333ec;"></i>
-                                *6777
-                            </p>
-                            <p>
-                                <i class="fa-solid fa-phone" style="color: #8333ec;"></i>
-                                +994125996777
-                            </p>
-                        </article>
-                    </aside>
+                            <form class="delivery__form">
+                                <input class="delivery__form--input" type="email" placeholder="Email" required>
+                                <input class="delivery__form--input" type="password" placeholder="Şifrə" required>
+                                <div class="delivery__form--submit">
+                                    <a href="#">Şifrənizi unutmusunuz?</a>
+                                    <input class="loginRegister__btn" type="submit" value="Daxil ol">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="payment__description">
+                            <h4 class="loginRegister__contents--title">Qeydiyyat</h4>
 
-                    <div class="stores__aside--map">
-                        <iframe
-                            class="stores__map--google"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.5302928042697!2d49.85413311744384!3d40.37493819999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307dadf997d2bb%3A0x19199b64c00f9313!2siSpace%20Servis%20-%20Apple%20Authorized%20Service%20Provider!5e0!3m2!1saz!2saz!4v1680673443894!5m2!1saz!2saz"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <form class="delivery__form">
+                                <input class="delivery__form--input" type="text" placeholder="Ad" required>
+                                <input class="delivery__form--input" type="email" placeholder="Email" required>
+                                <div class="qeydiyyat__checkbox">
+                                    <input type="checkbox" id="cbx" style="display: none;">
+                                    <label for="cbx" class="check">
+                                        <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                            <path
+                                                d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">
+                                            </path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                    </label>
+                                    <span>Abunəlik şərtləri ilə razıyam.</span>
+                                </div>
+
+                                <input type="tel" class="delivery__form--input" id="validationCustom07"
+                                    placeholder="+994551234567" value="+994"
+                                    pattern="[+,0-9]{4}[55,99,70,77,51,50,10,60]{2}[0-9]{7}" required>
+
+                                <div class="telCodeReceive">
+                                    <input type="text" class="delivery__form--input" placeholder="Kodu daxil edin">
+                                    <input class="loginRegister__btn" type="submit" value="SMS ilə təsdiq kodunu almaq">
+                                </div>
+
+
+                                <input class="delivery__form--input qeydiyyat__sifre" type="password"
+                                    placeholder="Şifrə" required>
+                                <input class="delivery__form--input qeydiyyat__sifre--tesdiq" type="password"
+                                    placeholder="Şifrənizi təsdiqləyin" required>
+                                <input class="loginRegister__btn" type="submit" value="Qeydiyyat">
+                            </form>
+
+                        </div>
+                        <div class="track__description">
+                            <h4 class="loginRegister__contents--title">Sifarişin statusu</h4>
+
+                            <form class="delivery__form">
+                                <input class="delivery__form--input" type="text" placeholder="Sifarişin nömrəsi"
+                                    required>
+                                <input class="loginRegister__btn" type="submit" value="Yoxla">
+                            </form>
+                        </div>
                     </div>
 
+                    <div class="loginRegister__socialNetwork">
+                        <h4 class="loginRegister__contents--title">Sosial şəbəkə ilə</h4>
+                        <div class="loginRegister__social">
+                            <button href="#"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></button>
+                            <button href="#"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></button>
+                            <button href="#"><i class="fa-brands fa-google" style="color: #ffffff;"></i></button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        </div>
     </section>
+
 
     <!-- ==========================ABUNEOL======================== -->
     <section class="abune__section">
-        <div class="cont ainer footer__container">
+        <div class="container footer__container">
             <div class="text-center footer__abune">
                 <div class="footer--abune">
                     <h1 class="footer__abune--title">Bizə abunə olun</h1>
@@ -398,10 +379,8 @@
                     <h2>Bütün arzularınız bir tətbiqdə!</h2>
                     <div>
                         <a href="/"><img loading="lazy" src="../../assets/img/footer_app/app1.svg" alt="appleLink"></a>
-                        <a href="/"><img loading="lazy" src="../../assets/img/footer_app/app2.svg"
-                                alt="googleLink"></a>
-                        <a href="/"><img loading="lazy" src="../../assets/img/footer_app/app3.svg"
-                                alt="huaweiLink"></a>
+                        <a href="/"><img loading="lazy" src="../../assets/img/footer_app/app2.svg" alt="googleLink"></a>
+                        <a href="/"><img loading="lazy" src="../../assets/img/footer_app/app3.svg" alt="huaweiLink"></a>
                     </div>
                 </div>
             </div>
@@ -496,7 +475,6 @@
             </p>
         </div>
     </section>
-
 
     <!-- =====================TO-TOPOFPAGE====================== -->
     <a href="#header" class="btn-up">

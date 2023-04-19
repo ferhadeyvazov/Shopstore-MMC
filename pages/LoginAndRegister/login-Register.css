@@ -1,0 +1,237 @@
+@import "../../assets/css/global.css";
+
+.loginRegister__section h1,
+.loginRegister__section h2,
+.loginRegister__section h3,
+.loginRegister__section h4,
+.loginRegister__section p {
+    margin-bottom: 1.2rem;
+}
+
+/* ================DELIVERY SECTION================ */
+.delivery__sections {
+    background-color: rgba(246, 246, 246, 255);
+}
+
+.loginRegister__sections {
+    background-color: #ffffff;
+    padding: 1.5rem 0;
+}
+
+.loginRegister__socialNetwork,
+.track__description,
+.delivery__description,
+.payment__description {
+    background-color: #ffffff;
+    padding: 0 1.5rem;
+    user-select: none;
+    /* margin-bottom: 2rem; */
+    border-right: 1px solid #eff0ef;
+}
+
+.track__description,
+.payment__description {
+    display: none;
+}
+
+.payment__description div:not(:last-child)>h3 {
+    margin: 0;
+}
+
+.track__btn,
+.delivery__btn,
+.payment__btn {
+    padding: 1rem .7rem;
+    width: 125px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.delivery__btn {
+    background: #ffffff;
+}
+
+.delivery__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.delivery__form--input {
+    padding: .7rem .7rem;
+    border: 1px solid #b2b3b2;
+    border-radius: 10px;
+    margin-bottom: 1.2rem;
+    width: 100%;
+    font-size: 16px;
+}
+
+.loginRegister__btn {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #8433ee;
+    padding: .7rem 0;
+    margin: .7rem 0;
+    cursor: pointer;
+}
+
+.loginRegister__contents--title {
+    font-weight: 400;
+}
+
+/* =================SOCIALNETWORK=============================== */
+.loginRegister__social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.loginRegister__social button {
+    border: none;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    /* padding: 1rem 1.2rem; */
+    background-color: #7221e0;
+    cursor: pointer;
+}
+
+/* ======================================================== */
+.qeydiyyat__checkbox {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 1.2rem;
+}
+
+.check {
+    cursor: pointer;
+    position: relative;
+    /* margin: auto; */
+    /* width: 18px; */
+    /* height: 18px; */
+    -webkit-tap-highlight-color: transparent;
+    transform: translate3d(0, 0, 0);
+}
+
+.check:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(34, 50, 84, 0.03);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.check svg {
+    position: relative;
+    z-index: 1;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #c8ccd4;
+    stroke-width: 1.5;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
+}
+
+.check svg path {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 0;
+}
+
+.check svg polyline {
+    stroke-dasharray: 22;
+    stroke-dashoffset: 66;
+}
+
+.check:hover:before {
+    opacity: 1;
+}
+
+.check:hover svg {
+    stroke: #7520e2;
+}
+
+#cbx:checked+.check svg {
+    stroke: #7520e2;
+}
+
+#cbx:checked+.check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#cbx:checked+.check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+.track__description .delivery__form--input {
+    margin: 0;
+}
+
+/* ======================================================== */
+@media (min-width: 451px) {
+    .loginRegister__sections {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .track__btn,
+    .delivery__btn,
+    .payment__btn {
+        width: 140px;
+        padding: 1rem 1.2rem;
+    }
+
+    .loginRegister__btn {
+        width: unset;
+        padding: .7rem 2.2rem;
+    }
+
+    .delivery__form {
+        /* flex-direction: row; */
+        max-width: 360px;
+    }
+
+    .delivery__form--submit {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+}
+
+@media (min-width: 657px) {
+    .telCodeReceive {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: .7rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .telCodeReceive .delivery__form--input {
+        margin-bottom: 0;
+    }
+
+    .telCodeReceive .loginRegister__btn {
+        padding: .7rem;
+    }
+
+    .track__description>.delivery__form {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: .7rem;
+    }
+}

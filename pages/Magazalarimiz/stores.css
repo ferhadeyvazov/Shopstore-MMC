@@ -63,7 +63,12 @@
     display: none;
 }
 
-
+.stores__adress h4{
+    margin-bottom: 13px;
+}
+.stores__adress i{
+    margin-right: .5rem;
+}
 
 
 
