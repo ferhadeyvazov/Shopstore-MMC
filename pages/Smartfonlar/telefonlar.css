@@ -1,0 +1,42 @@
+@import "../../assets/css/global.css";
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.smartfon__section{
+    margin-bottom: 3rem;
+}
+
+.priceBtn{
+    background-color: #8433ee;
+}
+
+.accordion-button::after{
+    background-image: url("../../assets/img/Logo/angle-down-solid.svg");
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url("../../assets/img/Logo/angle-down-solid.svg");
+}
+.accordion-button:not(.collapsed){
+    color: #000;
+}
+
+.form-check{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.4rem;
+}
+
+.btn-group .btn{
+    flex-grow: 0;
+}
+.listIcons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    color: #4e218f;
+}
+

@@ -211,7 +211,7 @@
 
 }
 
-@media (min-width: 657px) {
+@media screen and (min-width: 657px) {
     .telCodeReceive {
         display: flex;
         align-items: center;
