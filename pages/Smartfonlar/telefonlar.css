@@ -1,5 +1,4 @@
-@import "../../assets/css/global.css";
-
+@import "../../css/global.css";
 ul {
     padding: 0;
     margin: 0;
@@ -14,10 +13,10 @@ ul {
 }
 
 .accordion-button::after{
-    background-image: url("../../assets/img/Logo/angle-down-solid.svg");
+    background-image: url("../../img/Logo/angle-down-solid.svg");
 }
 .accordion-button:not(.collapsed)::after{
-    background-image: url("../../assets/img/Logo/angle-down-solid.svg");
+    background-image: url("../../img/Logo/angle-down-solid.svg");
 }
 .accordion-button:not(.collapsed){
     color: #000;

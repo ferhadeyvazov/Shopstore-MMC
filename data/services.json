@@ -3,31 +3,31 @@
         "id": 1,
         "name": "Trade-in",
         "name_description": "Köhnəni yenisiylə əvəz et",
-        "bgImage": "../assets/img/xidmetler/backg9.png"
+        "bgImage": "../img/xidmetler/backg9.png"
     },
     {
         "id": 2,
         "name": "Servis",
         "name_description": "Peşəkarlara etibar edin",
-        "bgImage": "../assets/img/xidmetler/backg5.jpg"
+        "bgImage": "../img/xidmetler/backg5.jpg"
     },
     {
         "id": 3,
         "name": "Nömrələr",
         "name_description": "Səndə də kamaz nömrəsidir?",
-        "bgImage": "../assets/img/xidmetler/backg10.png"
+        "bgImage": "../img/xidmetler/backg10.png"
     },
     {
         "id": 4,
         "name": "Kredit",
         "name_description": "Köhnəni yenisiylə əvəz et",
-        "bgImage": "../assets/img/xidmetler/backg1.webp"
+        "bgImage": "../img/xidmetler/backg1.webp"
     },
     {
         "id": 5,
         "name": "Trade-in",
         "name_description": "Köhnəni yenisiylə əvəz et",
-        "bgImage": "../assets/img/xidmetler/backg5.jpg"
+        "bgImage": "../img/xidmetler/backg5.jpg"
     },
     {
         "id": 6,

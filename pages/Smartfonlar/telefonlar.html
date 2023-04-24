@@ -9,14 +9,14 @@
     <meta name="description" content="Arzulariniz bir-klikle">
 
     <!-- =======================BOOTSTRAP 5.0.2================ -->
-    <link rel="stylesheet" href="../../tools/bootstrap-5.0.2-dist (1)/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../frameworks/bootstrap-5.0.2-dist/css/bootstrap.min.css">
 
     <!-- =======================MAIN CSS================ -->
     <!-- <link rel="stylesheet" media="all" href="../../assets/css/style.css"> -->
-    <link rel="stylesheet" media="all" href="../../Components/header/header.style.css">
-    <link rel="stylesheet" media="all" href="../../Components/header/abune.style.css">
-    <link rel="stylesheet" media="all" href="../../Components/header/footer.style.css">
-    <link rel="stylesheet" media="all" href="../../assets/css/media.query.css">
+    <link rel="stylesheet" media="all" href="../../css/header/header.style.css">
+    <link rel="stylesheet" media="all" href="../../css/header/abune.style.css">
+    <link rel="stylesheet" media="all" href="../../css/header/footer.style.css">
+    <link rel="stylesheet" media="all" href="../../css/media.query.css">
     <link rel="stylesheet" media="all" href="./product.css">
     <link rel="stylesheet" media="all" href="./telefonlar.css">
 
@@ -27,7 +27,7 @@
 
 
     <!-- ====================MAIN JS==================== -->
-    <script defer src="../../assets/js/app.js"></script>
+    <script defer src="../../js/app.js"></script>
     <script defer src="./telefonlar.js"></script>
 
     <title>Shopstore - Smartfonlar</title>
@@ -82,7 +82,7 @@
                         <span></span>
                     </div>
                 </label>
-                <a href="/"><img src="../../assets/img/Logo/logo_shopstore.svg" alt="LOGO" class="logo"></a>
+                <a href="/"><img src="../../img/Logo/logo_shopstore.svg" alt="LOGO" class="logo"></a>
 
                 <button aria-label="kataloq" class="product--catalog">
                     <span class="circle1"></span>
@@ -263,8 +263,6 @@
         </div>
     </div>
 
-
-
     <!-- =====================SMARTFONLAR SECTION PAGE====================== -->
     <section class="section smartfon__section">
         <div class="container smartfon__container">
@@ -304,55 +302,64 @@
                                 <div class="accordion-body">
 
                                     <div class="form-check">
-                                        <input class="form-check-input me-4" type="checkbox" id="flexCheckDefault01">
+                                        <input class="brandsInp form-check-input me-4" type="checkbox"
+                                            id="flexCheckDefault01" value="Apple">
                                         <label class="form-check-label" for="flexCheckDefault01">
                                             Apple <span class="say appleSay">63</span>
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input me-4" type="checkbox" id="flexCheckDefault02">
+                                        <input class="brandsInp form-check-input me-4" type="checkbox"
+                                            id="flexCheckDefault02" value="Samsung">
                                         <label class="form-check-label" for="flexCheckDefault02">
                                             Samsung <span class="say appleSay">83</span>
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input me-4" type="checkbox" id="flexCheckDefault03">
+                                        <input class="brandsInp form-check-input me-4" type="checkbox"
+                                            id="flexCheckDefault03" value="Xiaomi">
                                         <label class="form-check-label" for="flexCheckDefault03">
                                             Xiaomi <span class="say appleSay">72</span>
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input me-4" type="checkbox" id="flexCheckDefault04">
+                                        <input class="brandsInp form-check-input me-4" type="checkbox"
+                                            id="flexCheckDefault04" value="Honor">
                                         <label class="form-check-label" for="flexCheckDefault04">
                                             Honor <span class="say appleSay">12</span>
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input me-4" type="checkbox" id="flexCheckDefault05">
+                                        <input class="brandsInp form-check-input me-4" type="checkbox"
+                                            id="flexCheckDefault05" value="Realme">
                                         <label class="form-check-label" for="flexCheckDefault05">
                                             Realme <span class="say appleSay">19</span>
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input me-4" type="checkbox" id="flexCheckDefault06">
+                                        <input class="brandsInp form-check-input me-4" type="checkbox"
+                                            id="flexCheckDefault06" value="Techno">
                                         <label class="form-check-label" for="flexCheckDefault06">
                                             Techno <span class="say appleSay">4</span>
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input me-4" type="checkbox" id="flexCheckDefault07">
+                                        <input class="brandsInp form-check-input me-4" type="checkbox"
+                                            id="flexCheckDefault07" value="Nokia">
                                         <label class="form-check-label" for="flexCheckDefault07">
                                             Nokia <span class="say appleSay">1</span>
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input me-4" type="checkbox" id="flexCheckDefault08">
+                                        <input class="brandsInp form-check-input me-4" type="checkbox"
+                                            id="flexCheckDefault08" value="Itel">
                                         <label class="form-check-label" for="flexCheckDefault08">
                                             Itel <span class="say appleSay">6</span>
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input me-4" type="checkbox" id="flexCheckDefault09">
+                                        <input class="brandsInp form-check-input me-4" type="checkbox"
+                                            id="flexCheckDefault09" value="ZTE">
                                         <label class="form-check-label" for="flexCheckDefault09">
                                             ZTE <span class="say appleSay">1</span>
                                         </label>
@@ -417,26 +424,26 @@
 
                     <div class="btn-group gap-2 flex-wrap mb-4" role="group"
                         aria-label="Basic checkbox toggle button group">
-                        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                        <label class="btn btn-outline-secondary rounded-3 border border-2" for="btncheck1">Apple</label>
+                        <input type="checkbox" class="btn-check" id="sortApple" autocomplete="off">
+                        <label class="btn btn-outline-secondary rounded-3 border border-2" for="sortApple">Apple</label>
 
-                        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                        <input type="checkbox" class="btn-check" id="sortSamsung" autocomplete="off">
                         <label class="btn btn-outline-secondary rounded-3 border border-2"
-                            for="btncheck2">Samsung</label>
+                            for="sortSamsung">Samsung</label>
 
-                        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                        <input type="checkbox" class="btn-check" id="sortXiaomi" autocomplete="off">
                         <label class="btn btn-outline-secondary rounded-3 border border-2"
-                            for="btncheck3">Xiaomi</label>
+                            for="sortXiaomi">Xiaomi</label>
 
-                        <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
-                        <label class="btn btn-outline-secondary rounded-3 border border-2" for="btncheck4">Honor</label>
+                        <input type="checkbox" class="btn-check" id="sortHonor" autocomplete="off">
+                        <label class="btn btn-outline-secondary rounded-3 border border-2" for="sortHonor">Honor</label>
 
-                        <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
+                        <input type="checkbox" class="btn-check" id="sortHuawei" autocomplete="off">
                         <label class="btn btn-outline-secondary rounded-3 border border-2"
-                            for="btncheck5">Huawei</label>
+                            for="sortHuawei">Huawei</label>
 
-                        <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off">
-                        <label class="btn btn-outline-secondary rounded-3 border border-2" for="btncheck6">Nokia</label>
+                        <input type="checkbox" class="btn-check" id="sortNokia" autocomplete="off">
+                        <label class="btn btn-outline-secondary rounded-3 border border-2" for="sortNokia">Nokia</label>
                     </div>
 
                     <div class="d-flex align-items-center justify-content-between mb-4">
@@ -468,7 +475,7 @@
 
 
                     <div class="smartfon__products">
-                        <div class="smartfon__products--card">
+                        <!-- <div class="smartfon__products--card">
                             <div class="smartfon__card--icons">
                                 <button class="iconUnbalanced">
                                     <i class="fa-solid fa-scale-unbalanced fa-xs" style="color: #9b9b9b;"></i>
@@ -498,13 +505,6 @@
                                     <li class="card_color card_color--pink"></li>
                                     <li class="card_color card_color--starlight"></li>
                                 </ul>
-
-                                <!-- <button class="card_color card_color--red"></button>
-                                <button class="card_color card_color--black"></button>
-                                <button class="card_color card_color--blue"></button>
-                                <button class="card_color card_color--green"></button>
-                                <button class="card_color card_color--pink"></button>
-                                <button class="card_color card_color--starlight"></button> -->
                             </div>
 
                             <div class="smartfon__card--price">
@@ -516,203 +516,7 @@
                                 <button class="shop-btn"><i class="fa-solid fa-cart-shopping"
                                         style="color: #8532ed;"></i></button>
                             </div>
-                        </div>
-                        <div class="smartfon__products--card">
-                            <div class="smartfon__card--icons">
-                                <button class="iconUnbalanced">
-                                    <i class="fa-solid fa-scale-unbalanced fa-xs" style="color: #9b9b9b;"></i>
-                                </button>
-                                <button class="iconHeart">
-                                    <i class="fa-regular fa-heart fa-xs" style="color: #9b9b9b;"></i>
-                                </button>
-                            </div>
-
-                            <a href="#" class="product__card--image">
-                                <img src="../../assets/img/Apple mehsullari/apple1.webp" alt="apple">
-                            </a>
-
-                            <div class="smartfon__card--title">
-                                <p>Smartfonlar</p>
-                                <a href="#">Apple IPhone 13 256GB</a>
-                            </div>
-
-                            <div class="smartfon__card--color">
-                                <p>Rəng:</p>
-
-                                <ul class="color__list">
-                                    <li class="card_color card_color--red"></li>
-                                    <li class="card_color card_color--black"></li>
-                                    <li class="card_color card_color--blue"></li>
-                                    <li class="card_color card_color--green"></li>
-                                    <li class="card_color card_color--pink"></li>
-                                    <li class="card_color card_color--starlight"></li>
-                                </ul>
-
-                                <!-- <button class="card_color card_color--red"></button>
-                                <button class="card_color card_color--black"></button>
-                                <button class="card_color card_color--blue"></button>
-                                <button class="card_color card_color--green"></button>
-                                <button class="card_color card_color--pink"></button>
-                                <button class="card_color card_color--starlight"></button> -->
-                            </div>
-
-                            <div class="smartfon__card--price">
-                                <div class="main_price">
-                                    <h5>2 899₼</h5>
-                                    <del>3 299₼</del>
-                                </div>
-
-                                <button class="shop-btn"><i class="fa-solid fa-cart-shopping"
-                                        style="color: #8532ed;"></i></button>
-                            </div>
-                        </div>
-                        <div class="smartfon__products--card">
-                            <div class="smartfon__card--icons">
-                                <button class="iconUnbalanced">
-                                    <i class="fa-solid fa-scale-unbalanced fa-xs" style="color: #9b9b9b;"></i>
-                                </button>
-                                <button class="iconHeart">
-                                    <i class="fa-regular fa-heart fa-xs" style="color: #9b9b9b;"></i>
-                                </button>
-                            </div>
-
-                            <a href="#" class="product__card--image">
-                                <img src="../../assets/img/Apple mehsullari/apple1.webp" alt="apple">
-                            </a>
-
-                            <div class="smartfon__card--title">
-                                <p>Smartfonlar</p>
-                                <a href="#">Apple IPhone 13 256GB</a>
-                            </div>
-
-                            <div class="smartfon__card--color">
-                                <p>Rəng:</p>
-
-                                <ul class="color__list">
-                                    <li class="card_color card_color--red"></li>
-                                    <li class="card_color card_color--black"></li>
-                                    <li class="card_color card_color--blue"></li>
-                                    <li class="card_color card_color--green"></li>
-                                    <li class="card_color card_color--pink"></li>
-                                    <li class="card_color card_color--starlight"></li>
-                                </ul>
-
-                                <!-- <button class="card_color card_color--red"></button>
-                                <button class="card_color card_color--black"></button>
-                                <button class="card_color card_color--blue"></button>
-                                <button class="card_color card_color--green"></button>
-                                <button class="card_color card_color--pink"></button>
-                                <button class="card_color card_color--starlight"></button> -->
-                            </div>
-
-                            <div class="smartfon__card--price">
-                                <div class="main_price">
-                                    <h5>2 899₼</h5>
-                                    <del>3 299₼</del>
-                                </div>
-
-                                <button class="shop-btn"><i class="fa-solid fa-cart-shopping"
-                                        style="color: #8532ed;"></i></button>
-                            </div>
-                        </div>
-                        <div class="smartfon__products--card">
-                            <div class="smartfon__card--icons">
-                                <button class="iconUnbalanced">
-                                    <i class="fa-solid fa-scale-unbalanced fa-xs" style="color: #9b9b9b;"></i>
-                                </button>
-                                <button class="iconHeart">
-                                    <i class="fa-regular fa-heart fa-xs" style="color: #9b9b9b;"></i>
-                                </button>
-                            </div>
-
-                            <a href="#" class="product__card--image">
-                                <img src="../../assets/img/Apple mehsullari/apple1.webp" alt="apple">
-                            </a>
-
-                            <div class="smartfon__card--title">
-                                <p>Smartfonlar</p>
-                                <a href="#">Apple IPhone 13 256GB</a>
-                            </div>
-
-                            <div class="smartfon__card--color">
-                                <p>Rəng:</p>
-
-                                <ul class="color__list">
-                                    <li class="card_color card_color--red"></li>
-                                    <li class="card_color card_color--black"></li>
-                                    <li class="card_color card_color--blue"></li>
-                                    <li class="card_color card_color--green"></li>
-                                    <li class="card_color card_color--pink"></li>
-                                    <li class="card_color card_color--starlight"></li>
-                                </ul>
-
-                                <!-- <button class="card_color card_color--red"></button>
-                                <button class="card_color card_color--black"></button>
-                                <button class="card_color card_color--blue"></button>
-                                <button class="card_color card_color--green"></button>
-                                <button class="card_color card_color--pink"></button>
-                                <button class="card_color card_color--starlight"></button> -->
-                            </div>
-
-                            <div class="smartfon__card--price">
-                                <div class="main_price">
-                                    <h5>2 899₼</h5>
-                                    <del>3 299₼</del>
-                                </div>
-
-                                <button class="shop-btn"><i class="fa-solid fa-cart-shopping"
-                                        style="color: #8532ed;"></i></button>
-                            </div>
-                        </div>
-                        <div class="smartfon__products--card">
-                            <div class="smartfon__card--icons">
-                                <button class="iconUnbalanced">
-                                    <i class="fa-solid fa-scale-unbalanced fa-xs" style="color: #9b9b9b;"></i>
-                                </button>
-                                <button class="iconHeart">
-                                    <i class="fa-regular fa-heart fa-xs" style="color: #9b9b9b;"></i>
-                                </button>
-                            </div>
-
-                            <a href="#" class="product__card--image">
-                                <img src="../../assets/img/Apple mehsullari/apple1.webp" alt="apple">
-                            </a>
-
-                            <div class="smartfon__card--title">
-                                <p>Smartfonlar</p>
-                                <a href="#">Apple IPhone 13 256GB</a>
-                            </div>
-
-                            <div class="smartfon__card--color">
-                                <p>Rəng:</p>
-
-                                <ul class="color__list">
-                                    <li class="card_color card_color--red"></li>
-                                    <li class="card_color card_color--black"></li>
-                                    <li class="card_color card_color--blue"></li>
-                                    <li class="card_color card_color--green"></li>
-                                    <li class="card_color card_color--pink"></li>
-                                    <li class="card_color card_color--starlight"></li>
-                                </ul>
-
-                                <!-- <button class="card_color card_color--red"></button>
-                                <button class="card_color card_color--black"></button>
-                                <button class="card_color card_color--blue"></button>
-                                <button class="card_color card_color--green"></button>
-                                <button class="card_color card_color--pink"></button>
-                                <button class="card_color card_color--starlight"></button> -->
-                            </div>
-
-                            <div class="smartfon__card--price">
-                                <div class="main_price">
-                                    <h5>2 899₼</h5>
-                                    <del>3 299₼</del>
-                                </div>
-
-                                <button class="shop-btn"><i class="fa-solid fa-cart-shopping"
-                                        style="color: #8532ed;"></i></button>
-                            </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -753,9 +557,9 @@
                 <div class="footer__app text-center">
                     <h2>Bütün arzularınız bir tətbiqdə!</h2>
                     <div>
-                        <a href="/"><img loading="lazy" src="../../assets/img/footer_app/app1.svg" alt="appleLink"></a>
-                        <a href="/"><img loading="lazy" src="../../assets/img/footer_app/app2.svg" alt="googleLink"></a>
-                        <a href="/"><img loading="lazy" src="../../assets/img/footer_app/app3.svg" alt="huaweiLink"></a>
+                        <a href="/"><img loading="lazy" src="../../img/footer_app/app1.svg" alt="appleLink"></a>
+                        <a href="/"><img loading="lazy" src="../../img/footer_app/app2.svg" alt="googleLink"></a>
+                        <a href="/"><img loading="lazy" src="../../img/footer_app/app3.svg" alt="huaweiLink"></a>
                     </div>
                 </div>
             </div>
@@ -858,14 +662,14 @@
     </a>
 
     <!-- =======================BOOTSTRAP 5.0.2================ -->
-    <script src="../../tools/bootstrap-5.0.2-dist (1)/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="../../frameworks/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
 
 
     <!-- =====================MODULE JS====================== -->
-    <script src="../../assets/js/Modules/catalog/mehsulCatalogu.js"></script>
-    <script src="../../assets/js/Modules/catalog/mobileMenubar.js"></script>
-    <script src="../../assets/js/General/toTopofPage.js"></script>
-    <script src="../../assets/js/products.js"></script>
+    <script src="../../js/Modules/catalog/mehsulCatalogu.js"></script>
+    <script src="../../js/Modules/catalog/mobileMenubar.js"></script>
+    <script src="../../js/General/toTopofPage.js"></script>
+    <script src="../../js/products.js"></script>
 
 </body>
 

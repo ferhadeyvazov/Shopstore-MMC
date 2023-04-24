@@ -95,7 +95,7 @@ function updateDOM(elements) {
                                 <h5 class="fw-bold">
                                     ${obj.price}
                                     <img class="manat-Icon-small"
-                                        src="../../assets/img/Logo/manat-sign-solid.svg" alt="manatIcon">
+                                        src="../img/Logo/manat-sign-solid.svg" alt="manatIcon">
                                 </h5>
                             </div>
                             <div class="basket__product--count">
