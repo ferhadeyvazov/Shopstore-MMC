@@ -1,62 +1,62 @@
 [
     [
             {
-                "img": "../img/AltCategory/altCategory.webp",
+                "img": "../../img/AltCategory/altCategory.webp",
                 "altName": "Smartfonlar" 
             },
             {
-                "img": "../img/AltCategory/altCategory1.webp",
+                "img": "../../img/AltCategory/altCategory1.webp",
                 "altName": "Telefonlar" 
             },
             {
-                "img": "../img/AltCategory/altCategory2.webp",
+                "img": "../../img/AltCategory/altCategory2.webp",
                 "altName": "Qoruyucu Şüşələr" 
             },
             {
-                "img": "../img/AltCategory/altCategory3.webp",
+                "img": "../../img/AltCategory/altCategory3.webp",
                 "altName": "Smartfon üçün korpuslar" 
             },
             {
-                "img": "../img/AltCategory/altCategory1.webp",
+                "img": "../../img/AltCategory/altCategory1.webp",
                 "altName": "Avtomobil malları" 
             },
             {
-                "img": "../img/AltCategory/altCategory2.webp",
+                "img": "../../img/AltCategory/altCategory2.webp",
                 "altName": "Şarj cihazları" 
             },
             {
-                "img": "../img/AltCategory/altCategory3.webp",
+                "img": "../../img/AltCategory/altCategory3.webp",
                 "altName": "Yaddaş kartları" 
             }
-        ],
+    ],
 
     [
             {
-                "img": "../img/AltCategory/saat1.webp",
+                "img": "../../img/AltCategory/saat1.webp",
                 "altName": "Saatlar" 
             },
             {
-                "img": "../img/AltCategory/saat2.webp",
+                "img": "../../img/AltCategory/saat2.webp",
                 "altName": "Qolbaglar" 
             },
             {
-                "img": "../img/AltCategory/altCategory3.webp",
+                "img": "../../img/AltCategory/altCategory3.webp",
                 "altName": "Qoruyucu Şüşələr" 
             },
             {
-                "img": "../img/AltCategory/altCategory1.webp",
+                "img": "../../img/AltCategory/altCategory1.webp",
                 "altName": "Smartfon üçün korpuslar" 
             },
             {
-                "img": "../img/AltCategory/altCategory2.webp",
+                "img": "../../img/AltCategory/altCategory2.webp",
                 "altName": "Avtomobil malları" 
             },
             {
-                "img": "../img/AltCategory/altCategory3.webp",
+                "img": "../../img/AltCategory/altCategory3.webp",
                 "altName": "Şarj cihazları" 
             },
             {
-                "img": "../img/AltCategory/saat1.webp",
+                "img": "../../img/AltCategory/saat1.webp",
                 "altName": "Yaddaş kartları" 
             }
     ]

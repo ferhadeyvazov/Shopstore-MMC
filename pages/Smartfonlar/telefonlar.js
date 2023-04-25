@@ -1,25 +1,28 @@
 let smartfonProducts = document.querySelector(".smartfon__products");
+let arr = [];
 
 getSmartfon();
 async function getSmartfon() {
     let response = await fetch("../../data/mehsullarData/mobilPhones.json");
     let data = await response.json();
 
-    data.forEach((arr, i) => {
-        smartfonCards(arr, i);
+    let productFilter = data;
+    productFilter.forEach(arr => {
+        showLength(arr);
+        smartfonCards(arr);
     })
 }
 
-function smartfonCards(array,index) {
+function smartfonCards(array, index) {
     array.forEach((item) => {
-        smartfonProductsUI( item.id, item.brand, item.name, item.price, item.bigPrice, item.image, item.colors);
+        smartfonProductsUI(item.id, item.brand, item.name, item.price, item.bigPrice, item.image, item.colors);
     });
 }
 
-function smartfonProductsUI( id, brand, name, price, bigPrice, image, colors) {
-    let a = price.length-1;
+function smartfonProductsUI(id, brand, name, price, bigPrice, image, colors) {
+    let a = price.length - 1;
     smartfonProducts.innerHTML += `
-                        <div class="smartfon__products--card">
+                        <div class="smartfon__products--card brand__${brand}">
                             <div class="smartfon__card--icons">
                                 <button class="iconUnbalanced">
                                     <i class="fa-solid fa-scale-unbalanced fa-xs" style="color: #9b9b9b;"></i>
@@ -58,11 +61,12 @@ function smartfonProductsUI( id, brand, name, price, bigPrice, image, colors) {
                         </div>
                  `;
 
-    let colorList = document.querySelectorAll(".color__list")[id-1];
+
+    let colorList = document.querySelectorAll(".color__list")[id - 1];
     setColor(colorList, colors);
 
-    let cardName = document.querySelectorAll(".smartfon__products--card");
-    filterBrands(cardName);
+    let brandCards = document.querySelectorAll(".smartfon__products--card");
+    filterBrands(brandCards);
 }
 
 // ==================SETCOLORS============================
@@ -77,12 +81,103 @@ function setColor(colorList, colors) {
 }
 
 // ==================FILTER BRANDS============================
-let brandsName = document.querySelectorAll(".brandsInp");
-function filterBrands(cardName) {
-    brandsName.forEach(inp=>{
-        console.log(inp.value);
-        switch(inp.value){
-            
+let brandsInputs = document.querySelectorAll(".brandsInp");
+function filterBrands(brandCards) {
+    console.log(1);
+    brandsInputs.forEach(inp => {
+        inp.addEventListener("change", () => {
+            if (inp.checked) {
+                console.log("deydi");
+                brandCards.forEach(item => {
+                    console.log("Hamisini yoxladi");
+                    if (item.className.includes(inp.value)) {
+                        item.classList.remove("hidden");
+                    }
+                    else {
+                        item.classList.add("hidden");
+                    }
+                })
+                filterBrands(brandCards)
+            }
+            else {
+                console.log("Hamisini gosterir");
+                brandCards.forEach(item => {
+                    item.classList.remove("hidden");
+                    if (inp.checked && item.className.includes(inp.value)) {
+                        item.classList.add("hidden");
+                    }
+                })
+            }
+        })
+    })
+
+
+
+}
+
+
+
+// ==================BRAND'S COUNT============================
+let appleSay = document.querySelector(".appleSay");
+let samsungSay = document.querySelector(".samsungSay");
+let xiaomiSay = document.querySelector(".xiaomiSay");
+let honorSay = document.querySelector(".honorSay");
+let realmeSay = document.querySelector(".realmeSay");
+let technoSay = document.querySelector(".technoSay");
+let nokiaSay = document.querySelector(".nokiaSay");
+let itelSay = document.querySelector(".itelSay");
+let zteSay = document.querySelector(".zteSay");
+function showLength(arr) {
+    let apple = 0;
+    let samsung = 0;
+    let xiaomi = 0;
+    let nokia = 0;
+    let honor = 0;
+    let realme = 0;
+    let techno = 0;
+    let itel = 0;
+    arr.forEach(item => {
+        if (item.brand === "Apple") {
+            apple++;
+            appleSay.innerText = apple;
         }
+        else if (item.brand == "Samsung") {
+            samsung++;
+            samsungSay.innerText = samsung;
+        }
+        else if (item.brand == "Xiaomi") {
+            xiaomi++;
+            xiaomiSay.innerText = xiaomi;
+        }
+        else if (item.brand == "Honor") {
+            honor++;
+            honorSay.innerText = honor;
+        }
+        else if (item.brand == "Nokia") {
+            nokia++;
+            nokiaSay.innerText = nokia;
+        }
+        else if (item.brand == "Itel") {
+            itel++;
+            itelSay.innerText = itel;
+        }
+        else if (item.brand == "realme") {
+            realme++;
+            realmeSay.innerText = realme;
+        }
+        else if (item.brand == "techno") {
+            techno++;
+            technoSay.innerText = techno;
+        }
+
     })
 }
+
+
+
+
+
+// ==================FILTER BRANDS============================
+let fromPrice = document.querySelector("fromPrice");
+let toPrice = document.querySelector("toPrice");
+
