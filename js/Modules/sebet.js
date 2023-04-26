@@ -1,10 +1,5 @@
 let sebetProductsSayi = document.querySelectorAll(".marginContainer");
 
-
-// ===========Product Sayi ============================
-let sebetProductsButton = document.querySelector(".sebet__products--sayi");
-sebetProductsButton.innerText = sebetProductsSayi.length;
-
 // ===========ADD PRODUCT TO BASKET ============================
 let addBtn = document.querySelectorAll(".sebet-btn");
 let arr = [];
@@ -71,14 +66,22 @@ if (getElfromLocalStorage) {
 // updateDOM Umumi Function
 function updateDOM(elements) {
     const cartBox = document.querySelector(".sebet__products");
-    // const sebetElemets = document.querySelector(".sebet__products--elements");
     let listItems = "";
     let id = 0;
 
     // ===========Product Sayi ============================
     let sebetProductsButton = document.querySelector(".sebet__products--sayi");
+    let sebetElementSayi = document.querySelector(".elementSayi");
+    sebetElementSayi.innerText = elements.length;
     sebetProductsButton.innerText = elements.length;
-
+    if(sebetElementSayi.textContent==0){
+        sebetElementSayi.style.display="none";
+        sebetProductsButton.style.display="none";
+    }
+    else{
+        sebetElementSayi.style.display="block";
+        sebetProductsButton.style.display="block";
+    }
 
     elements.forEach(obj => {
         listItems += `
@@ -151,14 +154,20 @@ function total() {
     totalPrices.innerHTML = `
     <h3 class="sebet__total--cem">${totalPrice}<i class="fa-solid fa-manat-sign" style="color: #000000;"></i></h3>
     `
-
-    // let finalPrice = document.querySelector('.final__Price');
-    // finalPrice.innerHTML = `
-    // ${totalPrice}<i class="fa-solid fa-manat-sign"></i>
-    // `;
-
 }
 
+// =====================SEBETIN GORSENMESI=====================
+let sebetMehsul = document.getElementById("sebetMehsul");
+let sebet = document.querySelector(".sebet");
+let exitSebetBtn = document.querySelector(".sebet__hero i");
+console.log(exitSebetBtn);
+
+sebetMehsul.addEventListener("click", ()=>{
+    sebet.classList.toggle("activeBlock");
+})
+exitSebetBtn.addEventListener("click", ()=>{
+    sebet.classList.remove("activeBlock")
+});
 
 
 

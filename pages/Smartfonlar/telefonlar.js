@@ -8,6 +8,9 @@ async function getSmartfon() {
 
     let productFilter = data;
     productFilter.forEach(arr => {
+        let newCard = {
+
+        }
         showLength(arr);
         smartfonCards(arr);
     })
@@ -69,54 +72,6 @@ function smartfonProductsUI(id, brand, name, price, bigPrice, image, colors) {
     filterBrands(brandCards);
 }
 
-// ==================SETCOLORS============================
-function setColor(colorList, colors) {
-    colors.forEach(color => {
-        let li = document.createElement("li");
-        li.classList.add(`card_color`);
-        li.classList.add(`card_color--${color.color}`);
-        li.style.backgroundColor = color.hex;
-        colorList.appendChild(li);
-    })
-}
-
-// ==================FILTER BRANDS============================
-let brandsInputs = document.querySelectorAll(".brandsInp");
-function filterBrands(brandCards) {
-    console.log(1);
-    brandsInputs.forEach(inp => {
-        inp.addEventListener("change", () => {
-            if (inp.checked) {
-                console.log("deydi");
-                brandCards.forEach(item => {
-                    console.log("Hamisini yoxladi");
-                    if (item.className.includes(inp.value)) {
-                        item.classList.remove("hidden");
-                    }
-                    else {
-                        item.classList.add("hidden");
-                    }
-                })
-                filterBrands(brandCards)
-            }
-            else {
-                console.log("Hamisini gosterir");
-                brandCards.forEach(item => {
-                    item.classList.remove("hidden");
-                    if (inp.checked && item.className.includes(inp.value)) {
-                        item.classList.add("hidden");
-                    }
-                })
-            }
-        })
-    })
-
-
-
-}
-
-
-
 // ==================BRAND'S COUNT============================
 let appleSay = document.querySelector(".appleSay");
 let samsungSay = document.querySelector(".samsungSay");
@@ -173,7 +128,72 @@ function showLength(arr) {
     })
 }
 
+// ==================SETCOLORS============================
+function setColor(colorList, colors) {
+    colors.forEach(color => {
+        let li = document.createElement("li");
+        li.classList.add(`card_color`);
+        li.classList.add(`card_color--${color.color}`);
+        li.style.backgroundColor = color.hex;
+        colorList.appendChild(li);
+    })
+}
 
+// ==================FILTER BRANDS============================
+let brandsInputs = document.querySelectorAll(".brandsInp");
+let uncheckedCheckboxes = [];
+
+inp.addEventListener("change", () => {
+    filterBrands(brandCards);
+})
+
+function filterBrands(brandCards) {
+    let emty="";
+    console.log(1);
+    brandsInputs.forEach(inp => {
+        if (inp.checked) {
+            smartfonProducts.innerHTML = "";
+            brandCards.forEach(item=>{
+                uncheckedCheckboxes.push(item);
+                uncheckedCheckboxes.forEach(a => emty+=a);
+                console.log(emty);
+            })
+            smartfonProducts.innerHTML =emty;
+        }
+
+
+
+
+
+    // inp.addEventListener("change", () => {
+    //     if (inp.checked) {
+    //         console.log("deydi");
+    //         brandCards.forEach(item => {
+    //             console.log("Hamisini yoxladi");
+    //             if (item.className.includes(inp.value)) {
+    //                 item.classList.remove("hidden");
+    //             }
+    //             else {
+    //                 item.classList.add("hidden");
+    //             }
+    //         })
+    //         filterBrands(brandCards)
+    //     }
+    //     else {
+    //         console.log("Hamisini gosterir");
+    //         brandCards.forEach(item => {
+    //             item.classList.remove("hidden");
+    //             if (inp.checked && item.className.includes(inp.value)) {
+    //                 item.classList.add("hidden");
+    //             }
+    //         })
+    //     }
+    // })
+})
+
+
+
+}
 
 
 

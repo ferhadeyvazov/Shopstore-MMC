@@ -37,13 +37,19 @@
     justify-content: space-between;
     align-items: center;
 }
-.sebet__total--resmi{
+.sebet__hero>i{
+    cursor: pointer;
+}
+
+.sebet__total--resmi {
     margin-bottom: 1.3rem;
 }
-.sebet__hero--text{
+
+.sebet__hero--text {
     display: flex;
 }
-.sebet__hero--text h2{
+
+.sebet__hero--text h2 {
     letter-spacing: .2px;
 }
 
@@ -66,7 +72,8 @@
     grid-template-columns: 1fr 3fr;
     grid-gap: 1rem;
 }
-.divShadow{
+
+.divShadow {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
@@ -92,6 +99,7 @@
 .manat-Icon-small {
     width: 11px;
 }
+
 .manat-Icon-big {
     width: 17px;
 }
@@ -102,6 +110,7 @@
     font-size: 15px;
     text-align: start;
 }
+
 .basket__product--count {
     display: flex;
     justify-content: space-between;
@@ -116,13 +125,14 @@
     align-items: center;
     font-weight: 600;
 }
-.fw-bold{
+
+.fw-bold {
     font-size: 20px;
     text-align: start;
 }
 
 .sebet__total--price,
-.sebet__total--resmi{
+.sebet__total--resmi {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -135,19 +145,21 @@
     border-radius: 7px;
 }
 
-.sebet__total--price h3{
+.sebet__total--price h3 {
     font-size: 23px;
 }
-.sebet__total--price h3:nth-child(1){
+
+.sebet__total--price h3:nth-child(1) {
     font-weight: 500;
 }
-.sebet__total--resmi{
+
+.sebet__total--resmi {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.sebet__product--delete{
+.sebet__product--delete {
     font-size: 30px;
 }
 
@@ -157,8 +169,21 @@
         position: relative;
     }
 
+    .elementSayi {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        font-size: 1rem;
+        background-color: red;
+        top: -5px;
+        right: -6px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .sebet {
-        display: block;
         position: absolute;
         top: 35px;
         right: 0;
@@ -168,18 +193,24 @@
         border: 1px solid #e6e6e6;
         background-color: rgba(241, 241, 241, 255);
         box-shadow: -3px 5px 10px rgba(0, 0, 0, .07);
+        transition: all .4s;
     }
-
-    .sebet__products{
+    
+    
+    .sebet__products {
         max-height: 35vh;
         overflow-y: scroll;
     }
-    
-    .sebet__products::-webkit-scrollbar{
+
+    .sebet__products::-webkit-scrollbar {
         width: 8px;
     }
-    .sebet__products::-webkit-scrollbar-thumb{
+
+    .sebet__products::-webkit-scrollbar-thumb {
         border-radius: 20px;
         background-color: #a1a1a1;
+    }
+    .sebet__products div{
+        background-color: #ffffff;
     }
 }
