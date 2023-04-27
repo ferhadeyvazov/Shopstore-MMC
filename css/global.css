@@ -116,6 +116,10 @@ p {
     margin-bottom: 0;
 }
 
+del{
+    text-decoration: line-through !important;
+}
+
 .section {
     padding: 1rem 0;
 }

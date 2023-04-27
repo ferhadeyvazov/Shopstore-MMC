@@ -48,7 +48,6 @@
 .header__container a:hover,
 .header--language:hover {
     opacity: .4;
-    /* color: var(--text-color-alt); */
     cursor: pointer;
     transition: all .4s;
 }
@@ -345,14 +344,6 @@
     color: #4c1e87;
     border: none;
 }
-
-/* .catalog-alt--title h3 {
-    font-size: 1.4rem;
-} */
-
-
-
-
 
 /* =================SEARCHBAR================= */
 .search__section {
@@ -723,7 +714,6 @@
 
 .box {
     min-width: 260px;
-    /* height: 250px; */
     height: 200px;
     background-color: teal;
 }
@@ -1185,9 +1175,8 @@
 }
 
 .satLider__img {
-    /* width: 240px;
-    height: 250px;  HER AN ACİLA BİLER ASPECT-RATİO SİLİNE BİLER */
-    aspect-ratio: 4/4;
+    aspect-ratio: 1/1;
+    object-fit: cover;
     align-self: center;
     margin-bottom: 1rem;
     margin-inline: auto;
@@ -1299,13 +1288,13 @@
     background-color: #fff;
     padding: 1.3rem;
     border-right: solid #b9b9b9 1px;
-    min-width: 220px;
-    max-width: 320px;
 }
 
 .product__item--img {
+    overflow: hidden;
     margin-bottom: 1rem;
-    aspect-ratio: unset !important;
+    height: 300px;
+    width: 300px;
 }
 
 .game__products--item:last-child {
@@ -1352,20 +1341,12 @@
     margin-left: auto;
 }
 
-/* .product__item--favor button {
-    border-radius: 50%;
-    background-color: white;
-    border: #cbcbcb 1px solid;
-    color: #979797;
-    padding: .4rem;
-    cursor: pointer;
-} */
 
 /* ========================= */
 .game__products {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: stretch;
+    justify-content: space-between;
     overflow-x: scroll;
     overflow-y: hidden;
 }

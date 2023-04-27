@@ -38,7 +38,6 @@ function localStYekun(yekunPrice){
 
 // ==================REGION APIES =============================
 let regionSelect = document.getElementById("regions");
-console.log(regionSelect);
 let getRegions = async () => {
     let resp = await fetch("../../data/az.json");
     let data = await resp.json();
@@ -255,14 +254,12 @@ function taksitToFinalPrice(event) {
 function finalPriceCalculate(getfromLS) {
     let expressDelivery = document.querySelector(".expressDelivery");
     let giftInp = document.querySelector(".giftPresent");
-    let totalPrices = document.querySelector(".sebet__total--price");
+    let totalPrices = document.querySelector(".basket__total--price");
     let totalPrice = getfromLS.reduce((acc, user) => (acc + (user.price * user.value)), 0);
     totalPrice = Number(totalPrice.toFixed(2));
     
     // ====>EXPRESS CATDIRILMA===================
     expressDelivery.addEventListener("change", () => {
-        // let a = JSON.parse(localStorage.getItem("userLastPrice"));
-        // console.log(a);
         let a = document.querySelector(".final__Price");
         if (expressDelivery.checked) {
             totalPrice += 10;
@@ -367,48 +364,48 @@ taksitInps.forEach(inp => {
 
 // ============================PRODUCTS WIEW=========================
 function productUI(data) {
-    let basketProducts = document.querySelector(".sebet__products");
-    allElements = "";
+    let basketProducts = document.querySelector(".basket__products");
+    let allElements = "";
     id = 0;
 
     data.forEach(obj => {
+        console.log(obj);
         allElements += `
-                        <div id="${id}" class="shadow-sm grid-3 bg-white my-3 py-4 px-3 marginContainer grid-3">
-                    <a href="#" class="basket__img rowFlex basket__img rowFlex">
-                        <img src="${obj.image}" alt="basketImg">
-                    </a>
+        <div id="${id}" class="shadow-sm grid-3 bg-white my-3 py-4 px-3 marginContainer grid-3">
+        <a href="#" class="basket__img rowFlex basket__img rowFlex">
+        <img src="${obj.image}" alt="basketImg">
+        </a>
                     <div class="basket__product--info">
-                        <div class="basket__product--hero">
-                            <a href="#">
-                                <h4 class="headerContainer">${obj.name}</h4>
-                            </a>
-                            <div class="basket__product--price">
-                                <h5 class="fw-bold">
-                                    ${obj.price}
-                                    <img class="manat-Icon-small"
-                                        src="../../assets/img/Logo/manat-sign-solid.svg" alt="manatIcon">
-                                </h5>
-                            </div>
-                            <div class="basket__product--count">
-                                <div class="product__number">
-                                    <i onclick="minusProduct(${id})" class="cix fa-solid fa-minus"></i>
-                                    <span class="mehsul__sayi">${obj.value}</span>
-                                    <i onclick="plusProduct(${id})" class="plus fa-solid fa-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <a onclick="delItemFromCart(${id})" class="sebet__product--delete">
-                            <i class="fa-solid fa-xmark fa-sm" style="color: #ff3c3c;"></i>
-                        </a>
+                    <div class="basket__product--hero">
+                    <a href="#">
+                    <h4 class="headerContainer">${obj.name}</h4>
+                    </a>
+                    <div class="basket__product--price">
+                    <h5 class="fw-bold">
+                    ${obj.price}₼
+                    </h5>
                     </div>
-                </div>
-
-        `;
+                    <div class="basket__product--count">
+                    <div class="product__number">
+                    <i onclick="minusProduct(${id})" class="cix fa-solid fa-minus"></i>
+                    <span class="mehsul__sayi">${obj.value}</span>
+                    <i onclick="plusProduct(${id})" class="plus fa-solid fa-plus"></i>
+                    </div>
+                    </div>
+                    </div>
+                    <a onclick="delItemFromCart(${id})" class="sebet__product--delete">
+                    <i class="fa-solid fa-xmark fa-sm" style="color: #ff3c3c;"></i>
+                    </a>
+                    </div>
+                    </div>
+                    
+                    `;
 
         id++;
     })
-
+    
     basketProducts.innerHTML = allElements;
+    console.log(basketProducts);
     finalPriceCalculate(data);
     calculateTaksit(data);
 

@@ -162,6 +162,23 @@
 .sebet__product--delete {
     font-size: 30px;
 }
+.menu__link{
+    position: relative;
+}
+
+.altMenu__link--elementSayi {
+    position: absolute;
+    right: -12px;
+    top: -10px;
+    background-color: #ff0000;
+    color: #ffffff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding: .1rem;
+    display: grid;
+    text-align: center;
+}
 
 
 @media screen and (min-width: 938px) {

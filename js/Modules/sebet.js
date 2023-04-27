@@ -19,11 +19,10 @@ addBtn.forEach((btn, i) => {
         let newShopCart = {
             name: productName,
             image: productImg,
-            price: +productPrice,
+            price: parseInt(productPrice),
             value: value
 
         }
-
         sendToLocalStr(newShopCart)
     });
 })
@@ -46,7 +45,6 @@ function sendToLocalStr(object) {
     console.log(arr);
 
     beraber == false ? arr.push(object) : beraber;
-    console.log(arr);
     sendLS(arr);
 
 }
@@ -66,21 +64,27 @@ if (getElfromLocalStorage) {
 // updateDOM Umumi Function
 function updateDOM(elements) {
     const cartBox = document.querySelector(".sebet__products");
+    console.log(cartBox);
     let listItems = "";
     let id = 0;
 
     // ===========Product Sayi ============================
     let sebetProductsButton = document.querySelector(".sebet__products--sayi");
     let sebetElementSayi = document.querySelector(".elementSayi");
+    let altSebetElementSayi = document.querySelector(".altMenu__link--elementSayi");
     sebetElementSayi.innerText = elements.length;
     sebetProductsButton.innerText = elements.length;
+    altSebetElementSayi.innerText = elements.length;
+
     if(sebetElementSayi.textContent==0){
         sebetElementSayi.style.display="none";
         sebetProductsButton.style.display="none";
+        altSebetElementSayi.style.display="none";
     }
     else{
         sebetElementSayi.style.display="block";
         sebetProductsButton.style.display="block";
+        altSebetElementSayi.style.display="block";
     }
 
     elements.forEach(obj => {
@@ -96,9 +100,7 @@ function updateDOM(elements) {
                             </a>
                             <div class="basket__product--price">
                                 <h5 class="fw-bold">
-                                    ${obj.price}
-                                    <img class="manat-Icon-small"
-                                        src="../img/Logo/manat-sign-solid.svg" alt="manatIcon">
+                                    ${obj.price}₼
                                 </h5>
                             </div>
                             <div class="basket__product--count">
@@ -156,18 +158,6 @@ function total() {
     `
 }
 
-// =====================SEBETIN GORSENMESI=====================
-let sebetMehsul = document.getElementById("sebetMehsul");
-let sebet = document.querySelector(".sebet");
-let exitSebetBtn = document.querySelector(".sebet__hero i");
-console.log(exitSebetBtn);
-
-sebetMehsul.addEventListener("click", ()=>{
-    sebet.classList.toggle("activeBlock");
-})
-exitSebetBtn.addEventListener("click", ()=>{
-    sebet.classList.remove("activeBlock")
-});
 
 
 
