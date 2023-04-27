@@ -357,11 +357,6 @@ taksitInps.forEach(inp => {
 
 
 
-
-
-
-
-
 // ============================PRODUCTS WIEW=========================
 function productUI(data) {
     let basketProducts = document.querySelector(".basket__products");
