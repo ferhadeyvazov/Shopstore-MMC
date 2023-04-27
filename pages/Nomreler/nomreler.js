@@ -15,10 +15,10 @@ allInputs.forEach(item => {
 // ==================FETCH========================
 // ===>>Inputlari bosalt
 let emtyString = "";
-let arr = [];
+let arrOfInputs = [];
 function resetString() {
     emtyString = '';
-    arr = [];	
+    arrOfInputs = [];	
 }
 
 const form = document.querySelector(".nomreler form");
