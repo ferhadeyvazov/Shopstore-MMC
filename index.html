@@ -110,7 +110,7 @@
             <div class="section__catalog" id="section__catalog">
                 <div class="catalog__title">
                     <h3>Məhsulların kataloqu</h3>
-                    <button onclick="cancelCatalog()" class="catalog">
+                    <button onclick="cancelCatalog()" class="catalog" aria-label="cancelCatalog">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
@@ -123,12 +123,12 @@
             <div class="section__catalog-alt" id="section__catalog-alt">
                 <div class="catalog__title">
                     <div class="catalog-alt--title">
-                        <button onclick="cancelCatalogAlt()" class="cancel__catalog-alt">
+                        <button onclick="cancelCatalogAlt()" class="cancel__catalog-alt" aria-label="carbon">
                             <i class="fa-solid fa-arrow-left-long"></i>
                         </button>
                         <h3 class="catalog-alt--hero"></h3>
                     </div>
-                    <button onclick="cancelCatalog()" class="catalog">
+                    <button onclick="cancelCatalog()" class="catalog" aria-label="cancelBtn">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
@@ -166,13 +166,13 @@
                         <i class="fa-solid fa-magnifying-glass" id="faSearch"></i>
                     </li>
                     <li class="nav--tools-link" target="_blank">
-                        <a class="nav__tools--link" href="#" target="_blank">
+                        <a class="nav__tools--link" href="#" target="_blank" aria-label="Muqayise et">
                             <span>Müqayisə</span>
                             <i class="fa-solid fa-scale-balanced"></i>
                         </a>
                     </li>
                     <li class="nav--tools-link" id="secilmisler">
-                        <a class="nav__tools--link" href="#" target="_blank">
+                        <a class="nav__tools--link" href="#" target="_blank" aria-label="Secilmislere elave et">
                             <span>Seçilmişlər</span>
                             <i class="fa-regular fa-heart"></i>
                         </a>
@@ -350,10 +350,10 @@
             <div class="sliders">
                 <div class="ferhad-2">
 
-                    <img src="./img/swiperImg/img9.avif" alt="Mainİmg1">
-                    <img src="./img/swiperImg/img8.avif" alt="MainImg2">
-                    <img src="./img/swiperImg/img11.avif" alt="Mainİmg3">
-                    <img src="./img/swiperImg/img10.avif" alt="Mainİmg4">
+                    <img loading="lazy" src="./img/swiperImg/img9.avif" alt="Mainİmg1">
+                    <img loading="lazy" src="./img/swiperImg/img8.avif" alt="MainImg2">
+                    <img loading="lazy" src="./img/swiperImg/img11.avif" alt="Mainİmg3">
+                    <img loading="lazy" src="./img/swiperImg/img10.avif" alt="Mainİmg4">
 
                 </div>
 
@@ -370,7 +370,7 @@
                             </div>
                         </div>
                         <div class="nonloop__item--img--product"><img class="nonloop__item--img"
-                                src="./img/swiperImg/gunun1.jpg" alt="endirimImg1"></div>
+                                src="./img/swiperImg/gunun1.avif" alt="endirimImg1"></div>
                         <div class="item__info">
                             <p class="item__info--title">AirPods Max Silver</p>
                             <div class="item__info--alt">
@@ -396,7 +396,7 @@
                             </div>
                         </div>
                         <div class="nonloop__item--img--product"><img class="nonloop__item--img"
-                                src="./img/swiperImg/gunun2.jpg" alt="endirimImg1"></div>
+                                src="./img/swiperImg/gunun2.avif" alt="endirimImg1"></div>
                         <div class="item__info">
                             <p class="item__info--title">AirPods Max Silver</p>
                             <div class="item__info--alt">
@@ -595,8 +595,8 @@
             <div class="grid">
                 <div class="sutun sutun-1 product__images--extra pad-1">
                     <div class="flexEnd">
-                        <button class="heart"><i class="fa-regular fa-heart"></i></button>
-                        <button class="heart"><i class="fa-solid fa-scale-unbalanced"></i></button>
+                        <button class="heart" aria-label="Heart"><i class="fa-regular fa-heart"></i></button>
+                        <button class="heart" aria-label="Heart"><i class="fa-solid fa-scale-unbalanced"></i></button>
                     </div>
                     <img src="./img/Apple mehsullari/apple1.webp" alt="apple3">
                     <h4 class="images--medium--title">Apple IPhone 13 256GB (Blue)</h4>
@@ -605,7 +605,7 @@
                             <del>1899.99<i class="fa-solid fa-manat-sign"></i></del>
                             <h3>2249.99<i class="fa-solid fa-manat-sign"></i></h3>
                         </div>
-                        <button class="sebet-btn btn__basket">
+                        <button class="sebet-btn btn__basket" aria-label="btnBasket">
                             <i class="fa-solid fa-cart-shopping"></i>
                         </button>
                     </div>
@@ -623,8 +623,8 @@
                                         Space
                                         Gray</h4>
                                     <div class="flexStart">
-                                        <button class="heart"><i class="fa-regular fa-heart"></i></button>
-                                        <button class="heart"><i class="fa-solid fa-scale-unbalanced"></i></button>
+                                        <button class="heart" aria-label="Heart"><i class="fa-regular fa-heart"></i></button>
+                                        <button class="heart" aria-label="Heart"><i class="fa-solid fa-scale-unbalanced"></i></button>
                                     </div>
                                 </div>
                                 <div class="price--basket">
@@ -632,7 +632,7 @@
                                         <del>1899.99<i class="fa-solid fa-manat-sign"></i></del>
                                         <h3>2249.99<i class="fa-solid fa-manat-sign"></i></h3>
                                     </div>
-                                    <button class="sebet-btn btn__basket">
+                                    <button class="sebet-btn btn__basket" aria-label="btnBasket">
                                         <i class="fa-solid fa-cart-shopping"></i>
                                     </button>
                                 </div>
@@ -649,7 +649,7 @@
                                         <del>1899.99<i class="fa-solid fa-manat-sign"></i></del>
                                         <h3>2249.99<i class="fa-solid fa-manat-sign"></i></h3>
                                     </div>
-                                    <button class="sebet-btn btn__basket">
+                                    <button class="sebet-btn btn__basket" aria-label="btnBasket">
                                         <i class="fa-solid fa-cart-shopping"></i>
                                     </button>
                                 </div>
@@ -662,7 +662,7 @@
                                         <del>1899.99<i class="fa-solid fa-manat-sign"></i></del>
                                         <h3>2249.99<i class="fa-solid fa-manat-sign"></i></h3>
                                     </div>
-                                    <button class="sebet-btn btn__basket">
+                                    <button class="sebet-btn btn__basket" aria-label="btnBasket">
                                         <i class="fa-solid fa-cart-shopping"></i>
                                     </button>
                                 </div>
@@ -679,7 +679,7 @@
                                         <del>1899.99<i class="fa-solid fa-manat-sign"></i></del>
                                         <h3>2249.99<i class="fa-solid fa-manat-sign"></i></h3>
                                     </div>
-                                    <button class="sebet-btn btn__basket">
+                                    <button class="sebet-btn btn__basket" aria-label="btnBasket">
                                         <i class="fa-solid fa-cart-shopping"></i>
                                     </button>
                                 </div>
@@ -692,7 +692,7 @@
                                         <del>1899.99<i class="fa-solid fa-manat-sign"></i></del>
                                         <h3>2249.99<i class="fa-solid fa-manat-sign"></i></h3>
                                     </div>
-                                    <button class="sebet-btn btn__basket">
+                                    <button class="sebet-btn btn__basket" aria-label="btnBasket">
                                         <i class="fa-solid fa-cart-shopping"></i>
                                     </button>
                                 </div>
@@ -707,8 +707,8 @@
                                         Space
                                         Gray</h4>
                                     <div class="flexStart">
-                                        <button class="heart"><i class="fa-regular fa-heart"></i></button>
-                                        <button class="heart"><i class="fa-solid fa-scale-unbalanced"></i></button>
+                                        <button class="heart" aria-label="heart"><i class="fa-regular fa-heart"></i></button>
+                                        <button class="heart" aria-label="heart"><i class="fa-solid fa-scale-unbalanced"></i></button>
                                     </div>
                                 </div>
                                 <div class="price--basket">
@@ -716,7 +716,7 @@
                                         <del>1899.99<i class="fa-solid fa-manat-sign"></i></del>
                                         <h3>2249.99<i class="fa-solid fa-manat-sign"></i></h3>
                                     </div>
-                                    <button class="sebet-btn btn__basket">
+                                    <button class="sebet-btn btn__basket" aria-label="btnBasket">
                                         <i class="fa-solid fa-cart-shopping"></i>
                                     </button>
                                 </div>
@@ -775,7 +775,7 @@
                                         <del>1899.99<i class="fa-solid fa-manat-sign"></i></del>
                                         <h3>2249.99<i class="fa-solid fa-manat-sign"></i></h3>
                                     </div>
-                                    <button class="sebet-btn btn__basket">
+                                    <button class="sebet-btn btn__basket" aria-label="btnBasket">
                                         <i class="fa-solid fa-cart-shopping"></i>
                                     </button>
                                 </div>
@@ -788,7 +788,7 @@
                                         <del>1899.99<i class="fa-solid fa-manat-sign"></i></del>
                                         <h3>2249.99<i class="fa-solid fa-manat-sign"></i></h3>
                                     </div>
-                                    <button class="sebet-btn btn__basket">
+                                    <button class="sebet-btn btn__basket" aria-label="btnBasket">
                                         <i class="fa-solid fa-cart-shopping"></i>
                                     </button>
                                 </div>
@@ -804,8 +804,8 @@
                                         MacBook Air 13'' Apple M1, 8GB, 256GB Space Gray
                                     </h4>
                                     <div class="flexStart">
-                                        <button class="heart"><i class="fa-regular fa-heart"></i></button>
-                                        <button class="heart"><i class="fa-solid fa-scale-unbalanced"></i></button>
+                                        <button class="heart" aria-label="Heart"><i class="fa-regular fa-heart"></i></button>
+                                        <button class="heart" aria-label="Heart"><i class="fa-solid fa-scale-unbalanced"></i></button>
                                     </div>
                                 </div>
                                 <div class="price--basket">
@@ -813,7 +813,7 @@
                                         <del>1899.99<i class="fa-solid fa-manat-sign"></i></del>
                                         <h3>2249.99<i class="fa-solid fa-manat-sign"></i></h3>
                                     </div>
-                                    <button class="sebet-btn btn__basket">
+                                    <button class="sebet-btn btn__basket" aria-label="btnBasket">
                                         <i class="fa-solid fa-cart-shopping"></i>
                                     </button>
                                 </div>
@@ -832,8 +832,8 @@
                                         Space
                                         Gray</h4>
                                     <div class="flexStart">
-                                        <button class="heart"><i class="fa-regular fa-heart"></i></button>
-                                        <button class="heart"><i class="fa-solid fa-scale-unbalanced"></i></button>
+                                        <button class="heart" aria-label="Heart"><i class="fa-regular fa-heart"></i></button>
+                                        <button class="heart" aria-label="Heart"><i class="fa-solid fa-scale-unbalanced"></i></button>
                                     </div>
                                 </div>
                                 <div class="price--basket">
@@ -841,7 +841,7 @@
                                         <del>1899.99<i class="fa-solid fa-manat-sign"></i></del>
                                         <h3>2249.99<i class="fa-solid fa-manat-sign"></i></h3>
                                     </div>
-                                    <button class="sebet-btn btn__basket">
+                                    <button class="sebet-btn btn__basket" aria-label="btnBasket">
                                         <i class="fa-solid fa-cart-shopping"></i>
                                     </button>
                                 </div>
@@ -858,7 +858,7 @@
                                         <del>1899.99<i class="fa-solid fa-manat-sign"></i></del>
                                         <h3>2249.99<i class="fa-solid fa-manat-sign"></i></h3>
                                     </div>
-                                    <button class="sebet-btn btn__basket">
+                                    <button class="sebet-btn btn__basket" aria-label="btnBasket">
                                         <i class="fa-solid fa-cart-shopping"></i>
                                     </button>
                                 </div>
@@ -871,7 +871,7 @@
                                         <del>1899.99<i class="fa-solid fa-manat-sign"></i></del>
                                         <h3>2249.99<i class="fa-solid fa-manat-sign"></i></h3>
                                     </div>
-                                    <button class="sebet-btn btn__basket">
+                                    <button class="sebet-btn btn__basket" aria-label="btnBasket">
                                         <i class="fa-solid fa-cart-shopping"></i>
                                     </button>
                                 </div>
@@ -883,8 +883,8 @@
 
                 <div class="sutun sutun-1 product__images--extra pad-1">
                     <div class="flexEnd">
-                        <button class="heart"><i class="fa-regular fa-heart"></i></button>
-                        <button class="heart"><i class="fa-solid fa-scale-unbalanced"></i></button>
+                        <button class="heart" aria-label="Heart"><i class="fa-regular fa-heart"></i></button>
+                        <button class="heart" aria-label="Heart"><i class="fa-solid fa-scale-unbalanced"></i></button>
                     </div>
                     <img src="./img/Samsung mehsullari/sam4.webp" alt="sam4">
                     <h4 class="images--medium--title">Apple IPhone 13 256GB (Blue)</h4>
@@ -893,7 +893,7 @@
                             <del>1899.99<i class="fa-solid fa-manat-sign"></i></del>
                             <h3>2249.99<i class="fa-solid fa-manat-sign"></i></h3>
                         </div>
-                        <button class="sebet-btn btn__basket">
+                        <button class="sebet-btn btn__basket" aria-label="btnBasket">
                             <i class="fa-solid fa-cart-shopping"></i>
                         </button>
                     </div>
@@ -926,8 +926,8 @@
             <div class="grid">
                 <div class="sutun sutun-1 product__images--extra pad-1">
                     <div class="flexEnd">
-                        <button class="heart"><i class="fa-regular fa-heart"></i></button>
-                        <button class="heart"><i class="fa-solid fa-scale-unbalanced"></i></button>
+                        <button class="heart" aria-label="Heart"><i class="fa-regular fa-heart"></i></button>
+                        <button class="heart" aria-label="Heart"><i class="fa-solid fa-scale-unbalanced"></i></button>
                     </div>
                     <img src="./img/Xiaomi mehsullari/xi1.webp" alt="Xi3">
                     <h4 class="images--medium--title">Apple IPhone 13 256GB (Blue)</h4>
@@ -936,7 +936,7 @@
                             <del>1899.99<i class="fa-solid fa-manat-sign"></i></del>
                             <h3>2249.99<i class="fa-solid fa-manat-sign"></i></h3>
                         </div>
-                        <button class="sebet-btn btn__basket">
+                        <button class="sebet-btn btn__basket" aria-label="btnBasket">
                             <i class="fa-solid fa-cart-shopping"></i>
                         </button>
                     </div>
@@ -954,8 +954,8 @@
                                         Space
                                         Gray</h4>
                                     <div class="flexStart">
-                                        <button class="heart"><i class="fa-regular fa-heart"></i></button>
-                                        <button class="heart"><i class="fa-solid fa-scale-unbalanced"></i></button>
+                                        <button class="heart" aria-label="Heart"><i class="fa-regular fa-heart"></i></button>
+                                        <button class="heart" aria-label="Heart"><i class="fa-solid fa-scale-unbalanced"></i></button>
                                     </div>
                                 </div>
                                 <div class="price--basket">
@@ -963,7 +963,7 @@
                                         <del>1899.99<i class="fa-solid fa-manat-sign"></i></del>
                                         <h3>2249.99<i class="fa-solid fa-manat-sign"></i></h3>
                                     </div>
-                                    <button class="sebet-btn btn__basket">
+                                    <button class="sebet-btn btn__basket" aria-label="btnBasket">
                                         <i class="fa-solid fa-cart-shopping"></i>
                                     </button>
                                 </div>
@@ -980,7 +980,7 @@
                                         <del>1899.99<i class="fa-solid fa-manat-sign"></i></del>
                                         <h3>2249.99<i class="fa-solid fa-manat-sign"></i></h3>
                                     </div>
-                                    <button class="sebet-btn btn__basket">
+                                    <button class="sebet-btn btn__basket" aria-label="btnBasket">
                                         <i class="fa-solid fa-cart-shopping"></i>
                                     </button>
                                 </div>
@@ -993,7 +993,7 @@
                                         <del>1899.99<i class="fa-solid fa-manat-sign"></i></del>
                                         <h3>2249.99<i class="fa-solid fa-manat-sign"></i></h3>
                                     </div>
-                                    <button class="sebet-btn btn__basket">
+                                    <button class="sebet-btn btn__basket" aria-label="btnBasket">
                                         <i class="fa-solid fa-cart-shopping"></i>
                                     </button>
                                 </div>
@@ -1010,7 +1010,7 @@
                                         <del>1899.99<i class="fa-solid fa-manat-sign"></i></del>
                                         <h3>2249.99<i class="fa-solid fa-manat-sign"></i></h3>
                                     </div>
-                                    <button class="sebet-btn btn__basket">
+                                    <button class="sebet-btn btn__basket" aria-label="btnBasket">
                                         <i class="fa-solid fa-cart-shopping"></i>
                                     </button>
                                 </div>
@@ -1023,7 +1023,7 @@
                                         <del>1899.99<i class="fa-solid fa-manat-sign"></i></del>
                                         <h3>2249.99<i class="fa-solid fa-manat-sign"></i></h3>
                                     </div>
-                                    <button class="sebet-btn btn__basket">
+                                    <button class="sebet-btn btn__basket" aria-label="btnBasket">
                                         <i class="fa-solid fa-cart-shopping"></i>
                                     </button>
                                 </div>
@@ -1038,8 +1038,8 @@
                                         Space
                                         Gray</h4>
                                     <div class="flexStart">
-                                        <button class="heart"><i class="fa-regular fa-heart"></i></button>
-                                        <button class="heart"><i class="fa-solid fa-scale-unbalanced"></i></button>
+                                        <button class="heart" aria-label="Heart"><i class="fa-regular fa-heart"></i></button>
+                                        <button class="heart" aria-label="Heart"><i class="fa-solid fa-scale-unbalanced"></i></button>
                                     </div>
                                 </div>
                                 <div class="price--basket">
@@ -1047,7 +1047,7 @@
                                         <del>1899.99<i class="fa-solid fa-manat-sign"></i></del>
                                         <h3>2249.99<i class="fa-solid fa-manat-sign"></i></h3>
                                     </div>
-                                    <button class="sebet-btn btn__basket">
+                                    <button class="sebet-btn btn__basket" aria-label="btnBasket">
                                         <i class="fa-solid fa-cart-shopping"></i>
                                     </button>
                                 </div>

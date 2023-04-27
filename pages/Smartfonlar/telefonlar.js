@@ -1,5 +1,5 @@
 let smartfonProducts = document.querySelector(".smartfon__products");
-let arr = [];
+let arrSmartfons = [];
 
 getSmartfon();
 async function getSmartfon() {
@@ -69,7 +69,6 @@ function smartfonProductsUI(id, brand, name, price, bigPrice, image, colors) {
     setColor(colorList, colors);
 
     let brandCards = document.querySelectorAll(".smartfon__products--card");
-    filterBrands(brandCards);
 }
 
 // ==================BRAND'S COUNT============================
@@ -142,58 +141,6 @@ function setColor(colorList, colors) {
 // ==================FILTER BRANDS============================
 let brandsInputs = document.querySelectorAll(".brandsInp");
 let uncheckedCheckboxes = [];
-
-inp.addEventListener("change", () => {
-    filterBrands(brandCards);
-})
-
-function filterBrands(brandCards) {
-    let emty="";
-    console.log(1);
-    brandsInputs.forEach(inp => {
-        if (inp.checked) {
-            smartfonProducts.innerHTML = "";
-            brandCards.forEach(item=>{
-                uncheckedCheckboxes.push(item);
-                uncheckedCheckboxes.forEach(a => emty+=a);
-                console.log(emty);
-            })
-            smartfonProducts.innerHTML =emty;
-        }
-
-
-
-
-
-    // inp.addEventListener("change", () => {
-    //     if (inp.checked) {
-    //         console.log("deydi");
-    //         brandCards.forEach(item => {
-    //             console.log("Hamisini yoxladi");
-    //             if (item.className.includes(inp.value)) {
-    //                 item.classList.remove("hidden");
-    //             }
-    //             else {
-    //                 item.classList.add("hidden");
-    //             }
-    //         })
-    //         filterBrands(brandCards)
-    //     }
-    //     else {
-    //         console.log("Hamisini gosterir");
-    //         brandCards.forEach(item => {
-    //             item.classList.remove("hidden");
-    //             if (inp.checked && item.className.includes(inp.value)) {
-    //                 item.classList.add("hidden");
-    //             }
-    //         })
-    //     }
-    // })
-})
-
-
-
-}
 
 
 

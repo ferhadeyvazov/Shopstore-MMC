@@ -612,7 +612,7 @@
 /* ==========================SERVICES========================  */
 .service__left--side {
     height: 350px;
-    background-image: url(../img/xidmetler/backg11.png);
+    background-image: url(../img/xidmetler/backg11.avif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -898,6 +898,7 @@
 .abune__section {
     background-color: var(--main-bg-color);
     padding: 1.5rem 0;
+    margin-top: 7rem;
 }
 
 .footer__abune--title {
@@ -1279,7 +1280,7 @@
 
 .container__game {
     position: absolute;
-    top: 280px;
+    top: 310px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -1288,6 +1289,7 @@
     background-color: #fff;
     padding: 1.3rem;
     border-right: solid #b9b9b9 1px;
+    scroll-snap-align: center;
 }
 
 .product__item--img {
@@ -1347,8 +1349,8 @@
     display: flex;
     align-items: stretch;
     justify-content: space-between;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
 }
 
 .game__title {
