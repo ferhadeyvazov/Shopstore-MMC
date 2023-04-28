@@ -1,13 +1,16 @@
 .smartfon__products{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .smartfon__products--card {
     background-color: #ffffff;
     padding: .8rem 1.2rem;
     transition: .3s;
-box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .smartfon__products--card:hover {
     transform: scale(1.05);
@@ -49,6 +52,7 @@ box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0p
 .smartfon__card--color{
     display: flex;
 }
+
 .color__list {
     display: flex;
     align-items: center;
@@ -93,6 +97,10 @@ box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0p
 
 .card_color--starlight {
     background-color: rgb(250, 246, 242);
+}
+
+.smartfon__card--price{
+    margin-top: 30px;
 }
 
 .smartfon__card--price,
