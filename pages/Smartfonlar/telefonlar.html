@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../../frameworks/bootstrap-5.0.2-dist/css/bootstrap.min.css">
 
     <!-- =======================MAIN CSS================ -->
-    
+
     <link rel="stylesheet" media="all" href="../../css/sebet.css">
     <!-- <link rel="stylesheet" media="all" href="../../assets/css/style.css"> -->
     <link rel="stylesheet" media="all" href="../../css/header/header.style.css">
@@ -340,9 +340,14 @@
         <div class="container smartfon__container">
             <h3 class="fs-4 mb-4 mt-3">Mobil Telefonlar</h3>
 
-            <div class="row">
-                <div class="col-md-4 col-xl-3 d-none d-lg-block">
-                    <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="row smartfon__page">
+                <div class="col-sm-6 col-md-4 col-xl-3 d-lg-block smartfon__filter">
+                    <div class="Close__filter--section">
+                        <button onclick="removeFilter()" type="button" class="btnFilter__close btn-close d-md-none"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <div class="accordion filter__accordion" id="accordionPanelsStayOpenExample">
                         <div class="accordion-item mb-1">
                             <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                                 <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
@@ -355,7 +360,8 @@
                                 aria-labelledby="panelsStayOpen-headingOne">
                                 <div
                                     class="phonePriceFilter accordion-body d-flex justify-content-between align-items-center gap-2">
-                                    <input type="number" class="fromPrice form-control" min="0" placeholder="-qiymətdən">
+                                    <input type="number" class="fromPrice form-control" min="0"
+                                        placeholder="-qiymətdən">
                                     <input type="number" class="toPrice form-control" min="0" placeholder="-qiymətə">
                                     <input class="btn priceBtn text-white fw-bold" type="button" value="OK">
                                 </div>
@@ -493,7 +499,7 @@
                 </div>
 
 
-                <div class="col-lg-8 col-xl-9 py-3 bg-light">
+                <div class="col-md-8 col-xl-9 py-3 bg-light">
 
                     <div class="btn-group gap-2 flex-wrap mb-4" role="group"
                         aria-label="Basic checkbox toggle button group">
@@ -540,12 +546,18 @@
                                 for="btncheck4">Yeniliklər</label>
                         </div>
 
-                        <div class="listIcons">
-                            <i class="fa-solid fa-braille fa-xl" style="color: #4e218f;"></i>
-                            <i class="fa-solid fa-list fa-xl" style="color: #848a8b;"></i>
-                        </div>
+                        <!-- <div class="listIcons">
+                            <i class="fa-solid fa-filter" style="color: #4e218f;"></i>
+                            <h5 style="color: #4e218f;">Filterləri Göstər</h5>
+                        </div> -->
                     </div>
 
+                    <div class="col-12 d-md-none border border-1 px-1 filterBtn__container">
+                        <button class="btn btn-outline-light filterBtn" type="button">
+                            <i class="fa-solid fa-filter" style="color: #6c757d;"></i>
+                            Filterləri Göstər.
+                        </button>
+                    </div>
 
                     <div class="smartfon__products">
                         <!-- <div class="smartfon__products--card">

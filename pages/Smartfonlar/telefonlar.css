@@ -5,34 +5,37 @@ ul {
     margin: 0;
 }
 
-.smartfon__section{
+.smartfon__section {
     margin-bottom: 3rem;
 }
 
-.priceBtn{
+.priceBtn {
     background-color: #8433ee;
 }
 
-.accordion-button::after{
+.accordion-button::after {
     background-image: url("../../img/Logo/angle-down-solid.svg");
 }
-.accordion-button:not(.collapsed)::after{
+
+.accordion-button:not(.collapsed)::after {
     background-image: url("../../img/Logo/angle-down-solid.svg");
 }
-.accordion-button:not(.collapsed){
+
+.accordion-button:not(.collapsed) {
     color: #000;
 }
 
-.form-check{
+.form-check {
     display: flex;
     align-items: center;
     margin-bottom: 1.4rem;
 }
 
-.btn-group .btn{
+.btn-group .btn {
     flex-grow: 0;
 }
-.listIcons{
+
+.listIcons {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -40,3 +43,69 @@ ul {
     color: #4e218f;
 }
 
+.filterBtn__container {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+.filterBtn {
+    display: flex;
+    align-items: center;
+    color: #6c757d;
+    margin: 15px 0;
+    padding: 0 .45rem;
+    font-size: 14px;
+}
+
+.filterBtn i {
+    margin-right: .3rem;
+}
+
+.smartfon__page {
+    position: relative;
+}
+
+.smartfon__filter {
+    background-color: white;
+    height: 75%;
+    overflow: scroll;
+    padding: 0;
+    position: fixed;
+    top: 80px;
+    left: -145%;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: left .4s ease-out;
+}
+
+.smartfon__filter::-webkit-scrollbar {
+    width: 8px;
+}
+
+.smartfon__filter::-webkit-scrollbar-thumb {
+    background-color: #e7f1ff;
+    border-radius: 20px;
+}
+
+.smartfon__filter--active {
+    left: 0;
+}
+
+.btnFilter__close {
+    margin: 15px;
+
+}
+
+.Close__filter--section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+@media screen and (min-width: 768px) {
+    .smartfon__filter {
+        position: static;
+        z-index: unset;
+    }
+}

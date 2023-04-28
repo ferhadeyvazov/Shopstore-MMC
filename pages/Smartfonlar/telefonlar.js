@@ -148,3 +148,12 @@ let uncheckedCheckboxes = [];
 let fromPrice = document.querySelector("fromPrice");
 let toPrice = document.querySelector("toPrice");
 
+// ==================OPEN&CLOSE FILTER============================
+let smartfonFilter = document.querySelector(".smartfon__filter");
+let filterBtn =document.querySelector(".filterBtn");
+filterBtn.addEventListener("click",()=>{
+    smartfonFilter.classList.toggle("smartfon__filter--active");
+});
+function removeFilter() {
+    smartfonFilter.classList.remove("smartfon__filter--active");
+}
