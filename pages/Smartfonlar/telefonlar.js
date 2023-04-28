@@ -8,9 +8,6 @@ async function getSmartfon() {
 
     let productFilter = data;
     productFilter.forEach(arr => {
-        let newCard = {
-
-        }
         showLength(arr);
         smartfonCards(arr);
     })
@@ -54,8 +51,8 @@ function smartfonProductsUI(id, brand, name, price, bigPrice, image, colors) {
 
                             <div class="smartfon__card--price">
                                 <div class="main_price">
-                                    <h5>${price[a]}₼</h5>
-                                    <del>${bigPrice[a]}₼</del>
+                                    <h5>${formatNumber(price[a])}</h5>
+                                    <del>${formatNumber(bigPrice[a]) }</del>
                                 </div>
 
                                 <button class="shop-btn"><i class="fa-solid fa-cart-shopping"
@@ -64,6 +61,15 @@ function smartfonProductsUI(id, brand, name, price, bigPrice, image, colors) {
                         </div>
                  `;
 
+    // Format number as a Money
+    function formatNumber(num) {
+        if (Number.isInteger(num)){
+            return num + "₼";
+        }
+        else if(Number.isFinite(num)){
+            return num.toFixed(2) + "₼";
+        }
+    }
 
     let colorList = document.querySelectorAll(".color__list")[id - 1];
     setColor(colorList, colors);

@@ -6,8 +6,8 @@
             "generation": "IPhone 14",
             "name":"IPhone 14",
             "storage": ["128 GB", "256 GB", "512 GB"],
-            "price": [2169, 2459, 2999],
-            "bigPrice": [2339, 2649, 3239],
+            "price": [2169, 2459.99, 2999.99],
+            "bigPrice": [2339, 2649, 3239.99],
             "image": "../../img/Apple mehsullari/apple1.webp",
             "colors": 
             [
@@ -49,8 +49,8 @@
             "generation": "IPhone 14",
             "name":"IPhone 14 Plus",
             "storage": ["128 GB", "256 GB", "512 GB"],
-            "price": [2529, 2799, 3379],
-            "bigPrice": [2649, 2949, 3539],
+            "price": [2529, 2799, 3379.99],
+            "bigPrice": [2649, 2949, 3539.99],
             "image": "../../img/Apple mehsullari/apple1.webp",
             "colors": 
             [
