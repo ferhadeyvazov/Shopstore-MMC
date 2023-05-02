@@ -115,6 +115,10 @@ p {
     color: var(--text-color);
     margin-bottom: 0;
 }
+ul{
+    padding: 0;
+    margin: 0;
+}
 
 del{
     text-decoration: line-through !important;

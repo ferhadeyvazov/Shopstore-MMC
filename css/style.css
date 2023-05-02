@@ -104,9 +104,26 @@
 
 .nav__alt {
     background-color: var(--main-bg-color);
-    padding-bottom: .7rem;
+    padding: .7rem 0;
     position: relative;
     z-index: 9;
+}
+
+.animated{
+    font-weight: 400;
+    -webkit-animation: .8s infinite alternate color_change;
+    animation: .8s infinite alternate color_change;
+}
+@keyframes color_change {
+    0%{
+        color: #ffffff;
+    }
+    50%{
+        color: var(--hover-color);
+    }
+    100%{
+        color: #ff0000;
+    }
 }
 
 .nav__container--alt {
@@ -504,7 +521,7 @@
 
 .nonloop {
     background: #fff;
-    border: solid #7321df;
+    border: solid #ff0071;
     padding: 1rem .5rem;
 }
 
@@ -813,7 +830,7 @@
 .all__brends {
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
 }
 

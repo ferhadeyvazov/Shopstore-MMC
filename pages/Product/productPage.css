@@ -1,0 +1,149 @@
+@import "../../css/global.css";
+
+.product__grid {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.product__grid--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 1rem;
+}
+
+/* .product__grid--content{
+    align-items: flex-start;
+} */
+
+.product__grid--header h3 {
+    /* font-weight: 400;  Deyise Biler!!! */
+}
+
+.header__customs {
+    display: flex;
+    gap: 25px;
+}
+
+.header__customs p {
+    color: #391089;
+}
+
+.ekstra__serhler {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: .7rem;
+}
+
+.ekstra__serhler:nth-child(1) {
+    background-color: #4a1f85;
+}
+
+.ekstra__serhler:nth-child(2) {
+    background-color: #fe0098;
+}
+
+.ekstra__serhler:nth-child(3) {
+    background-color: #fec800;
+    flex-direction: column;
+}
+
+.ekstra__serhler:nth-child(3) p {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.product__MainImg {
+    aspect-ratio: .9/1;
+    object-fit: cover;
+}
+
+.phone__storages {
+    gap: .5rem;
+}
+
+.phone__storages .btn-outline-secondary {
+    border-radius: 5px !important;
+    background-color: #eeeeee;
+    border: none;
+}
+
+.btn-check:active+.btn-outline-secondary,
+.btn-check:checked+.btn-outline-secondary,
+.btn-outline-secondary.active,
+.btn-outline-secondary.dropdown-toggle.show,
+.btn-outline-secondary:active {
+    background-color: #7620e0;
+    border-color: #7620e0;
+}
+
+.btn-check:active+.btn-outline-secondary:focus,
+.btn-check:checked+.btn-outline-secondary:focus,
+.btn-outline-secondary.active:focus,
+.btn-outline-secondary.dropdown-toggle.show:focus,
+.btn-outline-secondary:active:focus {
+    box-shadow: 0 0 0 0.25rem #7620e0;
+}
+
+.btn-check:focus+.btn-outline-secondary,
+.btn-outline-secondary:focus {
+    box-shadow: 0 0 0 0.25rem #7620e0;
+}
+
+.color__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card_color {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    outline-color: white;
+    border: solid 1px #a1a1a1;
+    margin-right: .8rem;
+    margin-bottom: .465rem;
+}
+
+.card_color--red {
+    background-color: #fe0233;
+}
+
+.card_color--black {
+    background-color: #232a31;
+}
+
+.card_color--pink {
+    background-color: rgb(250, 221, 215);
+}
+
+.card_color--green {
+    background-color: rgb(57, 76, 56);
+}
+
+.card_color--blue {
+    background-color: rgb(39, 103, 135);
+}
+
+.card_color--starlight {
+    background-color: rgb(250, 246, 242);
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .product__grid {
+        grid-template-columns: 2fr 1fr;
+    }
+}

@@ -2,15 +2,18 @@
     [
             {
                 "img": "../../img/AltCategory/altCategory.webp",
-                "altName": "Smartfonlar" 
+                "altName": "Smartfonlar",
+                "link": "../../pages/Smartfonlar/telefonlar.html"
             },
             {
                 "img": "../../img/AltCategory/altCategory1.webp",
-                "altName": "Telefonlar" 
+                "altName": "Telefonlar",
+                "link": "../../pages/Smartfonlar/telefonlar.html"
             },
             {
                 "img": "../../img/AltCategory/altCategory2.webp",
-                "altName": "Qoruyucu Şüşələr" 
+                "altName": "Qoruyucu Şüşələr",
+                "link": "../../pages/Smartfonlar/qoruyucu-sushe.html"
             },
             {
                 "img": "../../img/AltCategory/altCategory3.webp",

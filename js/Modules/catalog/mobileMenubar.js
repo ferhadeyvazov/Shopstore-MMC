@@ -80,7 +80,7 @@ async function setAltCatalog(index) {
     altCategory.innerHTML = "";
     altCatalog__list.innerHTML = "";
     altData.forEach(item => {
-        let { img, altName } = item;
+        let { img, altName, link } = item;
 
         altCatalog__list.innerHTML += `
                 <li class="catalog__list--link">
@@ -93,7 +93,7 @@ async function setAltCatalog(index) {
                 </li>
                 `
         altCategory.innerHTML += `
-                <a class="altCategory--link" href="/">
+                <a class="altCategory--link" href="${link}">
                     <img src="${img}" alt="altCategory" loading="lazy">
                     <p class="text-center">${altName}</p>
                 </a>

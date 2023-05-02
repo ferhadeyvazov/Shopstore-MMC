@@ -38,7 +38,6 @@
 }
 
 @media screen and (min-width: 526px) {
-
     .rowFlex {
         flex-direction: row;
         align-items: center;
@@ -541,6 +540,9 @@
         min-height: 480px;
     }
 
+    .all__brends {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
 
 }
 
@@ -560,5 +562,6 @@
     .ferhad-2 img {
         min-height: 500px;
     }
+
 
 }
