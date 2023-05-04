@@ -1,8 +1,11 @@
 @import "../../css/global.css";
 
 .product__grid {
-    display: grid;
-    grid-gap: 10px;
+    /* grid-gap: 10px; */
+}
+
+.product__grid .bg-white:nth-child(1) {
+    margin-bottom: 10px;
 }
 
 .product__grid--header {
@@ -21,9 +24,17 @@
     /* font-weight: 400;  Deyise Biler!!! */
 }
 
+.ekstras {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 18px;
+}
+
 .header__customs {
     display: flex;
-    gap: 25px;
+    flex-wrap: wrap;
+    gap: 10px 25px;
 }
 
 .header__customs p {
@@ -31,8 +42,8 @@
 }
 
 .ekstra__serhler {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
 
     display: flex;
@@ -76,6 +87,7 @@
     border-radius: 5px !important;
     background-color: #eeeeee;
     border: none;
+    font-size: 10px;
 }
 
 .btn-check:active+.btn-outline-secondary,
@@ -140,10 +152,164 @@
     background-color: rgb(250, 246, 242);
 }
 
+.splide__track--nav>.splide__list>.splide__slide.is-active {
+    border: none;
+    opacity: .3;
+}
 
+.kart__Splide {
+    border: 2px solid #ff0073;
+}
+
+.splide__taksit--reklam {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.splide__taksit--reklam img {
+    object-fit: contain;
+    height: 85px;
+}
+
+.splide__taksit--hero>span {
+    /* color: #5b5f66; */
+    color: #6e7072;
+}
+
+.buyBtn{
+    background-color: #ff006f;
+}
+
+.buyBtn:active {
+    background-color: #ff006f;
+    border-color: #ff006f;
+}
+
+.shopBtn {
+    background-color: #7221e0;
+    border-color: #7221e0;
+    margin-left: 8px;
+    padding: 6px 20px;
+}
+
+.shopBtn:hover,
+.shopBtn:active {
+    background-color: #7221e0;
+    border-color: #7221e0;
+}
+
+.product__price {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.product__price h3 {
+    font-weight: 700;
+}
+
+.fmb-10 {
+    margin-bottom: 13px;
+}
+
+.pxf-10 {
+    padding: 0;
+}
+
+.product__grid .bg-white:nth-child(1) {
+    margin-bottom: 13px;
+}
+
+.table__SharePayment {
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+.table{
+    text-align: center;
+}
+
+.table thead th{
+    color: #979799;
+}
+
+.form-check-input:checked{
+    background-color: #222d3f;
+    border-color: #222d3f;
+}
+
+.sharePayment__description,
+.sharePayment__btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.sharePayment__btns button{
+    width: 45%;
+    min-width: 200px;
+    border: 1px solid #222d3f;
+}
+.sharePayment__btns button:nth-child(1):hover {
+    background-color: #222d3f;
+    color: #ffffff;
+}
+.sharePayment__btns button:nth-child(2) {
+    background-color: #222d3f;
+}
+.sharePayment__btns button:nth-child(2):hover {
+    background-color: #ffffff;
+    color: #222d3f;
+}
+
+.btn-separated{
+    background-color: #222d3f;
+    width: .01rem;
+    height: 1.7rem;
+}
+.sharePayment__description{
+    border: solid 1px #222d3f;
+    border-radius: 8px;
+}
+.sharePayment__description div:nth-child(1),
+.sharePayment__description div:nth-child(3){
+    font-size: 16px;
+    padding: .2rem;
+    width: 45%;
+    text-align: center;
+}
+.sharePayment__description div:nth-child(1) img,
+.sharePayment__description div:nth-child(3) img {
+    width: 32px;
+}
 
 @media screen and (min-width: 768px) {
-    .product__grid {
+    /* .product__grid {
         grid-template-columns: 2fr 1fr;
+    } */
+
+    .ekstras {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .ekstra__serhler {
+        width: 74px;
+        height: 74px;
+    }
+
+    .phone__storages .btn-outline-secondary {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .pxf-10 {
+        padding-left: 13px;
     }
 }

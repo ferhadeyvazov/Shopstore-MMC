@@ -338,7 +338,7 @@
     <section class="section product__section">
         <div class="container product__container">
 
-            <nav class="my-2" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <nav class="mb-5 mt-2" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Əsas Səhifə</a></li>
                     <li class="breadcrumb-item"><a href="#">Smartfonlar</a></li>
@@ -346,8 +346,8 @@
                 </ol>
             </nav>
 
-            <div class="product__grid">
-                <div class="bg-white p-4">
+            <div class="product__grid row">
+                <div class="col-lg-8 bg-white p-4">
                     <div class="product__grid--header mb-5">
                         <h3>Apple iPhone 14 Pro Max</h3>
                         <div class="header__customs">
@@ -363,12 +363,12 @@
                     </div>
 
                     <div class="row product__grid--content">
-                        <div class="col-3 col-md-2">
+                        <div class="col-md-2 mb-2 ekstras">
                             <div class="ekstra__serhler"></div>
                             <div class="ekstra__serhler"></div>
                             <div class="ekstra__serhler"></div>
                         </div>
-                        <div class="col-9 col-md-4">
+                        <div class="col-12 col-md-4 mb-3">
                             <div class="product__MainImg">
 
                                 <section class="splide" aria-label="Splide Basic HTML Example">
@@ -415,7 +415,7 @@
                         </div>
 
                         <div class="col-12 col-md-6">
-                            <div class="product__storage mb-5">
+                            <div class="product__storage mb-3 mb-md-5">
                                 <p class="mb-2 fs-5">Yaddaş həcmi</p>
                                 <div class="btn-group phone__storages" role="group"
                                     aria-label="Basic radio toggle button group">
@@ -449,7 +449,112 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-white p-4">sag</div>
+
+                <div class="col-lg-4 pxf-10">
+                    <div class="splide kart__Splide bg-white p-1 p-md-4 fmb-10" role="group"
+                        aria-label="Splide Basic HTML Example">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide splide__taksit--reklam">
+                                    <img class="w-25" src="../../img/Logo/tam-card.svg" alt="TamKart">
+                                    <div class="splide__taksit--hero">
+                                        <h6 class="fw-bold"><span>186.95 AZN</span>x 18 ay</h6>
+                                        <span>Tamkart ilə 18 aya faizsiz ödə!</span>
+                                    </div>
+                                </li>
+                                <li class="splide__slide splide__taksit--reklam">
+                                    <img class="w-25" src="../../img/Logo/ucard.svg" alt="TamKart">
+                                    <div class="splide__taksit--hero">
+                                        <h6 class="fw-bold"><span>186.95 AZN</span>x 18 ay</h6>
+                                        <span>Tamkart ilə 18 aya faizsiz ödə!</span>
+                                    </div>
+                                </li>
+                                <li class="splide__slide splide__taksit--reklam">
+                                    <img class="w-25" src="../../img/Logo/bircard.png" alt="TamKart">
+                                    <div class="splide__taksit--hero">
+                                        <h6 class="fw-bold"><span>186.95 AZN</span>x 18 ay</h6>
+                                        <span>Tamkart ilə 18 aya faizsiz ödə!</span>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="product__price py-4 px-3 py-md-5 px-md-4 bg-white fmb-10">
+                        <h3>3549,99 AZN</h3>
+                        <div class="price__btns">
+                            <button class="buyBtn btn btn-danger fs-5 fw-bold">indi al</button>
+                            <button class="shopBtn btn btn-primary fs-5"><i class="fa-solid fa-cart-shopping fa-sm"
+                                    style="color: #ffffff;"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="table__SharePayment bg-white">
+                        <h5 class="table__heading fw-bold mb-3">İlkin ödənişsiz hissə-hissə ödə!</h5>
+                        <table class="table mb-3">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Seçim</th>
+                                    <th scope="col">İlkin ödəniş</th>
+                                    <th scope="col">Müddət</th>
+                                    <th scope="col">Aylıq ödəniş</th>
+                                    <th scope="col">Yekun məbləğ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <input class="form-check-input me-3" type="radio"
+                                            name="radioNoLabel" id="radioNoLabel1" value="" aria-label="...">
+                                        </th>
+                                        <td>0</td>
+                                        <td>6 ay</td>
+                                        <td>591.67</td>
+                                        <td>3549.99</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <input class="form-check-input me-3" type="radio"
+                                                    name="radioNoLabel" id="radioNoLabel1" value="" aria-label="...">
+                                        </th>
+                                        <td>0</td>
+                                        <td>6 ay</td>
+                                        <td>591.67</td>
+                                        <td>3549.99</td>
+                                    </tr>
+                                    <tr>
+                                    <th scope="row">
+                                        <input class="form-check-input me-3" type="radio"
+                                                name="radioNoLabel" id="radioNoLabel1" value="" aria-label="...">
+                                    </th>
+                                    <td>0</td>
+                                    <td>6 ay</td>
+                                    <td>591.67</td>
+                                    <td>3549.99</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="sharePayment__btns">
+                            <button class="btn btn-light py-3 fs-6">Kredit kalkulyatoru</button>
+                            <button class="btn btn-dark py-3 fs-6">Hissə-hissə al</button>
+                        </div>
+
+                        <div class="sharePayment__description mt-3">
+                            <div class="py-2">
+                                <img src="../../img/Logo/delivery_time.svg" alt="DeliveryOnTime">
+                                Çatdırılma pulsuz
+                            </div>
+                            <div class="btn-separated"></div>
+                            <div class="py-2">
+                                <img src="../../img/Logo/shield.svg" alt="Shield">
+                                1 il Zəmanət
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
         </div>
