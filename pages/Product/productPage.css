@@ -228,7 +228,11 @@
 }
 
 .table{
+    display: block;
     text-align: center;
+    overflow: scroll;
+    scroll-snap-align: center;
+    scroll-snap-type: x mandatory;
 }
 
 .table thead th{
@@ -284,6 +288,59 @@
 .sharePayment__description div:nth-child(1) img,
 .sharePayment__description div:nth-child(3) img {
     width: 32px;
+}
+
+.carousel__card{
+    background-color: #ffffff;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.accessory__image{
+    width: 200px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    align-self: center;
+}
+
+.accessory__price--btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.accessory__price--btn h4{
+    font-weight: 700;
+}
+
+.card__header{
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.ekstra__carousel {
+    margin-bottom: 13px;
+}
+
+.explanation__card{
+    margin-bottom: 33px;
+}
+.explanation__card--header{
+    font-size: 38px;
+}
+.explanation__card--header i{
+    margin-right: 1.8rem;
+    font-size: 38px;
+}
+
+.explanation__card--description{
+    padding-left: 5.5rem;
+
+}
+.explanation__card--description p{
+    font-size: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {

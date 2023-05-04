@@ -1,6 +1,7 @@
 let carouse = document.querySelector(".splide");
 let splideAlt = document.querySelector(".splide__Alt");
 let kartSplide = document.querySelector(".kart__Splide");
+let altCarousel = document.querySelector(".ekstra__carousel");
 
 let main = new Splide(carouse, {
     type: 'fade',
@@ -56,8 +57,38 @@ let kartCarousel = new Splide(kartSplide, {
     easing: "ease-out"
 });
 
+const ekstraCarousel = new Splide(altCarousel, {
+    type: 'loop',
+    drag: 'free',
+    arrows: false,
+    pagination: false,
+    autoplay: true,
+    interval: 2500,
+    gap: ".2em",
+    autoScroll: {
+        speed: 2,
+    },
+    perPage: 5,
+    breakpoints: {
+        628: {
+            perPage: 1,
+        },
+        885: {
+            perPage: 2,
+        },
+        1122: {
+            perPage: 3,
+        },
+        1295: {
+            perPage: 4,
+        }
+    }
+
+});
+
 
 main.sync(thumbnails);
 main.mount();
 thumbnails.mount();
 kartCarousel.mount();
+ekstraCarousel.mount();
