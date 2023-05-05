@@ -41,6 +41,12 @@
     color: #391089;
 }
 
+.product__info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
 .ekstra__serhler {
     width: 60px;
     height: 60px;
@@ -177,7 +183,7 @@
     color: #6e7072;
 }
 
-.buyBtn{
+.buyBtn {
     background-color: #ff006f;
 }
 
@@ -227,7 +233,7 @@
     padding: 2rem 1rem 1rem 1rem;
 }
 
-.table{
+.table {
     display: block;
     text-align: center;
     overflow: scroll;
@@ -235,87 +241,91 @@
     scroll-snap-type: x mandatory;
 }
 
-.table thead th{
+.table thead th {
     color: #979799;
 }
 
-.form-check-input:checked{
+.form-check-input:checked {
     background-color: #222d3f;
     border-color: #222d3f;
 }
 
 .sharePayment__description,
-.sharePayment__btns{
+.sharePayment__btns {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
+    gap: 7px;
 }
-.sharePayment__btns button{
-    width: 45%;
-    min-width: 200px;
+
+.sharePayment__btns button {
+    width: 100%;
     border: 1px solid #222d3f;
+    font-size: 1.1rem;
 }
+
 .sharePayment__btns button:nth-child(1):hover {
     background-color: #222d3f;
     color: #ffffff;
 }
+
 .sharePayment__btns button:nth-child(2) {
     background-color: #222d3f;
 }
+
 .sharePayment__btns button:nth-child(2):hover {
     background-color: #ffffff;
     color: #222d3f;
 }
 
-.btn-separated{
-    background-color: #222d3f;
-    width: .01rem;
-    height: 1.7rem;
+.btn-separated {
+    display: none;
 }
-.sharePayment__description{
+
+.sharePayment__description {
     border: solid 1px #222d3f;
     border-radius: 8px;
 }
+
 .sharePayment__description div:nth-child(1),
-.sharePayment__description div:nth-child(3){
-    font-size: 16px;
+.sharePayment__description div:nth-child(3) {
+    font-size: 18px;
     padding: .2rem;
-    width: 45%;
-    text-align: center;
-}
-.sharePayment__description div:nth-child(1) img,
-.sharePayment__description div:nth-child(3) img {
-    width: 32px;
+    width: 90%;
 }
 
-.carousel__card{
+.sharePayment__description div:nth-child(1) img,
+.sharePayment__description div:nth-child(3) img {
+    width: 27px;
+}
+
+.carousel__card {
     background-color: #ffffff;
     padding: 1.2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+
 }
 
-.accessory__image{
+.accessory__image {
     width: 200px;
     aspect-ratio: 1/1;
     object-fit: contain;
     align-self: center;
 }
 
-.accessory__price--btn{
+.accessory__price--btn {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.accessory__price--btn h4{
+
+.accessory__price--btn h4 {
     font-weight: 700;
 }
 
-.card__header{
+.card__header {
     font-weight: 600;
     margin: 1rem 0;
 }
@@ -324,30 +334,55 @@
     margin-bottom: 13px;
 }
 
-.explanation__card{
+.explanation__card {
     margin-bottom: 33px;
 }
-.explanation__card--header{
-    font-size: 38px;
-}
-.explanation__card--header i{
-    margin-right: 1.8rem;
-    font-size: 38px;
+
+.explanation__card--header {
+    font-size: 22px;
 }
 
-.explanation__card--description{
-    padding-left: 5.5rem;
+.explanation__card--header i {
+    margin-right: 1.3rem;
+    font-size: 22px;
+}
+
+.explanation__card--description {
+    padding-left: 3.2rem;
+}
+
+.explanation__card--description p {
+    font-size: .8rem;
+}
+
+@media screen and (min-width: 437px) {
+    .sharePayment__btns button{
+        width: 47%;
+    }
+    .sharePayment__description,
+    .sharePayment__btns {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .sharePayment__description{
+        padding: .4rem 0;
+    }
+
+    .btn-separated {
+        display: unset;
+        background-color: #222d3f;
+        width: .01rem;
+        height: 1.7rem;
+    }
 
 }
-.explanation__card--description p{
-    font-size: 1.5rem;
-}
+
 
 @media screen and (min-width: 768px) {
-    /* .product__grid {
-        grid-template-columns: 2fr 1fr;
-    } */
-
     .ekstras {
         display: flex;
         flex-direction: column;
@@ -363,10 +398,35 @@
     .phone__storages .btn-outline-secondary {
         font-size: 16px;
     }
+
+    .explanation__card--header {
+        font-size: 38px;
+    }
+
+    .sharePayment__btns button {
+        width: 45%;
+    }
+
+    .explanation__card--description {
+        padding-left: 5.5rem;
+    }
+
+    .explanation__card--description p {
+        font-size: 1.5rem;
+    }
+
+    .explanation__card--header i {
+        margin-right: 1.8rem;
+        font-size: 38px;
+    }
 }
 
 @media screen and (min-width: 992px) {
     .pxf-10 {
         padding-left: 13px;
+    }
+    .sharePayment__btns button {
+        font-size: 1rem;
+        padding: 1rem .5rem;
     }
 }
