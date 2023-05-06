@@ -1,4 +1,5 @@
 @import "../../css/global.css";
+@import "./kredit-kalkulyatoru.css";
 
 
 .product__grid .bg-white:nth-child(1) {
@@ -24,6 +25,17 @@
     align-items: center;
     gap: 18px;
 }
+
+.ekstra__serhler{
+    position: relative;
+}
+.ekstra__serhler img{
+    position: absolute;
+    width: 78px;
+    aspect-ratio: 16/6;
+    top: 10px;
+}
+
 
 .header__customs {
     display: flex;

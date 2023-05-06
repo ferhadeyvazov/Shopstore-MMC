@@ -112,7 +112,8 @@ p {
     font-size: 28px;
 }
 
-.modal-footer button {
+.modal-footer button,
+.modal-footer a{
     background-color: #f6861f;
     border: none;
     width: 100%;
@@ -121,26 +122,23 @@ p {
     font-weight: 600;
 }
 
-.modal-footer button:nth-child(1) {
+.modal-footer button {
     border: 1px solid #40b659;
+    background-color: #40b659;
 }
-.modal-footer button:nth-child(2) {
+.modal-footer a {
     border: 1px solid #f6861f;
 }
 
-.modal-footer button:nth-child(1):hover {
+.modal-footer button:hover {
     background-color: #ffffff;
     color: #40b659;
     border: 1px solid #40b659;
 }
-.modal-footer button:nth-child(2):hover {
+.modal-footer a:hover {
     background-color: #ffffff;
     color: #f6861f;
     border: 1px solid #f6861f;
-}
-
-.modal-footer button:nth-child(1) {
-    background-color: #40b659;
 }
 
 @media screen and (min-width: 595px) {
@@ -150,7 +148,8 @@ p {
         justify-content: space-between;
         gap: 4px;
     }
-    .modal-footer button {
+    .modal-footer button,
+    .modal-footer a {
         width: 45%;
     }
 }
