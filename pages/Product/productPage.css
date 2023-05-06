@@ -1,8 +1,5 @@
 @import "../../css/global.css";
 
-.product__grid {
-    /* grid-gap: 10px; */
-}
 
 .product__grid .bg-white:nth-child(1) {
     margin-bottom: 10px;
@@ -20,9 +17,6 @@
     align-items: flex-start;
 } */
 
-.product__grid--header h3 {
-    /* font-weight: 400;  Deyise Biler!!! */
-}
 
 .ekstras {
     display: flex;

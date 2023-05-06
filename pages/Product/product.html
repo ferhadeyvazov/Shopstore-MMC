@@ -577,7 +577,8 @@
 
 
                         <div class="sharePayment__btns">
-                            <button type="button" class="btn btn-light py-3 fs-sm-6" data-bs-toggle="modal" data-bs-target="#exampleModal" id="modalKredit">
+                            <button type="button" class="btn btn-light py-3 fs-sm-6" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" id="modalKredit">
                                 Kredit kalkulyatoru
                             </button>
                             <button class="btn btn-dark py-3 fs-sm-6">Hissə-hissə al</button>
@@ -782,7 +783,7 @@
             </section>
 
         </div>
-        
+
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -792,11 +793,65 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        ...
+                        <div class="calculator__product">
+                            <div class="calculator__product--description">
+                                <img src="../../img/Apple mehsullari/apple10.webp" alt="Apple13">
+                                <div class="product__name">
+                                    <p>Telefon</p>
+                                    <h5>iPhone 14 Pro 128GB Deep Purple</h5>
+                                </div>
+                            </div>
+                            <h3 class="calculator__product--price fw-bolder">
+                                2999.99 AZN
+                            </h3>
+                        </div>
+
+                        <label for="formControl1">İlkin ödəniş (minimal: 0 AZN)</label>
+                        <input id="formControl1" class="form-control mb-20 form-control-lg mt-2" type="number"
+                            placeholder="İlkin ödəniş (minimal: 0 AZN)" aria-label=".form-control-lg example">
+
+                        <p class="mt-3 altSoz">Məhsulun rəsmiləşdirilməsi zamanı 5-10% komissiya məbləği əlavə oluna
+                            bilər.</p>
+                        <p class="mt-3 altSoz mb-20">İlkin ödəniş ümumi məbləğin 50% dəyərində olarsa, komissiya tələb
+                            olunmur.</p>
+
+                        <label for="formControl2" class="mb-2 zemanet">Zəmanət</label>
+                        <select id="formControl2" class="form-select form-select-lg mb-20"
+                            aria-label="Default select example">
+                            <option selected>Sadə Zəmanət</option>
+                            <option value="1">Qızıl Zəmanət</option>
+                        </select>
+
+                        <label for="formControl3" class="mb-8">Müddət və aylıq ödəniş</label>
+                        <div class="paymentTime">
+                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check" name="btnradio" id="btnRadio1" autocomplete="off"
+                                    checked>
+                                <label class="btn btn-outline-warning" for="btnRadio1" selected>18 ay</label>
+
+                                <input type="radio" class="btn-check" name="btnradio" id="btnRadio2" autocomplete="off">
+                                <label class="btn btn-outline-warning" for="btnRadio2">12 ay</label>
+
+                                <input type="radio" class="btn-check" name="btnradio" id="btnRadio3" autocomplete="off">
+                                <label class="btn btn-outline-warning" for="btnRadio3">6 ay</label>
+                            </div>
+                            <h3 class="taksit__price">176.67 AZN</h3>
+                        </div>
+
+                        <label for="formControl4" class="mb-8">Yekun məbləğ</label>
+                        <div class="product__Price--content">
+                            <h1 class="product__final--price">2999.99 AZN</h1>
+                        </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                            Səbətə əlavə et
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            <i class="fa-solid fa-hand-point-up" style="color: #ffffff;"></i>
+                            Bir kliklə al
+                        </button>
                     </div>
                 </div>
             </div>
