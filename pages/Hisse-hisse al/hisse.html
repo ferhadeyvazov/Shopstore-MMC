@@ -331,102 +331,99 @@
             <h3 class="hisse__header fs-4 mb-4 mt-3">Sifarişi Rəsmiləşdir</h3>
             <div class="hisse__grid--container">
 
-                <form class="row g-3 needs-validation" novalidate>
-                    <div class="col-md-12">
-                        <label for="validationCustom01" class="form-label">Ad Soyad</label>
-                        <input type="text" class="form-control" id="validationCustom01" placeholder="Ad Soyad" required>
-                        <div class="valid-feedback">
-                            Looks good!
-                        </div>
-                    </div>
-                    <div class="col-md-6 position-relative">
-                        <label for="tel_nomresi" class="form-label">Telefon nömrəsi</label>
-                        <div class="phone_section">
-                            <select class="form-control">
-                                <option value="070">070</option>
-                                <option value="077">077</option>
-                                <option value="050">050</option>
-                                <option value="071">051</option>
-                                <option value="010">010</option>
-                                <option value="055">055</option>
-                                <option value="099">099</option>
-                                <option value="060">060</option>
-                            </select>
-                            <input type="text" class="form-control" id="tel_nomresi" placeholder="123 45 67" required>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="validationCustomUsername" class="form-label">Email</label>
-                        <div class="input-group has-validation">
-                            <span class="input-group-text" id="inputGroupPrepend">@</span>
-                            <input type="email" class="form-control" id="validationCustomUsername"
-                                aria-describedby="inputGroupPrepend" placeholder="Email" required>
-                            <div class="invalid-feedback">
-                                Zəhmət olmasa emailinizi düzgün daxil edin...
+                <div class="hisse-first">
+                    <form class="row g-3 needs-validation" novalidate>
+                        <div class="col-md-12">
+                            <label for="validationCustom01" class="form-label">Ad Soyad</label>
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="Ad Soyad" required>
+                            <div class="valid-feedback">
+                                Looks good!
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col-md-12">
-                        <label for="validationCustom04" class="form-label">Şəhər</label>
-                        <select class="form-select city__select" id="validationCustom04" required>
-                            <option selected disabled></option>
-                            <option>Bakı</option>
-                        </select>
-                        <div class="invalid-feedback">
-                            Please select a valid state.
+                        <div class="col-md-6 position-relative">
+                            <label for="tel_nomresi" class="form-label">Telefon nömrəsi</label>
+                            <div class="phone_section">
+                                <select class="form-control">
+                                    <option value="070">070</option>
+                                    <option value="077">077</option>
+                                    <option value="050">050</option>
+                                    <option value="071">051</option>
+                                    <option value="010">010</option>
+                                    <option value="055">055</option>
+                                    <option value="099">099</option>
+                                    <option value="060">060</option>
+                                </select>
+                                <input type="text" class="form-control" id="tel_nomresi" placeholder="123 45 67" required>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="form-floating">
-                        <textarea class="form-control"
-                            placeholder="Sifariş haqqında əlavə qeyd olarsa, bu xanaya daxil edin"
-                            id="floatingTextarea2" style="height: 100px"></textarea>
-                        <label for="floatingTextarea2">Əlavə məlumat</label>
-                    </div>
-
-                    <div class="hisse__footer">
-                        <div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                                <label class="form-check-label" for="invalidCheck">
-                                    <a class="link-secondary" href="../DeliveryAndPayments/deliveryAndPayment.html"
-                                        target="_blank">Bütün Şərtlərlə</a> razıyam.
-                                </label>
+                        <div class="col-md-6">
+                            <label for="validationCustomUsername" class="form-label">Email</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                <input type="email" class="form-control" id="validationCustomUsername"
+                                    aria-describedby="inputGroupPrepend" placeholder="Email" required>
                                 <div class="invalid-feedback">
-                                    You must agree before submitting.
+                                    Zəhmət olmasa emailinizi düzgün daxil edin...
                                 </div>
                             </div>
                         </div>
-
-                        <div class="product__descr">
-                            <div class="hisse__product--info">
-                                <img src="../../img/Apple mehsullari/apple12.webp" alt="Apple12">
-                                <div class="product__info">
-                                    <p>Apple</p>
-                                    <h6>Iphone 14 Pro 128GB Deep Purple</h6>
+                        <div class="col-md-12">
+                            <label for="validationCustom04" class="form-label">Şəhər</label>
+                            <select class="form-select city__select" id="validationCustom04" required>
+                                <option selected disabled></option>
+                                <option>Bakı</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control"
+                                placeholder="Sifariş haqqında əlavə qeyd olarsa, bu xanaya daxil edin"
+                                id="floatingTextarea2" style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Əlavə məlumat</label>
+                        </div>
+                        <div class="hisse__footer">
+                            <div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck">
+                                        <a class="link-secondary" href="../DeliveryAndPayments/deliveryAndPayment.html"
+                                            target="_blank">Bütün Şərtlərlə</a> razıyam.
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        You must agree before submitting.
+                                    </div>
                                 </div>
                             </div>
-                            <dl class="product-details__prices">
-                                <dd>Məhsulun qiyməti</dd>
-                                <dt>2999.99 AZN</dt>
-                                <dd>Çatdırılma</dd>
-                                <dt>0 AZN</dt>
-                            </dl>
-                            <div class="toplam__qiymet">
-                                <p>Toplam qiymət:</h3>
-                                <h3>1399.99 AZN</h3>
+                            <div class="product__descr">
+                                <div class="hisse__product--info">
+                                    <img src="../../img/Apple mehsullari/apple12.webp" alt="Apple12">
+                                    <div class="product__info">
+                                        <p>Apple</p>
+                                        <h6>Iphone 14 Pro 128GB Deep Purple</h6>
+                                    </div>
+                                </div>
+                                <dl class="product-details__prices">
+                                    <dd>Məhsulun qiyməti</dd>
+                                    <dt>2999.99 AZN</dt>
+                                    <dd>Çatdırılma</dd>
+                                    <dt>0 AZN</dt>
+                                </dl>
+                                <div class="toplam__qiymet">
+                                    <p>Toplam qiymət:</h3>
+                                    <h3>1399.99 AZN</h3>
+                                </div>
+                            </div>
+                            <div class="hisse__footer--btns">
+                                <a href="../Product/product.html" class="btn btn-secondary" type="reset">Ləğv Et</a>
+                                <a href="#" class="btn" type="submit">Davam Et</a>
                             </div>
                         </div>
+                    </form>
+                </div>
 
-                        <div class="hisse__footer--btns">
-                            <a href="../Product/product.html" class="btn btn-secondary" type="reset">Ləğv Et</a>
-                            <a href="#" class="btn" type="submit">Davam Et</a>
-                        </div>
-                    </div>
-                </form>
-
-                <div class="hisse__second">
+                <div class="hisse__second bg-white">
                     <div class="hisse__second--content">
                         <img class="hisse__second--img" src="../../img/Apple mehsullari/apple10.webp" alt="Apple12">
                         <div class="product__info">
@@ -435,13 +432,55 @@
                         </div>
                         <div class="product-labels mb-3">
                             <span class="product__label product__label--gray">
+                                <i class="fa-solid fa-truck" style="color: #000000;"></i>
                                 Çatdırılma pulsuz
                             </span>
                             <span class="product__label product__label--gray">
+                                <i class="fa-solid fa-shield" style="color: #000000;"></i>
                                 Zəmanət 1 il
                             </span>
                         </div>
+                        <dl class="product-details__prices">
+                            <dd>Məhsulun qiyməti</dd>
+                            <dt>2999.99 AZN</dt>
+                            <dd>Çatdırılma</dd>
+                            <dt>0 AZN</dt>
+                        </dl>
 
+                        <div class="toplam__qiymet">
+                            <p>Toplam qiymət:</h3>
+                            <h3>1399.99 AZN</h3>
+                        </div>                        
+                    </div>
+
+                    <div class="checkout-info">
+                        <h4 class="mb-3">
+                            <button disabled><i class="fa-solid fa-exclamation" style="color: #232d40;"></i></button>
+                            Məlumat
+                        </h4>
+                        <p>
+                            Seçim etdiyiniz şərtlərə əsasən siz bu məhsulu 12 ay müddətə, 0 AZN ilkin ödəniş və ayda 250 AZN ödəməklə əldə edə
+                            bilərsiniz.
+                        </p>
+                        <p>
+                            Ümumilikdə məhsulun dəyəri qeyd olunan müddət ərzində bütün xərclər daxil olmaqla 2999.99 AZN təşkil edəcək.
+                        </p>
+                        <p>
+                            Qeyd olunan şərtlər ilkin şərtlərdir, sifarişinizin təhlili zamanı şirkətin daxili təlimatına əsasən, mütəxəssislər
+                            sizdən əlavə ilkin ödəniş məbləği tələb edə bilərlər.
+                        </p>
+                        <p>
+                            Xahiş edirik müraciət anketini tam və doğru məlumatlarla doldurasınız.
+                        </p>
+                        <p>
+                            Müraciət anketini göndərməklə siz şirkətimizin online alış şərtlərinə razılıq bildirirsiz.
+                        </p>
+                        <p>
+                            Hər hansı sualınız yaranırsa *6777 nömrə ilə Qaynar Xəttimizə zəng edin.
+                        </p>
+                        <p>
+                            Bizi seçdiyinizə görə təşəkkür edirik.
+                        </p>
                     </div>
                 </div>
 

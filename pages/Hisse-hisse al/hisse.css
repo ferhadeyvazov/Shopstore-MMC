@@ -1,5 +1,6 @@
 @import "../../css/global.css";
 
+
 .hisse__header {
     font-weight: 600;
 }
@@ -120,6 +121,11 @@
     display: none;
 }
 
+.hisse__grid--container .hisse-first {
+    background-color: #ffffff;
+    padding: 1rem;
+}
+
 @media screen and (min-width: 767px) {
     .product__descr {
         display: none;
@@ -133,16 +139,18 @@
     .hisse__footer--btns a {
         width: 9.5rem;
     }
-    .hisse__footer--btns a+ a {
+
+    .hisse__footer--btns a+a {
         margin-left: 1.5rem;
     }
 
     .hisse__grid--container {
         display: flex;
+        align-items: flex-start;
     }
 
-    .hisse__grid--container form {
-        width: calc(100% - 280px);
+    .hisse__grid--container .hisse-first {
+        width: calc(100% - 300px);
         border-radius: .8rem 0 0 .8rem;
         padding: .7rem 4.3rem 3.2rem 2.2rem;
         box-shadow: 1px 0 0 0 #e3e5eb,
@@ -150,14 +158,13 @@
             1px 1px 0 0 #e3e5eb,
             1px 0 0 0 #e3e5eb inset,
             0 1px 0 0 #e3e5eb inset;
-        }
-    
+    }
+
 
     .hisse__second {
         display: block;
-        width: 280px;
+        width: 300px;
         border-radius: 0 .8rem .8rem 0;
-        padding: 1rem;
         box-shadow: 1px 0 0 0 #e3e5eb,
             0 1px 0 0 #e3e5eb,
             1px 1px 0 0 #e3e5eb,
@@ -165,7 +172,15 @@
             0 1px 0 0 #e3e5eb inset;
     }
 
-    .hisse__second--img{
+    .hisse__second--content {
+        padding: 1rem;
+    }
+
+    .checkout-info {
+        padding: 1rem;
+    }
+
+    .hisse__second--img {
         height: 10.4rem;
         aspect-ratio: 1/1;
         object-fit: contain;
@@ -173,32 +188,55 @@
         margin-bottom: 2rem;
     }
 
-    .hisse__second .product__info{
+    .hisse__second .product__info {
         margin-bottom: .8rem;
     }
 
-    .product-labels{
+    .product-labels {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
-        flex-wrap: wrap;
         gap: 5px;
     }
-    .product__label{
-        padding: .3rem .5rem;
+
+    .product__label {
+        padding: .6rem .8rem;
         border-radius: 5px;
 
         text-align: center;
     }
 
-    .product__label i{
+    .product__label i {
         margin-right: 1px;
     }
 
-    .product__label--gray{
+    .product__label--gray {
         background-color: #f5f5f5;
         color: #232d40;
         border-color: #f5f5f5;
         font-size: .8rem;
+    }
+
+    .checkout-info {
+        background-color: #f5f6f8;
+        border-bottom-right-radius: .8rem;
+    }
+
+    .checkout-info p {
+        color: #5b5f66;
+        margin-bottom: 1.3rem;
+        line-height: 2rem;
+    }
+
+    .checkout-info h4 {
+        color: #232d40;
+    }
+
+    .checkout-info h4 button {
+        width: 50px;
+        height: 45px;
+        border: none;
+        background-color: #eaeaed;
+        margin-right: 10px;
     }
 }
