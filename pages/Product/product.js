@@ -11,8 +11,3 @@
 
 let ayliqOdenisler = document.querySelector(".odenisSecimleri");
 let xana = "";
-
-
-function odenisCedveli() {
-    
-}

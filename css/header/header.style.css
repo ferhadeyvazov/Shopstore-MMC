@@ -120,6 +120,26 @@
     display: none !important;
 }
 
+.animated {
+    font-weight: 400;
+    -webkit-animation: .8s infinite alternate color_change;
+    animation: .8s infinite alternate color_change;
+}
+
+@keyframes color_change {
+    0% {
+        color: #ffffff;
+    }
+
+    50% {
+        color: var(--hover-color);
+    }
+
+    100% {
+        color: #ff0000;
+    }
+}
+
 
 
 
@@ -349,9 +369,6 @@
 /* .catalog-alt--title h3 {
     font-size: 1.4rem;
 } */
-
-
-
 
 
 /* =================SEARCHBAR================= */
