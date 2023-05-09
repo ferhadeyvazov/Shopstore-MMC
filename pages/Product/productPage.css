@@ -1,0 +1,443 @@
+@import "../../css/global.css";
+@import "./kredit-kalkulyatoru.css";
+
+
+.product__grid .bg-white:nth-child(1) {
+    margin-bottom: 10px;
+}
+
+.product__grid--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 1rem;
+}
+
+/* .product__grid--content{
+    align-items: flex-start;
+} */
+
+
+.ekstras {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 18px;
+}
+
+.ekstra__serhler{
+    position: relative;
+}
+.ekstra__serhler img{
+    position: absolute;
+    width: 78px;
+    aspect-ratio: 16/6;
+    top: 10px;
+}
+
+
+.header__customs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 25px;
+}
+
+.header__customs p {
+    color: #391089;
+}
+
+.product__info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.ekstra__serhler {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: .7rem;
+}
+
+.ekstra__serhler:nth-child(1) {
+    background-color: #4a1f85;
+}
+
+.ekstra__serhler:nth-child(2) {
+    background-color: #fe0098;
+}
+
+.ekstra__serhler:nth-child(3) {
+    background-color: #fec800;
+    flex-direction: column;
+}
+
+.ekstra__serhler:nth-child(3) p {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.product__MainImg {
+    aspect-ratio: .9/1;
+    object-fit: cover;
+}
+
+.phone__storages {
+    gap: .5rem;
+}
+
+.phone__storages .btn-outline-secondary {
+    border-radius: 5px !important;
+    background-color: #eeeeee;
+    border: none;
+    font-size: 10px;
+}
+
+.btn-check:active+.btn-outline-secondary,
+.btn-check:checked+.btn-outline-secondary,
+.btn-outline-secondary.active,
+.btn-outline-secondary.dropdown-toggle.show,
+.btn-outline-secondary:active {
+    background-color: #7620e0;
+    border-color: #7620e0;
+}
+
+.btn-check:active+.btn-outline-secondary:focus,
+.btn-check:checked+.btn-outline-secondary:focus,
+.btn-outline-secondary.active:focus,
+.btn-outline-secondary.dropdown-toggle.show:focus,
+.btn-outline-secondary:active:focus {
+    box-shadow: 0 0 0 0.25rem #7620e0;
+}
+
+.btn-check:focus+.btn-outline-secondary,
+.btn-outline-secondary:focus {
+    box-shadow: 0 0 0 0.25rem #7620e0;
+}
+
+.color__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card_color {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    outline-color: white;
+    border: solid 1px #a1a1a1;
+    margin-right: .8rem;
+    margin-bottom: .465rem;
+}
+
+.card_color--red {
+    background-color: #fe0233;
+}
+
+.card_color--black {
+    background-color: #232a31;
+}
+
+.card_color--pink {
+    background-color: rgb(250, 221, 215);
+}
+
+.card_color--green {
+    background-color: rgb(57, 76, 56);
+}
+
+.card_color--blue {
+    background-color: rgb(39, 103, 135);
+}
+
+.card_color--starlight {
+    background-color: rgb(250, 246, 242);
+}
+
+.splide__track--nav>.splide__list>.splide__slide.is-active {
+    border: none;
+    opacity: .3;
+}
+
+.kart__Splide {
+    border: 2px solid #ff0073;
+}
+
+.splide__taksit--reklam {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.splide__taksit--reklam img {
+    object-fit: contain;
+    height: 85px;
+}
+
+.splide__taksit--hero>span {
+    /* color: #5b5f66; */
+    color: #6e7072;
+}
+
+.buyBtn {
+    background-color: #ff006f;
+}
+
+.buyBtn:active {
+    background-color: #ff006f;
+    border-color: #ff006f;
+}
+
+.shopBtn {
+    background-color: #7221e0;
+    border-color: #7221e0;
+    margin-left: 8px;
+    padding: 6px 20px;
+}
+
+.shopBtn:hover,
+.shopBtn:active {
+    background-color: #7221e0;
+    border-color: #7221e0;
+}
+
+.product__price {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: .4rem;
+}
+
+.product__price h3 {
+    font-weight: 700;
+}
+
+.fmb-10 {
+    margin-bottom: 13px;
+}
+
+.pxf-10 {
+    padding: 0;
+}
+
+.product__grid .bg-white:nth-child(1) {
+    margin-bottom: 13px;
+}
+
+.table__SharePayment {
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+.table {
+    display: block;
+    text-align: center;
+    overflow: scroll;
+    scroll-snap-align: center;
+    scroll-snap-type: x mandatory;
+}
+
+.table thead th {
+    color: #979799;
+}
+
+.form-check-input:checked {
+    background-color: #222d3f;
+    border-color: #222d3f;
+}
+
+.sharePayment__description,
+.sharePayment__btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+.sharePayment__btns button {
+    width: 100%;
+    border: 1px solid #222d3f;
+    font-size: 1.1rem;
+}
+
+.sharePayment__btns button:nth-child(1):hover {
+    background-color: #222d3f;
+    color: #ffffff;
+}
+
+.sharePayment__btns button:nth-child(2) {
+    background-color: #222d3f;
+}
+
+.sharePayment__btns button:nth-child(2):hover {
+    background-color: #ffffff;
+    color: #222d3f;
+}
+
+.btn-separated {
+    display: none;
+}
+
+.sharePayment__description {
+    border: solid 1px #222d3f;
+    border-radius: 8px;
+}
+
+.sharePayment__description div:nth-child(1),
+.sharePayment__description div:nth-child(3) {
+    font-size: 14px;
+    padding: .2rem;
+    width: 90%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sharePayment__description div:nth-child(1) img,
+.sharePayment__description div:nth-child(3) img {
+    width: 23px;
+    margin-right: 10px;
+}
+
+.carousel__card {
+    background-color: #ffffff;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.accessory__image {
+    width: 200px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    align-self: center;
+}
+
+.accessory__price--btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accessory__price--btn h4 {
+    font-weight: 700;
+}
+
+.card__header {
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.ekstra__carousel {
+    margin-bottom: 13px;
+}
+
+.explanation__card {
+    margin-bottom: 33px;
+}
+
+.explanation__card--header {
+    font-size: 22px;
+}
+
+.explanation__card--header i {
+    margin-right: 1.3rem;
+    font-size: 22px;
+}
+
+.explanation__card--description {
+    padding-left: 3.2rem;
+}
+
+.explanation__card--description p {
+    font-size: .8rem;
+}
+
+@media screen and (min-width: 437px) {
+    .sharePayment__btns button{
+        width: 47%;
+    }
+    .sharePayment__description,
+    .sharePayment__btns {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .sharePayment__description{
+        padding: .4rem 0;
+    }
+
+    .btn-separated {
+        display: unset;
+        background-color: #222d3f;
+        width: .01rem;
+        height: 1.7rem;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .ekstras {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .ekstra__serhler {
+        width: 74px;
+        height: 74px;
+    }
+
+    .phone__storages .btn-outline-secondary {
+        font-size: 16px;
+    }
+
+    .explanation__card--header {
+        font-size: 38px;
+    }
+
+    .sharePayment__btns button {
+        width: 45%;
+    }
+
+    .explanation__card--description {
+        padding-left: 5.5rem;
+    }
+
+    .explanation__card--description p {
+        font-size: 1.5rem;
+    }
+
+    .explanation__card--header i {
+        margin-right: 1.8rem;
+        font-size: 38px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .pxf-10 {
+        padding-left: 13px;
+    }
+    .sharePayment__btns button {
+        font-size: 1rem;
+        padding: 1rem .5rem;
+    }
+}

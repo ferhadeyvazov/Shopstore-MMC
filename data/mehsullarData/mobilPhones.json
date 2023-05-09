@@ -1,0 +1,343 @@
+[
+    [
+        {
+            "id": 1,
+            "brand": "Apple",
+            "generation": "IPhone 14",
+            "name":"IPhone 14",
+            "storage": ["128 GB", "256 GB", "512 GB"],
+            "price": [2169, 2459.99, 2999.99],
+            "bigPrice": [2339, 2649, 3239.99],
+            "image": "../../img/Apple mehsullari/apple1.webp",
+            "colors": 
+            [
+                {
+                    "color": "Black",
+                    "hex": "#232a31",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                },
+                {
+                    "color": "Blue",
+                    "hex": "rgb(39, 103, 135)",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                },
+                {
+                    "color": "Red",
+                    "hex": "#fe0233",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                },
+                {
+                    "color": "Purple",
+                    "hex": "#e3d6ff",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                },
+                {
+                    "color": "Starlight",
+                    "hex": "rgb(250, 246, 242)",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                },
+                {
+                    "color": "Yellow",
+                    "hex": "#f5e488",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "brand": "Apple",
+            "generation": "IPhone 14",
+            "name":"IPhone 14 Plus",
+            "storage": ["128 GB", "256 GB", "512 GB"],
+            "price": [2529, 2799, 3379.99],
+            "bigPrice": [2649, 2949, 3539.99],
+            "image": "../../img/Apple mehsullari/apple1.webp",
+            "colors": 
+            [
+                {
+                    "color": "Black",
+                    "hex": "#232a31",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                },
+                {
+                    "color": "Blue",
+                    "hex": "rgb(39, 103, 135)",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                },
+                {
+                    "color": "Red",
+                    "hex": "#fe0233",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                },
+                {
+                    "color": "Purple",
+                    "hex": "#e3d6ff",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                },
+                {
+                    "color": "Starlight",
+                    "hex": "rgb(250, 246, 242)",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                },
+                {
+                    "color": "Yellow",
+                    "hex": "#f5e488",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "brand": "Apple",
+            "generation": "IPhone 14",
+            "name":"IPhone 14 Pro",
+            "storage": ["128 GB", "256 GB", "512 GB", "1TB"],
+            "price": [2779, 3249, 3649, 4199],
+            "bigPrice": [3199, 3479, 4049, 4619],
+            "image": "../../img/Apple mehsullari/apple2.webp",
+            "colors": 
+            [
+                {
+                    "color": "Purple",
+                    "hex": "#534b5a",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                },
+                {
+                    "color": "Gold",
+                    "hex": "#f4e6cc",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                },
+                {
+                    "color": "White",
+                    "hex": "#f1f2f2",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                },
+                {
+                    "color": "Midnight",
+                    "hex": "#454545",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "brand": "Apple",
+            "generation": "IPhone 14",
+            "name":"IPhone 14 Pro Max",
+            "storage": ["128 GB", "256 GB", "512 GB", "1TB"],
+            "price": [3069, 3359, 3919, 4499],
+            "bigPrice": [3479, 3759, 4329, 4899],
+            "image": "../../img/Apple mehsullari/apple2.webp",
+            "colors": 
+            [
+                {
+                    "color": "Purple",
+                    "hex": "#534b5a",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                },
+                {
+                    "color": "Gold",
+                    "hex": "#f4e6cc",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                },
+                {
+                    "color": "White",
+                    "hex": "#f1f2f2",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                },
+                {
+                    "color": "Midnight",
+                    "hex": "#454545",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "id": 5,
+            "brand": "Samsung",
+            "generation": "Galaxy",
+            "name":"Galaxy S23",
+            "storage": ["128 GB", "256 GB"],
+            "price": [2149, 2299],
+            "bigPrice": [2439, 2799],
+            "image": "../../img/Samsung mehsullari/sam1.webp",
+            "colors": 
+            [
+                {
+                    "color": "Phantom",
+                    "hex": "#000",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                },
+                {
+                    "color": "Yaşıl",
+                    "hex": "#60645a",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                },
+                {
+                    "color": "Lavanda",
+                    "hex": "#d4c8da",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                },
+                {
+                    "color": "Krem",
+                    "hex": "#f0ebe1",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "brand": "Samsung",
+            "generation": "Galaxy",
+            "name":"Galaxy S23+",
+            "storage": [ "256 GB","512 GB"],
+            "price": [2499, 2799],
+            "bigPrice": [2799, 2999],
+            "image": "../../img/Samsung mehsullari/sam1.webp",
+            "colors": 
+            [
+                {
+                    "color": "Phantom",
+                    "hex": "#000",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                },
+                {
+                    "color": "Yaşıl",
+                    "hex": "#60645a",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                },
+                {
+                    "color": "Lavanda",
+                    "hex": "#d4c8da",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                },
+                {
+                    "color": "Krem",
+                    "hex": "#f0ebe1",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "brand": "Samsung",
+            "generation": "Galaxy",
+            "name":"Galaxy S23 Ultra",
+            "storage": [ "256 GB","512 GB"],
+            "price": [3199, 3499],
+            "bigPrice": [3329, 3699],
+            "image": "../../img/Samsung mehsullari/sam1.webp",
+            "colors": 
+            [
+                {
+                    "color": "Phantom",
+                    "hex": "#000",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                },
+                {
+                    "color": "Yaşıl",
+                    "hex": "#60645a",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                },
+                {
+                    "color": "Lavanda",
+                    "hex": "#d4c8da",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                },
+                {
+                    "color": "Krem",
+                    "hex": "#f0ebe1",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "id": 8,
+            "brand": "Xiaomi",
+            "generation": "Redmi",
+            "name":"Note 11 LTE",
+            "storage": ["64 GB", "128 GB"],
+            "price": [359, 385],
+            "bigPrice": [585, 659],
+            "image": "../../img/Samsung mehsullari/sam1.webp",
+            "colors": 
+            [
+                {
+                    "color": "Gray",
+                    "hex": "#000",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                },
+                {
+                    "color": "Twilight",
+                    "hex": "#60645a",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                },
+                {
+                    "color": "Star",
+                    "hex": "#d4c8da",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "brand": "Xiaomi",
+            "generation": "Redmi",
+            "name":"Note 11S",
+            "storage": ["128 GB"],
+            "price": [415, 440],
+            "bigPrice": [440, 465],
+            "image": "../../img/Samsung mehsullari/sam1.webp",
+            "colors": 
+            [
+                {
+                    "color": "Gray",
+                    "hex": "#000",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                },
+                {
+                    "color": "Twilight",
+                    "hex": "#60645a",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                },
+                {
+                    "color": "White",
+                    "hex": "#fff",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "brand": "Xiaomi",
+            "generation": "Redmi",
+            "name":"Note 12",
+            "storage": ["128 GB"],
+            "price": [359, 389],
+            "bigPrice": [595, 679],
+            "image": "../../img/Samsung mehsullari/sam1.webp",
+            "colors": 
+            [
+                {
+                    "color": "Gray",
+                    "hex": "#12161f",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                },
+                {
+                    "color": "Blue",
+                    "hex": "#87a6bb",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                },
+                {
+                    "color": "Green",
+                    "hex": "#e2d5e6",
+                    "img": "../../img/Apple mehsullari/apple1.webp"
+                }
+            ]
+        }
+    ]
+]

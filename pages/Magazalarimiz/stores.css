@@ -1,4 +1,4 @@
-@import "../../assets/css/global.css";
+@import "../../css/global.css";
 
 .stores__section {
     margin-bottom: 3rem;
@@ -62,6 +62,15 @@
 .stores__service {
     display: none;
 }
+
+.stores__adress h4{
+    margin-bottom: 13px;
+}
+.stores__adress i{
+    margin-right: .5rem;
+}
+
+
 
 @media (min-width: 840px) {
     .stores__service,

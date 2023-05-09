@@ -1,0 +1,155 @@
+.kreditKalPopup h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: #232d40;
+}
+
+.modal-content {
+    border-radius: 15px;
+}
+
+.btn-close {
+    border: 1px solid #c2c5ca;
+    font-weight: 600;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+.kreditKalPopup {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .6);
+    opacity: .4;
+    z-index: 1;
+}
+
+.calculator__product {
+    padding-bottom: 2.4rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.calculator__product--description {
+    display: flex;
+    align-items: center;
+    margin-bottom: .6rem;
+}
+
+.calculator__product--description img {
+    width: 3.8rem;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    margin-right: 1rem;
+}
+
+.calculator__product--price {
+    color: #232d40;
+}
+
+.product__name p {
+    color: #95979c;
+}
+
+#formControl1 {
+    color: #232d40;
+    font-weight: 500;
+}
+
+.altSoz {
+    color: #95979c;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-8 {
+    margin-bottom: 8px;
+}
+
+.zemanet {
+    font-size: 16px;
+    color: #232d40;
+}
+
+.paymentTime {
+    width: 100%;
+    border: 1px solid #dadbdd;
+    padding: 1.5rem 1.3rem;
+    margin-bottom: 20px;
+}
+
+.paymentTime label{
+    color: #232d40;
+}
+
+.btn-outline-warning:focus{
+    box-shadow: none;
+}
+.taksit__price {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+
+.product__Price--content {
+    border: 2px solid #f6861f;
+    border-radius: .6rem;
+    padding: 22px;
+}
+
+.product__final--price {
+    color: #232d40;
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.modal-footer button,
+.modal-footer a{
+    background-color: #f6861f;
+    border: none;
+    width: 100%;
+    padding: 11px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.modal-footer button {
+    border: 1px solid #40b659;
+    background-color: #40b659;
+}
+.modal-footer a {
+    border: 1px solid #f6861f;
+}
+
+.modal-footer button:hover {
+    background-color: #ffffff;
+    color: #40b659;
+    border: 1px solid #40b659;
+}
+.modal-footer a:hover {
+    background-color: #ffffff;
+    color: #f6861f;
+    border: 1px solid #f6861f;
+}
+
+@media screen and (min-width: 595px) {
+    .modal-footer {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-between;
+        gap: 4px;
+    }
+    .modal-footer button,
+    .modal-footer a {
+        width: 45%;
+    }
+}

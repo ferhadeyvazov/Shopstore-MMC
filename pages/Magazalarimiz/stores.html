@@ -9,9 +9,10 @@
     <meta name="description" content="Arzulariniz bir-klikle">
 
     <!-- =======================MAIN CSS================ -->
-    <link rel="stylesheet" media="all" href="../../assets/css/style.css">
+    <link rel="stylesheet" media="all" href="../../css/style.css">
+    <link rel="stylesheet" media="all" href="../../css/sebet.css">
     <link rel="stylesheet" media="all" href="./stores.css">
-    <link rel="stylesheet" media="all" href="../../assets/css/media.query.css">
+    <link rel="stylesheet" media="all" href="../../css/media.query.css">
 
 
     <!-- ====================AWESOME ICONS===================== -->
@@ -21,7 +22,7 @@
 
 
     <!-- ====================MAIN JS==================== -->
-    <script defer src="../../assets/js/app.js"></script>
+    <script defer src="../../js/app.js"></script>
     <script defer src="./stores.js"></script>
 
     <title>Shopstore - Mağazalarımız</title>
@@ -35,9 +36,9 @@
             <div class="header--info">
                 <a href="#">Korporativ satış</a>
                 <a href="#">Haqqımızda</a>
-                <a href="./stores.html">Mağazalarımız</a>
+                <a href="../Magazalarimiz/stores.html" target="_blank">Mağazalarımız</a>
                 <a href="#">Texniki dəstək</a>
-                <a href="../DeliveryAndPayments/deliveryAndPayment.html">Çatdırılma və ödəniş</a>
+                <a href="../DeliveryAndPayments/deliveryAndPayment.html" target="_blank">Çatdırılma və ödəniş</a>
             </div>
 
             <div class="header--user--sign">
@@ -55,7 +56,7 @@
                         РУС
                     </option>
                 </select>
-                <a href="#">
+                <a href="./pages/LoginAndRegister/login-Register.html">
                     <i class="fa-regular fa-user"></i>
                     <span>Qeydiyyat | Giriş</span>
                 </a>
@@ -64,7 +65,7 @@
         </div>
     </header>
 
-    <!-- ==========================NAV======================== -->
+    <!-- ==========================NAV=========================== -->
     <nav class="nav" id="nav">
         <div class="container nav__container">
             <div class="nav--burger--logo">
@@ -76,7 +77,7 @@
                         <span></span>
                     </div>
                 </label>
-                <a href="/"><img src="../../assets/img/Logo/logo_shopstore.svg" alt="LOGO" class="logo"></a>
+                <a href="/"><img src="../../img/Logo/logo_shopstore.svg" alt="LOGO" class="logo"></a>
 
                 <button aria-label="kataloq" class="product--catalog">
                     <span class="circle1"></span>
@@ -149,37 +150,105 @@
                     <li class="nav--tools-link">
                         <i class="fa-solid fa-magnifying-glass" id="faSearch"></i>
                     </li>
-                    <li class="nav--tools-link">
-                        <a href="#" target="_blank">
+                    <li class="nav--tools-link" target="_blank">
+                        <a class="nav__tools--link" href="#" target="_blank">
                             <span>Müqayisə</span>
                             <i class="fa-solid fa-scale-balanced"></i>
                         </a>
                     </li>
                     <li class="nav--tools-link" id="secilmisler">
-                        <a href="#" target="_blank">
+                        <a class="nav__tools--link" href="#" target="_blank">
                             <span>Seçilmişlər</span>
                             <i class="fa-regular fa-heart"></i>
                         </a>
                     </li>
                     <li class="nav--tools-link">
-                        <a href="../Basket/basket.html" target="_blank">
+                        <a id="sebetMehsul" class="nav__tools--link">
                             <span>Səbət</span>
                             <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="elementSayi">0</div>
                         </a>
+
+
+                        <aside class="sebet">
+                            <div class="sebet__hero paddingHero">
+                                <div class="sebet__hero--text">
+                                    <h2 class="textUppercase">
+                                        Səbət
+                                    </h2>
+                                    <button class="bg-color-red sebet__products--sayi" disabled="disabled">0</button>
+                                </div>
+
+                                <i class="fa-solid fa-x fa-xl" style="color: #818387;"></i>
+                            </div>
+
+                            <div class="sebet__products">
+                                <!-- <div class="marginContainer grid-3">
+                                            <a href="#" class="basket__img rowFlex">
+                                                <img src="../../assets/img/Basket/basket1.jpeg" alt="basketImg">
+                                            </a>
+                                            <div class="basket__product--info">
+                                                <div class="basket__product--hero">
+                                                    <a href="#">
+                                                        <h4 class="headerContainer">Ütü Polaris PIR 2274K_A1QKPGN</h4>
+                                                    </a>
+        
+                                                    <div class="basket__product--price">
+                                                        <h5 class="fw-bold">
+                                                            19
+                                                            <img class="manat-Icon-small"
+                                                                src="../../img/Logo/manat-sign-solid.svg" alt="manatIcon">
+                                                        </h5>
+                                                    </div>
+                                                    <div class="basket__product--count">
+                                                        <div class="product__number">
+                                                            <i class="cix fa-solid fa-minus"></i>
+                                                            <span class="mehsul__sayi">1</span>
+                                                            <i class="plus fa-solid fa-plus"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+        
+        
+                                                <a class="sebet__product--delete">
+                                                    <i class="fa-solid fa-xmark fa-sm" style="color: #ff3c3c;"></i>
+                                                </a>
+                                            </div>
+                                        </div> -->
+                            </div>
+
+                            <div class="sebet__total">
+                                <div class="sebet__total--price">
+                                    <h3>Cəmi:</h3>
+                                    <h3 class="sebet__total--cem">
+                                        0<i class="fa-solid fa-manat-sign" style="color: #000000;"></i>
+                                    </h3>
+                                </div>
+                                <div class="sebet__total--resmi">
+                                    <button class="bg-color-red">
+                                        <a href="./pages/Basket/basket.html">
+                                            Sifarişi rəsmiləşdir
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </aside>
+
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- ==================KAMPANIYALAR, XEBERLER.....================ -->
+
     <nav class="nav__alt" id="nav__alt">
         <div class="container nav__container--alt">
-            <a href="../Kampaniyalar/campaign.html" class="nav__link">
+            <a href="../Kampaniyalar/campaign.html" class="nav__link" target="_blank">
                 <i class="fa-solid fa-bullhorn"></i>
                 Kampaniyalar
             </a>
-            <a href="../News/news.html" class="nav__link">
+            <a href="../News/news.html" class="nav__link" target="_blank">
                 <i class="fa-solid fa-newspaper"></i>
                 Xəbərlər
             </a>
@@ -187,18 +256,14 @@
                 <i class="fa-solid fa-sim-card"></i>
                 Nömrələr
             </a>
-            <a href="#" class="nav__link">
-                <i class="fa-solid fa-building-columns"></i>
-                Kredit
-            </a>
-            <a href="#" class="nav__link">
-                <i class="fa-solid fa-truck"></i>
-                Online sifariş
+            <a href="../Smartfonlar/telefonlar.html" class="nav__link animated">
+                <i class="fa-solid fa-tags"></i>
+                Outlet
             </a>
         </div>
     </nav>
 
-    <!-- =====================BOTTOM MENU====================== -->
+
     <nav class="menu__alt">
         <div class="container container__alt--menu">
             <ul class="menu__list">
@@ -215,7 +280,8 @@
                     </a>
                 </li>
                 <li class="menu__link">
-                    <a href="../Basket/basket.html">
+                    <div class="altMenu__link--elementSayi">0</div>
+                    <a href="./pages/Basket/basket.html">
                         <i class="menu__link--icon fa-solid fa-cart-shopping"></i>
                         <span class="menu__link--name">Səbət</span>
                     </a>
@@ -236,19 +302,19 @@
         </div>
     </nav>
 
-    <!-- =====================MEHSUL KATALOGU====================== -->
+    <!-- ===============MEHSUL KATALOGU================= -->
     <div class="main catalogPopUp" id="catalogPopup">
         <div class="container">
             <div class="catalog__Popup--container">
                 <div class="catalog__Popup">
                     <ul class="catalog__Popup--list">
                         <!-- <li class="catalog__Popup--link">
-                            <div>
-                                <i class="fa-solid fa-file-invoice"></i>
-                                <p>Smartfonlar</p>
-                            </div>
-                            <i class="fa-solid fa-angle-right"></i>
-                        </li> -->
+                                    <div>
+                                        <i class="fa-solid fa-file-invoice"></i>
+                                        <p>Smartfonlar</p>
+                                    </div>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </li> -->
                     </ul>
                 </div>
 
@@ -271,11 +337,11 @@
                 <div class="stores__aside">
                     <aside class="stores__adress--list">
                         <article class="stores__adress">
-                            <b>
+                            <h4>
                                 <i class="fa-solid fa-location-dot" style="color: #8333ec;"></i>
                                 Nəsimi rayon, Zərifə Əliyeva 55
                                 (Yeni Həyat Plaza)
-                            </b>
+                            </h4>
                             <p>
                                 <i class="fa-solid fa-clock" style="color: #8333ec;"></i>
                                 B.e-B (10:00-22:00)
@@ -286,34 +352,34 @@
                             </p>
                             <p>
                                 <i class="fa-solid fa-phone" style="color: #8333ec;"></i>
-                                +994125996777
+                                +994 (12) 599-67-77
                             </p>
                         </article>
                         <article class="stores__adress">
-                            <b>
+                            <h4>
                                 <i class="fa-solid fa-location-dot" style="color: #8333ec;"></i>
                                 Fəvvarələr meydanı, Tərlan Əliyarbəyov 9
-                            </b>
+                            </h4>
                             <p>
                                 <i class="fa-solid fa-clock" style="color: #8333ec;"></i>
                                 B.e-B (10:00-22:00)
                             </p>
                         </article>
                         <article class="stores__adress">
-                            <b>
+                            <h4>
                                 <i class="fa-solid fa-location-dot" style="color: #8333ec;"></i>
                                 Fəvvarələr meydanı, Tərlan Əliyarbəyov 9
-                            </b>
+                            </h4>
                             <p>
                                 <i class="fa-solid fa-clock" style="color: #8333ec;"></i>
                                 B.e-B (10:00-22:00)
                             </p>
                         </article>
                         <article class="stores__adress">
-                            <b>
+                            <h4>
                                 <i class="fa-solid fa-location-dot" style="color: #8333ec;"></i>
                                 Nəsimi rayon, Puşkin küç. 12/14
-                            </b>
+                            </h4>
                             <p>
                                 <i class="fa-solid fa-clock" style="color: #8333ec;"></i>
                                 B.e-B (10:00-22:00)
@@ -331,29 +397,28 @@
                 <div class="stores__service">
                     <aside class="stores__adress--list">
                         <article class="stores__adress">
-                            <b>
+                            <h4>
                                 <i class="fa-solid fa-location-dot" style="color: #8333ec;"></i>
                                 ISpace | Yeni Həyat Plaza, Zərifə Əliyeva 111
-                                
-                            </b>
+
+                            </h4>
                             <p>
                                 <i class="fa-solid fa-clock" style="color: #8333ec;"></i>
                                 B.e-B (10:00-22:00)
                             </p>
                             <p>
                                 <i class="fa-solid fa-phone-volume" style="color: #8333ec;"></i>
-                                *6777
+                                +994 (50) 766-00-25
                             </p>
                             <p>
                                 <i class="fa-solid fa-phone" style="color: #8333ec;"></i>
-                                +994125996777
+                                +994 (12) 493-54-34
                             </p>
                         </article>
                     </aside>
 
                     <div class="stores__aside--map">
-                        <iframe
-                            class="stores__map--google"
+                        <iframe class="stores__map--google"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.5302928042697!2d49.85413311744384!3d40.37493819999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307dadf997d2bb%3A0x19199b64c00f9313!2siSpace%20Servis%20-%20Apple%20Authorized%20Service%20Provider!5e0!3m2!1saz!2saz!4v1680673443894!5m2!1saz!2saz"
                             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -385,10 +450,8 @@
                     <button aria-label="abuneOl" class="footer__inp--btn" type="submit">Abunə ol</button>
                 </div>
                 <div class="check_container">
-                    <label class="check_container--label">
-                        <input type="checkbox">
-                        <div class="check_container--checkmark"></div>
-                    </label>
+                    <label for="" id="checkboxNoLabel"><input class="form-check-input rounded-circle p-3"
+                            type="checkbox" id="checkboxNoLabel" value="" aria-label="..."></label>
                     <p class="checkbox__words">Şəxsi məlumatların emalı və abunə şərtləri ilə razıyam</p>
                 </div>
             </form>
@@ -397,11 +460,9 @@
                 <div class="footer__app text-center">
                     <h2>Bütün arzularınız bir tətbiqdə!</h2>
                     <div>
-                        <a href="/"><img loading="lazy" src="../../assets/img/footer_app/app1.svg" alt="appleLink"></a>
-                        <a href="/"><img loading="lazy" src="../../assets/img/footer_app/app2.svg"
-                                alt="googleLink"></a>
-                        <a href="/"><img loading="lazy" src="../../assets/img/footer_app/app3.svg"
-                                alt="huaweiLink"></a>
+                        <a href="/"><img loading="lazy" src="../../img/footer_app/app1.svg" alt="appleLink"></a>
+                        <a href="/"><img loading="lazy" src="../../img/footer_app/app2.svg" alt="googleLink"></a>
+                        <a href="/"><img loading="lazy" src="../../img/footer_app/app3.svg" alt="huaweiLink"></a>
                     </div>
                 </div>
             </div>
@@ -505,9 +566,11 @@
 
 
     <!-- =====================MODULE JS====================== -->
-    <script src="../../assets/js/Modules/catalog/mehsulCatalogu.js"></script>
-    <script src="../../assets/js/Modules/catalog/mobileMenubar.js"></script>
-    <script src="../../assets/js/General/toTopofPage.js"></script>
+    <script src="../../js/Modules/sebet.js"></script>
+    <script src="../../js/Modules/sebet2.js"></script>
+    <script src="../../js/Modules/catalog/mehsulCatalogu.js"></script>
+    <script src="../../js/Modules/catalog/mobileMenubar.js"></script>
+    <script src="../../js/General/toTopofPage.js"></script>
 
 </body>
 

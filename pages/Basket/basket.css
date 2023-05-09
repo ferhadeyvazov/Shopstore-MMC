@@ -1,7 +1,12 @@
-@import "../../assets/css/global.css";
+@import "../../css/global.css";
 @import "./formHeader.css";
 @import "./form.css";
-ul{
+
+.displayShow {
+    display: block;
+}
+
+ul {
     padding: 0;
     margin: 0;
 }
@@ -9,6 +14,7 @@ ul{
 .btn {
     background-color: #fe0000;
 }
+
 .row {
     display: flex;
     align-items: center;
@@ -29,6 +35,10 @@ ul{
 .paddingContainer {
     padding: 1.5rem 1rem;
     background-color: #ffffff;
+}
+
+#section4TH {
+    display: none;
 }
 
 .marginBottom-1 {
@@ -68,8 +78,9 @@ ul{
 
 .basket__product--hero {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: .5rem;
 }
 
@@ -102,6 +113,19 @@ ul{
     width: 17px;
 }
 
+.sebet__products {
+    max-height: 528px;
+    overflow-y: scroll;
+}
+
+.sebet__products::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sebet__products::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: #a1a1a1;
+}
 
 .basket__product--count {
     display: flex;
@@ -121,8 +145,7 @@ ul{
 
 .basket__product--info {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .basket__img {
@@ -133,6 +156,10 @@ ul{
 
 .basket__img img {
     max-width: 100px;
+}
+
+.sebet__product--delete{
+    font-size: 2rem;
 }
 
 @media screen and (min-width: 368px) {
