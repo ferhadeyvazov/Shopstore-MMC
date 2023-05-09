@@ -466,6 +466,10 @@
     .functional--date ul li {
         font-size: 10px;
     }
+
+    .all__brends {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media screen and (min-width: 1040px) {
@@ -490,6 +494,10 @@
     .gunun__teklifi--title {
         font-size: 12px;
         padding: 4px 6px;
+    }
+
+    .all__brends {
+        grid-template-columns: repeat(6, 1fr);
     }
 
 }
@@ -540,9 +548,9 @@
         min-height: 480px;
     }
 
-    .all__brends {
+    /* .all__brends {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
+    } */
 
 }
 
