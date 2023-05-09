@@ -216,7 +216,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
+    gap: .4rem;
 }
 
 .product__price h3 {
@@ -295,14 +295,19 @@
 
 .sharePayment__description div:nth-child(1),
 .sharePayment__description div:nth-child(3) {
-    font-size: 18px;
+    font-size: 14px;
     padding: .2rem;
     width: 90%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sharePayment__description div:nth-child(1) img,
 .sharePayment__description div:nth-child(3) img {
-    width: 27px;
+    width: 23px;
+    margin-right: 10px;
 }
 
 .carousel__card {

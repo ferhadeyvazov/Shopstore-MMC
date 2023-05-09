@@ -32,7 +32,7 @@ function smartfonProductsUI(id, brand, name, price, bigPrice, image, colors) {
                                 </button>
                             </div>
 
-                            <a href="#" class="product__card--image">
+                            <a href="../Product/product.html" class="product__card--image">
                                 <img src="${image}">
                             </a>
 
