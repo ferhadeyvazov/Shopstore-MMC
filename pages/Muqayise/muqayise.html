@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ferhad Eyvazov">
+    <meta name="description" content="Arzulariniz bir-klikle">
+
+    <!-- =======================SPLIDE JS================ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+    <!-- =======================BOOTSTRAP 5.0.2================ -->
+    <link rel="stylesheet" href="../../frameworks/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../frameworks/bootstrap-5.0.2-dist/css/bootstrap.min.css.map">
+
+    <!-- =======================MAIN CSS================ -->
+    <link rel="stylesheet" media="all" href="../../css/style.css">
+    <link rel="stylesheet" media="all" href="../../css/sebet.css">
+    <link rel="stylesheet" media="all" href="../../css/media.query.css">
+    <link rel="stylesheet" href="./muqayise.css">
+
+
+    <!-- ====================AWESOME ICONS===================== -->
+    <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- ====================MAIN JS==================== -->
+    <script defer src="../../js/app.js"></script>
+    <script defer src="./muqayise.js"></script>
+
+    <title>Shopstore - Müqayisə</title>
+</head>
+
+<body>
+    <!-- ==========================HEADER======================== -->
+    <a class="author" id="header"></a>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header--info">
+                <a href="#">Korporativ satış</a>
+                <a href="#">Haqqımızda</a>
+                <a href="../Magazalarimiz/stores.html" target="_blank">Mağazalarımız</a>
+                <a href="#">Texniki dəstək</a>
+                <a href="../DeliveryAndPayments/deliveryAndPayment.html" target="_blank">Çatdırılma və ödəniş</a>
+            </div>
+
+            <div class="header--user--sign">
+                <a href="tel:+994(*6777)">
+                    <i class="fa-solid fa-phone"></i>*6777
+                </a>
+                <select class="header--language">
+                    <option value="az">
+                        AZ
+                    </option>
+                    <option value="en">
+                        EN
+                    </option>
+                    <option value="rus">
+                        РУС
+                    </option>
+                </select>
+                <a href="../LoginAndRegister/login-Register.html">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Qeydiyyat | Giriş</span>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- ==========================NAV=========================== -->
+    <nav class="nav" id="nav">
+        <div class="container nav__container">
+            <div class="nav--burger--logo">
+                <label class="nav--burger">
+                    <input type="checkbox" aria-label="Katalog">
+                    <div class="checkmark">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </label>
+                <a href="/"><img src="../../img/Logo/logo_shopstore.svg" alt="LOGO" class="logo"></a>
+
+                <button aria-label="kataloq" class="product--catalog">
+                    <span class="circle1"></span>
+                    <span class="circle2"></span>
+                    <span class="circle3"></span>
+                    <span class="circle4"></span>
+                    <span class="circle5"></span>
+                    <p class="text">
+                        Məhsul kataloqu <i class="fa-solid fa-chevron-down"></i>
+                    </p>
+                </button>
+            </div>
+
+            <!-- ================MOBILE MENU KATALOG================== -->
+            <div class="section__catalog" id="section__catalog">
+                <div class="catalog__title">
+                    <h3>Məhsulların kataloqu</h3>
+                    <button onclick="cancelCatalog()" class="catalog">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <!-- =========================CATALOG LISTS================ -->
+                <div class="catalog">
+                    <ul class="catalog__list"></ul>
+                </div>
+            </div>
+
+            <div class="section__catalog-alt" id="section__catalog-alt">
+                <div class="catalog__title">
+                    <div class="catalog-alt--title">
+                        <button onclick="cancelCatalogAlt()" class="cancel__catalog-alt">
+                            <i class="fa-solid fa-arrow-left-long"></i>
+                        </button>
+                        <h3 class="catalog-alt--hero"></h3>
+                    </div>
+                    <button onclick="cancelCatalog()" class="catalog">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="catalog">
+                    <ul class="catalog__list altCatalog__list"></ul>
+                </div>
+            </div>
+
+
+            <div class="search__section" id="search__section">
+                <div class="container">
+                    <div class="search__back">
+                        <i class="fa-solid fa-x" id="faBack"></i>
+                    </div>
+                    <div class="search__container">
+                        <input placeholder="Search the internet..." type="text" name="text" class="input">
+                        <a href="#" class="search--input" aria-label="Read more about Seminole tax hike">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <form class="form">
+                <input type="search" name="" id="searchBtn" placeholder="Iphone 12 pro max silicone case baseus">
+                <button aria-label="search__btn" class="search__btn" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+
+            <div class="nav--tools">
+                <ul>
+                    <li class="nav--tools-link">
+                        <i class="fa-solid fa-magnifying-glass" id="faSearch"></i>
+                    </li>
+                    <li class="nav--tools-link" target="_blank">
+                        <a class="nav__tools--link" href="#" target="_blank">
+                            <span>Müqayisə</span>
+                            <i class="fa-solid fa-scale-balanced"></i>
+                        </a>
+                    </li>
+                    <li class="nav--tools-link" id="secilmisler">
+                        <a class="nav__tools--link" href="#" target="_blank">
+                            <span>Seçilmişlər</span>
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </li>
+                    <li class="nav--tools-link">
+                        <a id="sebetMehsul" class="nav__tools--link">
+                            <span>Səbət</span>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="elementSayi">0</div>
+                        </a>
+
+
+                        <aside class="sebet">
+                            <div class="sebet__hero paddingHero">
+                                <div class="sebet__hero--text">
+                                    <h2 class="textUppercase">
+                                        Səbət
+                                    </h2>
+                                    <button class="bg-color-red sebet__products--sayi" disabled="disabled">0</button>
+                                </div>
+
+                                <i class="fa-solid fa-x fa-xl" style="color: #818387;"></i>
+                            </div>
+
+                            <div class="sebet__products"></div>
+
+                            <div class="sebet__total">
+                                <div class="sebet__total--price">
+                                    <h3>Cəmi:</h3>
+                                    <h3 class="sebet__total--cem">
+                                        0<i class="fa-solid fa-manat-sign" style="color: #000000;"></i>
+                                    </h3>
+                                </div>
+                                <div class="sebet__total--resmi">
+                                    <button class="bg-color-red">
+                                        <a href="../Basket/basket.html">
+                                            Sifarişi rəsmiləşdir
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </aside>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav class="nav__alt" id="nav__alt">
+        <div class="container nav__container--alt">
+            <a href="../Kampaniyalar/campaign.html" class="nav__link">
+                <i class="fa-solid fa-bullhorn"></i>
+                Kampaniyalar
+            </a>
+            <a href="../News/news.html" class="nav__link">
+                <i class="fa-solid fa-newspaper"></i>
+                Xəbərlər
+            </a>
+            <a href="../Nomreler/nomreler.html" class="nav__link">
+                <i class="fa-solid fa-sim-card"></i>
+                Nömrələr
+            </a>
+            <a href="../Smartfonlar/telefonlar.html" class="nav__link animated">
+                <i class="fa-solid fa-tags"></i>
+                Outlet
+            </a>
+
+        </div>
+    </nav>
+
+
+    <nav class="menu__alt">
+        <div class="container container__alt--menu">
+            <ul class="menu__list">
+                <li class="menu__link">
+                    <a class="menuActive" href="/">
+                        <i class="menu__link--icon fa-solid fa-house"></i>
+                        <span class="menu__link--name">Əsas Səhifə</span>
+                    </a>
+                </li>
+                <li class="menu__link">
+                    <a onclick="activeCatalog()">
+                        <i class="menu__link--icon fa-solid fa-file-lines"></i>
+                        <span class="menu__link--name">Katalog</span>
+                    </a>
+                </li>
+                <li class="menu__link">
+                    <div class="altMenu__link--elementSayi">0</div>
+                    <a>
+                        <i class="menu__link--icon fa-solid fa-cart-shopping"></i>
+                        <span class="menu__link--name">Səbət</span>
+                    </a>
+                </li>
+                <li class="menu__link">
+                    <a href="#">
+                        <i class="menu__link--icon fa-solid fa-user"></i>
+                        <span class="menu__link--name">Profil</span>
+                    </a>
+                </li>
+                <li class="menu__link">
+                    <a href="#">
+                        <i class="menu__link--icon fa-solid fa-ellipsis"></i>
+                        <span class="menu__link--name">Menu</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===============MEHSUL KATALOGU================= -->
+    <div class="main catalogPopUp" id="catalogPopup">
+        <div class="container">
+            <div class="catalog__Popup--container">
+                <div class="catalog__Popup">
+                    <ul class="catalog__Popup--list">
+                        <!-- <li class="catalog__Popup--link">
+                                    <div>
+                                        <i class="fa-solid fa-file-invoice"></i>
+                                        <p>Smartfonlar</p>
+                                    </div>
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </li> -->
+                    </ul>
+                </div>
+
+                <div class="altCategory catalog__Popup--alt"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =====================PRODUCT PAGE====================== -->
+    <section class="section muqayise__section">
+        <div class="container muqayise__container">
+
+            <nav class="mt-2" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/index.html">Əsas Səhifə</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Müqayisə</li>
+                </ol>
+            </nav>
+
+            <h2 class="page__header--logo">Müqayisə</h2>
+
+            <section class="page__Muqayise bg-white">
+                <div class="arrow-rotate">
+                    <div class="arrow__btns">
+                        <button class="left-button"> 
+                            <i class="fa-solid fa-chevron-left fa-sm" style="color: #000000;"></i>
+                        </button>
+                        <button class="right-button">
+                            <i class="fa-solid fa-chevron-right fa-sm" style="color: #000000;"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            
+            <table class="table table__muqayise">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="card__product">
+                                <aside class="card__title">
+                                    <h6>Apple iPhone 13 Pro Max</h6>
+                                    <button class="close__btn--card">
+                                        <i class="fa-solid fa-xmark" style="color: #9a9a9d;"></i>
+                                    </button>
+                                </aside>
+                                <h6 class="card__price">3549,99 AZN</h6>
+                            </div>
+                        </td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+    </section>
+
+
+    <!-- ==========================ABUNEOL======================== -->
+    <section class="abune__section">
+        <div class="container footer__container">
+            <div class="text-center footer__abune">
+                <div class="footer--abune">
+                    <h1 class="footer__abune--title">Bizə abunə olun</h1>
+                    <p class="footer__abune--description">
+                        Ən son yeniləmələrə abunə olun, yeni məhsullar
+                        və xüsusi təkliflər haqqında ilk siz xəbərdar olun
+                    </p>
+                </div>
+
+            </div>
+
+            <form class="footer__inp">
+                <div class="footer__inp--form">
+                    <input class="footer__inp--input" type="email" placeholder="Elektron ünvanınızı qeyd edin..."
+                        required />
+                    <button aria-label="abuneOl" class="footer__inp--btn" type="submit">Abunə ol</button>
+                </div>
+                <div class="check_container">
+                    <label class="check_container--label">
+                        <input type="checkbox">
+                        <div class="check_container--checkmark"></div>
+                    </label>
+                    <p class="checkbox__words">Şəxsi məlumatların emalı və abunə şərtləri ilə razıyam</p>
+                </div>
+            </form>
+
+            <div class="footer__form--app">
+                <div class="footer__app text-center">
+                    <h2>Bütün arzularınız bir tətbiqdə!</h2>
+                    <div>
+                        <a href="/"><img loading="lazy" src="../../img/footer_app/app1.svg" alt="appleLink"></a>
+                        <a href="/"><img loading="lazy" src="../../img/footer_app/app2.svg" alt="googleLink"></a>
+                        <a href="/"><img loading="lazy" src="../../img/footer_app/app3.svg" alt="huaweiLink"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- =====================FOOTER====================== -->
+    <footer class="footer" id="footer">
+        <div class="container foot__container">
+            <div class="foot__section1">
+                <h3 class="foot__section1--title">Çağrı mərkəzi</h3>
+                <a href="/" class="section1--qaynarxett">
+                    <p>Qaynar xətt</p>
+                    <h2>*6777</h2>
+                </a>
+                <div class="foot__saatlar">
+                    <h3>İş saatları</h3>
+                    <p>B.e-C.9:00-21:00</p>
+                    <p>Ş-B.9:00-20:00</p>
+                </div>
+
+                <div class="foot__phone--numbers">
+                    <a href="tel: +994557776777">Mob: +994 55 777-67-77</a>
+                    <a href="tel: +994707776777">+994 70 777-67-77</a>
+                    <a href="tel: +994125996777">Tel: +994 12 599-67-77</a>
+                </div>
+
+                <div class="foot__socials">
+                    <a target="_blank" href="https://wa.me/994557776777" class="foot__social--whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        WhatsApp
+                    </a>
+                    <a target="_blank" href="https://t.me/994557776777" class="foot__social--telegram">
+                        <i class="fa-brands fa-telegram"></i>
+                        Telegram
+                    </a>
+                    <a target="_blank" href="https://www.facebook.com/shopstoreba" class="foot__social--facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                        Facebook
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/shopstore.az/" class="foot__social--instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                        Instagram
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="foot__section2">
+                <h3 class="foot__section1--title">Umico Market</h3>
+                <div class="foot__section2--links">
+                    <a href="/">
+                        Umico Market-də necə sifariş etmək olar?
+                    </a>
+                    <a href="/">
+                        Çatdırılma və Ödəmə
+                    </a>
+                    <a href="/">
+                        Kredit
+                    </a>
+                    <a href="/">
+                        Taksitli ödəniş
+                    </a>
+                    <a href="/">
+                        Promokodlar və Endirimlər
+                    </a>
+                    <a href="/">
+                        Sifarişin ləğv edilməsi və qaytarılması
+                    </a>
+                    <a href="/">
+                        Umico Market təhvil məntəqələrinin siyahısı
+                    </a>
+                    <a href="/">
+                        Servis mərkəzləri
+                    </a>
+                    <a href="/">
+                        Ən çox verilən suallar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="section-copyright">
+        <div class="container text-center">
+            <p class="authorOfPage">
+                <i class="fa-regular fa-copyright"></i> shopstore.az Bütün hüquqları qorunur.
+                Onlayn mağaza <a href="https://ferhaddev.netlify.app/" target="_blank"><strong>Fərhad
+                        Eyvazov</strong></a>
+                tərəfindən hazırlanmışdır
+            </p>
+        </div>
+    </section>
+
+    <!-- =====================TO-TOPOFPAGE====================== -->
+    <a href="#header" class="btn-up">
+        ↑
+    </a>
+
+    <!-- =======================SplideJS================ -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+
+    <!-- =======================BOOTSTRAP 5.0.2================ -->
+    <script src="../../frameworks/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="../../frameworks/bootstrap-5.0.2-dist/js/bootstrap.min.js.map"></script>
+
+
+    <!-- =====================MODULE JS====================== -->
+    <script src="../../js/Modules/productSlider.js"></script>
+    <script src="../../js/Modules/sebet.js"></script>
+    <script src="../../js/Modules/sebet2.js"></script>
+    <script src="../../js/Modules/catalog/mehsulCatalogu.js"></script>
+    <script src="../../js/Modules/catalog/mobileMenubar.js"></script>
+    <script src="../../js/General/toTopofPage.js"></script>
+
+</body>
+
+</html>

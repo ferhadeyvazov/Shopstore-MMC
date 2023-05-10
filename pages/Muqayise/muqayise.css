@@ -1,0 +1,51 @@
+@import "../../css/global.css";
+
+.page__Muqayise {
+    padding: 1rem;
+}
+
+.arrow-rotate {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1.1rem 0;
+}
+
+.arrow__btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.arrow__btns button {
+    border: none;
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 30px;
+    height: 30px;
+    padding: .260rem;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.card__title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__title h6 {
+    font-weight: 700;
+}
+
+.close__btn--card {
+    border: none;
+    border-radius: 50%;
+    padding: .260rem;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.card__price {
+    color: var(--main-bg-color);
+}
