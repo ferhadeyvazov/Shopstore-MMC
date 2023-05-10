@@ -130,6 +130,7 @@ ul{
 
 del{
     text-decoration: line-through !important;
+    color: #949494;
 }
 
 .section {
