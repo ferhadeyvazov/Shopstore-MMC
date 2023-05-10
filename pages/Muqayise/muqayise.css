@@ -32,6 +32,7 @@
 .card__title {
     display: flex;
     justify-content: space-between;
+    margin-bottom: .5rem;
 }
 
 .card__title h6 {
@@ -41,11 +42,27 @@
 .close__btn--card {
     border: none;
     border-radius: 50%;
-    padding: .260rem;
+    padding: .09rem;
+    width: 25px;
+    height: 25px;
     background-color: #ffffff;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
 .card__price {
     color: var(--main-bg-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.muqayise__img{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.muqayise__img img {
+    width: 150px;
+    vertical-align: middle;
+    aspect-ratio: 1/1;
+    object-fit: contain;
 }
