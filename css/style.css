@@ -109,19 +109,22 @@
     z-index: 9;
 }
 
-.animated{
+.animated {
     font-weight: 400;
     -webkit-animation: .8s infinite alternate color_change;
     animation: .8s infinite alternate color_change;
 }
+
 @keyframes color_change {
-    0%{
+    0% {
         color: #ffffff;
     }
-    50%{
+
+    50% {
         color: var(--hover-color);
     }
-    100%{
+
+    100% {
         color: #ff0000;
     }
 }
@@ -482,7 +485,7 @@
     cursor: pointer;
 }
 
-#sebetMehsul>i::after{
+#sebetMehsul>i::after {
     content: "";
 }
 
@@ -1358,11 +1361,12 @@
     display: flex;
     gap: 8px;
 }
-.product__item--favor button{
+
+.product__item--favor button {
     margin-left: 0;
 }
 
-.product__item--favor button:nth-child(1){
+.product__item--favor button:nth-child(1) {
     margin-left: auto;
 }
 
@@ -1374,6 +1378,16 @@
     justify-content: space-between;
     overflow: auto;
     scroll-snap-type: x mandatory;
+}
+
+.game__products::-webkit-scrollbar {
+    height: 2px;
+    display: none;
+}
+
+.table__muqayise::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: #ffffff;
 }
 
 .game__title {
