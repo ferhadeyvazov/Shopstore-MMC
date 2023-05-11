@@ -29,22 +29,33 @@
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
+.card__product {
+    width: 225px;
+}
+
 .card__title {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: .5rem;
 }
 
 .card__title h6 {
     font-weight: 700;
+    color: #000;
 }
 
 .close__btn--card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     border: none;
     border-radius: 50%;
-    padding: .09rem;
-    width: 25px;
-    height: 25px;
+    text-align: center;
+    padding: .75rem;
+    width: 20px;
+    height: 20px;
     background-color: #ffffff;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
@@ -54,15 +65,104 @@
     font-weight: 600;
     margin-bottom: 1rem;
 }
-.muqayise__img{
+
+.muqayise__img {
+    overflow: hidden;
     display: flex;
     align-items: center;
     /* justify-content: center; */
 }
 
 .muqayise__img img {
-    width: 150px;
+    width: 180px;
     vertical-align: middle;
     aspect-ratio: 1/1;
     object-fit: contain;
+    transition: .5s;
+}
+
+/* .muqayise__img img:hover {
+    filter: blur(5px);
+}
+.muqayise__img img:hover + .muqayise__btns,
+.muqayise__btns:hover {
+    display: block;
+}
+.muqayise__btns:hover + .muqayise__img img {
+    filter: blur(5px);
+} */
+.muqayise__img:hover img{
+    filter: blur(5px);
+}
+.muqayise__img:hover .muqayise__btns{
+    opacity: 1;
+    filter: blur(0);
+}
+
+
+
+.table__muqayise {
+    background-color: #ffffff;
+    display: block;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: center;
+    scroll-margin-right: 1rem;
+}
+
+.table__muqayise::-webkit-scrollbar {
+    height: 2px;
+    display: none;
+}
+
+.table__muqayise::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+.table__muqayise tbody {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; <<--deyise biler*/
+}
+
+tbody tr td {
+    position: relative;
+    margin-right: 4rem;
+    min-width: 290px;
+    width: 285px;
+    padding: 1rem 2rem !important;
+    vertical-align: top;
+}
+
+tbody tr td>i {
+    margin-right: 1rem;
+}
+
+.muqayise__btns{
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+}
+
+.buyBtn {
+    background-color: #ff006f;
+}
+
+.buyBtn:active {
+    background-color: #ff006f;
+    border-color: #ff006f;
+}
+
+.shopBtn {
+    background-color: #7221e0;
+    border-color: #7221e0;
+    margin-left: 8px;
+    padding: 6px 20px;
+}
+
+.shopBtn:hover,
+.shopBtn:active {
+    background-color: #7221e0;
+    border-color: #7221e0;
 }
